@@ -6,3 +6,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://misaki-kasai.github.io/paper/sitemap.xml
