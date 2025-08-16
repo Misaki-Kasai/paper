@@ -56,35 +56,41 @@ Related Links:<br>
 <h2>Successes and Limitations of the \(\Lambda\)CDM Model</h2><p>The \(\Lambda\)CDM model, which serves as the standard framework in modern cosmology, has achieved remarkable success in explaining observational data such as the cosmic microwave background (CMB), baryon acoustic oscillations (BAO), and Type Ia supernovae with high precision \cite{planck2018}. However, the cosmological constant \(\Lambda\) is defined as a static and uniform quantity, without incorporating any spatial structure or scale dependence.</p><p>Moreover, although \(\Lambda\)CDM relies on invisible components such as dark matter and dark energy, the true nature of these entities remains unknown. They function as auxiliary terms in the theoretical framework, and there has been persistent criticism that they lack a solid basis for physical reality \cite{padmanabhan2003}.</p>
 <h2>Motivation: Constructing a Cosmological Framework with Repulsion as the Subject</h2>
 <p>This study attempts to construct a gravitational theory in which <strong>repulsive response is the subject</strong>, in contrast to general relativity, which treats “gravity = attraction” as its primary perspective.</p><p>Specifically, we propose a framework that introduces an effective cosmological constant term, \(\Lambda_{\text{eff}}\), derived from a scalar field, which acts as a scale-dependent repulsive potential. This enables a unified description of gravitational structures ranging from galactic scales to black hole singularity scales.</p><p>It should be noted that this study adopts the stance of preserving the cosmological constant \(\Lambda\) in the Einstein field equations as a true constant. However, its effect manifests in a scale-dependent manner through a logarithmic-type potential, and is therefore reflected in the observable gravitational structure as \(\Lambda_{\text{eff}}(r)\). In this way, the aim is to construct a gravitational theory that retains the philosophical foundation of the \(\Lambda\)CDM model while overcoming its structural limitations.</p>
-<h2>Structure of the Effective Term Λ<sub>eff</sub> and Derivation from the Scalar Field Potential</h2></p><p>In this section, we demonstrate that the effective \(\Lambda\) term
+<h2>Structure of the Effective Term Λ<sub>eff</sub> and Derivation from the Scalar Field Potential</h2><p>In this section, we demonstrate that the effective \(\Lambda\) term</p>
 \[
 \Lambda_{\text{eff}}(r) = \frac{4r^2}{(R^2 + r^2)^2}
 \]
-is structurally derived from a variational principle applied to a spherically symmetric and static scalar field.</p><p>Here, \(R\) is a characteristic scale of space and corresponds to the radial position at which the effective term \(\Lambda_{\text{eff}}(r)\) reaches its maximum. It serves as a physically meaningful parameter in this framework.</p><p>The scalar field \(\phi\) considered in this study is rigorously defined based on a Lorentz-invariant Lagrangian density. In its general form, this Lagrangian is given by
+<p>is structurally derived from a variational principle applied to a spherically symmetric and static scalar field.</p><p>Here, \(R\) is a characteristic scale of space and corresponds to the radial position at which the effective term \(\Lambda_{\text{eff}}(r)\) reaches its maximum. It serves as a physically meaningful parameter in this framework.</p><p>The scalar field \(\phi\) considered in this study is rigorously defined based on a Lorentz-invariant Lagrangian density. In its general form, this Lagrangian is given by</p>
 \[
 \mathcal{L}_\phi = -\frac{1}{2} g^{\mu\nu} \partial_\mu \phi \, \partial_\nu \phi - V(\phi),
 \]
-where \(V(\phi)\) is the scalar potential. However, restricting ourselves to a spherically symmetric and static configuration \(\phi = \phi(r)\), we simplify the Lagrangian to the form
+<p>where \(V(\phi)\) is the scalar potential. However, restricting ourselves to a spherically symmetric and static configuration \(\phi = \phi(r)\), we simplify the Lagrangian to the form</p>
 \[
 \mathcal{L}_\phi = -\frac{1}{2} \left( \frac{d\phi}{dr} \right)^2 - V(\phi).
 \]
-This reduction is justified as an effective theory based on the symmetry of the solution and does not imply a violation of the original Lorentz invariance of the full Lagrangian.</p><p>In this context, the isotropic structure of the corresponding energy-momentum tensor is given by:</p><p>\[
+<p>This reduction is justified as an effective theory based on the symmetry of the solution and does not imply a violation of the original Lorentz invariance of the full Lagrangian.</p><p>In this context, the isotropic structure of the corresponding energy-momentum tensor is given by:</p>
+\[
 T_{\mu\nu}^{(\phi)} = \left[ \frac{1}{2} \left( \frac{d\phi}{dr} \right)^2 + V(\phi) \right] g_{\mu\nu}.
-\]</p><p>We now assume the following form for the effective cosmological term, which depends on spatial scale:</p><p>\[
+\]<p>We now assume the following form for the effective cosmological term, which depends on spatial scale:</p>
+\[
 \Lambda_{\text{eff}}(r) = \frac{4r^2}{(R^2 + r^2)^2}.
-\]</p><p>A natural choice of scalar field that reproduces this structure is:</p><p>\[
+\]<p>A natural choice of scalar field that reproduces this structure is:</p>
+\[
 \phi(r) = \frac{2r}{R^2 + r^2}.
-\]</p><p>Using this expression for \(\phi(r)\), the corresponding potential \(V(\phi(r))\) expands as follows:</p><p>\[
+\]<p>Using this expression for \(\phi(r)\), the corresponding potential \(V(\phi(r))\) expands as follows:</p>
+\[
 \phi(r)^2 = \left( \frac{2r}{R^2 + r^2} \right)^2 = \frac{4r^2}{(R^2 + r^2)^2},
-\]</p><p>\[
+\]
+\[
 V(\phi(r)) = -\frac{1}{4} \cdot \phi^2 \left( 4 - R^2 \phi^2 \right)
 = -\frac{1}{4} \cdot \frac{4r^2}{(R^2 + r^2)^2} \left( 4 - \frac{4R^2 r^2}{(R^2 + r^2)^2} \right),
-\]</p><p>\[
+\]
+\[
 = -\frac{4r^2}{(R^2 + r^2)^2} + \underbrace{\frac{4R^2 r^4}{(R^2 + r^2)^4}}_{\text{Second-order correction term}}.
-\]</p><p>Here, the second term serves as a correction that slightly modifies the primary structure of \(\Lambda_{\text{eff}}\), but the leading term clearly satisfies the relation:
+\]<p>Here, the second term serves as a correction that slightly modifies the primary structure of \(\Lambda_{\text{eff}}\), but the leading term clearly satisfies the relation:</p>
 \[
 \boxed{V(\phi(r)) \propto -\Lambda_{\text{eff}}(r)}.
-\]</p><p>In particular, in the regime \(r \ll R\), the correction term is significantly smaller than the leading term. In the opposite limit \(r \gg R\), we observe the following asymptotic behaviors:
+\]<p>In particular, in the regime \(r \ll R\), the correction term is significantly smaller than the leading term. In the opposite limit \(r \gg R\), we observe the following asymptotic behaviors:</p>
 \[
 \frac{r^2}{(R^2 + r^2)^2} \approx \frac{1}{r^2}, \quad \frac{r^4}{(R^2 + r^2)^4} \approx \frac{1}{r^4},
 \]
@@ -93,28 +99,29 @@ indicating that the contribution from the correction term decays rapidly.</p><p>
 \frac{4R^2}{(2R^2)^2} = \frac{1}{R^2}, \quad
 \frac{4R^2 R^4}{(2R^2)^4} = \frac{1}{4R^2},
 \]
-showing that the correction term remains only one-fourth of the leading term.</p><p>Therefore, across all spatial scales, the leading term dominates, and it is demonstrated that \(\Lambda_{\text{eff}}(r)\) can be directly and naturally derived from the scalar field potential \(V(\phi)\). </p><p>
-<h2>Variational Evaluation of the Scalar Field</h2></p><p>In this section, we evaluate whether the Lagrangian of the scalar field \(\phi(r)\), derived from the effective cosmological term \(\Lambda_{\text{eff}}(r)\) constructed in Section 4, satisfies the extremum condition based on the variational principle (Euler–Lagrange equation). In particular, we expect that the extremum condition is locally violated around the spatial scale \(r = R\), and that this violation rapidly diminishes for \(r \gg R\).</p><p>Such behavior is naturally anticipated from the structure of the adopted \(\phi(r)\), and it also corresponds to the notion that cosmic acceleration may be closely related to a local violation of the extremum condition.</p><p>Note that the violation of the extremum condition discussed here does not directly imply a violation of the conservation law \(\nabla^\mu T_{\mu\nu} = 0\).</p><p><h3>Euler–Lagrange Equation and Variational Residual</h3></p><p>In Section 4, the following scalar field was adopted as a natural candidate for reproducing the spatial dependence of the effective cosmological constant, based on the structure of the scalar potential \( V(\phi) \):
+showing that the correction term remains only one-fourth of the leading term.</p><p>Therefore, across all spatial scales, the leading term dominates, and it is demonstrated that \(\Lambda_{\text{eff}}(r)\) can be directly and naturally derived from the scalar field potential \(V(\phi)\). </p>
+<h2>Variational Evaluation of the Scalar Field</h2><p>In this section, we evaluate whether the Lagrangian of the scalar field \(\phi(r)\), derived from the effective cosmological term \(\Lambda_{\text{eff}}(r)\) constructed in Section 4, satisfies the extremum condition based on the variational principle (Euler–Lagrange equation). In particular, we expect that the extremum condition is locally violated around the spatial scale \(r = R\), and that this violation rapidly diminishes for \(r \gg R\).</p><p>Such behavior is naturally anticipated from the structure of the adopted \(\phi(r)\), and it also corresponds to the notion that cosmic acceleration may be closely related to a local violation of the extremum condition.</p><p>Note that the violation of the extremum condition discussed here does not directly imply a violation of the conservation law \(\nabla^\mu T_{\mu\nu} = 0\).</p>
+<h3>Euler–Lagrange Equation and Variational Residual</h3><p>In Section 4, the following scalar field was adopted as a natural candidate for reproducing the spatial dependence of the effective cosmological constant, based on the structure of the scalar potential \( V(\phi) \):</p>
 \[
 \phi(r) = \frac{2r}{R^2 + r^2}
-\]</p><p>The corresponding potential takes the following form:
+\]<p>The corresponding potential takes the following form:</p>
 \[
 V(\phi) = -\frac{1}{4} \phi^2 \left( 4 - R^2 \phi^2 \right)
-\]</p><p>Under the assumption of spherical symmetry, the Lagrangian density becomes:
+\]<p>Under the assumption of spherical symmetry, the Lagrangian density becomes:</p>
 \[
 \mathcal{L}_\phi = -\frac{1}{2} \left( \frac{d\phi}{dr} \right)^2 - V(\phi)
 = -\frac{1}{2} \left( \frac{d\phi}{dr} \right)^2 + \frac{1}{4} \phi^2 \left( 4 - R^2 \phi^2 \right)
-\]</p><p>The Euler–Lagrange equation derived from this Lagrangian is:
+\]<p>The Euler–Lagrange equation derived from this Lagrangian is:</p>
 \[
 \frac{d^2\phi}{dr^2} = R^2 \phi^3 - 2\phi
-\]</p><p>Here, in order to evaluate how well the assumed scalar field \(\phi(r)\) satisfies the extremum condition, we conduct the analysis under the following boundary conditions:
+\]<p>Here, in order to evaluate how well the assumed scalar field \(\phi(r)\) satisfies the extremum condition, we conduct the analysis under the following boundary conditions:</p>
 \[
 \phi(0) = 0, \quad \phi'(0) = \frac{2}{R^2}
 \]
-with the characteristic scale \(R = 2\), which is chosen because it highlights the features of the scalar field structure and the behavior of the effective \(\Lambda\) term most clearly, while also ensuring clarity in the analytical results and numerical plots.</p><p>Under these conditions, the deviation from the extremum condition (the variational residual) is defined as follows:
+with the characteristic scale \(R = 2\), which is chosen because it highlights the features of the scalar field structure and the behavior of the effective \(\Lambda\) term most clearly, while also ensuring clarity in the analytical results and numerical plots.</p><p>Under these conditions, the deviation from the extremum condition (the variational residual) is defined as follows:</p>
 \[
 \delta(r) \equiv \frac{d^2\phi}{dr^2} - \left( R^2 \phi^3 - 2\phi \right)
-\]</p><p>By substituting the assumed scalar field \(\phi(r)\) into this expression, the variational residual is explicitly given by:
+\]<p>By substituting the assumed scalar field \(\phi(r)\) into this expression, the variational residual is explicitly given by:</p>
 \[
 \delta(r) = 
 \left[
@@ -124,7 +131,7 @@ with the characteristic scale \(R = 2\), which is chosen because it highlights t
 \left[
 \frac{8R^2 r^3}{(R^2 + r^2)^3} - \frac{4r}{R^2 + r^2}
 \right]
-\]</p><p>Based on this expression, the variational residual \(\delta(r)\) for the scalar field \(\phi(r)\) was numerically evaluated. The resulting plots, including a close-up view, are shown in Fig. 1.</p>
+\]<p>Based on this expression, the variational residual \(\delta(r)\) for the scalar field \(\phi(r)\) was numerically evaluated. The resulting plots, including a close-up view, are shown in Fig. 1.</p>
   <figure style="max-width:600px; margin:0 auto;">
   <img src="https://misaki-kasai.github.io/paper/vari_resi.PNG" 
        alt="Variational residual δ(r) for the adopted scalar field φ(r)" 
