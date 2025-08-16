@@ -433,48 +433,20 @@ The author declares no conflict of interest.</p><p>
   <div class="container">
 <h1>fΛ and the Vacuum Expectation Value, Higgs Boson, Z Boson, and W Boson</h1>
 <h2>1. The Vacuum Expectation Value (VEV) as the Onset of Breaking (r=R=2)</h2>
-<p>The vacuum expectation value (VEV), <strong>$v \approx 246 \text{ GeV}$</strong>, is the scale corresponding to a stable vacuum where spontaneous symmetry breaking has already occurred. Just before this point, symmetry is preserved, and breaking can be considered to have begun around $v$. In a variational residual plot, <strong>$r=R=2$</strong> corresponds to the threshold of breaking.</p>
+<p>The vacuum expectation value (VEV), <strong>$v \approx 246\;\mathrm{GeV}$</strong>, corresponds to a stable vacuum where spontaneous symmetry breaking has already occurred. Just before this point, symmetry is preserved, and breaking can be considered to have begun around $v$. In a variational residual plot, <strong>$r=R=2$</strong> corresponds to the threshold of breaking.</p>
 <h2>2. The Higgs Boson Mass as the Peak of Breaking</h2>
-<p>The Higgs boson mass, <strong>$m_H$ (here denoted as $E_H$) $\approx 125 \text{ GeV}$</strong> (natural units, $c=1$), represents the curvature of the Higgs potential. It is the most prominent excitable eigenmode in the broken vacuum—the <strong>peak of spontaneous symmetry breaking</strong>.</p>
-<p>If this peak coincides with the peak position of the variational residual, the energy scale where the vacuum responds most strongly ($\delta(r)$ maximum) aligns with the Higgs mass scale. Therefore, the breaking peak and maximum intensity should coincide.</p>
+<p>The Higgs boson mass, <strong>$m_H$ (here denoted as $E_H$) $\approx 125\;\mathrm{GeV}$</strong> (in natural units, $c=1$), represents the curvature of the Higgs potential, i.e., its resistance to fluctuations. Physically, it is the most prominent excitable eigenmode in the broken vacuum—the <strong>peak of spontaneous symmetry breaking</strong>.</p>
+<p>If this peak coincides with the peak position of the variational residual, the energy scale where the vacuum structure responds most strongly (where the variational residual, $\delta(r)$, is maximum and the extreme value condition breaking is most pronounced) aligns with the Higgs boson mass scale.</p>
+<p>Therefore, the breaking peak in the variational residual plot and the point of maximum intensity (peak) of spontaneous symmetry breaking are expected to coincide.</p>
 <h2>3. The Naturalness of This Expectation</h2>
 <ul>
-<li>The onset of breaking (VEV) and the peak of breaking (Higgs mass) follow a doubling-scale relationship ($2 \to 4$) on a dimensionless coordinate system.</li>
-<li>This corresponds to a halving of energy via inverse proportion, consistent with $246 \text{ GeV} \to 125 \text{ GeV}$.</li>
-<li>The variational residual can geometrically encode this "onset → peak" relationship.</li>
+<li>The onset of breaking (VEV) and the peak of breaking (Higgs boson mass) follow a simple doubling-scale relationship ($2 \to 4$) on a dimensionless coordinate system.</li>
+<li>This doubling-scale relationship corresponds to a halving of energy via inverse proportion, consistent with the measured values $246\;\mathrm{GeV} \to 125\;\mathrm{GeV}$.</li>
+<li>The variational residual structure can geometrically encode this "onset $\to$ peak" relationship.</li>
 </ul>
-<p>Below, we numerically verify whether these relationships hold.</p>
-<h2>4. Scaling Law and General Form</h2>
-<p>From $v = \sqrt{2}/R$, the Higgs VEV is inversely proportional to $R$: $v \propto 1/R$. We assume $E \propto 1/R$ holds for any related energy scale $E$, not just $v$.</p>
-<p>Since $r$ and $R$ are both dimensionless, this can be rewritten as:</p>
-<p><strong>$E \propto 1/r$</strong></p>
-<p>Hence:</p>
-<p>$$\frac{E_v}{E} = \frac{(r_v)^{-1}}{(r(E))^{-1}} = \frac{r(E)}{r_v}$$</p>
-<p>or equivalently:</p>
-<p><strong>$$r(E) = r_v \times \frac{E_v}{E}$$</strong></p>
-<h2>5. Individual Application and Numerical Calculation</h2>
-<p>As mentioned at the beginning, adopting <strong>$r_v = R = 2$</strong> and <strong>$E_v = 246 \text{ GeV}$</strong> gives $E \propto 1/r$, with proportionality constant $\kappa = r_v \times E_v = 2 \times 246 = 492 \text{ GeV}$:</p>
-<p><strong>$$r(E) = \frac{492 \text{ GeV}}{E}$$</strong></p>
-<div class="calculation-block">
-<p><strong>(For clarity)</strong></p>
-<p>$$r(E) = r_v \times \frac{E_v}{E} = \frac{r_v \cdot E_v}{E} = \frac{492 \text{ GeV}}{E}$$</p>
-</div>
-<p>Calculating individual scales:</p>
-<ol>
-<li><strong>Higgs Boson $E_H \approx 125 \text{ GeV}$</strong><br>$$r_H = \frac{492}{125} \approx 3.94$$</li>
-<li><strong>Z Boson $E_Z \approx 91.2 \text{ GeV}$</strong><br>$$r_Z = \frac{492}{91.2} \approx 5.39$$</li>
-<li><strong>W Boson $E_W \approx 80.4 \text{ GeV}$</strong><br>$$r_W = \frac{492}{80.4} \approx 6.12$$</li>
-</ol>
-<figure style="max-width:600px; margin:0 auto;">
-<img src="https://misaki-kasai.github.io/paper/higgs_r_scale.PNG" style="width:100%; height:auto;" alt="Enlarged overlay">
-<figcaption>Figure: Overlay on the variational residual plot</figcaption>
-</figure>
-<h2>Conclusion</h2>
-<p>The 125 GeV Higgs boson corresponds to <strong>$r \approx 3.94$</strong>, coinciding with the peak of extreme value condition breaking ($\approx 4.10$). Z and W bosons lie to the right, maintaining $\delta(r) \approx 0.5$. This connects GeV values consistently with the residual plot.</p>
-<div class="note">
-<p><strong>Note:</strong> $r$ and $R$ are dimensionless; $\delta(r)$ is also dimensionless. The residual plot shape remains invariant regardless of physical scale.</p>
-</div>
-</div>
+
+
+    
   <p><em>#quantumgravity #Higgs #TOE</em></p>
   <hr />
   <p>Additionally, since this model assumes that \(\Lambda_{\text{eff}}(r)\) coincides with \(\Lambda\) at \(r = R\), if we interpret cosmological observations as occurring at \(r = R\), then the main observational phenomena previously explained by ΛCDM (roughly speaking, about 70–80%) can be absorbed directly into this theory.</p>
