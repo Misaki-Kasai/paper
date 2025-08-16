@@ -444,9 +444,37 @@ The author declares no conflict of interest.</p><p>
 <li>This doubling-scale relationship corresponds to a halving of energy via inverse proportion, consistent with the measured values $246\;\mathrm{GeV} \to 125\;\mathrm{GeV}$.</li>
 <li>The variational residual structure can geometrically encode this "onset $\to$ peak" relationship.</li>
 </ul>
-
-
-    
+<p>Below, we will numerically verify whether these relationships hold.</p>
+<h2>4. Scaling Law and General Form</h2>
+<p>From the relationship derived in this paper, $$v = \frac{\sqrt{2}}{R},$$ the Higgs vacuum expectation value $v$ is inversely proportional to the characteristic scale $R$: $$v \propto \frac{1}{R}.$$ We assume a similar inverse proportionality, $$E \propto \frac{1}{R},$$ holds for any related energy scale $E$, not just $v$.</p>
+<p>In the fΛ theory, since $r$ and $R$ are both dimensionless length scales that correspond to each other, the above relationship can be rewritten as: <strong>$$E \propto \frac{1}{r}$$</strong></p>
+<p>From this, the following holds: $$\frac{E_v}{E} = \frac{(r_v)^{-1}}{(r(E))^{-1}} = \frac{r(E)}{r_v}$$</p>
+<p>Thus, we obtain the general equation: <strong>$$r(E) = r_v \frac{E_v}{E}$$</strong></p>
+<h2>5. Individual Application and Numerical Calculation</h2>
+<p>As mentioned earlier, adopting <strong>$r_v = R = 2$</strong> and <strong>$E_v = 246\;\mathrm{GeV}$</strong> as reference points, and using $E \propto 1/r$ (i.e., $E = \kappa \cdot 1/r$), the proportionality constant is $$\kappa = r_v \cdot E_v = 2 \cdot 246\;\mathrm{GeV} = 492\;\mathrm{GeV},$$ giving</p>
+<p><strong>$$r(E) = \frac{492\;\mathrm{GeV}}{E}$$</strong></p>
+<div class="calculation-block">
+<p><strong>(For clarity)</strong></p>
+<p>$$r(E) = r_v \frac{E_v}{E} \implies r(E) = \frac{r_v \cdot E_v}{E}$$</p>
+<p>Substituting $r_v \cdot E_v = 492\;\mathrm{GeV}$ gives:</p>
+<p>$$r(E) = \frac{492\;\mathrm{GeV}}{E}$$</p>
+</div>
+<p>Using this formula, we calculate individual scales (natural units, $c=1$):</p>
+<ol>
+<li><strong>Higgs Boson, $E_H \approx 125\;\mathrm{GeV}$</strong><br>$$r_H = \frac{492\;\mathrm{GeV}}{125\;\mathrm{GeV}} \approx 3.94$$</li>
+<li><strong>Z Boson, $E_Z \approx 91.2\;\mathrm{GeV}$</strong><br>$$r_Z = \frac{492\;\mathrm{GeV}}{91.2\;\mathrm{GeV}} \approx 5.39$$</li>
+<li><strong>W Boson, $E_W \approx 80.4\;\mathrm{GeV}$</strong><br>$$r_W = \frac{492\;\mathrm{GeV}}{80.4\;\mathrm{GeV}} \approx 6.12$$</li>
+</ol>
+<p>This result, overlaid on the variational residual plot and enlarged for the relevant section, is shown below.</p>
+<figure style="max-width:600px; margin:0 auto;">
+  <img src="https://misaki-kasai.github.io/paper/higgs_r_scale.PNG" style="width:100%; height:auto;" alt="Overlay on the variational residual plot">
+  <figcaption>Figure: Overlay on the variational residual plot</figcaption>
+</figure>
+<h2>Conclusion</h2>
+<p>The 125 GeV Higgs boson mass, a symbol of spontaneous symmetry breaking, corresponds to <strong>$$r \approx 3.94$$</strong> on the variational residual plot, coinciding with the peak of the extreme value condition ($\approx 4.10$). The Z and W bosons lie to the right of this peak, with residuals $\delta(r) \approx 0.5$, which is intuitively natural. This provides a consistent connection and deeper physical meaning to the observed GeV values of the Higgs scale.</p>
+<div class="note">
+<p><strong>Note:</strong> $r$ and $R$ are dimensionless before output. The variational residual $\delta(r)$ is also dimensionless, meaning $r$ and $R$ "borrow" units from observations for comparison. Thus, the residual plot is on dimensionless coordinates, and its shape remains invariant regardless of physical scale (e.g., the Higgs scale).</p>
+</div>
   <p><em>#quantumgravity #Higgs #TOE</em></p>
   <hr />
   <p>Additionally, since this model assumes that \(\Lambda_{\text{eff}}(r)\) coincides with \(\Lambda\) at \(r = R\), if we interpret cosmological observations as occurring at \(r = R\), then the main observational phenomena previously explained by ΛCDM (roughly speaking, about 70–80%) can be absorbed directly into this theory.</p>
