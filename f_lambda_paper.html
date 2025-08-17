@@ -43,7 +43,6 @@ Related Links:<br>
 <span style="display:inline-block;padding:0.0em 0.0em;border:1px solid #E8D28D;border-radius:0.3em;">👤</span> <a href="https://scholar.google.com/citations?user=9kB1rbkAAAAJ&hl=ja" target="_blank">Google Scholar: Misaki Kasai</a><br>
 <span style="display:inline-block;padding:0.0em 0.0em;border:1px solid #E8D28D;border-radius:0.3em;">🧬</span> <a href="https://orcid.org/0009-0005-7404-5257" target="_blank">ORCID: 0009-0005-7404-5257</a><br>
 <span style="display:inline-block;padding:0.0em 0.0em;border:1px solid #E8D28D;border-radius:0.3em;">💾</span> <a href="https://zenodo.org/record/15612467/files/fΛ_theory_v2.pdf" target="_blank">Direct PDF download: Zenodo</a>
-</p>
 <section style="padding: 1em; border: 2px dashed #E8D28D; margin: 2em 0;">
   <h2 style="text-align: center;">Structural Note on the Variational Section</h2>
   <p>This model intentionally adopts a quasi-solution \(\phi(r)\), rather than an exact solution. The reason is that an exact solution would eliminate the physical significance of the characteristic scale <span style="font-style: normal;">r = R</span>, thereby preventing the reproduction of the essential behavior: scale-responsive structure of space. If an exact solution were enforced, the parameter <span style="font-style: normal;">r = R</span> would likely be absorbed into coordinate redefinitions or symmetry-induced degeneracies. In such a case, <span style="font-style: normal;">R</span> would lose its status as a physically anchored scale and instead become a redundant parameter, thereby obscuring any meaningful scale-dependent structure in the resulting dynamics. Being a quasi-solution is not a weakness but the structural foundation of the model—it is the key to realizing scale-dependent spatial dynamics. To verify the validity of this quasi-solution, we conducted a variational residual analysis. The results show that the deviation is well-controlled, localized, and physically meaningful. This behavior is also visually illustrated in Fig. 1. Please do not mistake the use of a quasi-solution for a flaw or a compromise. It is not a shortcoming, but the core of the theory and the very foundation of its structure. Importantly, the quasi-solution is not adopted for approximation, but for its structural role in deriving the effective cosmological term <span style="font-style: normal;">Λ<sub>eff</sub>(r)</span>. It does not imply that the entire structure of the universe or the fundamental field equations themselves are quasi-solutions. The aim of this study is to examine whether a quasi-structural term like <span style="font-style: normal;">Λ<sub>eff</sub>(r)</span> can function effectively within a universe that is otherwise governed by exact solutions.</p>
@@ -94,7 +93,7 @@ V(\phi(r)) = -\frac{1}{4} \cdot \phi^2 \left( 4 - R^2 \phi^2 \right)
 \[
 \frac{r^2}{(R^2 + r^2)^2} \approx \frac{1}{r^2}, \quad \frac{r^4}{(R^2 + r^2)^4} \approx \frac{1}{r^4},
 \]
-indicating that the contribution from the correction term decays rapidly.</p><p>Furthermore, even at the intermediate scale \(r = R\), we find:
+<p>indicating that the contribution from the correction term decays rapidly.</p><p>Furthermore, even at the intermediate scale \(r = R\), we find:</p>
 \[
 \frac{4R^2}{(2R^2)^2} = \frac{1}{R^2}, \quad
 \frac{4R^2 R^4}{(2R^2)^4} = \frac{1}{4R^2},
@@ -117,8 +116,7 @@ V(\phi) = -\frac{1}{4} \phi^2 \left( 4 - R^2 \phi^2 \right)
 \]<p>Here, in order to evaluate how well the assumed scalar field \(\phi(r)\) satisfies the extremum condition, we conduct the analysis under the following boundary conditions:</p>
 \[
 \phi(0) = 0, \quad \phi'(0) = \frac{2}{R^2}
-\]
-with the characteristic scale \(R = 2\), which is chosen because it highlights the features of the scalar field structure and the behavior of the effective \(\Lambda\) term most clearly, while also ensuring clarity in the analytical results and numerical plots.</p><p>Under these conditions, the deviation from the extremum condition (the variational residual) is defined as follows:</p>
+\]<p>with the characteristic scale \(R = 2\), which is chosen because it highlights the features of the scalar field structure and the behavior of the effective \(\Lambda\) term most clearly, while also ensuring clarity in the analytical results and numerical plots.</p><p>Under these conditions, the deviation from the extremum condition (the variational residual) is defined as follows:</p>
 \[
 \delta(r) \equiv \frac{d^2\phi}{dr^2} - \left( R^2 \phi^3 - 2\phi \right)
 \]<p>By substituting the assumed scalar field \(\phi(r)\) into this expression, the variational residual is explicitly given by:</p>
@@ -150,9 +148,9 @@ with the characteristic scale \(R = 2\), which is chosen because it highlights t
 \[
 \epsilon_\phi(R) = \left| \frac{\delta(R)}{\phi(R)} \right| = 0.750 \quad (\delta(R) = 0.375,\ \phi(R) = 0.500)
 \]<p>Even around the characteristic scale \( r = R \), the relative error remains within a range that can be regarded as a local violation of the extremum condition.</p>
-The value \( \epsilon_\phi(R) = 0.750 \) supports the validity of the function as a quasi-solution.</p><p>On the other hand, the variational residual \( \delta(r) \) reaches its maximum around \( r \approx 4.10 \), where the relative error rises to approximately \( \epsilon_\phi \approx 1.40 \). 
-However, since \( \phi(r) \) becomes small at this scale, the relative error is numerically overestimated due to the small denominator. 
-Therefore, it is more appropriate to evaluate the validity of the quasi-solution primarily around \( r = R \).</p><p>Based on these considerations, the scalar field \( \phi(r) \) adopted in this study, while not an exact solution, can be regarded as a physically acceptable quasi-solution that does not significantly violate the variational principle.</p><p>In this paper, we refer to the structure based on the effective cosmological term \(\Lambda_{\text{eff}}(r)\), constructed from the quasi-solution \(\phi(r)\), as the \(\Lambda_{\text{eff}}\) model (or the f\(\Lambda\) theory).</p>
+<p>The value \( \epsilon_\phi(R) = 0.750 \) supports the validity of the function as a quasi-solution.</p><p>On the other hand, the variational residual \( \delta(r) \) reaches its maximum around \( r \approx 4.10 \), where the relative error rises to approximately \( \epsilon_\phi \approx 1.40 \).</p>
+<p>However, since \( \phi(r) \) becomes small at this scale, the relative error is numerically overestimated due to the small denominator.</p>
+<p>Therefore, it is more appropriate to evaluate the validity of the quasi-solution primarily around \( r = R \).</p><p>Based on these considerations, the scalar field \( \phi(r) \) adopted in this study, while not an exact solution, can be regarded as a physically acceptable quasi-solution that does not significantly violate the variational principle.</p><p>In this paper, we refer to the structure based on the effective cosmological term \(\Lambda_{\text{eff}}(r)\), constructed from the quasi-solution \(\phi(r)\), as the \(\Lambda_{\text{eff}}\) model (or the f\(\Lambda\) theory).</p>
 <h2 id="section6">Consistency Between the Maximum of Λ<sub>eff</sub> and the Observed Cosmological Constant Λ</h2>
 <p>The derived scale-dependent effective cosmological term,</p>
 \[
