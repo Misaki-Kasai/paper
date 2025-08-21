@@ -138,7 +138,7 @@ V(\phi) = -\frac{1}{4} \phi^2 \left( 4 - R^2 \phi^2 \right)
 <p>この式に基づき、スカラー場 \(\phi(r)\) に対する変分残差 \(\delta(r)\) を数値的に評価した。その結果得られたプロットを Fig. 1 に示す。</p>
   <figure style="max-width:600px; margin:0 auto;">
   <img src="https://misaki-kasai.github.io/paper/vari_resi.PNG" 
-       alt="Variational residual δ(r) for the adopted scalar field φ(r)" 
+       alt="採用されたスカラー場 \(\phi(r)\) に対する変分残差 \(\delta(r)\) の挙動。" 
        style="width:100%; height:auto;">
   <figcaption>Fig. 1: Variational residual \(\delta(r)\) for the adopted scalar field \(\phi(r)\).</figcaption>
 </figure><p>Fig. 1 から、変分残差 \(\delta(r)\) は空間スケール \(r = R\) において局所的なずれを生じ、その直後（\(r > R\)）にピークを迎え、以降急速に減衰していく様子が確認される。</p>
@@ -224,43 +224,50 @@ v_{\text{total}}^2(r) = v_{\text{grav}}^2(r) + v_{\text{rep}}^2(r)
 v_{\text{total}}(r) = \sqrt{v_{\text{grav}}^2(r) + v_{\text{rep}}^2(r)}.
 \]<p>この合成構造により、</p>
 <ul>
-  <li>In the inner region, \(v_{\text{grav}} \propto r\) dominates,</li>
-  <li>While in the outer region, \(v_{\text{rep}} \to v_0\) flattens the rotation curve.</li>
+  <li>\(v_{\text{grav}} \propto r\) が中心部で支配し、</li>
+  <li>\(v_{\text{rep}} \to v_0\) により外縁部の回転曲線が平坦化される。</li>
 </ul>
-<p>This framework demonstrates that the essential features of galactic rotation curves can be reproduced without assuming the existence of dark matter, thereby supporting the validity of the effective \(\Lambda\) term, \(\Lambda_{\text{eff}}\).</p>
-<h3>(4) Deriving the Velocity v₀ ≈ 200 km/s from the Effective Energy of Λ<sub>eff</sub>(r)</h3><p>The characteristic velocity scale \( v_0 \) can be derived from the result of <a href="#section6">Section 6</a> and the energy density of space in the \( \Lambda \)CDM model, which is given by</p>
+<p>本構造は、ダークマターを仮定することなく銀河回転曲線の特徴を再現できることを示しており、\(\Lambda_{\text{eff}}\) の有効性を裏付ける。</p>
+<p><strong>(4) \(\Lambda_{\text{eff}}\) の有効エネルギーからの速度 \(v_0 \approx 200\,\text{km/s}\) の導出</strong></p>
+<p>特性速度スケール \(v_0\) は、<a href="#section6">セクション6</a>の結果および \(\Lambda\)CDMモデルにおける真空エネルギー密度式に基づいて導出できる。</p>
+<p>したがって、有効エネルギー密度は次のように与えられる（<a href="#section6">セクション6</a>より、\(r = R\)（すなわち \(v_0\) の導出条件）において \(\Lambda_{\text{eff}} = \Lambda\) であるから、）：</p>
 \[
 \rho_\Lambda = \frac{\Lambda c^2}{8\pi G} \approx 10^{-26} \, \text{kg/m}^3.
-\]<p>By integrating this density over a spherically symmetric region of radius \( R \approx 1000\,\text{kpc} \approx 3.1 \times 10^{22}\,\text{m} \), we obtain the effective mass:
+\]<p>このエネルギー密度を、半径 \(R \approx 1000\,\text{kpc} \approx 3.1 \times 10^{22}\,\text{m}\) の球対称領域にわたって積分すると、有効質量は以下のように求まる（<a href="#section6">セクション6</a>より、\(10^{22}\,\text{m} \ll 10^{26}\,\text{m}\) であるため、\(\rho_\Lambda\) はこの範囲では一定とみなして積分できるから、）：</p>
 \[
 M_\Lambda = \rho_\Lambda \cdot \frac{4}{3} \pi R^3 \approx 10^{42} \, \text{kg}.
-\]<p>If we convert the entire energy associated with this mass into kinetic energy, the result is:</p>
+\]<p><p>この質量に対応する全エネルギーを運動エネルギーに変換すると、次の関係が得られる（ここでは、\(v_0 \approx 200\,\mathrm{km/s}\) を先に代入し、有効質量 \(M_\Lambda\) を一度全運動エネルギーに変換したとして、そのうちどれだけのエネルギー \(E\) が実際に必要となるかを見ることが本当の目的です。そのため、式の展開がやや逆順となっています。）：</p>
 \[
 E = \frac{1}{2} M_\Lambda v_0^2 \quad \Rightarrow \quad v_0 \approx \sqrt{\frac{2E}{M_\Lambda}} \approx 200\,\text{km/s}.
-\]<p>Therefore, the characteristic velocity \( v_0 \approx 200\,\mathrm{km/s} \) is naturally derived within the framework of the \(\Lambda_{\text{eff}}\) model, and the corresponding energy \( E \) is consistent with the typical observational energy scale \( E \sim 10^{52}\,\mathrm{J} \). Considering that the total vacuum energy is given by \( E_\Lambda = M_\Lambda c^2 \approx 10^{59}\,\mathrm{J} \), the energy scale \( E \sim 10^{52}\,\mathrm{J} \) is sufficiently small in comparison, ensuring energetic consistency. These results quantitatively support the physical plausibility of the scale-dependent term \( \Lambda_{\text{eff}}(r) \), derived from the scalar field, as an effective cosmological repulsive component.</p>
-<h3>(5) Physical Interpretation: Dominant Structures by Region</h3>
+\]<p>したがって、特性速度スケール \(v_0 \approx 200\,\text{km/s}\) は、\(\Lambda_{\text{eff}}\) モデルの枠組みの中で自然に導出される量であり、対応するエネルギー \(E\) は観測的に典型的なスケール \(E \sim 10^{52}\,\text{J}\) と整合的である。</p>
+<p>また、真空エネルギー全体は \(E_\Lambda = M_\Lambda c^2 \approx 10^{59}\,\text{J}\) と見積もられ、 \(E \sim 10^{52}\,\text{J}\) はこれと比較して十分に小さく、エネルギー論的一貫性も保たれている。</p>
+<p>これらの結果は、スカラー場から導出されたスケール依存項 \(\Lambda_{\text{eff}}(r)\) が、物理的に妥当な有効宇宙斥力項として機能しうることを定量的に裏付けるものである。</p>
+<h3>(5) 物理的意味：領域ごとの支配構造</h3>
 <ul>
-  <li><strong>Central region</strong> (\( r &lt; R \)): The gravitational term dominates, with \(v_{\text{grav}} \propto r\).</li>
-  <li><strong>Intermediate region</strong> (\(r \approx R\)): The repulsive term \(v_{\text{rep}}\) becomes dominant, flattening the rotation velocity.</li>
-  <li><strong>Outer region</strong> (\( r &gt; R \)): The rotation velocity slowly decays or rises again, reflecting the logarithmic-type structure and scale dependence of \(\Lambda\).</li>
-</ul><p><strong>Representative Parameters and Plotting Conditions</strong></p>
-<ul>
-  <li>Gravitational constant: \(G = 4.302 \times 10^{-6} \, \mathrm{kpc \cdot (km/s)^2 / M_\odot}\)</li>
-  <li>Mass density (average over the galaxy): \(\rho = 10^6 \, M_\odot/\mathrm{kpc^3}\)</li>
-  <li>Scale parameter: \(R = 5 \, \mathrm{kpc}\)</li>
-  <li>Repulsive velocity scale: \(v_0 = 200 \, \mathrm{km/s}\)</li>
-  <li>Radial range for calculation: \(r = 0.1 \sim 20 \, \mathrm{kpc}\)</li>
+  <li>中心部（\(r &lt; R\)）：<br>重力項 \(v_{\text{grav}} \propto r\) が支配的</li>
+  <li>中間領域（\(r \approx R\)）：<br>斥力項 \(v_{\text{rep}}\) が優勢となり、回転速度は平坦化する</li>
+  <li>外縁部（\(r &gt; R\)）：<br>回転速度は緩やかに減衰あるいは再上昇<br>（対数型構造や \(\Lambda_{\text{eff}}(r)\) のスケール依存性に由来）</li>
 </ul>
-<p>Using the above representative values, the numerically plotted rotation velocity profile at the galactic scale is shown in Fig. 2, based on the previously derived composite formula:</p>
+<p><strong>使用した代表パラメータとプロット条件</strong></p>
+<ul>
+  <li>万有引力定数：<br>\(G = 4.302 \times 10^{-6} \, \text{kpc} \cdot (\text{km/s})^2 / M_\odot\)</li>
+  <li>質量密度（銀河全体の平均）：<br>\(\rho = 10^6 \, M_\odot/\text{kpc}^3\)</li>
+  <li>スケールパラメータ：<br>\(R = 5 \, \text{kpc}\)</li>
+  <li>特性速度スケール：<br>\(v_0 = 200 \, \text{km/s}\)</li>
+  <li>計算対象の半径範囲：<br>\(r = 0.1 \sim 20 \, \text{kpc}\)</li>
+</ul>
+<p>以上の代表値を用い、先に導出した回転速度の合成式：</p>
 \[
 v_{\text{total}}(r) = \sqrt{v_{\text{grav}}^2(r) + v_{\text{rep}}^2(r)}.
 \]
+<p>に基づき、銀河スケールでの回転速度プロファイルを数値的にプロットしたものがFig. 2である。</p>
 <figure style="max-width:600px; margin:0 auto;">
   <img src="https://misaki-kasai.github.io/paper/gal_rot.PNG" 
        alt="Galactic rotation curve simulation" 
        style="width:100%; height:auto;">
-  <figcaption>Fig. 2: Numerical simulation of gravitational, repulsive, and total rotational velocity components for a galactic rotation curve.</figcaption>
-</figure><p>As clearly demonstrated by the numerical simulation results shown in Fig. 2, it was initially expected that the gravitational term would dominate in the central region \( r &lt; R \). However, the repulsive component was quantitatively found to exceed the gravitational component across all spatial scales. This indicates that the rotational velocity within galaxies is effectively governed by the scalar-field-induced effective \(\Lambda\) term, characterized by its logarithmic-type structure.</p><p>This result not only explains the observed flattening of rotational velocities in the outer regions of galaxies, but also reveals that the repulsive term significantly contributes even in the central region. It strongly supports the possibility that the scale-dominant behavior of the logarithmic-type repulsive term extends far more broadly than previously anticipated.</p>
+  <figcaption>Fig. 2: 銀河回転曲線に対する重力項・斥力項・合成速度の理論モデルに基づく数値プロット。</figcaption>
+</figure><p>ところが、Fig. 2に示す数値シミュレーションの結果から明らかなように、中心部（\(r &lt; R\)）において重力項が支配的となることが期待されていたにもかかわらず、全スケールにわたり斥力項が重力項を上回る振る舞いが定量的に確認された。すなわち、銀河内の回転速度は実効的に、スカラー場由来の \(\Lambda\) 項によって支配されていることが明らかとなった。</p>
+<p>この結果は、銀河外縁部における回転速度の平坦性のみならず、中心領域においても斥力項が顕著に寄与していることを示しており、対数型斥力項のスケール支配性が想定を超えて広範囲に及ぶ可能性を強く裏付けるものである。</p>
 <h2>Avoidance Conditions for Black Hole Singularities</h2>
 <p>As a scale-dependent repulsive force derived from the quasi-solution scalar field \(\phi(r)\), we introduce the following acceleration term:</p>
 \[
