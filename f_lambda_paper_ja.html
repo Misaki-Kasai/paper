@@ -19,7 +19,7 @@
    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <style>body{background:#000;color:#E8D28D;font-family:"Times New Roman",sans-serif;line-height:1.6}a,h1,h2,h3,h4,h5,h6,strong,section,p,li,td,th,footer{color:#E8D28D}a{text-decoration:underline}a:hover{color:#FFA500}table{border-color:#E8D28D}table th,table td{border:1px solid #E8D28D}</style>
   <style>.logo-box{height:1em;vertical-align:middle;margin-left:0.5em;border:1px solid #E8D28D;padding:0.15em;border-radius:0.2em;background-color:#000}</style>
-  <style>body { font-size: 14px; }</style>
+  <style>body { font-size: 15px; }</style>
   <style>.data-table{border:1px solid #E8D28D;border-collapse:collapse;width:100%;margin-bottom:1em}.data-table th,.data-table td{border:1px solid #E8D28D;padding:6px;text-align:left}.data-table caption{caption-side:bottom;font-size:0.9em;text-align:left;margin-top:0.3em;}</style>
 </head>
 <body>
@@ -40,78 +40,87 @@ Related Links:<br>
 <span style="display:inline-block;padding:0.0em 0.0em;border:1px solid #E8D28D;border-radius:0.3em;">🧬</span> <a href="https://orcid.org/0009-0005-7404-5257" target="_blank">ORCID: 0009-0005-7404-5257</a><br>
 <span style="display:inline-block;padding:0.0em 0.0em;border:1px solid #E8D28D;border-radius:0.3em;">💾</span> <a href="https://zenodo.org/record/15612467/files/fΛ_theory_v2.pdf" target="_blank">Direct PDF download: Zenodo</a>
 <section style="padding: 1em; border: 2px dashed #E8D28D; margin: 2em 0;">
-  <h2 style="text-align: center;">変分セクションに関する<br>構造的補足</h2>
-<p>本モデルは、厳密解ではなく準解 \(\phi(r)\) を意図的に採用している。その理由は、厳密解を課すことで特性スケール \(r = R\) の物理的意義が消失し、空間のスケール応答的構造という本質的な挙動を再現できなくなるためである。仮に厳密解を強制すると、\(r = R\) というパラメータは座標変換や対称性による縮退によって吸収されてしまう可能性が高い。その場合、\(R\) は物理的に意味を持つスケールとしての地位を失い、冗長なパラメータとなってしまうことで、スケール依存の意味ある構造は記述されなくなる。</p><p>準解であることは弱点ではなく、本モデルの構造的基盤である。それこそが、スケール依存的な空間力学を実現する鍵である。この準解の妥当性を検証するために、変分残差解析を実施した。その結果、極値条件の破れは局所的かつ制御されており、物理的に意味のあるものであることが確認された。この挙動は Fig. 1 に視覚的に示されている。</p><p>準解の使用を、欠陥や妥協と誤解しないようにしてください。これは欠点ではなく、理論の核であり、本構造の根幹であるからです。</p><p>重要なのは、この準解が近似のために採用されたのではなく、有効宇宙項 \(\Lambda_{\text{eff}}(r)\) を導出するうえでの構造的役割のために導入されたという点である。なお、このことは、宇宙全体の構造や場の基本方程式そのものが準解であることを意味するものではない。本研究の目的は、\(\Lambda_{\text{eff}}(r)\) のような準構造的な項が、その他の部分が厳密解で記述される宇宙において、機能的に作用し得るかを検証することにある。</p><p>また、本論文における「対数型」という用語は、厳密な \(\log\) 関数式そのものを意味するのではなく、関数の形状が対数的であるという定性的特徴を指している。</p><p>この準解構造は、宇宙論的スケール（\(\sim 10^{26}\,\text{m}\)）とヒッグススケール（\(\sim 10^{-18}\,\text{m}\)）の両者を橋渡しすることが確認されている。（ヒッグススケールに関する数値評価については、ページ下部の Appendix（付録）も参照。）</p>
+  <h2 style="text-align: center;">変分セクションに関する構造的補足</h2>
+<p>本モデルは、厳密解ではなく準解 \(\phi(r)\) を意図的に採用している。その理由は、厳密解を課すことで特性スケール \(r = R\) の物理的意義が消失し、空間のスケール応答的構造という本質的な挙動を再現できなくなるためである。仮に厳密解を強制すると、\(r = R\) というパラメータは座標変換や対称性による縮退によって吸収されてしまう可能性が高い。その場合、\(R\) は物理的に意味を持つスケールとしての地位を失い、冗長なパラメータとなってしまうことで、スケール依存の意味ある構造は記述されなくなる。準解であることは弱点ではなく、本モデルの構造的基盤である。それこそが、スケール依存的な空間力学を実現する鍵である。この準解の妥当性を検証するために、変分残差解析を実施した。その結果、極値条件の破れは局所的かつ制御されており、物理的に意味のあるものであることが確認された。この挙動は Fig. 1 に視覚的に示されている。準解の使用を、欠陥や妥協と誤解しないようにしてほしい。これは欠点ではなく、理論の核であり、本構造の根幹であるからである。重要なのは、この準解が近似のために採用されたのではなく、有効宇宙項 \(\Lambda_{\text{eff}}(r)\) を導出するうえでの構造的役割のために導入されたという点である。なお、このことは、宇宙全体の構造や場の基本方程式そのものが準解であることを意味するものではない。本研究の目的は、\(\Lambda_{\text{eff}}(r)\) のような準構造的な項が、その他の部分が厳密解で記述される宇宙において、機能的に作用し得るかを検証することにある。また、本論文における「対数型」という用語は、厳密な \(\log\) 関数式そのものを意味するのではなく、関数の形状が対数的であるという定性的特徴を指している。</p>
+  <p>この準解構造は、宇宙論的スケール（\(\sim 10^{26}\,\text{m}\)）とヒッグススケール（\(\sim 10^{-18}\,\text{m}\)）の両者を橋渡しすることが確認されている。（ヒッグススケールに関する数値評価についてはAppendix(付録)を参照。）</p>
 </section>
   <hr />
 <h2>Abstract</h2><p>本研究では、スカラー場に起因する空間のスケール応答的な幾何的反発効果を対数型のポテンシャル構造として表現し、これに基づくスケール依存型の有効Λ項 \(\Lambda_{\text{eff}}\) を導出することで、Einstein方程式の枠組みを重力理論から、斥力応答を基盤とした斥力応答型重力理論へと拡張する方法を提示する。</p><p>\(\Lambda_{\text{eff}}\) の効果は空間スケールに依存し、特に銀河スケールおよびブラックホール内部における重力の構造的性質そのものを再定義する役割を果たす可能性がある。</p><p>銀河回転曲線の外縁部にみられる平坦化と、ブラックホール特異点の回避という二つの観測的・理論的問題に対して、共通のスカラー場項 \(\Lambda_{\text{eff}}\) による統一的かつ定量的な解決を提示する。</p>
 <h2>銀河回転曲線問題と特異点問題の概観</h2><p>近年の観測により、銀河の外縁部における恒星の回転速度が、重力理論（一般相対性理論）と通常のバリオン物質量から期待される値を大きく上回ることが明らかとなった。これはいわゆる「銀河回転曲線問題」であり、ダークマターの存在を前提としない限り、既存の重力理論では説明が困難であるとされてきた <span style="color: blue;">[Rubin, V. C., & Ford, W. K. (1980). <em>Rotation of the Andromeda Nebula from a Spectroscopic Survey of Emission Regions</em>. The Astrophysical Journal]; [Sofue, Y., & Rubin, V. (2001). <em>Rotation Curves of Spiral Galaxies</em>. Annual Review of Astronomy and Astrophysics]</span>。</p>
 <p>一方、ブラックホール内部における重力崩壊は、古典的には \(r \to 0\) 極限で特異点（無限の曲率）を生じることが知られており、これもまた一般相対性理論の構造的限界を示唆していると考えられている <span style="color: blue;">[Penrose, R. (1965). <em>Gravitational Collapse and Space-Time Singularities</em>. Physical Review Letters]</span>。この「特異点問題」は、重力理論において量子補正または構造的修正の必要性を強く示唆する。</p>
-<h2>Successes and Limitations of the \(\Lambda\)CDM Model</h2><p>The \(\Lambda\)CDM model, which serves as the standard framework in modern cosmology, has achieved remarkable success in explaining observational data such as the cosmic microwave background (CMB), baryon acoustic oscillations (BAO), and Type Ia supernovae with high precision <span style="color: blue;">[Planck Collaboration (2020). <em>Planck 2018 Results. VI. Cosmological Parameters</em>. Astronomy & Astrophysics]</span>. However, the cosmological constant \(\Lambda\) is defined as a static and uniform quantity, without incorporating any spatial structure or scale dependence.</p><p>Moreover, although \(\Lambda\)CDM relies on invisible components such as dark matter and dark energy, the true nature of these entities remains unknown. They function as auxiliary terms in the theoretical framework, and there has been persistent criticism that they lack a solid basis for physical reality <span style="color: blue;">[Padmanabhan, T. (2003). <em>Cosmological Constant—The Weight of the Vacuum</em>. Physics Reports]</span>.</p>
-<h2>Motivation: Constructing a Cosmological Framework with Repulsion as the Subject</h2>
-<p>This study attempts to construct a gravitational theory in which <strong>repulsive response is the subject</strong>, in contrast to general relativity, which treats “gravity = attraction” as its primary perspective.</p><p>Specifically, we propose a framework that introduces an effective cosmological constant term, \(\Lambda_{\text{eff}}\), derived from a scalar field, which acts as a scale-dependent repulsive potential. This enables a unified description of gravitational structures ranging from galactic scales to black hole singularity scales.</p><p>It should be noted that this study adopts the stance of preserving the cosmological constant \(\Lambda\) in the Einstein field equations as a true constant. However, its effect manifests in a scale-dependent manner through a logarithmic-type potential, and is therefore reflected in the observable gravitational structure as \(\Lambda_{\text{eff}}(r)\). In this way, the aim is to construct a gravitational theory that retains the philosophical foundation of the \(\Lambda\)CDM model while overcoming its structural limitations.</p>
-<h2 id="section4">Structure of the Effective Term Λ<sub>eff</sub> and Derivation from the Scalar Field Potential</h2><p>In this section, we demonstrate that the effective \(\Lambda\) term</p>
+<h2>(\Lambda\)CDMの成功と限界</h2><p>現代宇宙論の標準モデルである \(\Lambda\)CDMは、宇宙マイクロ波背景（CMB）、バリオン音響振動（BAO）、Ia型超新星などの観測と高精度に整合する成功を収めている <span style="color: blue;">[Planck Collaboration (2020). <em>Planck 2018 Results. VI. Cosmological Parameters</em>. Astronomy & Astrophysics]</span>。<br>しかしその一方で、宇宙定数 \(\Lambda\) は静的・一様な定数として定義されており、空間構造やスケール依存性を含まないという制約をもつ。また、\(\Lambda\)CDMはダークマターやダークエネルギーといった「見えない成分」に依存しているが、これらの正体は未解明である。これらは理論的には補助項として振る舞い、物理的実在性の根拠が希薄であるという批判も根強い <span style="color: blue;">[Padmanabhan, T. (2003). <em>Cosmological Constant – the Weight of the Vacuum</em>. Physics Reports]</span>。</p>
+<h2>動機：「斥力を主語」とする宇宙論的構造の構築</h2>
+<p>本研究では、「重力＝引力（空間の歪み）」という視点を基本とする一般相対性理論とは対照的に、斥力応答を主語とする重力理論の構築を試みる。具体的には、スカラー場に由来する有効宇宙項 \(\Lambda_{\text{eff}}\) を導入し、それが空間スケールに依存する斥力的ポテンシャルとして働くことで、銀河スケールからブラックホール特異点スケールまでの重力構造を統一的に説明する枠組みを提案する。</p>
+<p>なお、本研究は、Einstein方程式における宇宙定数 \(\Lambda\) を定数のまま保持する立場を採る。ただし、その効果は対数型ポテンシャルを介してスケール依存的に現れ、\(\Lambda_{\text{eff}}(r)\) という形で観測可能な重力構造に反映される。このようにして、\(\Lambda\)CDMの哲学的背景を保ちつつ、その構造的限界を乗り越える重力理論を構築することを目的とする。</p>
+<h2 id="section4">有効 \(\Lambda\) 項 \(\Lambda_{\text{eff}}\) の構造とポテンシャルの導出</h2><p>このセクションでは、有効 \(\Lambda\) 項 \(\Lambda_{\text{eff}}\)</p>
 \[
 \Lambda_{\text{eff}}(r) = \frac{4r^2}{(R^2 + r^2)^2}
-\]<p>is structurally derived from a variational principle applied to a spherically symmetric and static scalar field.</p><p>Here, \(R\) is a characteristic scale of space and corresponds to the radial position at which the effective term \(\Lambda_{\text{eff}}(r)\) reaches its maximum. It serves as a physically meaningful parameter in this framework.</p><p>The scalar field \(\phi\) considered in this study is rigorously defined based on a Lorentz-invariant Lagrangian density. In its general form, this Lagrangian is given by</p>
+\]<p>が、球対称かつ静的なスカラー場に対して変分原理を適用することで構造的に導出されることを示す。</p><p>ここで、 \(R\) は空間スケールにおける特性長（characteristic scale）であり、有効項 \(\Lambda_{\text{eff}}(r)\) が最大値を取る位置に対応する物理的パラメータである。</p><p>本研究で扱うスカラー場 \(\phi\) は、厳密にはローレンツ不変なラグランジアン密度に基づいて構成される。すなわち、その一般形は：</p>
 \[
 \mathcal{L}_\phi = -\frac{1}{2} g^{\mu\nu} \partial_\mu \phi \, \partial_\nu \phi - V(\phi),
-\]<p>where \(V(\phi)\) is the scalar potential. However, restricting ourselves to a spherically symmetric and static configuration \(\phi = \phi(r)\), we simplify the Lagrangian to the form</p>
+\]<p>であるが、ここでは球対称かつ静的な解 \(\phi = \phi(r)\) に制限し、以下のように簡約化して扱う：</p>
 \[
 \mathcal{L}_\phi = -\frac{1}{2} \left( \frac{d\phi}{dr} \right)^2 - V(\phi).
-\]<p>This reduction is justified as an effective theory based on the symmetry of the solution and does not imply a violation of the original Lorentz invariance of the full Lagrangian.</p><p>In this context, the isotropic structure of the corresponding energy-momentum tensor is given by:</p>
+\]<p>このような簡約は、解の対称性に基づいた有効理論として正当化されるものであり、元のラグランジアンが持つローレンツ対称性を破るものではない。
+このとき、対応するエネルギー運動量テンソルの等方的な構造は次のように与えられる：</p>
 \[
 T_{\mu\nu}^{(\phi)} = \left[ \frac{1}{2} \left( \frac{d\phi}{dr} \right)^2 + V(\phi) \right] g_{\mu\nu}.
-\]<p>We now assume the following form for the effective cosmological term, which depends on spatial scale:</p>
+\]<p>ここで、空間スケールに依存する有効 $\Lambda$ 項として以下を仮定する：</p>
 \[
-\Lambda_{\text{eff}}(r) = \frac{4r^2}{(R^2 + r^2)^2}.
-\]<p>A natural choice of scalar field that reproduces this structure is:</p>
-\[
-\phi(r) = \frac{2r}{R^2 + r^2}.
-\]<p>Using this expression for \(\phi(r)\), the corresponding potential \(V(\phi(r))\) expands as follows:</p>
-\[
-\phi(r)^2 = \left( \frac{2r}{R^2 + r^2} \right)^2 = \frac{4r^2}{(R^2 + r^2)^2},
-\]
-\[
-V(\phi(r)) = -\frac{1}{4} \cdot \phi^2 \left( 4 - R^2 \phi^2 \right)
-= -\frac{1}{4} \cdot \frac{4r^2}{(R^2 + r^2)^2} \left( 4 - \frac{4R^2 r^2}{(R^2 + r^2)^2} \right),
-\]
-\[
-= -\frac{4r^2}{(R^2 + r^2)^2} + \underbrace{\frac{4R^2 r^4}{(R^2 + r^2)^4}}_{\text{Second-order correction term}}.
-\]<p>Here, the second term serves as a correction that slightly modifies the primary structure of \(\Lambda_{\text{eff}}\), but the leading term clearly satisfies the relation:</p>
-\[
-\boxed{V(\phi(r)) \propto -\Lambda_{\text{eff}}(r)}.
-\]<p>In particular, in the regime \(r \ll R\), the correction term is significantly smaller than the leading term. In the opposite limit \(r \gg R\), we observe the following asymptotic behaviors:</p>
-\[
-\frac{r^2}{(R^2 + r^2)^2} \approx \frac{1}{r^2}, \quad \frac{r^4}{(R^2 + r^2)^4} \approx \frac{1}{r^4},
-\]<p>indicating that the contribution from the correction term decays rapidly.</p><p>Furthermore, even at the intermediate scale \(r = R\), we find:</p>
-\[
-\frac{4R^2}{(2R^2)^2} = \frac{1}{R^2}, \quad
-\frac{4R^2 R^4}{(2R^2)^4} = \frac{1}{4R^2},
-\]<p>showing that the correction term remains only one-fourth of the leading term.</p><p>Therefore, across all spatial scales, the leading term dominates, and it is demonstrated that \(\Lambda_{\text{eff}}(r)\) can be directly and naturally derived from the scalar field potential \(V(\phi)\).</p>
-<h2>Variational Evaluation of the Scalar Field</h2><p>In this section, we evaluate whether the Lagrangian of the scalar field \(\phi(r)\), derived from the effective cosmological term \(\Lambda_{\text{eff}}(r)\) constructed in <a href="#section4">Section 4</a>, satisfies the extremum condition based on the variational principle (Euler–Lagrange equation). In particular, we expect that the extremum condition is locally violated around the spatial scale \(r = R\), and that this violation rapidly diminishes for \(r \gg R\).</p><p>Such behavior is naturally anticipated from the structure of the adopted \(\phi(r)\), and it also corresponds to the notion that cosmic acceleration may be closely related to a local violation of the extremum condition.</p><p>Note that the violation of the extremum condition discussed here does not directly imply a violation of the conservation law \(\nabla^\mu T_{\mu\nu} = 0\).</p>
-<h3>Euler–Lagrange Equation and Variational Residual</h3><p>In <a href="#section4">Section 4</a>, the following scalar field was adopted as a natural candidate for reproducing the spatial dependence of the effective cosmological constant, based on the structure of the scalar potential \( V(\phi) \):</p>
+\Lambda_{\text{eff}}(r) = \frac{4r^2}{(R^2 + r^2)^2}
+\]<p>この構造を実現する自然なスカラー場として、以下を選択する：</p>
 \[
 \phi(r) = \frac{2r}{R^2 + r^2}
-\]<p>The corresponding potential takes the following form:</p>
+\]<p>このとき、$\phi(r)$ を用いたポテンシャル $V(\phi(r))$ は以下のように展開される：</p>
+\[
+\phi(r)^2 = \left( \frac{2r}{R^2 + r^2} \right)^2 = \frac{4r^2}{(R^2 + r^2)^2}
+\]
+\[
+V(\phi(r)) = -\frac{1}{4} \cdot \phi^2 \left( 4 - R^2 \phi^2 \right) = -\frac{1}{4} \cdot \frac{4r^2}{(R^2 + r^2)^2} \left( 4 - \frac{4R^2 r^2}{(R^2 + r^2)^2} \right)
+\]
+\[
+= -\frac{4r^2}{(R^2 + r^2)^2} + \underbrace{\frac{4R^2 r^4}{(R^2 + r^2)^4}}_{\text{第2次寄与（補正項）}}
+\]<p>ここで、第2項は補正項として $\Lambda_{\text{eff}}$ の主要構造をわずかに変形するが、主項は明確に：</p>
+\[
+\boxed{V(\phi(r)) \propto -\Lambda_{\text{eff}}(r)}
+\]<p>特に $r \ll R$ では第2項は主項に比べて十分に小さく、また $r \gg R$ においても：</p>
+\[
+\frac{r^2}{(R^2 + r^2)^2} \approx \frac{1}{r^2}, \quad
+\frac{r^4}{(R^2 + r^2)^4} \approx \frac{1}{r^4}
+\]<p>より、補正項の寄与は急速に減衰する。さらに中間スケールにあたる $r = R$ においても、</p>
+\[
+\frac{4R^2}{(2R^2)^2} = \frac{1}{R^2}, \quad
+\frac{4R^2 R^4}{(2R^2)^4} = \frac{1}{4R^2}
+\]<p>となり、補正項は主項の $1/4$ にとどまる。したがって、全空間にわたって主項が支配的であり、$\Lambda_{\text{eff}}(r)$ はスカラー場ポテンシャル $V(\phi)$ から直接かつ自然に導出されることが示される。</p>
+<h2>スカラー場に対する変分評価</h2><p>本セクションでは、<a href="#section4">セクション4</a>で構成した有効宇宙項 $\Lambda_{\text{eff}}(r)$ から導かれるスカラー場 $\phi(r)$ のラグランジアンが、変分原理（オイラー＝ラグランジュ方程式）に基づく極値条件を満たすかどうかを評価する。</p>
+<p>ここで、我々は特に、空間スケール $r = R$ の近傍において極値条件が局所的に破れ始め、その破れが $r \gg R$ の領域で急速に減衰することを期待する。</p>
+<p>このような挙動は、採用された $\phi(r)$ の構造から自然に導かれるものであり、また宇宙の加速膨張が極値条件の局所的な破れと密接に関係している可能性を示唆するためである。</p>
+<p>なお、ここで議論される極値条件の破れは、保存則 $\nabla^\mu T_{\mu\nu} = 0$ の破れを直接的に意味するものではないことに注意されたい。</p>
+<h3>オイラー＝ラグランジュ方程式と変分残差</h3><p><a href="#section4">セクション4</a>において、<p>スカラーポテンシャル $V(\phi)$ の構造に基づき、有効宇宙定数の空間依存性を再現するための自然な候補として、以下のスカラー場が採用された：</p>
+\[
+\phi(r) = \frac{2r}{R^2 + r^2}
+\]
+<p>これに対応するポテンシャルは次のような形となる：</p>
 \[
 V(\phi) = -\frac{1}{4} \phi^2 \left( 4 - R^2 \phi^2 \right)
-\]<p>Under the assumption of spherical symmetry, the Lagrangian density becomes:</p>
+\]<p>球対称性を仮定したもとでのラグランジアン密度は以下の通りである：</p>
 \[
 \mathcal{L}_\phi = -\frac{1}{2} \left( \frac{d\phi}{dr} \right)^2 - V(\phi)
 = -\frac{1}{2} \left( \frac{d\phi}{dr} \right)^2 + \frac{1}{4} \phi^2 \left( 4 - R^2 \phi^2 \right)
-\]<p>The Euler–Lagrange equation derived from this Lagrangian is:</p>
+\]<p>このラグランジアンから導出されるオイラー＝ラグランジュ方程式は以下のように与えられる：</p>
 \[
 \frac{d^2\phi}{dr^2} = R^2 \phi^3 - 2\phi
-\]<p>Here, in order to evaluate how well the assumed scalar field \(\phi(r)\) satisfies the extremum condition, we conduct the analysis under the following boundary conditions:</p>
+\]<p>ここでは、仮定されたスカラー場 $\phi(r)$ が極値条件をどの程度満たしているかを評価するために、以下の境界条件のもとで解析を行う：</p>
 \[
 \phi(0) = 0, \quad \phi'(0) = \frac{2}{R^2}
-\]<p>with the characteristic scale \(R = 2\), which is chosen because it highlights the features of the scalar field structure and the behavior of the effective \(\Lambda\) term most clearly, while also ensuring clarity in the analytical results and numerical plots.</p><p>Under these conditions, the deviation from the extremum condition (the variational residual) is defined as follows:</p>
+\]<p>ここで、特性スケール \(R = 2\) は、スカラー場構造および有効\(\Lambda\)項の挙動が最も明瞭に現れる値であり、解析結果および数値グラフの可視性を高める目的も兼ねて選ばれる。</p>
+<p>この条件のもとで、極値条件からのずれ（変分残差）は次のように定義される：</p>
 \[
 \delta(r) \equiv \frac{d^2\phi}{dr^2} - \left( R^2 \phi^3 - 2\phi \right)
-\]<p>By substituting the assumed scalar field \(\phi(r)\) into this expression, the variational residual is explicitly given by:</p>
+\]
+<p>仮定されたスカラー場 \(\phi(r)\) をこの式に代入することで、変分残差は明示的に次の形で与えられる：</p>
 \[
-\delta(r) = 
+\delta(r) =
 \left[
 \frac{4r(r^2 - 3R^2)}{(R^2 + r^2)^3}
 \right]
@@ -119,28 +128,39 @@ V(\phi) = -\frac{1}{4} \phi^2 \left( 4 - R^2 \phi^2 \right)
 \left[
 \frac{8R^2 r^3}{(R^2 + r^2)^3} - \frac{4r}{R^2 + r^2}
 \right]
-\]<p>Based on this expression, the variational residual \(\delta(r)\) for the scalar field \(\phi(r)\) was numerically evaluated. The resulting plots, including a close-up view, are shown in Fig. 1.</p>
+\]
+<p>この式に基づき、スカラー場 \(\phi(r)\) に対する変分残差 \(\delta(r)\) を数値的に評価した。その結果得られたプロットを Fig. 1 に示す。</p>
   <figure style="max-width:600px; margin:0 auto;">
   <img src="https://misaki-kasai.github.io/paper/vari_resi.PNG" 
        alt="Variational residual δ(r) for the adopted scalar field φ(r)" 
        style="width:100%; height:auto;">
   <figcaption>Fig. 1: Variational residual \(\delta(r)\) for the adopted scalar field \(\phi(r)\).</figcaption>
-</figure><p>From Fig. 1, it can be seen that the variational residual \(\delta(r)\) begins to locally deviate at the spatial scale \(r = R\), reaches a peak shortly thereafter (\( r &gt; R \)), and then rapidly decays. This result indicates that the scalar field specifically recognizes and responds to \(r = R\), and that the violation of the extremum condition is local and non-instantaneous. Such behavior is also consistent with the nature of the sustained cosmic acceleration.</p><p>The range of analysis is set to \( r \in [0.0001, 100] \). Within this interval, the maximum value of the variational residual \(\delta(r)\) is found to be:</p>
+</figure><p>Fig. 1 から、変分残差 \(\delta(r)\) は空間スケール \(r = R\) において局所的なずれを生じ、その直後（\(r > R\)）にピークを迎え、以降急速に減衰していく様子が確認される。</p>
+<p>この結果は、スカラー場が特に \(r = R\) を認識し、それに応答していること、また極値条件の破れが局所的かつ非瞬間的であることを示している。このような挙動は、持続的な宇宙加速の性質とも整合的である。</p>
+<p>解析の範囲は \(r \in [0.0001, 100]\) に設定した。この区間内における変分残差 \(\delta(r)\) の最大値は以下の通りである：</p>
 \[
 \delta_{\text{max}} \approx 0.552 \quad \text{at} \quad r \approx 4.10 \approx R
-\]<p>To evaluate the significance of this residual, we define the relative error with respect to the extremum condition as:</p>
+\]
+<p>この残差の有意性を評価するため、極値条件に対する相対誤差を次のように定義する：</p>
 \[
 \epsilon_\phi(r) \equiv \left| \frac{\delta(r)}{\phi(r)} \right|
-\]<p>At the point where the residual peaks (\(r \approx 4.10\)), the scalar field takes the value \(\phi(r) \approx 0.394\), yielding:</p>
+\]
+<p>残差が最大となる点（\(r \approx 4.10\)）において、スカラー場の値は \(\phi(r) \approx 0.394\) であり、したがって：</p>
 \[
 \epsilon_\phi \approx 1.40
-\]<p>Similarly, at the characteristic scale \(r = R = 2.00\), the relative error is:</p>
+\]
+<p>同様に、特性スケール \(r = R = 2.00\) における相対誤差は以下の通りである：</p>
 \[
 \epsilon_\phi(R) = \left| \frac{\delta(R)}{\phi(R)} \right| = 0.750 \quad (\delta(R) = 0.375,\ \phi(R) = 0.500)
-\]<p>Even around the characteristic scale \( r = R \), the relative error remains within a range that can be regarded as a local violation of the extremum condition.</p>
-<p>The value \( \epsilon_\phi(R) = 0.750 \) supports the validity of the function as a quasi-solution.</p><p>On the other hand, the variational residual \( \delta(r) \) reaches its maximum around \( r \approx 4.10 \), where the relative error rises to approximately \( \epsilon_\phi \approx 1.40 \).</p>
-<p>However, since \( \phi(r) \) becomes small at this scale, the relative error is numerically overestimated due to the small denominator.</p>
-<p>Therefore, it is more appropriate to evaluate the validity of the quasi-solution primarily around \( r = R \).</p><p>Based on these considerations, the scalar field \( \phi(r) \) adopted in this study, while not an exact solution, can be regarded as a physically acceptable quasi-solution that does not significantly violate the variational principle.</p><p>In this paper, we refer to the structure based on the effective cosmological term \(\Lambda_{\text{eff}}(r)\), constructed from the quasi-solution \(\phi(r)\), as the \(\Lambda_{\text{eff}}\) model (or the f\(\Lambda\) theory).</p>
+\]<p>特性スケール \(r = R\) 付近において、相対誤差は極値条件の局所的な破れと見なせる範囲に収まっており、このときの値 \(\epsilon_\phi(R) = 0.750\) は、本関数が準解として妥当であることを裏付けている。</p>
+<p>一方で、変分残差 \(\delta(r)\) は \(r \approx 4.10\) 付近で最大値を取り、このとき相対誤差はおよそ \(\epsilon_\phi \approx 1.40\) に達する。しかし、このスケールにおいては \(\phi(r)\) 自身が減衰して小さくなるため、分母が小さくなることで相対誤差が見かけ上過大評価される。</p>
+<p>したがって、準解の妥当性を評価するうえでは、主に \(r = R\) 付近に注目するのがより適切である。</p>
+<p>以上の評価に基づき、本研究で採用されたスカラー場 \(\phi(r)\) は厳密解ではないものの、変分原理に著しく反することのない、物理的に許容可能な準解であると見なすことができる。</p>
+<p>本論文では、準解 \(\phi(r)\) から構成された有効宇宙項 \(\Lambda_{\text{eff}}(r)\) に基づく構造全体を、<em>\(\Lambda_{\text{eff}}\)モデル</em>（または <em>f\(\Lambda\)理論</em>）として以後参照する。</p>
+
+  
+  
+
 <h2 id="section6">Consistency Between the Maximum of Λ<sub>eff</sub> and the Observed Cosmological Constant Λ</h2>
 <p>The derived scale-dependent effective cosmological term,</p>
 \[
