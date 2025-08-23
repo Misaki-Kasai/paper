@@ -128,12 +128,12 @@ V(\phi) = -\frac{1}{4} \phi^2 \left( 4 - R^2 \phi^2 \right)
 \frac{8R^2 r^3}{(R^2 + r^2)^3} - \frac{4r}{R^2 + r^2}
 \right]
 \]<p>この式に基づき、スカラー場 \(\phi(r)\) に対する変分残差 \(\delta(r)\) を数値的に評価した。その結果得られたプロットを Fig. 1 に示す。</p>
-  <figure style="max-width:600px; margin:0 auto;">
+  <figure id="fig1" style="max-width:600px; margin:0 auto;">
   <img src="https://misaki-kasai.github.io/paper/vari_resi.PNG" 
        alt="Variational residual \(\delta(r)\) for the adopted scalar field \(\phi(r)\)." 
        style="width:100%; height:auto;">
   <figcaption>Fig. 1: 採用されたスカラー場 \(\phi(r)\) に対する変分残差 \(\delta(r)\) の挙動。</figcaption>
-</figure><p>Fig. 1 から、変分残差 \(\delta(r)\) は空間スケール \(r = R\) において局所的なずれを生じ、その直後 \(r &gt; R\) にピークを迎え、以降急速に減衰していく様子が確認される。</p>
+  </figure><p>Fig. 1 から、変分残差 \(\delta(r)\) は空間スケール \(r = R\) において局所的なずれを生じ、その直後 \(r &gt; R\) にピークを迎え、以降急速に減衰していく様子が確認される。</p>
 <p>この結果は、スカラー場が特に \(r = R\) を認識し、それに応答していること、また極値条件の破れが局所的かつ非瞬間的であることを示している。このような挙動は、持続的な宇宙加速の性質とも整合的である。</p>
 <p>解析の範囲は \(r \in [0.0001, 100]\) に設定した。この区間内における変分残差 \(\delta(r)\) の最大値は以下の通りである：</p>
 \[
@@ -493,7 +493,7 @@ r(E) = \frac{(r_v \times E_v)}{E} = \frac{492\ \mathrm{GeV}}{E}
     \]
   </li>
 </ol>
-<p>この結果を、変分残差プロットに重ね合わせて該当部分を拡大すると、以下の図のようになる（本文の Fig. 1 も参照）。</p>
+<p>この結果を、変分残差プロットに重ね合わせて該当部分を拡大すると、以下の図のようになる（本文の <a href="#fig1">Fig. 1</a> も参照）。</p>
 <figure style="max-width:600px; margin:0 auto;">
 <img src="https://misaki-kasai.github.io/paper/higgs_r_scale.PNG" style="width:100%; height:auto;" alt="Overlay on the variational residual plot">
 </figure>
