@@ -517,6 +517,374 @@ r(E) = \frac{(r_v \times E_v)}{E} = \frac{492\ \mathrm{GeV}}{E}
 </figure>
 <p>よって、曲率半径 \(R_\Lambda\) は、本モデルの変分残差プロットにおける \(\Lambda_{\mathrm{eff}}\) 顕在化領域 \(r = 2 \sim 4.10\) 内に、\(r = 3.46\) として自然に含まれ、かつ極値条件破れのピーク付近に位置する。</p>
 <p>したがって、本モデルのスカラー場応答が最も強くなる領域と、\(\Lambda\)CDM における \(\Lambda\) 支配への転換点は一致する。</p>
+
+<h2>Appendix:<br>保存則とフリードマン方程式</h2>
+
+<p>セクション7で定義した修正アインシュタイン方程式は、次のように表される：</p>
+\[
+\Lambda_{\mathrm{eff}}(r)\, g_{\mu\nu} + G_{\mu\nu} = \kappa\,T^{(\mathrm{m})}_{\mu\nu},
+\qquad
+\kappa \equiv \frac{8\pi G}{c^4}.
+\]
+
+<p>この式により、本モデルでは有効項 \(\Lambda_{\mathrm{eff}}(r)\) の空間依存性を取り入れることで、局所的な保存則と大域的な保存則を統一的に議論することができる。</p>
+<h2>有効項 \(\Lambda_{\mathrm{eff}}\) の普遍関数形</h2>
+
+<p>セクション4で導出した有効 \(\Lambda\) 項 \(\displaystyle \Lambda_{\mathrm{eff}}(r) = \dfrac{4r^{2}}{(R^{2}+r^{2})^{2}}\) を変形すると：</p>
+\[
+\boxed{
+\Lambda_{\mathrm{eff}}(r)
+= \frac{1}{R^{2}}\,
+F\!\left(\frac{r}{R}\right),
+\qquad
+F(x)=\frac{4x^{2}}{(1+x^{2})^{2}},
+\qquad
+x=\frac{r}{R}
+}
+\]
+
+<p>\(F(x)\) を展開すると、元の形：</p>
+\[
+\Lambda_{\mathrm{eff}}(r)
+= \frac{4 r^{2}}{\left(R^{2} + r^{2}\right)^{2}}
+\]
+が再現される。したがって、\(\Lambda_{\mathrm{eff}}(r)\) は \(r/R = x\) とおくことで、スケールに依存しない普遍関数 \(F(x)\) によって記述できることがわかる。
+<h2>Bianchi 恒等式から交換流 \(J_\nu\) の定義</h2>
+
+<p>修正アインシュタイン方程式に \(\nabla^\mu\) を作用させると、Bianchi 恒等式 \(\nabla^\mu G_{\mu\nu}=0\) および \(\nabla^\mu g_{\mu\nu}=0\) が成り立つ。また、\(\Lambda_{\mathrm{eff}}\) はスカラー量であるため、\(\nabla_\nu\Lambda_{\mathrm{eff}} = \partial_\nu\Lambda_{\mathrm{eff}}\) が成立する。これらを用いると次式を得る：</p>
+\[
+\kappa\,\nabla^\mu T^{(\mathrm{m})}_{\mu\nu}
+= \partial_\nu \Lambda_{\mathrm{eff}}.
+\]
+
+<p>ここで、物質テンソル単体での局所的な保存則破れを記述するため、交換流 \(J_\nu\) を次のように定義する：</p>
+\[
+\boxed{
+J_\nu \equiv \nabla^\mu T^{(\mathrm{m})}_{\mu\nu}
+= \frac{1}{\kappa}\,\partial_\nu \Lambda_{\mathrm{eff}}
+}
+\]
+
+<p>この式は、\(\Lambda_{\mathrm{eff}}\) の時空的な勾配が立つと、物質テンソルと真空エネルギーとの間でエネルギー・運動量の交換が生じることを意味する。すなわち、物質テンソル単体では局所保存則が破れる (\(J_\nu \neq 0\)) が、後述するように真空成分を含めた全体系では大域的な保存則が成立する。</p>
+
+<h2>静的・球対称場での交換流</h2>
+
+<p>静的かつ球対称な場では、時間および角度依存が消えるため、交換流は半径方向のみが残る：</p>
+\[
+\boxed{
+J_r = \frac{1}{\kappa}\,\frac{\mathrm{d}\Lambda_{\mathrm{eff}}}{\mathrm{d}r}
+}
+\]
+
+<p>ここで、先に述べた通り、\(\Lambda_{\mathrm{eff}}(r)\) は：</p>
+\[
+\Lambda_{\mathrm{eff}}(r)
+= \frac{1}{R^2}\,F\!\left(\frac{r}{R}\right),
+\qquad
+F(x)=\frac{4x^2}{(1+x^2)^2},
+\qquad
+x=\frac{r}{R}.
+\]
+
+<p>であるから、連鎖律を適用すると、導関数は次のようになる：</p>
+\[
+\boxed{
+\frac{\mathrm{d}\Lambda_{\mathrm{eff}}}{\mathrm{d}r}
+= \frac{1}{R^3}\,\frac{\mathrm{d}F}{\mathrm{d}x}
+},
+\qquad
+\boxed{
+\frac{\mathrm{d}F}{\mathrm{d}x}
+= \frac{8x(1-x^2)}{(1+x^2)^3}
+}.
+\]
+
+<p>したがって、交換流は次の形で表される：</p>
+\[
+\boxed{
+J_r = \frac{1}{\kappa R^3}\,\frac{\mathrm{d}F}{\mathrm{d}x}
+}
+\]
+
+<p>必要に応じて、\(\dfrac{\mathrm{d}F}{\mathrm{d}x}\) の式を代入して明示的に書くと：</p>
+\[
+J_r = \frac{1}{\kappa R^3}\cdot\frac{8x(1-x^2)}{(1+x^2)^3},
+\qquad x=\frac{r}{R}.
+\]
+
+<h2>無次元交換流 \(\tilde J\) の定義と極値解析</h2>
+
+<p>交換流 \(J_r\) を無次元化するため、次式を定義する：</p>
+\[
+\boxed{
+\tilde J(x) \equiv \kappa R^3 J_r
+= \frac{\mathrm{d}F}{\mathrm{d}x}
+= \frac{8x(1-x^2)}{(1+x^2)^3}
+}
+\]
+
+<p>\(\tilde J\) はスケール \(R\) に依存しない普遍関数であり、次の符号構造を持つ：</p>
+<ul>
+  <li>\(x<1 \ \Rightarrow\ \tilde J>0\) ：真空から物質へのエネルギー供給</li>
+  <li>\(x>1 \ \Rightarrow\ \tilde J<0\) ：物質から真空へのエネルギー回収</li>
+  <li>\(x=1\) で \(\tilde J=0\) ：供給と回収の転換点</li>
+</ul>
+
+<h3>供給・回収ピークの導出</h3>
+
+<p>ピークは \(\tilde J(x)\) の極値から求められる。まず一階微分を再掲する：</p>
+\[
+\tilde J(x) = \frac{\mathrm{d}F}{\mathrm{d}x}
+= \frac{8x(1-x^2)}{(1+x^2)^3}
+\]
+
+<p>二階微分は次のように計算される：</p>
+\[
+\frac{\mathrm{d}^2F}{\mathrm{d}x^2}
+= \frac{\mathrm{d}}{\mathrm{d}x}
+\left[
+\frac{8x(1-x^2)}{(1+x^2)^3}
+\right]
+=
+\frac{8(3x^4 - 8x^2 + 1)}{(1+x^2)^4}
+\]
+
+<p>極値条件 \(\dfrac{\mathrm{d}^2F}{\mathrm{d}x^2}=0\) より：</p>
+\[
+\boxed{
+3x^4 - 8x^2 + 1 = 0
+},
+\qquad x = \frac{r}{R},\quad r \ge 0,\ R > 0.
+\]
+
+<p>ここで \(y = x^2\) と置換すると、四次方程式は二次方程式に帰着する：</p>
+\[
+y = \frac{4 \pm \sqrt{13}}{3},
+\qquad
+x_{\pm} = \sqrt{\frac{4 \pm \sqrt{13}}{3}}
+\]
+
+<h3>極値の数値評価とピーク値</h3>
+
+<p>四次方程式の解から、極値の位置は次のように数値評価される：</p>
+\[
+x_{\mathrm{sup}} \approx 0.363,
+\qquad
+x_{\mathrm{rec}} \approx 1.592
+\]
+
+<p>これらを \(\tilde J(x)=\dfrac{8x(1-x^2)}{(1+x^2)^3}\) に代入すると、供給ピークと回収ピークの値は以下のように求められる：</p>
+
+<ul>
+  <li><b>供給ピーク（正）</b>：
+  \[
+    \tilde J(x_{\mathrm{sup}})
+    = \frac{
+      8\,x_{\mathrm{sup}}\!\left(1 - x_{\mathrm{sup}}^2\right)
+    }{
+      \left(1 + x_{\mathrm{sup}}^2\right)^3
+    }
+    \approx \boxed{+\,1.739}
+  \]
+  </li>
+
+  <li><b>回収ピーク（負）</b>：
+  \[
+    \tilde J(x_{\mathrm{rec}})
+    = \frac{
+      8\,x_{\mathrm{rec}}\!\left(1 - x_{\mathrm{rec}}^2\right)
+    }{
+      \left(1 + x_{\mathrm{rec}}^2\right)^3
+    }
+    \approx \boxed{-\,0.443}
+  \]
+  </li>
+</ul>
+
+<p>したがって、真空から物質への最大供給は \(x \approx 0.36\) 付近で生じ、
+その大きさは \(\tilde J \approx +1.74\) である。また、物質から真空への最大回収は
+\(x \approx 1.59\) 付近で発生し、その強さは \(\tilde J \approx -0.44\) となる。</p>
+
+<h3>極値の向きの判定</h3>
+<p>極値の性質（極大か極小か）は、$\tilde J(x)$ の符号を用いて次のように判定できる。</p>
+
+<ul>
+  <li>$x_{\mathrm{sup}} < 1$ であるから $1 - x_{\mathrm{sup}}^2 > 0$ より $\tilde J(x_{\mathrm{sup}}) > 0$。したがって $x_{\mathrm{sup}}$ は <strong>供給ピーク</strong>（極大値）である。</li>
+  <li>$x_{\mathrm{rec}} > 1$ であるから $1 - x_{\mathrm{rec}}^2 < 0$ より $\tilde J(x_{\mathrm{rec}}) < 0$。したがって $x_{\mathrm{rec}}$ は <strong>回収ピーク</strong>（極小値）である。</li>
+</ul>
+
+<p>また、二階微分 $\dfrac{\mathrm{d}^2F}{\mathrm{d}x^2}$ は $3x^4 - 8x^2 + 1 = 0$ を境に符号が変化するため、これらの極大・極小の判定は確定的である。</p>
+
+<h3>大域保存則</h3>
+<p>交換流 $J_r$ を全空間で積分すると、次式を得る：</p>
+
+\[
+\int_{0}^{\infty} J_r\,\mathrm{d}r
+= \frac{1}{\kappa}
+\int_{0}^{\infty}
+\frac{\mathrm{d}\Lambda_{\mathrm{eff}}}{\mathrm{d}r}\,\mathrm{d}r
+= \frac{1}{\kappa}
+\big[\Lambda_{\mathrm{eff}}(\infty)-\Lambda_{\mathrm{eff}}(0)\big]
+= 0.
+\]
+
+<p>さらに $\Lambda_{\mathrm{eff}}(r)=\dfrac{4r^2}{(R^2+r^2)^2}$ を代入しても同じ結果が得られる：</p>
+
+\[
+\boxed{
+\displaystyle
+\int_{0}^{\infty}
+\!\left[
+\frac{\partial}{\partial r}
+\!\left(
+\frac{4r^2}{(R^2+r^2)^2}
+\right)
+\right]\mathrm{d}r
+= 0
+}.
+\]
+
+<p>すなわち、端点 $\Lambda_{\mathrm{eff}}(0)=\Lambda_{\mathrm{eff}}(\infty)=0$ により、真空からの供給と回収は全空間で厳密に相殺される。従って、本モデルでは、一般相対論では困難であった<strong>大域的エネルギー保存則</strong>がここで定義される。</p>
+
+<h3>交換流のスケール依存性</h3>
+<p>交換流 $J_r$ の大きさは次式で表される：</p>
+
+\[
+\boxed{
+|J_r| \sim \frac{1}{\kappa R^3} \, |\tilde J(x)|
+}
+\]
+
+<p>この式から、スケール $R$ が大きいほど交換流は急激に抑制されることがわかる。</p>
+
+<ul>
+  <li>宇宙論スケール：$R_{\mathrm{cosmo}} \sim 10^{26}\,\mathrm{m}$  
+    → $|J_r|$ は極端に小さく、局所保存則の破れは観測的に無視できる。</li>
+  <li>ヒッグススケール：$R_{\mathrm{Higgs}} \sim 10^{-18}\,\mathrm{m}$  
+    → $|J_r|$ は非常に大きく、局所的な交換流は顕著となる。</li>
+</ul>
+
+<p>両者の比は次式で評価される：</p>
+
+\[
+\left(
+\frac{R_{\mathrm{cosmo}}}{R_{\mathrm{Higgs}}}
+\right)^3
+\sim
+\left(\frac{10^{26}}{10^{-18}}\right)^3
+\sim 10^{132}.
+\]
+
+<p>よって、ヒッグススケールでは局所的な交換流が極めて強く、宇宙論スケールではほぼゼロである。</p>
+
+<h3>物理的含意</h3>
+<ul>
+  <li><strong>局所領域</strong>：  
+    $\nabla^\mu T^{(\mathrm{m})}_{\mu\nu} = J_\nu \neq 0$  
+    → 真空と物質間でエネルギー交換が発生し、特にヒッグススケールで顕著となる。</li>
+  <li><strong>大域領域</strong>：  
+    $\displaystyle \int_0^\infty J_r \,\mathrm{d}r = 0$  
+    → 供給と回収が全空間で相殺され、大域的なエネルギー保存則は厳密に成立する。</li>
+</ul>
+
+<p>したがって、局所的な保存則破れは直接観測されず、ヒッグス機構などで質量付与としてのみ痕跡を残す。一方で、宇宙論スケールでは交換流が極めて小さいため、局所破れは事実上検出不能である。</p>
+
+<h3>Λ_effを真空エネルギーとして扱う場合</h3>
+<p>Λ_eff を幾何学項ではなく真空エネルギー成分として右辺に移すと、修正アインシュタイン方程式は次のように書き換えられる：</p>
+
+\[
+\boxed{
+G_{\mu\nu} = \kappa\,T^{(\mathrm{m})}_{\mu\nu} - \Lambda_{\mathrm{eff}}(r)\,g_{\mu\nu}
+}
+\]
+
+<p>ここで真空エネルギーのテンソルを</p>
+
+\[
+T^{(\Lambda)}_{\mu\nu} \equiv -\frac{\Lambda_{\mathrm{eff}}}{\kappa} g_{\mu\nu}
+\]
+
+<p>と定義すれば、式は次のように整理される：</p>
+
+\[
+G_{\mu\nu} = \kappa \Big( T^{(\mathrm{m})}_{\mu\nu} + T^{(\Lambda)}_{\mu\nu} \Big).
+\]
+
+<p>Bianchi 恒等式 $\nabla^\mu G_{\mu\nu} = 0$ を用いると、全エネルギー運動量テンソルに対する保存則が自動的に成立する：</p>
+
+\[
+\boxed{
+\nabla^\mu T^{\mathrm{(total)}}_{\mu\nu} = 0
+},
+\qquad
+T^{\mathrm{(total)}}_{\mu\nu}
+= T^{(\mathrm{m})}_{\mu\nu} + T^{(\Lambda)}_{\mu\nu}.
+\]
+
+<p>すなわち、Λ_eff を幾何学項として扱う場合は物質テンソル単体で局所保存則が破れているように見えるが、真空エネルギーとして物質側に含めれば、全体系では共変的な保存則が厳密に保たれていると解釈できる。どちらの表現を採用するかは「Λ_effを幾何学項とみなすか、物質項に含めるか」の違いに過ぎない。</p>
+
+<h3>宇宙論スケールでの定数近似の正当化</h3>
+
+<p>ここで、$\Lambda_{\mathrm{eff}}(r)$ の空間勾配は次式で与えられる：</p>
+
+\[
+\Lambda_{\mathrm{eff}}(r)=\frac{1}{R^{2}}\,F\!\!\left(\frac{r}{R}\right),
+\qquad
+F(x)=\frac{4x^{2}}{(1+x^{2})^{2}},
+\qquad x=\frac{r}{R}.
+\]
+
+<p>連鎖律より導関数は次式で表される：</p>
+
+\[
+\boxed{
+\frac{d\Lambda_{\mathrm{eff}}}{dr}
+= \frac{1}{R^{3}}\frac{dF}{dx},
+\qquad
+\frac{dF}{dx}=\frac{8x(1-x^{2})}{(1+x^{2})^{3}}
+}
+\]
+
+<p>ここで $\dfrac{dF}{dx}$ は $x=\mathcal{O}(1)$ の範囲では $\mathcal{O}(1)$ の大きさに抑えられる
+<sup>※</sup>。したがって、$\Lambda_{\mathrm{eff}}$ の空間勾配は</p>
+
+\[
+\left|\frac{d\Lambda_{\mathrm{eff}}}{dr}\right|
+\sim \frac{1}{R^{3}}\times\mathcal{O}(1)
+\]
+
+<p>で特徴づけられる。</p>
+
+<p>代表的なスケールにおけるオーダー評価は次の通りである：</p>
+
+\[
+\boxed{
+R\sim 10^{26}\,\mathrm{m}\ (\text{宇宙論})\ \Rightarrow\
+\left|\frac{d\Lambda_{\mathrm{eff}}}{dr}\right|
+\sim 10^{-78}\,\mathrm{m^{-3}}
+}
+\]
+
+<p>すなわち、宇宙論スケールでは $\Lambda_{\mathrm{eff}}$ の空間勾配は観測的に無視できるほど小さい：</p>
+
+\[
+\left|\frac{d\Lambda_{\mathrm{eff}}}{dr}\right| \approx 0
+\]
+
+<p>よって、このスケールでは $\Lambda_{\mathrm{eff}}$ を空間的に一定とみなすことが妥当である。この近似の下で、フリードマン方程式においては $\Lambda_{\mathrm{eff}}$ を定数 $\Lambda$ として扱える：</p>
+
+\[
+\boxed{
+H^{2} = \frac{\kappa}{3}\,\rho - \frac{k}{a^{2}} + \frac{\Lambda}{3}
+}
+\]
+
+
+
+
+
+
+
 </section>
   <section id="appendix-fitting-summary">
   <h2>Appendix:<br>銀河回転曲線フィッティング（斥力項のみ）</h2>
