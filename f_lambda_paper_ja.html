@@ -548,7 +548,15 @@ r(E) = \frac{(r_v \times E_v)}{E} = \frac{492\ \mathrm{GeV}}{E}
 \]<p>ここで、先に述べた通り、\(\Lambda_{\mathrm{eff}}(r)\) は：</p>
 \[
 \Lambda_{\mathrm{eff}}(r)=\frac{1}{R^2}F\!\left(\frac{r}{R}\right),\qquad F(x)=\frac{4x^2}{(1+x^2)^2},\qquad x=\frac{r}{R}
-\]<p>であるから、連鎖律より、導関数は次のようになる：</p>
+\]<p>であるから、連鎖律より、</p>
+\[
+\frac{d\Lambda_{\mathrm{eff}}}{dr}
+= \frac{d}{dr}\!\left[\frac{1}{R^{2}}F\!\left(x\right)\right]
+= \frac{1}{R^{2}}\,F'(x)\,\frac{dx}{dr}
+= \frac{1}{R^{2}}\,F'(x)\cdot\frac{1}{R}
+= \frac{1}{R^{3}}\frac{dF}{dx},
+\qquad x=\frac{r}{R}.
+\]<p>よって、導関数は次のようになる：</p>
 \[
 \boxed{\frac{\mathrm{d}\Lambda_{\mathrm{eff}}}{\mathrm{d}r}=\frac{1}{R^3}\frac{\mathrm{d}F}{\mathrm{d}x}},\qquad \boxed{\frac{\mathrm{d}F}{\mathrm{d}x}=\frac{8x(1-x^2)}{(1+x^2)^3}}
 \]<p>したがって、交換流は次の形で表される：</p>
