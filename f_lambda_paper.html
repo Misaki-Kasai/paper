@@ -507,107 +507,85 @@ r_\Lambda = 2\sqrt{3} \approx 3.46
 <h2>Appendix: Conservation Laws and the Friedmann Equation</h2>
 <p>The extended Einstein equation defined in Section 7 is:</p>
 \[
-\Lambda_{\mathrm{eff}}(r)\, g_{\mu\nu} + G_{\mu\nu} = \kappa\,T^{(\mathrm{matter})}_{\mu\nu},
+\Lambda_{\mathrm{eff}(r)\, g_{\mu\nu} + G_{\mu\nu} = \kappa\,T^{(\mathrm{matter})}_{\mu\nu},
 \qquad
 \kappa \equiv \frac{8\pi G}{c^4}.
-\]
-<p>Because this theory explicitly incorporates the spatial dependence of \(\Lambda_{\mathrm{eff}}(r)\) into the Einstein equation, it becomes possible to discuss local and global conservation laws in a unified framework.</p>
+\]<p>Because this theory explicitly incorporates the spatial dependence of \(\Lambda_{\mathrm{eff}}(r)\) into the Einstein equation, it becomes possible to discuss local and global conservation laws in a unified framework.</p>
 <h3>Universal Functional Form of \(\Lambda_{\mathrm{eff}}\)</h3>
-<p>Rewriting the effective \(\Lambda\) term derived in Section 4, \(\displaystyle \Lambda_{\mathrm{eff}}(r) = \dfrac{4r^{2}}{(R^{2}+r^{2})^{2}}\), we have:</p>
+<p>Rewriting the effective \(\Lambda\) term derived in Section 4, \(\Lambda_{\mathrm{eff}}(r) = \dfrac{4r^{2}}{(R^{2}+r^{2})^{2}}\), we have:</p>
 \[
-\boxed{\Lambda_{\mathrm{eff}}(r)=\frac{1}{R^{2}}F\!\left(\frac{r}{R}\right),\qquad F(x)=\frac{4x^{2}}{(1+x^{2})^{2}},\qquad x=\frac{r}{R}}
-\]
-<p>Substituting \(F(x)\) and expanding \(x\), we recover the original form:</p>
+\boxed{\Lambda_{\mathrm{eff}}=\frac{1}{R^{2}}F\!\left(\frac{r}{R}\right),\qquad F(x)=\frac{4x^{2}}{(1+x^{2})^{2}},\qquad x=\frac{r}{R}}
+\]<p>Substituting \(F(x)\) and expanding \(x\), we recover the original form:</p>
 \[
-\Lambda_{\mathrm{eff}}(r) = \frac{4 r^{2}}{\left(R^{2} + r^{2}\right)^{2}}
-\]
-Thus, by introducing \(\dfrac{r}{R} = x\), it becomes clear that \(\Lambda_{\mathrm{eff}}(r)\) can be expressed in terms of a universal, scale-independent function \(F(x)\).
-  
+\Lambda_{\mathrm{eff}} = \frac{4 r^{2}}{\left(R^{2} + r^{2}\right)^{2}}
+\]<p>Thus, by introducing \(\dfrac{r}{R} = x\), it becomes clear that \(\Lambda_{\mathrm{eff}}(r)\) can be expressed in terms of a universal, scale-independent function \(F(x)\).</p>
 <h3>Bianchi Identity and the Definition of the Exchange Current \(J_\nu\)</h3>
 <p>Applying \(\nabla^\mu\) to the extended Einstein equation, we use the Bianchi identity \(\nabla^\mu G_{\mu\nu}=0\) and the property \(\nabla^\mu g_{\mu\nu}=0\). Since \(\Lambda_{\mathrm{eff}}\) is a scalar quantity, it also satisfies \(\nabla_\nu\Lambda_{\mathrm{eff}} = \partial_\nu\Lambda_{\mathrm{eff}}\). Using these relations, we obtain:</p>
 \[
 \kappa\,\nabla^\mu T^{(\mathrm{m})}_{\mu\nu} = \partial_\nu \Lambda_{\mathrm{eff}}.
-\]
-<p>To describe the local non-conservation of the energy-momentum tensor (hereafter referred to as the matter term) alone, we define the exchange current \(J_\nu\) as follows:</p>
+\]<p>To describe the local non-conservation of the energy-momentum tensor (hereafter referred to as the matter term) alone, we define the exchange current \(J_\nu\) as follows:</p>
 \[
 \boxed{J_\nu \equiv \nabla^\mu T^{(\mathrm{m})}_{\mu\nu} = \frac{1}{\kappa}\,\partial_\nu \Lambda_{\mathrm{eff}}}
-\]
-<p>This equation implies that whenever there is a spacetime gradient in \(\Lambda_{\mathrm{eff}}\), an exchange of energy and momentum occurs between the matter component and the vacuum energy. In other words, the matter term by itself satisfies \(J_\nu \neq 0\), meaning local conservation is violated; however, as discussed later, global conservation is still maintained when the vacuum contribution is included in the total system.</p>
-
-
+\]<p>This equation implies that whenever there is a spacetime gradient in \(\Lambda_{\mathrm{eff}}\), an exchange of energy and momentum occurs between the matter component and the vacuum energy. In other words, the matter term by itself satisfies \(J_\nu \neq 0\), meaning local conservation is violated; however, as discussed later, global conservation is still maintained when the vacuum contribution is included in the total system.</p>
 <h3>Exchange Current in a Static, Spherically Symmetric Field</h3>
 <p>In a static and spherically symmetric field, the dependence on time and angular coordinates disappears, leaving only the radial component of the exchange current:</p>
 \[
 \boxed{J_r = \frac{1}{\kappa}\,\frac{\mathrm{d}\Lambda_{\mathrm{eff}}}{\mathrm{d}r}}
-\]
-<p>As mentioned earlier, \(\Lambda_{\mathrm{eff}}(r)\) is given by:</p>
+\]<p>As mentioned earlier, \(\Lambda_{\mathrm{eff}}(r)\) is given by:</p>
 \[
 \Lambda_{\mathrm{eff}}(r)=\frac{1}{R^2}F\!\left(\frac{r}{R}\right),\qquad F(x)=\frac{4x^2}{(1+x^2)^2},\qquad x=\frac{r}{R}
-\]
-<p>Therefore, using the chain rule, we have:</p>
+\]<p>Therefore, using the chain rule, we have:</p>
 \[
 \frac{d\Lambda_{\mathrm{eff}}}{dr}
 = \frac{d}{dr}\!\left[\frac{1}{R^{2}}F\!\left(\frac{r}{R}\right)\right]
 = \frac{1}{R^{2}}\cdot\frac{dF}{dx}\cdot\frac{dx}{dr}
 = \frac{1}{R^{2}}\cdot\frac{dF}{dx}\cdot\frac1R
-\]
-<p>Thus, the derivative becomes:</p>
+\]<p>Thus, the derivative becomes:</p>
 \[
 \boxed{\frac{\mathrm{d}\Lambda_{\mathrm{eff}}}{\mathrm{d}r}=\frac{1}{R^3}\frac{\mathrm{d}F}{\mathrm{d}x}},\qquad \boxed{\frac{\mathrm{d}F}{\mathrm{d}x}=\frac{8x(1-x^2)}{(1+x^2)^3}}
-\]
-<p>Accordingly, the exchange current can be expressed as:</p>
+\]<p>Accordingly, the exchange current can be expressed as:</p>
 \[
 \boxed{J_r=\frac{1}{\kappa R^3}\frac{\mathrm{d}F}{\mathrm{d}x}}
-\]
-<p>Substituting the explicit expression for \(\dfrac{\mathrm{d}F}{\mathrm{d}x}\), we obtain:</p>
+\]<p>Substituting the explicit expression for \(\dfrac{\mathrm{d}F}{\mathrm{d}x}\), we obtain:</p>
 \[
 J_r=\frac{1}{\kappa R^3}\frac{8x(1-x^2)}{(1+x^2)^3},\qquad x=\frac{r}{R}
 \]
-
 <h3>Definition of the Normalized Exchange Current \(\tilde J\) and Analysis of Its Extrema</h3>
 <p>To normalize the exchange current \(J_r\), we define:</p>
 \[
 \boxed{\tilde J(x)\equiv\kappa R^3J_r=\frac{\mathrm{d}F}{\mathrm{d}x}=\frac{8x(1-x^2)}{(1+x^2)^3}}
-\]
-<p>\(\tilde J\) is a universal function independent of the scale \(R\) and exhibits the following sign structure:</p>
+\]<p>\(\tilde J\) is a universal function independent of the scale \(R\) and exhibits the following sign structure:</p>
 <ul class="ol-spacing">
   <li><span>\(x \lt 1 \Rightarrow \tilde J \gt 0\)</span>: Energy flows from the vacuum into matter.</li>
   <li><span>\(x \gt 1 \Rightarrow \tilde J \lt 0\)</span>: Energy is transferred back from matter to the vacuum.</li>
   <li><span>\(x = 1\)</span> with <span>\(\tilde J = 0\)</span>: The transition point between energy supply and recovery.</li>
 </ul>
-
 <h4>Deriving the Peaks of Energy Supply and Recovery</h4>
 <p>The peaks are determined from the extrema of \(\tilde J(x)\). Rewriting the first derivative for reference:</p>
 \[
 \tilde J(x) = \frac{\mathrm{d}F}{\mathrm{d}x} = \frac{8x(1-x^2)}{(1+x^2)^3}
-\]
-<p>Therefore, the second derivative is given by:</p>
+\]<p>Therefore, the second derivative is given by:</p>
 \[
 \frac{\mathrm{d}^2F}{\mathrm{d}x^2} = \frac{\mathrm{d}}{\mathrm{d}x}
 \left[
 \frac{8x(1-x^2)}{(1+x^2)^3}
 \right] =
 \frac{8(3x^4 - 8x^2 + 1)}{(1+x^2)^4}
-\]
-<p>From the extremum condition \(\dfrac{\mathrm{d}^2F}{\mathrm{d}x^2}=0\), we obtain:</p>
+\]<p>From the extremum condition \(\dfrac{\mathrm{d}^2F}{\mathrm{d}x^2}=0\), we obtain:</p>
 \[
 \boxed{3x^4-8x^2+1=0},\qquad x=\frac{r}{R},\ r \ge 0,\ R > 0.
-\]
-<p>Introducing the substitution \(x^2 = y\), we solve for \(y\):</p>
+\]<p>Introducing the substitution \(x^2 = y\), we solve for \(y\):</p>
 \[
 y=\frac{4\pm\sqrt{13}}{3},\qquad x_{\pm}=\sqrt{\frac{4\pm\sqrt{13}}{3}}
-\]
-<p>Since \(r \ge 0\) and \(R > 0\), we have \(x = \dfrac{r}{R} \ge 0\), so the solutions are:</p>
+\]<p>Since \(r \ge 0\) and \(R > 0\), we have \(x = \dfrac{r}{R} \ge 0\), so the solutions are:</p>
 \[
 \boxed{x = \sqrt{\dfrac{4 \pm \sqrt{13}}{3}}}
 \]
-
 <h4>Numerical Evaluation of Extrema and Peak Values</h4>
 <p>From the previous solutions, the locations of the extrema are numerically evaluated as follows:</p>
 \[
 x_{\mathrm{sup}} = \sqrt{\dfrac{4 - \sqrt{13}}{3}} \approx 0.363,\quad x_{\mathrm{rec}} = \sqrt{\dfrac{4 + \sqrt{13}}{3}} \approx 1.592
-\]
-<p>Substituting these into \(\tilde J(x)=\dfrac{8x(1-x^2)}{(1+x^2)^3}\), the values of the supply and recovery peaks are obtained as:</p>
+\]<p>Substituting these into \(\tilde J(x)=\dfrac{8x(1-x^2)}{(1+x^2)^3}\), the values of the supply and recovery peaks are obtained as:</p>
 <ul>
   <li><b>Supply Peak (positive)</b>:
   <div>
@@ -625,7 +603,6 @@ x_{\mathrm{sup}} = \sqrt{\dfrac{4 - \sqrt{13}}{3}} \approx 0.363,\quad x_{\mathr
   </li>
 </ul>
 <p>Therefore, the maximum energy supply from the vacuum to matter occurs around \(x \approx 0.36\) with a magnitude of \(\tilde J \approx +1.74\). Similarly, the maximum energy recovery from matter back into the vacuum takes place near \(x \approx 1.59\) with a magnitude of \(\tilde J \approx -0.44\).</p>
-
 <h4>Determining the Nature of the Extrema</h4>
 <p>The nature of each extremum (whether it corresponds to a maximum or a minimum) can be determined using the sign of \(\tilde J(x)\) as follows:</p>
 <ul class="ol-spacing">
@@ -633,51 +610,42 @@ x_{\mathrm{sup}} = \sqrt{\dfrac{4 - \sqrt{13}}{3}} \approx 0.363,\quad x_{\mathr
   <li>Since \(x_{\mathrm{rec}} \approx 1.592 > 1\), we have \(1 - x_{\mathrm{rec}}^2 < 0\), which gives \(\tilde J(x_{\mathrm{rec}}) < 0\). Therefore, \(x_{\mathrm{rec}}\) corresponds to the <strong>recovery peak</strong> (local minimum).</li>
 </ul>
 <p>Furthermore, since the second derivative \(\dfrac{\mathrm{d}^2F}{\mathrm{d}x^2}\) changes sign across the equation \(3x^4 - 8x^2 + 1 = 0\), this classification of the extrema as maxima and minima is confirmed.</p>
-
 <h3>Global Conservation Law</h3>
 <p>Integrating the exchange current \(J_r\) along the radial direction yields:</p>
 \[
 \int_{0}^{\infty}J_r\,\mathrm{d}r=\frac{1}{\kappa}\int_{0}^{\infty}\frac{\mathrm{d}\Lambda_{\mathrm{eff}}}{\mathrm{d}r}\,\mathrm{d}r=\frac{1}{\kappa}\big[\Lambda_{\mathrm{eff}}(\infty)-\Lambda_{\mathrm{eff}}(0)\big]=0
-\]
-<p>Substituting explicitly \(\Lambda_{\mathrm{eff}}(r)=\dfrac{4r^2}{(R^2+r^2)^2}\) gives the same result:</p>
+\]<p>Substituting explicitly \(\Lambda_{\mathrm{eff}}(r)=\dfrac{4r^2}{(R^2+r^2)^2}\) gives the same result:</p>
 \[
 \boxed{\displaystyle \frac{1}{\kappa}\int_{0}^{\infty}\!\left[\frac{\partial}{\partial r}\!\left(\frac{4r^2}{(R^2+r^2)^2}\right)\right]\mathrm{d}r=0}
-\]
-<p>Thus, because the endpoints satisfy \(\Lambda_{\mathrm{eff}}(0)=\Lambda_{\mathrm{eff}}(\infty)=0\), the local energy supply and recovery along the radial direction exactly cancel out, ensuring strict global conservation.</p>
-
+\]<p>Thus, because the endpoints satisfy \(\Lambda_{\mathrm{eff}}(0)=\Lambda_{\mathrm{eff}}(\infty)=0\), the local energy supply and recovery along the radial direction exactly cancel out, ensuring strict global conservation.</p>
 <p>Furthermore, the surface integral under spherical symmetry, that is, the total flux of \(J_r\), is given by:</p>
 \[
 \Phi(r)=\oint_{S_r}J^i\,\mathrm{d}\Sigma_i=4\pi r^2 J_r
-\]
-<p>As noted earlier, since \(J_r=\dfrac{1}{\kappa}\,\dfrac{\mathrm{d}\Lambda_{\mathrm{eff}}}{\mathrm{d}r}\), we have:</p>
+\]<p>As noted earlier, since \(J_r=\dfrac{1}{\kappa}\,\dfrac{\mathrm{d}\Lambda_{\mathrm{eff}}}{\mathrm{d}r}\), we have:</p>
 \[
 J_r=\frac{1}{\kappa}\,\frac{\mathrm{d}}{\mathrm{d}r}\!\left[\frac{4r^2}{(R^2+r^2)^2}\right]=\frac{1}{\kappa}\,\frac{8r\,(R^2-r^2)}{(R^2+r^2)^3}
-\]
-<p>Therefore, the total flux becomes:</p>
+\]<p>Therefore, the total flux becomes:</p>
 \[
 \Phi(r)=4\pi r^2 J_r=\frac{32\pi}{\kappa}\,\frac{r^3(R^2-r^2)}{(R^2+r^2)^3}
-\]
-<p>Taking the limits at the endpoints gives:</p>
+\]<p>Taking the limits at the endpoints gives:</p>
 \[
 \Phi(0)=\lim_{r\to0}\left(\frac{32\pi}{\kappa}\,\frac{r^3(R^2-r^2)}{(R^2+r^2)^3}\;\Rightarrow\;\frac{r^3R^2}{(R^2)^3}=\frac{r^3}{R^4}\right)=0,
 \]
 \[
 \Phi(\infty)=\lim_{r\to\infty}\left(\frac{32\pi}{\kappa}\,\frac{r^3(R^2-r^2)}{(R^2+r^2)^3}\;\Rightarrow\;\frac{-r^5}{(r^2)^3}=-\frac{1}{r}\right)=0.
-\]
-<p>Thus, since \(\Phi(0)=\Phi(\infty)=0\), the total energy supplied from the vacuum and recovered back into it is exactly balanced over the entire volume of space.<br>Consequently, a <strong>global energy conservation law, which is difficult to define in general relativity, is established here</strong>.</p>
-
-<h3>交換流のスケール依存性</h3>
-<p>交換流 \(J_r\) の大きさは次式で表される：</p>
+\]<p>Thus, since \(\Phi(0)=\Phi(\infty)=0\), the total energy supplied from the vacuum and recovered back into it is exactly balanced over the entire volume of space.<br>Consequently, a <strong>global energy conservation law, which is difficult to define in general relativity, is established here</strong>.</p>
+<h3>Scale Dependence of the Exchange Current</h3>
+<p>The magnitude of the exchange current \(J_r\) is given by:</p>
 \[
 \boxed{|J_r| \sim \frac{1}{\kappa R^3} \, |\tilde J(x)|}
-\]<p>この式から、特性スケール \(R\) が大きいほど交換流は急激に抑制されることがわかる。</p>
+\]<p>This expression shows that the larger the characteristic scale \(R\), the more strongly the exchange current is suppressed.</p>
 <ul class="ol-spacing">
-  <li>宇宙論スケール：\(R_{\mathrm{cosmo}} \sim 10^{26}\,\mathrm{m}\)  
-    → \(|J_r|\) は極端に小さく、局所保存則の破れは観測的に無視できる。</li>
-  <li>ヒッグススケール：\(R_{\mathrm{Higgs}} \sim 10^{-18}\,\mathrm{m}\)  
-    → \(|J_r|\) は非常に大きく、局所的な交換流は顕著となる。</li>
+  <li>Cosmological scale: \(R_{\mathrm{cosmo}} \sim 10^{26}\,\mathrm{m}\)  
+    → \(|J_r|\) becomes extremely small, and any apparent local violation of conservation is observationally negligible.</li>
+  <li>Higgs scale: \(R_{\mathrm{Higgs}} \sim 10^{-18}\,\mathrm{m}\)  
+    → \(|J_r|\) becomes very large, and local exchange currents become significant.</li>
 </ul>
-<p>交換流の大きさは \(|J_r| \sim \dfrac{1}{\kappa R^3}\) に比例するため、宇宙論スケールとヒッグススケールの強さの比は次式で与えられる：</p>
+<p>Since the magnitude of the exchange current scales as \(|J_r| \sim \dfrac{1}{\kappa R^3}\), the ratio of the exchange strength between the Higgs scale and the cosmological scale is given by:</p>
 \[
 \frac{|J_r|_{\mathrm{Higgs}}}{|J_r|_{\mathrm{cosmo}}}
 =
@@ -687,78 +655,60 @@ J_r=\frac{1}{\kappa}\,\frac{\mathrm{d}}{\mathrm{d}r}\!\left[\frac{4r^2}{(R^2+r^2
 \sim
 \left(\frac{10^{26}}{10^{-18}}\right)^3
 \sim 10^{132}
-\]<p>すなわち、ヒッグススケールでは宇宙論スケールに比べて、およそ \(10^{132}\) 倍も交換流が強いことがわかる。</p>
+\]<p>This implies that, at the Higgs scale, the exchange current is about \(10^{132}\) times stronger than at the cosmological scale.</p>
 <ul class="ol-spacing">
-  <li><strong>局所領域</strong>： \(\nabla^\mu T^{(\mathrm{m})}_{\mu\nu}=J_\nu\neq0\) → 真空と物質間でエネルギー交換が発生する。特にヒッグススケールで顕著だが、宇宙論スケールでは交換流はほぼゼロに近い。\(\int_0^\infty J_r\,\mathrm{d}r=0\) より、半径方向の交換流は各特性スケールにおいて局所的に相殺される。</li>
-  <li><strong>大域領域</strong>： \(\Phi(0)=\Phi(\infty)=0\) より、供給と回収が全空間で相殺され、大域的なエネルギー保存則が厳密に成立する。</li>
+  <li><strong>Local regime</strong>: Since \(\nabla^\mu T^{(\mathrm{m})}_{\mu\nu}=J_\nu\neq0\), energy exchange occurs between vacuum and matter. This effect is particularly significant at the Higgs scale, whereas on cosmological scales the exchange current is nearly zero. Because \(\int_0^\infty J_r\,\mathrm{d}r=0\), the radial exchange currents locally cancel out at each characteristic scale.</li>
+  <li><strong>Global regime</strong>: Since \(\Phi(0)=\Phi(\infty)=0\), the energy supplied and recovered are perfectly balanced across the entire space, and the global energy conservation law holds exactly.</li>
 </ul>
-<p>したがって、大域で保存されるだけでなく局所でも保存則が回復するため、局所的な保存則の破れは直接観測困難だが、ヒッグススケールでは質量付与という形で交換流の痕跡を残す。一方で、宇宙論スケールでは、それに加えて交換流が極めて小さいため、保存則の破れやその痕跡は事実上検出不能である。</p>
-
+<p>Therefore, not only is energy conserved globally, but local conservation is effectively restored as well. Although local violations of conservation are extremely difficult to detect directly, traces of the exchange current can manifest at the Higgs scale in the form of mass generation. On the other hand, at cosmological scales, the exchange current is so small that both the violation of conservation and any associated traces are practically undetectable.</p>
 <h3>Treating \(\Lambda_{\mathrm{eff}}\) as Vacuum Energy</h3>
 <p>If we move \(\Lambda_{\mathrm{eff}}\) to the right-hand side and treat it not as a geometric term but as a vacuum energy component, the extended Einstein equation can be rewritten as:</p>
 \[
 \boxed{G_{\mu\nu} = \kappa\,T^{(\mathrm{matter})}_{\mu\nu} - \Lambda_{\mathrm{eff}}(r)\,g_{\mu\nu}}
-\]
-<p>Defining the vacuum energy tensor as:</p>
+\]<p>Defining the vacuum energy tensor as:</p>
 \[
 T^{(\Lambda)}_{\mu\nu} \equiv -\frac{\Lambda_{\mathrm{eff}}}{\kappa} g_{\mu\nu}
-\]
-<p>the equation can be rearranged as:</p>
+\]<p>the equation can be rearranged as:</p>
 \[
 G_{\mu\nu} = \kappa \Big( T^{(\mathrm{m})}_{\mu\nu} + T^{(\Lambda)}_{\mu\nu} \Big)
-\]
-<p>Using the Bianchi identity \(\nabla^\mu G_{\mu\nu} = 0\), the conservation law for the total energy-momentum tensor automatically follows:</p>
+\]<p>Using the Bianchi identity \(\nabla^\mu G_{\mu\nu} = 0\), the conservation law for the total energy-momentum tensor automatically follows:</p>
 \[
 \boxed{\nabla^\mu T^{\mathrm{(total)}}_{\mu\nu} = 0},
 \qquad T^{\mathrm{(total)}}_{\mu\nu} = T^{(\mathrm{m})}_{\mu\nu} + T^{(\Lambda)}_{\mu\nu}
-\]
-<p>In other words, when \(\Lambda_{\mathrm{eff}}\) is treated as part of the geometry, the matter term alone appears to violate local conservation. However, if the vacuum energy is included as part of the matter sector, the total system strictly satisfies the covariant conservation law. Thus, the choice of formulation simply reflects a difference in interpretation: whether \(\Lambda_{\mathrm{eff}}\) is regarded as a purely geometric term or as part of the matter (energy-momentum) content.<br><strong>From the author's standpoint, it is recommended to treat \(\Lambda_{\mathrm{eff}}\) as a geometric term.</strong></p>
-
+\]<p>In other words, when \(\Lambda_{\mathrm{eff}}\) is treated as part of the geometry, the matter term alone appears to violate local conservation. However, if the vacuum energy is included as part of the matter sector, the total system strictly satisfies the covariant conservation law. Thus, the choice of formulation simply reflects a difference in interpretation: whether \(\Lambda_{\mathrm{eff}}\) is regarded as a purely geometric term or as part of the matter (energy-momentum) content.<br><strong>From the author's standpoint, it is recommended to treat \(\Lambda_{\mathrm{eff}}\) as a geometric term.</strong></p>
 <h3>Validity of Approximating \(\Lambda_{\mathrm{eff}}\) as Constant on Cosmological Scales</h3>
 <p>Let us now consider the spatial gradient of \(\Lambda_{\mathrm{eff}}(r)\):</p>
 \[
 \Lambda_{\mathrm{eff}}(r)=\frac{1}{R^{2}}\,F\!\!\left(\frac{r}{R}\right),
 \qquad F(x)=\frac{4x^{2}}{(1+x^{2})^{2}},
 \qquad x=\frac{r}{R}.
-\]
-<p>As shown earlier, the derivative is expressed as:</p>
+\]<p>As shown earlier, the derivative is expressed as:</p>
 \[
 \boxed{\frac{d\Lambda_{\mathrm{eff}}}{dr} = \frac{1}{R^{3}}\frac{dF}{dx},
 \qquad
 \frac{dF}{dx}=\frac{8x(1-x^{2})}{(1+x^{2})^{3}}}
-\]
-<p>Within the range \(x = \mathcal{O}(1)\), the derivative \(\dfrac{dF}{dx}\) also remains of order \(\mathcal{O}(1)\) (even at its extrema, \(|dF/dx|_{\mathrm{max}} \approx 1.739\)). Therefore, the spatial gradient of \(\Lambda_{\mathrm{eff}}\) is characterized by:</p>
+\]<p>Within the range \(x = \mathcal{O}(1)\), the derivative \(\dfrac{dF}{dx}\) also remains of order \(\mathcal{O}(1)\) (even at its extrema, \(|dF/dx|_{\mathrm{max}} \approx 1.739\)). Therefore, the spatial gradient of \(\Lambda_{\mathrm{eff}}\) is characterized by:</p>
 \[
 \left|\frac{d\Lambda_{\mathrm{eff}}}{dr}\right|
 \sim \frac{1}{R^{3}}\times\mathcal{O}(1)
-\]
-<p>Thus, for a representative cosmological scale, we obtain the following order estimate:</p>
+\]<p>Thus, for a representative cosmological scale, we obtain the following order estimate:</p>
 \[
 \boxed{R \sim 10^{26}\,\mathrm{m} \ \Rightarrow\ \left|\dfrac{d\Lambda_{\mathrm{eff}}}{dr}\right| \sim 10^{-78}\,\mathrm{m^{-3}}}
-\]
-<p>This shows that, on cosmological scales, the spatial gradient of \(\Lambda_{\mathrm{eff}}\) is so small that it can be regarded as observationally negligible:</p>
+\]<p>This shows that, on cosmological scales, the spatial gradient of \(\Lambda_{\mathrm{eff}}\) is so small that it can be regarded as observationally negligible:</p>
 \[
 \left|\frac{d\Lambda_{\mathrm{eff}}}{dr}\right| \approx 0
-\]
-<p>Moreover, using the observed value in the \(\Lambda\)CDM model, \(\Lambda \approx 10^{-52}\,\mathrm{m^{-2}}\), together with the cosmological scale \(L \approx 10^{26}\,\mathrm{m}\), even if the constant \(\Lambda\) were to vary slightly on cosmological scales, its fractional variation would be:</p>
+\]<p>Moreover, using the observed value in the \(\Lambda\)CDM model, \(\Lambda \approx 10^{-52}\,\mathrm{m^{-2}}\), together with the cosmological scale \(L \approx 10^{26}\,\mathrm{m}\), even if the constant \(\Lambda\) were to vary slightly on cosmological scales, its fractional variation would be:</p>
 \[
 \frac{\Lambda}{L} \approx \frac{10^{-52}\,\mathrm{m^{-2}}}{10^{26}\,\mathrm{m}} \approx 10^{-78}\,\mathrm{m^{-3}}
-\]
-<p>This is far below the threshold of direct detectability. Therefore, the previously derived estimate \(\left|\dfrac{d\Lambda_{\mathrm{eff}}}{dr}\right| \sim 10^{-78}\,\mathrm{m^{-3}}\) justifies the constant approximation, yet it is not so extremely small as to be regarded as a true constant when compared to \(\Lambda/L\), and thus the significance of introducing \(\Lambda_{\mathrm{eff}}\) as a dynamical term is not undermined.</p>
-
+\]<p>This is far below the threshold of direct detectability. Therefore, the previously derived estimate \(\left|\dfrac{d\Lambda_{\mathrm{eff}}}{dr}\right| \sim 10^{-78}\,\mathrm{m^{-3}}\) justifies the constant approximation, yet it is not so extremely small as to be regarded as a true constant when compared to \(\Lambda/L\), and thus the significance of introducing \(\Lambda_{\mathrm{eff}}\) as a dynamical term is not undermined.</p>
 <p>Therefore, under this scale and approximation, \(\Lambda_{\mathrm{eff}}\) can be regarded as spatially constant and treated as an effective constant \(\Lambda\). Furthermore, as noted earlier, since the exchange current \(J_r\) becomes nearly zero on cosmological scales, the apparent local violation of conservation can be effectively neglected. As a result, the following Friedmann equations are naturally recovered:</p>
 \[
 \boxed{H^2 \equiv \left(\frac{\dot a}{a}\right)^2 = \frac{8\pi G}{3}\,\rho - \frac{k c^2}{a^2} + \frac{\Lambda c^2}{3}}
 \]
 \[
 \boxed{\frac{\ddot a}{a} = -\frac{4\pi G}{3}\!\left(\rho + \frac{3P}{c^2}\right) + \frac{\Lambda c^2}{3}}
-\]
-<p>Consequently, this theory can be consistently connected to the \(\Lambda\)CDM model and to the observations explained by its success, such as the CMB and BAO, through the Friedmann equations.</p>
+\]<p>Consequently, this theory can be consistently connected to the \(\Lambda\)CDM model and to the observations explained by its success, such as the CMB and BAO, through the Friedmann equations.</p>
 </section>
-
-    
-  
-
   <section id="appendix-fitting-summary">
   <h2>Appendix: Summary of Fitting Results (Repulsive Term Only)</h2>
   <p>The following statistical summary represents the fitting results for galactic rotation curves using only the repulsive term from the proposed theory. The data are based on 175 galaxies from the <a href="https://astroweb.cwru.edu/SPARC/" target="_blank">SPARC dataset</a>.</p>
