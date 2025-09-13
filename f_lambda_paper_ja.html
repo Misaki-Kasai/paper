@@ -614,6 +614,45 @@ G_{\mu\nu} = \kappa \Big( T^{(\mathrm{m})}_{\mu\nu} + T^{(\Lambda)}_{\mu\nu} \Bi
 \boxed{\frac{\ddot a}{a} = -\frac{4\pi G}{3}\!\left(\rho + \frac{3P}{c^2}\right) + \frac{\Lambda c^2}{3}}
 \]<p>以上より、本理論と、\(\Lambda\)CDM モデルおよびその成功によって説明されてきた観測（CMB や BAO など）は、Friedmann 方程式を介して相互に接続することができる。</p>
   
+<section id="appendix-fitting-summary">
+  <h2>Appendix:<br>銀河回転曲線フィッティング（斥力項のみ）</h2>
+  <p>以下の統計表は、<a href="https://astroweb.cwru.edu/SPARC/" target="_blank">SPARC データセット</a>に含まれる 175 個の銀河回転曲線を、本理論における斥力項のみを用いてフィッティングした結果を示しています。<br>（非線形最小二乗法（重み付けなし））</p>
+  <table class="data-table">
+    <caption>ここで、 \(R^2\) は決定係数</caption>
+    <thead>
+      <tr><th>パラメータ ／ 評価指標</th><th>値</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>\(v_0\) の範囲 [km/s]</td><td>13.6 – 251.1</td></tr>
+      <tr><td>\(R\) の範囲 [kpc]</td><td>0.00 – 8.69</td></tr>
+      <tr><td>\(R^2\) の中央値</td><td>0.964</td></tr>
+      <tr><td>\(R^2\) の平均値（負値丸め）</td><td>0.803</td></tr>
+      <tr><td>\(R^2\) の最大値</td><td>0.999</td></tr>
+      <tr><td>\(R^2 \geq 0.99\) の銀河数</td><td>35 / 175</td></tr>
+    </tbody>
+  </table>
+  <p>この結果に加えて、さらに重力項による相加または相殺の形での調整余地が残されています。</p>
+  <p>斥力項のみで行なっている理由は、重力項において質量平均密度 \(\rho\) の指定またはパラメータ調整が銀河ごとに必要となるためであり、今回は省略しました。</p>
+  <p>この結果はあくまで参考程度に留めて下さい。</p>
+<figure style="max-width:1200px; margin:0.0rem auto; padding:2px; border:3px solid #E8D28D; border-radius:10px; background:#000;">
+  <div style="display:grid; grid-template-columns:1fr; gap:10px;">
+    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_1.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 1/9" style="width:100%; height:auto; border-radius:6px;">
+    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_2.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 2/9" style="width:100%; height:auto; border-radius:6px;">
+    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_3.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 3/9" style="width:100%; height:auto; border-radius:6px;">
+    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_4.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 4/9" style="width:100%; height:auto; border-radius:6px;">
+    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_5.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 5/9" style="width:100%; height:auto; border-radius:6px;">
+    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_6.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 6/9" style="width:100%; height:auto; border-radius:6px;">
+    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_7.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 7/9" style="width:100%; height:auto; border-radius:6px;">
+    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_8.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 8/9" style="width:100%; height:auto; border-radius:6px;">
+    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_9.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 9/9" style="width:100%; height:auto; border-radius:6px;">
+  </div>
+  <figcaption style="text-align:center; color:#E8D28D; margin-top:10px; font-size:0.95rem;">
+    fΛ vs. 銀河回転曲線（SPARC 175個）
+  </figcaption>
+</figure>
+</section>
+  
+  
   <section id="appendix-multiverse">
   <h2>Appendix:<br>数学的構造の哲学的解釈と多元宇宙論</h2>
   <p>この論文の数学を意訳すると、</p>
@@ -744,43 +783,7 @@ r(E) = \frac{(r_v \times E_v)}{E} = \frac{492\ \mathrm{GeV}}{E}
 <p>したがって、本モデルのスカラー場応答が最も強くなる領域と、\(\Lambda\)CDM における \(\Lambda\) 支配への転換点は一致する。</p>
 
 </section>
-  <section id="appendix-fitting-summary">
-  <h2>Appendix:<br>銀河回転曲線フィッティング（斥力項のみ）</h2>
-  <p>以下の統計表は、<a href="https://astroweb.cwru.edu/SPARC/" target="_blank">SPARC データセット</a>に含まれる 175 個の銀河回転曲線を、本理論における斥力項のみを用いてフィッティングした結果を示しています。<br>（非線形最小二乗法（重み付けなし））</p>
-  <table class="data-table">
-    <caption>ここで、 \(R^2\) は決定係数</caption>
-    <thead>
-      <tr><th>パラメータ ／ 評価指標</th><th>値</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>\(v_0\) の範囲 [km/s]</td><td>13.6 – 251.1</td></tr>
-      <tr><td>\(R\) の範囲 [kpc]</td><td>0.00 – 8.69</td></tr>
-      <tr><td>\(R^2\) の中央値</td><td>0.964</td></tr>
-      <tr><td>\(R^2\) の平均値（負値丸め）</td><td>0.803</td></tr>
-      <tr><td>\(R^2\) の最大値</td><td>0.999</td></tr>
-      <tr><td>\(R^2 \geq 0.99\) の銀河数</td><td>35 / 175</td></tr>
-    </tbody>
-  </table>
-  <p>この結果に加えて、さらに重力項による相加または相殺の形での調整余地が残されています。</p>
-  <p>斥力項のみで行なっている理由は、重力項において質量平均密度 \(\rho\) の指定またはパラメータ調整が銀河ごとに必要となるためであり、今回は省略しました。</p>
-  <p>この結果はあくまで参考程度に留めて下さい。</p>
-<figure style="max-width:1200px; margin:0.0rem auto; padding:2px; border:3px solid #E8D28D; border-radius:10px; background:#000;">
-  <div style="display:grid; grid-template-columns:1fr; gap:10px;">
-    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_1.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 1/9" style="width:100%; height:auto; border-radius:6px;">
-    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_2.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 2/9" style="width:100%; height:auto; border-radius:6px;">
-    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_3.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 3/9" style="width:100%; height:auto; border-radius:6px;">
-    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_4.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 4/9" style="width:100%; height:auto; border-radius:6px;">
-    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_5.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 5/9" style="width:100%; height:auto; border-radius:6px;">
-    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_6.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 6/9" style="width:100%; height:auto; border-radius:6px;">
-    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_7.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 7/9" style="width:100%; height:auto; border-radius:6px;">
-    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_8.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 8/9" style="width:100%; height:auto; border-radius:6px;">
-    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_9.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 9/9" style="width:100%; height:auto; border-radius:6px;">
-  </div>
-  <figcaption style="text-align:center; color:#E8D28D; margin-top:10px; font-size:0.95rem;">
-    fΛ vs. 銀河回転曲線（SPARC 175個）
-  </figcaption>
-</figure>
-</section>
+  
 <footer>
   <p>© 2025 Misaki Kasai. <br>This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
 </footer>
