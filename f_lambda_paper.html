@@ -590,19 +590,140 @@ G_{\mu\nu} = \kappa \Big( T^{(\mathrm{m})}_{\mu\nu} + T^{(\Lambda)}_{\mu\nu} \Bi
 \boxed{\frac{\ddot a}{a} = -\frac{4\pi G}{3}\!\left(\rho + \frac{3P}{c^2}\right) + \frac{\Lambda c^2}{3}}
 \]<p>Consequently, this theory can be consistently connected to the \(\Lambda\)CDM model and to the observations explained by its success, such as the CMB and BAO, through the Friedmann equations.</p>
 </section>
-<section id="appendix-higgs-Λcdm">
-  <h2>Appendix: Implications of the Higgs boson and the \( \Lambda \)CDM curvature radius</h2>
-  <h3>Vacuum Expectation Value, Higgs Boson, Z Boson, and W Boson</h3>
-  <p>From the previously derived vacuum expectation value formula:</p>
-  \[
-  v = \frac{\sqrt{2}}{R}
-  \quad \Rightarrow \quad
-  R = \frac{\sqrt{2}}{v} = \frac{\sqrt{2}}{246\,\mathrm{GeV}} \approx 5.75 \times 10^{-3}\,\mathrm{GeV}^{-1}
-  \]<p>Using the natural unit conversion (\(\hbar = c = 1\)), \(\mathrm{GeV}^{-1} \approx 1.97 \times 10^{-16}\,\mathrm{m}\), we obtain:</p>
-  \[
-  R \approx 5.75 \times 10^{-3} \times 1.97 \times 10^{-16}\,\mathrm{m} \approx 1.13 \times 10^{-18}\,\mathrm{m}
-  \]<p>This value matches the electroweak scale at which the Higgs boson was discovered in LHC experiments (\(\sim 10^{-18}\,\mathrm{m}\)).</p>
-<div class="container">
+<h2>Appendix:<br>Structural Correspondence with the Higgs Mechanism</h2>
+<h3>Self-Coupling Constant \(\lambda\) and Double Higgs</h3>
+<p>From the previously derived vacuum expectation value formula:</p>
+\[
+v = \frac{\sqrt{2}}{R}
+\quad \Rightarrow \quad
+R = \frac{\sqrt{2}}{v} = \frac{\sqrt{2}}{246\,\mathrm{GeV}} \approx 5.75 \times 10^{-3}\,\mathrm{GeV}^{-1}
+\]<p>Using the natural unit conversion (\(\hbar = c = 1\)), \(\mathrm{GeV}^{-1} \approx 1.97 \times 10^{-16}\,\mathrm{m}\), we obtain:</p>
+\[
+R \approx 5.75 \times 10^{-3} \times 1.97 \times 10^{-16}\,\mathrm{m} \approx 1.13 \times 10^{-18}\,\mathrm{m}
+\]<p>This value matches the electroweak scale at which the Higgs boson was discovered in LHC experiments (\(\sim 10^{-18}\,\mathrm{m}\)).</p>
+<p>Furthermore, as noted in <a href="#section10">Section 10</a>, it has already been formally identified from coefficient comparison that \( \lambda = R^{2} \). Here, if we substitute the derived value \( R \approx 1.13\times 10^{-18}\ \mathrm{m} \) obtained from \( v = \frac{\sqrt{2}}{R} \), the dimension of \(\lambda\) becomes \(\mathrm{m}^2\). Therefore, it cannot be directly compared with the dimensionless self-coupling constant \(\lambda\) of the Standard Model. However, by substituting the derived relation \( v = \frac{\sqrt{2}}{R} \) into the Standard Model expression,</p>
+\[
+m_h^{2} = 2\,\lambda\,v^{2} \;\Rightarrow\; \lambda = \frac{m_h^{2}}{2\,v^{2}}
+\]
+<p>it is naturally normalized and becomes comparable.</p>
+<p>Carrying out the substitution explicitly gives,</p>
+\[
+\lambda 
+= \dfrac{m_h^{2}}{2 \left( \dfrac{\sqrt{2}}{R} \right)^{2}}
+= \dfrac{m_h^{2}}{\dfrac{4}{R^{2}}}
+\]
+<p>Therefore,</p>
+\[
+\boxed{\;\lambda = R^{2}\,\Bigl(\dfrac{m_h}{2}\Bigr)^{2}\;}
+\]
+<p>which shows that the factor \(\bigl(\dfrac{m_h}{2}\bigr)^{2}\) necessarily appears as a normalization coefficient.</p>
+<p>Here, in natural units \((\hbar = c = 1)\),</p>
+<ul class="ol-spacing">
+  <li>\( R \approx 1.13\times 10^{-18}\ \mathrm{m} \;\approx\; 5.75\times 10^{-3}\ \mathrm{GeV}^{-1} \)</li>
+  <li>\( m_h \approx 125\ \mathrm{GeV} \;\Rightarrow\; \dfrac{m_h}{2} \approx 62.5\ \mathrm{GeV} \)</li>
+</ul>
+<p>Therefore, substituting these values gives,</p>
+\[
+\lambda \;=\; (5.75\times 10^{-3}\ \mathrm{GeV}^{-1})^{2}\,\times\,(62.5\ \mathrm{GeV})^{2}
+\;\approx\; 0.129
+\]
+<p>which coincides with the Standard Model self-coupling constant \(\lambda \approx 0.129\) (dimensionless).</p>
+<p>This means that, at the squared scale of \(10^{-18}\ \mathrm{m}\), the energy corresponding to half the Higgs mass \(\dfrac{m_h}{2}\) overlaps doubly, resulting in the generation of the Higgs boson.</p>
+<h3>Non-confinement of Light and Infinite Propagation</h3>
+<p>Furthermore, the energy scale corresponding to this \( R \) (\( \approx 1.13 \times 10^{-18}\ \mathrm{m} \ \approx 5.75 \times 10^{-3}\ \mathrm{GeV}^{-1} \)) is \( \dfrac{1}{R} \approx 174\ \mathrm{GeV} \). This gives the maximum mass scale attainable by a single particle (\( m_{\max} \leq 174\ \mathrm{GeV} \)).</p>
+<p>On the other hand, from the Standard Model relation,</p>
+\[
+m_t = \dfrac{y_f \cdot v}{\sqrt{2}} \quad (0 \leq y_f \leq 1)
+\]
+<p>the Yukawa coupling is constrained to a maximum of \( y_f = 1 \), suggesting that no heavier particle can exist beyond this limit.</p>
+<p>In fact, the heaviest particle observed is the top quark, with a mass of \( m_t \approx 173\ \mathrm{GeV} \) and a Yukawa coupling of \( y_t \approx 0.99 \).<br>Thus, the prediction that no single particle heavier than the top quark can exist (\( m_{\max} \leq 174\ \mathrm{GeV},\ y_f \leq 1 \)) is consistent with observations in both the fΛ framework and the Standard Model.</p>
+<p>If we substitute the maximum energy scale of \( m_{\max} \approx 174\ \mathrm{GeV} \) from fΛ, we obtain:</p>
+\[
+y_f = \dfrac{\sqrt{2}\, m_{\max}}{v}
+\approx \dfrac{\sqrt{2} \times 174}{246}
+\approx \dfrac{246}{246}
+\approx 1.00
+\]
+<p>showing that the Yukawa coupling precisely reaches 1.</p>
+<p>(↓ Solving algebraically)</p>
+<p>From the Standard Model relation:</p>
+\[
+m_f = \dfrac{y_f \cdot v}{\sqrt{2}}
+\]
+<p>if we substitute \( m_f = \dfrac{1}{R} \), then</p>
+\[
+\dfrac{1}{R} = \dfrac{y_f \cdot v}{\sqrt{2}} \;\Rightarrow\; y_f = \dfrac{\sqrt{2}}{v \cdot R}
+\]
+<p>Since \( v = \dfrac{\sqrt{2}}{R} \),</p>
+\[
+y_f = \dfrac{\sqrt{2}}{\left(\dfrac{\sqrt{2}}{R}\right) \cdot R} = 1
+\]
+<p>Moreover, if we remove the identification \( v = \dfrac{\sqrt{2}}{R} \), i.e., the treatment that fixes \( R \approx 1.13 \times 10^{-18}\ \mathrm{m} \), we obtain the general relation:</p>
+\[
+\boxed{\dfrac{1}{R} = \dfrac{y_f \cdot v}{\sqrt{2}}}
+\]
+<p>Here,</p>
+<ul class="ol-spacing">
+  <li>if the Yukawa coupling is \( y_f = 1 \), this corresponds to the maximum mass,</li>
+  <li>whereas if the Yukawa coupling is \( y_f = 0 \), it means that the mass of the particle is also zero.</li>
+</ul>
+<p>To reproduce zero mass, substituting \( y_f = 0 \) gives,</p>
+\[
+\dfrac{1}{R} = \dfrac{0 \cdot v}{\sqrt{2}}
+\]
+\[
+\dfrac{1}{R} = 0
+\]
+<p><strong>which requires \( R \to \infty \).</strong></p>
+<p><strong>In other words, a massless particle forces \( R \) to diverge to infinity, and thus can propagate without being confined by the Higgs field. The corresponding case is the photon, namely light itself.</strong></p>
+<p>Strictly speaking, the photon has no Yukawa coupling defined, and one cannot literally substitute \( y_f = 0 \). However, since the photon does not interact with the Higgs field, it effectively follows the same consequence as the \( y_f = 0 \) case.</p>
+<p><strong>Thus, this constitutes the geometric principle by which light is unaffected by the Higgs field and can travel infinitely.</strong></p>
+<p>Furthermore, the top quark has a Yukawa coupling of \( y_t \approx 0.99 \), and in this case the corresponding \( R \) is extremely close to \( 1.13 \times 10^{-18}\ \mathrm{m} \) (\( \sqrt{2} / v \)). (Explicit calculation gives \( R \approx 1.14 \times 10^{-18}\ \mathrm{m} \)).</p>
+<p>Therefore, the motion of the top quark is constrained far more strongly than that of other particles at the \( 1.13 \times 10^{-18}\ \mathrm{m} \) scale, and it inevitably follows the fate of decaying near its production point.</p>
+<p>In fact, the lifetime of the top quark is extremely short (about \( 5 \times 10^{-25}\ \mathrm{s} \)), and it decays before hadronization by the strong interaction can occur.<br>As a result, unlike other particles that can be observed as “roaming entities,” the top quark is characterized by decaying almost immediately in the vicinity of where it was produced.</p>
+<h3>Connection Between Space and Mass</h3>
+<p>From Einstein’s relation \(E = mc^2\), for a single particle one has \(m_f = \dfrac{E_f}{c^2}\). In the same way, if we substitute \(m_f = \dfrac{1}{R}\), the spatial (confinement) energy of a single particle is defined as:</p>
+\[
+\dfrac{1}{R} = \dfrac{E_f}{c^2} \;\;\Rightarrow\;\; E_f = \dfrac{c^2}{R}
+\]
+<p>Substituting \(E_f = m_f \cdot c^2\) (\(E = mc^2\)) into this relation gives,</p>
+\[
+m_f \cdot c^2 = \dfrac{c^2}{R}
+\]
+<p>Therefore,</p>
+\[
+m_f = \dfrac{1}{R}
+\]
+<p>which returns (circulates) back to the original expression. Thus, “mass” can be regarded simply as the conversion into mass dimension of the “narrowness of the spatial confinement scale \(R\)” imposed by the Higgs field.</p>
+<p>This circulation means that the greater the mass \(m_f\), the smaller the confinement scale \(R\) in the Higgs field, which provides a particle-level explanation of spatial curvature in analogy to general relativity’s “space distortion by mass.”</p>
+<p>However, based on this circulation, the actual causal direction is more naturally understood as: the narrowness of the Higgs field confinement scale \(R\) → reduced mobility → observed externally as mass.</p>
+<div style="border:3px solid currentColor; padding:0.5em; border-radius:6px; line-height:2;">
+<p><strong>In other words, at least for a single particle,<br>it is not that “mass causes space to curve,” but rather that “being confined by the Higgs field, the degree of confinement (the shrinking of the spatial scale \(R\)) is observed as mass.”</strong></p>
+</div>
+<p><strong>Furthermore, in general relativistic terms, when light passes through a region where space is locally curved by other particles (i.e., where \(R\) is contracted), the photon, being unconfined (\(R \to \infty\)), nevertheless follows the geodesics of that curved space(-time). Thus, light, while massless, is subject to the influence of gravity.</strong></p>
+<p>(In multi-particle systems the situation becomes more complicated, so no general statement can be made. However, for considering the origin of the link between space and mass, the single-particle system is more appropriate.)</p>
+<h3>Higgs Scale and Planck Scale</h3>
+<p>For a single particle, since \( m = \dfrac{1}{R} \), if we substitute the Planck length \( \ell_P \approx 1.616 \times 10^{-35}\ \mathrm{m} \) into \( R \),</p>
+\[
+m = \frac{1}{\ell_P} \approx \frac{1}{1.616 \times 10^{-35}\ \mathrm{m}} \approx 6.19 \times 10^{34}\ \mathrm{m}^{-1}
+\]
+<p>In natural units (\( \hbar = c = 1 \)),</p>
+\[
+\mathrm{m}^{-1} \approx 1.97 \times 10^{-16}\ \mathrm{GeV}
+\]
+<p>Therefore,</p>
+\[
+m \approx 6.19 \times 10^{34} \times 1.97 \times 10^{-16}\ \mathrm{GeV} \approx 1.22 \times 10^{19}\ \mathrm{GeV}
+\]
+<p>This value coincides with the standard Planck mass:</p>
+\[
+m_P \approx 1.22 \times 10^{19}\ \mathrm{GeV}\ (\approx 2.18 \times 10^{-8}\ \mathrm{kg})
+\]
+<p>That is, by substituting the Planck length \( \ell_P \) into \( R \), the Planck mass \( m_P \) necessarily emerges.</p>
+<p>Therefore, the Higgs scale mass and the Planck mass are connected within the same framework through the spatial confinement scale \( R \) of the Higgs field.</p>
+<p>This implies that the long-standing large gap between the Higgs scale mass (\( \sim 10^2\ \mathrm{GeV} \)) and the Planck mass (\( \sim 10^{19}\ \mathrm{GeV} \))—namely, the hierarchy problem—has been given an answer.</p>
+<h2>Appendix: Implications of the Higgs boson and the \( \Lambda \)CDM curvature radius</h2>
+<h3>Vacuum Expectation Value, Higgs Boson, Z Boson, and W Boson</h3>
 <h4>The Vacuum Expectation Value (VEV) as the Onset of Breaking (\(r=R=2\))</h4>
 <p>The vacuum expectation value (VEV), <strong>\(v \approx 246\ \mathrm{GeV}\)</strong>, corresponds to a stable vacuum where spontaneous symmetry breaking has already occurred. Symmetry is preserved just before this point (higher energy region), and the breaking begins around \(v\). In a variational residual plot, <strong>\(r=R=2\)</strong> is the threshold (starting point) of breaking.</p>
 <h4>The Higgs Boson Mass as the Peak of Breaking</h4>
@@ -650,9 +771,7 @@ r_W = \frac{492\ \mathrm{GeV}}{80.4\ \mathrm{GeV}} \approx 6.12
  <img src="https://misaki-kasai.github.io/paper/higgs_r_scale.PNG" style="width:100%; height:auto;" alt="Overlay of vacuum expectation value (VEV) and electroweak boson energy scales (Higgs, W, Z) on the variational residual plot">
 </figure>
 <p>The 125 GeV Higgs mass, symbolizing spontaneous symmetry breaking, corresponds to <strong>\(r \approx 3.94\)</strong> on the residual plot, which coincides with the position of the peak of the extreme value condition at <strong>\(r \approx 4.10\)</strong>. Z and W bosons lie to the right of this peak, with residuals \(\delta(r) \approx 0.5\), consistent with physical intuition. This provides a consistent connection and deeper meaning to the observed Higgs scale values.</p>
-<div class="note">
- <p><strong>Note:</strong> \(r\) and \(R\) are dimensionless before output. The variational residual \(\delta(r)\) is also dimensionless, meaning \(r\) and \(R\) "borrow" units from observations for comparison. Thus, the residual plot is on dimensionless coordinates, invariant under physical scale changes (e.g., Higgs scale).</p></div>
-</div>
+<p><strong>Note:</strong> \(r\) and \(R\) are dimensionless before output. The variational residual \(\delta(r)\) is also dimensionless, meaning \(r\) and \(R\) "borrow" units from observations for comparison. Thus, the residual plot is on dimensionless coordinates, invariant under physical scale changes (e.g., Higgs scale).</p></div>
 <h3>Curvature Radius \(R_\Lambda\)</h3>
 <p>In this context, in the \(\Lambda\)CDM model, the curvature radius \(\displaystyle R_\Lambda\) is given in terms of the cosmological constant \(\Lambda\) by the following expression (in natural units \((\hbar = c = 1)\)):</p>
 \[
@@ -680,7 +799,6 @@ r_\Lambda = 2\sqrt{3} \approx 3.46
 <p>Thus, the curvature radius \(R_\Lambda\) naturally appears as \(r \approx 3.46\) within the region of \(\Lambda_{\mathrm{eff}}\) manifestation \((r = 2 \sim 4.10)\) in the variational residual plot of this model, and it is located near the peak of the extremum-condition violation.</p>
 <p>Therefore, the region where the scalar-field response in this model becomes strongest coincides with the transition point in the \(\Lambda\)CDM framework where the cosmological constant \(\Lambda\) starts to dominate.</p>
 <p>Accordingly, both the Higgs boson mass and the curvature radius \(R_\Lambda\) are shown to converge to the peak of the variational residual \(\delta(r)\) beyond the gap between scales.</p>
-</section>
 <section id="appendix-ccc">
   <h2>Appendix: Consistency with CCC and Aeon Transition Structure</h2>
   <p>From <a href="#section9">Section 9</a>, since the condition \(M c_0 = M c^2\) (\(E_{\text{rep}} = E_{\text{BH}}\)) is satisfied at the critical radius, it follows that \(c_0 = c^2\) at that point. Consequently, singularities are prohibited by the principle of energy conservation and the speed-of-light limit.</p>
