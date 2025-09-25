@@ -664,7 +664,7 @@ R = \frac{\sqrt{2}}{v} = \frac{\sqrt{2}}{246\,\mathrm{GeV}} \approx 5.75 \times 
 \[
 R \approx 5.75 \times 10^{-3} \times 1.97 \times 10^{-16}\,\mathrm{m} \approx 1.13 \times 10^{-18}\,\mathrm{m}
 \]<p>と定まる。この値は、LHC 実験においてヒッグス粒子が発見された電弱距離スケール ≒ \(10^{-18}\,\mathrm{m}\) と一致する。</p>
-<p>また、<a href="#section10">セクション 10 </a> より、係数比較から形式的に \( \lambda = R^{2} \) と同定済みである。ここで、\( v = \frac{\sqrt{2}}{R} \) から導いた \( R \approx 1.13\times 10^{-18}\ \mathrm{m} \) を代入すると、\(\lambda\) の次元が [\mathrm{m}^2] となるため、標準模型の無次元の自己結合定数 \(\lambda\) と直接的に比較できないが、標準模型の関係式：</p>
+<p>また、<a href="#section10">セクション 10 </a> より、係数比較から形式的に \( \lambda = R^{2} \) と同定済みである。ここで、\( v = \frac{\sqrt{2}}{R} \) から導いた \( R \approx 1.13\times 10^{-18}\ \mathrm{m} \) を代入すると、\(\lambda\) の次元が \mathrm{[m^2]} となるため、標準模型の無次元の自己結合定数 \(\lambda\) と直接的に比較できないが、標準模型の関係式：</p>
 \[
 m_h^{2} = 2\,\lambda\,v^{2} \;\Rightarrow\; \lambda = \frac{m_h^{2}}{2\,v^{2}}
 \]<p>に、導出した \( v = \frac{\sqrt{2}}{R} \) を代入することで自然に規格化され、比較可能となる。</p>
@@ -796,7 +796,7 @@ m_P \approx 1.22 \times 10^{19}\ \mathrm{GeV}\ (\approx 2.18 \times 10^{-8}\ \ma
 
   
 <<h3>基本定数としての \(\dfrac{m_h}{2}\) と宇宙論への接続</h3>
-<p><a href="#section10">セクション 10 </a> より、\(\mu^2 = 2\)（無次元）と同定済みである。ここで、標準模型の \(\mu^2\) は [\mathrm{GeV}^2] の次元を持つため直接の比較はできないが、標準模型の関係式：</p>
+<p><a href="#section10">セクション 10 </a> より、\(\mu^2 = 2\)（無次元）と同定済みである。ここで、標準模型の \(\mu^2\) は \mathrm{[GeV^2]} の次元を持つため直接の比較はできないが、標準模型の関係式：</p>
 \[
 v^2 = \frac{\mu^2}{\lambda}
 \]<p>に、先に求めた \(v = \dfrac{\sqrt{2}}{R}, \ \lambda = R^2 \left(\dfrac{m_h}{2}\right)^2\) を代入すると、自然と規格化され比較できるようになる。実際に代入すると、</p>
@@ -818,45 +818,27 @@ V_{\text{Higgs}}(\phi) = -\dfrac{1}{4} m_h^2 \phi^2 + \dfrac{m_h^2}{8 v^2} \phi^
 \[
 V_{\text{Higgs}}(\phi) = -\left(\dfrac{m_h}{2}\right)^2 \phi^2 + \dfrac{1}{4}\left(\dfrac{2}{v^2}\right)\left(\dfrac{m_h}{2}\right)^2 \phi^4
 \]<p>の形に細分化して記述できることがわかる。</p>
-<p>したがって、\(V(\phi(r))\) は特殊解の一つとして標準模型を含んでいることから、対応をより簡潔に表すための自然単位系：</p>
-\[
-\frac{m_h}{2} = 1
-\]<p>が導かれ、この自然単位系 \(\hbar = c = \tfrac{m_h}{2} = 1\) と、特殊解 \(v = \dfrac{\sqrt{2}}{R}\) を標準模型のポテンシャルに適用すれば、</p>
-\[
-V_{\text{Higgs}}(\phi) = - \phi^2 + \dfrac{1}{4} R^2 \phi^4
-\]<p>となり、\(V(\phi(r))\) と同じ表現に帰結する。このことから、\(\dfrac{m_h}{2}\) は、\(\hbar\) や \(c\) と同列に自然界を構成する基本定数の一つであることがわかる。</p>
-
-<p>（ ↓ 少し遠回りすると、）</p>
-<p>上で導いた式は：</p>
-\[
-V_{\text{Higgs}}(\phi) = -\left(\dfrac{m_h}{2}\right)^2 \phi^2 + \dfrac{1}{4}\left(\dfrac{2}{v^2}\right)\left(\dfrac{m_h}{2}\right)^2 \phi^4
-\]
 <p>ここで、</p>
 \[
 \dfrac{m_h}{2} \equiv \breve{m}
-\]<p>とおいて、\(v = \dfrac{\sqrt{2}}{R}\) を代入すると標準模型のポテンシャルは：</p>
+\]<p>とおくと：</p>
 \[
 V_{\text{Higgs}}(\phi) = -\breve{m}^2 \phi^2 + \dfrac{1}{4} R^2 \breve{m}^2 \phi^4
 \]<p>整理すると：</p>
 \[
 V_{\text{Higgs}}(\phi) = \breve{m}^2 \left( - \phi^2 + \dfrac{1}{4} R^2 \phi^4 \right)
-\]<p>となる。ここで、\(v = \dfrac{\sqrt{2}}{R}\) の同定を外し、自然単位系：</p>
+\]<p>が得られる。
+<p>したがって、\(V(\phi(r))\) は特殊解の一つとして標準模型を含んでいることから、対応をより簡潔に表すための自然単位系：</p>
 \[
-\hbar = c = \breve{m} = 1
-\]<p>を用いると、</p>
+\boxed{\breve{m} \equiv \dfrac{m_h}{2}}
+\]<p>が導かれ、この自然単位系：</p>
+\[
+\boxed{\hbar = c = \breve{m} = 1}
+\]<p>と、特殊解 \(v = \dfrac{\sqrt{2}}{R}\) を標準模型のポテンシャルに適用すれば：</p>
 \[
 V_{\text{Higgs}}(\phi) = - \phi^2 + \dfrac{1}{4} R^2 \phi^4
-\]
-<p>と一般化され、宇宙論へ適用可能となる（<a href="#section4">セクション 4 </a> へ循環する）。</p>
-
-
-
-
-
-
-  
-  
-  
+\]<p>が得られる。さらにここで、\(v = \dfrac{\sqrt{2}}{R}\) の同定を外せば普遍的なポテンシャルとして宇宙論へそのまま適用可能となる（<a href="#section4">セクション 4 </a> へ循環する）。</p>
+<p>したがって、\(\breve{m} \equiv \dfrac{m_h}{2}\) は、\(\hbar\) や \(c\) と同列に物理法則を規定する基本定数の一つであることがわかる。</p>
 <h2>Appendix:<br>Higgs ボソンと \(\Lambda\)CDM 曲率半径 \(R_\Lambda\) の帰結</h2>
 <h3>真空期待値、Higgs（ヒッグス）ボソン、Z ボソン、W ボソン</h3>
 <h4>破れ開始としての真空期待値（\(r = R = 2\)）</h4>
