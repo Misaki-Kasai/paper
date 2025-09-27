@@ -850,40 +850,34 @@ V_{\text{Higgs}}(\phi) = -\breve{m}^2 \phi^2 + \dfrac{1}{4} R_h^2 \breve{m}^2 \p
 <p>もし、このピークが変分残差のピーク位置と一致するなら、それは、真空構造が最も強く応答するエネルギースケール（変分残差 \(\delta(r)\) が最大になり、極値条件破れが最も強く現れるエネルギースケール）がヒッグスボソンの質量スケールに一致していることを意味する。</p>
 <p>したがって、変分残差プロットにおける破れピークと自発的対称性の破れの最大強度点（ピーク）の位置が一致することが期待される。</p>
 <h4>スケーリング則と一般形</h4>
-<p>検証の出発点として、本文で導出した \(v = \dfrac{\sqrt{2}}{R}\) より、ヒッグスの真空期待値 \(v\) と特性スケール \(R\) の間には反比例の関係、すなわち、</p>
+<p><a id="space-mass-connection">前述</a>の通り、単一粒子において（自然単位系 \(\hbar = c = 1\)）</p>
 \[
-v \propto \frac{1}{R}
+\frac{1}{R} = m = E
 \]
-<p>が成り立つ。また、<a href="#space-mass-connection">前述</a>の通り単一粒子において、</p>
-\[
-\frac{c^2}{R} = mc^2 = E
-\]
-<p>であるから、真空期待値 \(v\) に限らず、任意の単一粒子質量スケール \(E\) についても同様に、</p>
+<p>であるから、粒子の質量エネルギー \(E\) と特性スケール \(R\) には反比例の関係：</p>
 \[
 E \propto \frac{1}{R}
 \]
-<p>が成り立つ。</p>
-<p>ここで、本モデル（fΛ）では \(R\)（特性長）と \(r\) はともに無次元の長さスケールとして互いに対応しているため、上記二つの関係式はまとめて、</p>
+<p>が成り立つ。ここで、本モデル（fΛ）では R（特性長）と r はともに無次元の長さスケールとして互いに対応しているため、</p>
 \[
 E \propto \frac{1}{r}
-\]<p>と書き換えられる。</p>
-<p>この \(E \propto 1/r\) より、</p>
+\]
+<p>と書き換えることができる。ここで\((E_v, r_v)\) を基準点として固定すると、比例関係から</p>
 \[
-\frac{E_v}{E} = \frac{(r_v)^{-1}}{(r(E))^{-1}} = \frac{r(E)}{r_v}
-\]<p>が成り立ち、一般式として：</p>
+\frac{E_v}{E} = \frac{r(E)}{r_v}
+\]
+<p>が成り立ち、一般式として</p>
 \[
-r(E) = r_v \times \frac{E_v}{E}
-\]<p>を得る。</p>
+r(E) = r_v \cdot \frac{E_v}{E}
+\]
+<p>を得る。
 <h4>個別適用と数値計算</h4>
-<p>前述の通り、基準点として \(r_v = R = 2,\ E_v = 246\ \mathrm{GeV}\) を採用すると、\(E \propto \dfrac{1}{r}\)（つまり、\(E = \kappa \cdot \dfrac{1}{r}\)）より、比例定数 \(\kappa = r_v \times E_v = 2 \times 246\ \mathrm{GeV} = 492\ \mathrm{GeV}\) となり、</p>
+前述の通り、基準点に \(r_v = R = 2,\ E_v = 246\ \mathrm{GeV}\) を代入すると：</p>
 \[
-r(E) = \frac{492\ \mathrm{GeV}}{E}
-\]<p>と一般化できる。</p>
-<p>（ ↓ わかりやすく）<br>
-\(r(E) = r_v \times (E_v / E) \Rightarrow r(E) = (r_v \times E_v) / E\)<br>ここで、\(r_v \times E_v = 2 \times 246\ \mathrm{GeV} = 492\ \mathrm{GeV}\) だから、これを \((r_v \times E_v)\) に代入すると、</p>
-\[
-r(E) = \frac{(r_v \times E_v)}{E} = \frac{492\ \mathrm{GeV}}{E}
-\]<span style="display: block; height: 1em;"></span>
+r(E) = 2 \cdot \frac{246}{E} = \frac{492}{E}
+\]
+<p>となり、単一粒子質量スケール \(E\) と無次元スケール \(r\) の関係式が与えられる。</p>
+<span style="display: block; height: 1em;"></span>
 <p>これを用いて、計算すると、<br>個別スケール（自然単位系：\(\hbar = c = 1\)）：</p>
 <ol>
   <li><strong>ヒッグスボソン</strong>（\(E_H \approx 125\,\mathrm{GeV}\)）<br>
