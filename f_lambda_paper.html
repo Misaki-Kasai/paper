@@ -735,14 +735,57 @@ m = \frac{1}{\ell_P} \approx \frac{1}{1.616 \times 10^{-35}\ \mathrm{m}} \approx
 \]<p>In natural units (\( \hbar = c = 1 \)), \( \mathrm{m}^{-1} \approx 1.97 \times 10^{-16}\ \mathrm{GeV} \). Therefore,</p>
 \[
 m \approx 6.19 \times 10^{34} \times 1.97 \times 10^{-16}\ \mathrm{GeV} \approx 1.22 \times 10^{19}\ \mathrm{GeV}
-\]
-<p>This value coincides with the standard Planck mass:</p>
+\]<p>This value coincides with the standard Planck mass:</p>
 \[
 m_P \approx 1.22 \times 10^{19}\ \mathrm{GeV}\ (\approx 2.18 \times 10^{-8}\ \mathrm{kg})
-\]
-<p>That is, by substituting the Planck length \( \ell_P \) into \( R \), the Planck mass \( m_P \) necessarily emerges.</p>
+\]<p>That is, by substituting the Planck length \( \ell_P \) into \( R \), the Planck mass \( m_P \) necessarily emerges.</p>
 <p>Therefore, the Higgs scale mass and the Planck mass are connected within the same framework through the spatial confinement scale \( R \) of the Higgs field.</p>
 <p>This implies that the long-standing large gap between the Higgs scale mass (\( \sim 10^2\ \mathrm{GeV} \)) and the Planck mass (\( \sim 10^{19}\ \mathrm{GeV} \))—namely, the hierarchy problem—has been given an answer.</p>
+<h3>\(\dfrac{m_h}{2}\) as a Fundamental Constant</h3>
+<p>From <a href="#section10">Section 10</a>, it has already been formally identified from coefficient comparison that \(\mu^2 = 2\) (dimensionless). Here, since \(\mu^2\) in the Standard Model has the dimension \([\mathrm{GeV}^2]\), a direct comparison is not possible. However, using the Standard Model relation:</p>
+\[
+v^2 = \frac{\mu^2}{\lambda}
+\]<p>and substituting the previously obtained \(v = \dfrac{\sqrt{2}}{R}, \quad \lambda = R^2 \cdot \left(\dfrac{m_h}{2}\right)^2\), the quantities are naturally normalized and become comparable.<br>Indeed, substituting these gives,</p>
+\[
+\mu^2 = v^2 \lambda = \left(\dfrac{\sqrt{2}}{R}\right)^2 \cdot \left(R^2 \cdot \left(\dfrac{m_h}{2}\right)^2\right)
+\]<p>Therefore,</p>
+\[
+\mu^2 = 2 \cdot \left(\dfrac{m_h}{2}\right)^2 \;\; [\mathrm{GeV}^2]
+\]<p>which shows that \(\bigl(\dfrac{m_h}{2}\bigr)^{2}\) inevitably appears as a normalization factor, and furthermore coincides with the Standard Model definition \(\mu^2 = \dfrac{1}{2} m_h^2 \; [\mathrm{GeV}^2]\).<br>Substituting these (\(\mu^2, \lambda\)) back into the \(\phi^2\) and \(\phi^4\) terms of the fΛ potential \(V(\phi(r))\), we obtain:</p>
+\[
+V(\phi(r)) = -\left(\frac{m_h}{2}\right)^2 \phi^2 + \frac{1}{4} R^2 \left(\frac{m_h}{2}\right)^2 \phi^4
+\]<p>Furthermore, substituting \(R = \dfrac{\sqrt{2}}{v}\),</p>
+\[
+\boxed{V(\phi(r)) = -\left(\dfrac{m_h}{2}\right)^2 \phi^2 + \dfrac{1}{4}\left(\dfrac{\sqrt{2}}{v}\right)^2\left(\dfrac{m_h}{2}\right)^2 \phi^4}
+\]<p>is obtained, which coincides with the Standard Model potential:</p>
+\[
+V_{\text{Higgs}}(\phi) = -\dfrac{1}{4} m_h^2 \phi^2 + \dfrac{m_h^2}{8 v^2} \phi^4
+\]<p>Thus, the Standard Model potential can be expressed in the subdivided form:</p>
+\[
+\boxed{V_{\text{Higgs}}(\phi) = -\left(\dfrac{m_h}{2}\right)^2 \phi^2 + \dfrac{1}{4}\left(\dfrac{\sqrt{2}}{v}\right)^2\left(\dfrac{m_h}{2}\right)^2 \phi^4}
+\]<p>making it clear that it can indeed be written in this subdivided form.</p>
+<h4>Generalization of the Higgs Potential</h4>
+<p>The Standard Model potential, subdivided in the preceding step, is:</p>
+\[
+V_{\text{Higgs}}(\phi) = -\left(\dfrac{m_h}{2}\right)^2 \phi^2 + \dfrac{1}{4}\left(\dfrac{\sqrt{2}}{v}\right)^2\left(\dfrac{m_h}{2}\right)^2 \phi^4
+\]<p>Here,</p>
+\[
+\dfrac{m_h}{2} \equiv \breve{m}, \qquad \dfrac{\sqrt{2}}{v} \equiv R_h
+\]<p>so that:</p>
+\[
+V_{\text{Higgs}}(\phi) = -\breve{m}^2 \phi^2 + \dfrac{1}{4} R_h^2 \breve{m}^2 \phi^4
+\]<p>Rearranging this yields:</p>
+\[
+\boxed{V_{\text{Higgs}}(\phi) = \breve{m}^2 \left( - \phi^2 + \dfrac{1}{4} R_h^2 \phi^4 \right)}
+\]<p>which leads to the natural unit system:</p>
+\[
+\boxed{\breve{m} = 1}
+\]<p>that is inevitably defined to provide bidirectional consistency between mass-dimensionless and mass-dimensional formulations.<br>
+By applying this natural unit system (\(\hbar = c = \breve{m} = 1\)) and simultaneously replacing \(R_h = \tfrac{\sqrt{2}}{v} \approx 1.13 \times 10^{-18}\,\mathrm{m}\) with a more general characteristic scale \(R\), one obtains:</p>
+\[
+\boxed{V_{\text{Higgs}}(\phi) = - \phi^2 + \dfrac{1}{4} R^2 \phi^4}
+\]<p>which can be applied directly as a dimensionless universal scalar field potential to the cosmological scale (<a href="#section4">Section 4</a>).</p>
+<p>From this it follows that \(\breve{m} \equiv \dfrac{m_h}{2}\) is a fundamental constant that governs the physical laws at the Higgs scale.</p>
 <h2>Appendix: Implications of the Higgs boson and the \( \Lambda \)CDM curvature radius</h2>
 <h3>Vacuum Expectation Value, Higgs Boson, Z Boson, and W Boson</h3>
 <h4>The Vacuum Expectation Value (VEV) as the Onset of Breaking (\(r=R=2\))</h4>
