@@ -74,10 +74,11 @@ T_{\mu\nu}^{(\phi)} = \left[ \frac{1}{2} \left( \frac{d\phi}{dr} \right)^2 + V(\
 \phi(r)^2 = \left( \frac{2r}{R^2 + r^2} \right)^2 = \frac{4r^2}{(R^2 + r^2)^2}
 \]
 \[
-V(\phi(r)) = -\frac{1}{4} \cdot \phi^2 \left( 4 - R^2 \phi^2 \right) = -\frac{1}{4} \cdot \frac{4r^2}{(R^2 + r^2)^2} \left( 4 - \frac{4R^2 r^2}{(R^2 + r^2)^2} \right)
-\]
-\[
-= -\frac{4r^2}{(R^2 + r^2)^2} + \underbrace{\frac{4R^2 r^4}{(R^2 + r^2)^4}}_{\text{第 2 次寄与（補正項）}}
+\begin{aligned}
+V(\phi(r)) &= -\frac{1}{4} \cdot \phi^2 \left( 4 - R^2 \phi^2 \right) \\
+           &= -\frac{1}{4} \cdot \frac{4r^2}{(R^2 + r^2)^2} \left( 4 - \frac{4R^2 r^2}{(R^2 + r^2)^2} \right) \\
+           &= -\frac{4r^2}{(R^2 + r^2)^2} + \underbrace{\frac{4R^2 r^4}{(R^2 + r^2)^4}}_{\text{第 2 次寄与（補正項）}}
+\end{aligned}
 \]<p>ここで、第 2 項は補正項として \(\Lambda_{\text{eff}}\) の主要構造をわずかに変形するが、主項は明確に：</p>
 \[
 \boxed{V(\phi(r)) \propto -\Lambda_{\text{eff}}(r)}
@@ -202,7 +203,7 @@ v_{\mathrm{rep}}(r)^2 = v_0^2 \cdot \frac{2r^2}{R^2 + r^2}
 <p>観測に基づく代表値として \(v_0 \approx 200~\mathrm{km/s}\) を採用する。この構造は、中心部では寄与が小さく、\(r \to \infty\) で漸近的に一定値 \(v_{\mathrm{rep}} \to v_0\) に収束するため、回転速度の平坦化を自然に再現する。</p>
 <h3>(3) エネルギー合成による回転速度</h3><p>本モデルにおける重力的な回転速度と斥力的寄与は、互いに独立なエネルギー項と見なせる。したがって、観測される回転速度は次のようなエネルギーの二乗和として合成される：</p>
 \[
-\begin{aligned} v_{\text{total}}^{2}(r) &= v_{\text{grav}}^{2}(r) + v_{\text{rep}}^{2}(r) \\ &\Downarrow \\ v_{\text{total}}(r) &= \sqrt{v_{\text{grav}}^{2}(r) + v_{\text{rep}}^{2}(r)} \end{aligned}
+\begin{aligned} v_{\text{total}}^{2}(r) &= v_{\text{grav}}^{2}(r) + v_{\text{rep}}^{2}(r) \\\ &\Downarrow \\\ v_{\text{total}}(r) &= \sqrt{v_{\text{grav}}^{2}(r) + v_{\text{rep}}^{2}(r)} \end{aligned}
 \]<p>この合成構造により、</p>
 <ul>
   <li>\(v_{\text{grav}} \propto r\) が中心部で支配し、</li>
