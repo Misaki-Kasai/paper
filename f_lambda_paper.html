@@ -382,7 +382,7 @@ R \approx 5.75 \times 10^{-3} \times 1.97 \times 10^{-16}\,\mathrm{m} \approx 1.
 \[
 \boxed{\Lambda_{\mathrm{eff}}(r)=\frac{1}{R^{2}}F\!\left(\frac{r}{R}\right),
 \quad F(x)=\frac{4x^{2}}{(1+x^{2})^{2}},
-\quad x=\frac{r}{R}}
+\quad x \equiv \frac{r}{R}}
 \]<p>Substituting \(F(x)\) and expanding \(x\), we recover the original form:</p>
 \[
 \Lambda_{\mathrm{eff}}(r) = \frac{4 r^{2}}{\left(R^{2} + r^{2}\right)^{2}}
@@ -410,7 +410,7 @@ R \approx 5.75 \times 10^{-3} \times 1.97 \times 10^{-16}\,\mathrm{m} \approx 1.
 = \frac{1}{R^{2}}\cdot\frac{dF}{dx}\cdot\frac1R
 \]<p>Thus, the derivative becomes:</p>
 \[
-\boxed{\dfrac{\mathrm{d}\Lambda_{\mathrm{eff}}}{\mathrm{d}r}=\dfrac{1}{R^3}\dfrac{\mathrm{d}F}{\mathrm{d}x},\qquad \dfrac{\mathrm{d}F}{\mathrm{d}x}=\dfrac{8x(1-x^2)}{(1+x^2)^3}}
+\boxed{\dfrac{\mathrm{d}\Lambda_{\mathrm{eff}}}{\mathrm{d}r}=\dfrac{1}{R^3}\dfrac{\mathrm{d}F}{\mathrm{d}x}, \quad \dfrac{\mathrm{d}F}{\mathrm{d}x}=\dfrac{8x(1-x^2)}{(1+x^2)^3}}
 \]<p>Accordingly, the exchange current can be expressed as:</p>
 \[
 \boxed{J_r=\frac{1}{\kappa R^3}\frac{\mathrm{d}F}{\mathrm{d}x}}
@@ -442,11 +442,7 @@ J_r=\frac{1}{\kappa R^3}\frac{8x(1-x^2)}{(1+x^2)^3},\qquad x=\frac{r}{R}
 \tilde J(x) = \frac{\mathrm{d}F}{\mathrm{d}x} = \frac{8x(1-x^2)}{(1+x^2)^3}
 \]<p>Therefore, the second derivative is given by:</p>
 \[
-\frac{\mathrm{d}^2F}{\mathrm{d}x^2} = \frac{\mathrm{d}}{\mathrm{d}x}
-\left[
-\frac{8x(1-x^2)}{(1+x^2)^3}
-\right] =
-\frac{8(3x^4 - 8x^2 + 1)}{(1+x^2)^4}
+\frac{\mathrm{d}^2F}{\mathrm{d}x^2} = \frac{\mathrm{d}}{\mathrm{d}x}\left[\frac{8x(1-x^2)}{(1+x^2)^3}\right] = \frac{8(3x^4 - 8x^2 + 1)}{(1+x^2)^4}
 \]<p>From the extremum condition \(\dfrac{\mathrm{d}^2F}{\mathrm{d}x^2}=0\), we obtain:</p>
 \[
 \boxed{3x^4-8x^2+1=0},\qquad x=\frac{r}{R},\ r \ge 0,\ R > 0.
@@ -523,14 +519,7 @@ J_r=\frac{1}{\kappa}\,\frac{\mathrm{d}}{\mathrm{d}r}\!\left[\frac{4r^2}{(R^2+r^2
 </ul>
 <p>Since the magnitude of the exchange current scales as \(|J_r| \sim \dfrac{1}{\kappa R^3}\), the ratio of the exchange strength between the Higgs scale and the cosmological scale is given by:</p>
 \[
-\frac{|J_r|_{\mathrm{Higgs}}}{|J_r|_{\mathrm{cosmo}}}
-=
-\left(
-\frac{R_{\mathrm{cosmo}}}{R_{\mathrm{Higgs}}}
-\right)^3
-\sim
-\left(\frac{10^{26}}{10^{-18}}\right)^3
-\sim 10^{132}
+\frac{|J_r|_{\mathrm{Higgs}}}{|J_r|_{\mathrm{cosmo}}} = \left(\frac{R_{\mathrm{cosmo}}}{R_{\mathrm{Higgs}}}\right)^3 \sim \left(\frac{10^{26}}{10^{-18}}\right)^3 \sim 10^{132}
 \]<p>This implies that, at the Higgs scale, the exchange current is about \(10^{132}\) times stronger than at the cosmological scale.</p>
 <ul class="ol-spacing">
   <li><strong>Local regime</strong>: Since \(\nabla^\mu T^{(\mathrm{m})}_{\mu\nu}=J_\nu\neq0\), energy exchange occurs between vacuum and matter. This effect is particularly significant at the Higgs scale, whereas on cosmological scales the exchange current is nearly zero. Because \(\int_0^\infty J_r\,\mathrm{d}r=0\), the radial exchange currents locally cancel out at each characteristic scale.</li>
@@ -560,13 +549,10 @@ G_{\mu\nu} = \kappa \Big( T^{(\mathrm{m})}_{\mu\nu} + T^{(\Lambda)}_{\mu\nu} \Bi
 \quad x=\frac{r}{R}.
 \]<p>As shown earlier, the derivative is expressed as:</p>
 \[
-\boxed{\frac{d\Lambda_{\mathrm{eff}}}{dr} = \frac{1}{R^{3}}\frac{dF}{dx},
-\qquad
-\frac{dF}{dx}=\frac{8x(1-x^{2})}{(1+x^{2})^{3}}}
+\boxed{\frac{d\Lambda_{\mathrm{eff}}}{dr} = \frac{1}{R^{3}}\frac{dF}{dx}, \quad \frac{dF}{dx}=\frac{8x(1-x^{2})}{(1+x^{2})^{3}}}
 \]<p>Within the range \(x = \mathcal{O}(1)\), the derivative \(\dfrac{dF}{dx}\) also remains of order \(\mathcal{O}(1)\) (even at its extrema, \(|dF/dx|_{\mathrm{max}} \approx 1.739\)). Therefore, the spatial gradient of \(\Lambda_{\mathrm{eff}}\) is characterized by:</p>
 \[
-\left|\frac{d\Lambda_{\mathrm{eff}}}{dr}\right|
-\sim \frac{1}{R^{3}}\times\mathcal{O}(1)
+\left|\frac{d\Lambda_{\mathrm{eff}}}{dr}\right| \sim \frac{1}{R^{3}}\times\mathcal{O}(1)
 \]<p>Thus, for a representative cosmological scale, we obtain the following order estimate:</p>
 \[
 \boxed{R \sim 10^{26}\,\mathrm{m} \ \Rightarrow\ \left|\dfrac{d\Lambda_{\mathrm{eff}}}{dr}\right| \sim 10^{-78}\,\mathrm{m^{-3}}}
