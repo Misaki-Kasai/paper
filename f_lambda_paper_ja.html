@@ -935,7 +935,7 @@ r(E) = 2 \cdot \frac{246\,\mathrm{GeV}}{E} = \frac{492\,\mathrm{GeV}}{E}
 <p>したがって、ダークマター粒子もダークエネルギーの実体も決して発見されず、それらは全て幾何学的な斥力応答の表れとして理解されるはずである。</p>
 </div>
 </section>
-<h2>Appendix:<br>基本プランク単位とその物理的実在性</h2>
+<h2 id="planck-units">Appendix:<br>基本プランク単位とその物理的実在性</h2>
 <p><a href="#section9">セクション 9 </a>で導出された斥力加速度は：</p>
 \[
 a(r) = \dfrac{2 c_{0} r}{R^{2} + r^{2}} \quad
@@ -1042,6 +1042,53 @@ v_{\max} = \sqrt{\sqrt{\dfrac{c^{7}}{\kappa \hbar G}} \cdot \sqrt{\dfrac{\kappa 
 </ul>
 <p><strong>つまり、\(\kappa\) は「量子 ⇄ 古典のバランスを支配する調整パラメータ」として機能させることができる。</strong></p>
 <p><strong>ただし、\(\kappa = 1\) のときにのみ、全ての物理限界が補正因子なしに一致するため、理論的には \(\kappa = 1\) が最も自然である。</strong></p>
+<h2>コンプトン波長 \(\lambda\) の幾何学的本質とその一般化</h2>
+<p><a href="#space-mass-connection">前述</a>の通り：</p>
+\[
+m = \frac{1}{R} \quad (\text{自然単位系},\; \hbar = c = 1)
+\]<p>すなわち：</p>
+\[
+\frac{c^{2}}{R} = mc^{2} = E \quad (\text{自然単位系},\; \hbar = c = 1)
+\]<p>これを SI 単位系で表すと、質量と長さスケールの単なる単位換算の関係から：</p>
+\[
+m \times \frac{\hbar}{c} = \frac{1}{R} \quad \Longleftrightarrow \quad R \times \frac{\hbar}{c} = \frac{1}{m}
+\]<p>すなわち：</p>
+\[
+R = \frac{\hbar}{mc}
+\]<p>これを先ほどの式に代入すると：</p>
+\[
+\frac{c^{2}}{\tfrac{c}{\hbar}\cdot \tfrac{1}{R}} = mc^{2} = E
+\]<p>したがって：</p>
+\[
+\boxed{E = mc^{2} = \frac{\hbar c}{R}} \quad (\text{SI 単位系})
+\]<p>また、\(R = \tfrac{\hbar}{mc}\) はコンプトン波長：</p>
+\[
+\lambda_{\mathrm{C}} = \frac{\hbar}{mc}
+\]<p>と一致するため、単一粒子において \(R\) と \(\lambda_{\mathrm{C}}\) は同一視できる。</p>
+<p>ただし、コンプトン波長 \(\lambda_C\) は本来「質量をもった粒子」に付随する固有の波長であり、真空期待値 \(v\) や宇宙論のような場のスケールに直接適用することはできない。<br><strong>したがって、\(R\) はコンプトン波長の概念をヒッグス場の束縛スケール、さらに言えばより普遍的な特性スケールへと拡張したものとして理解できる。</strong></p
+<p>ここで、<a href="#planck-units">前述</a>の関係式：</p>
+\[
+a_{\max} \cdot R = c^2
+\]<p>に \(R = \hbar/(mc)\) を代入すると：</p>
+\[
+a_{\max} \cdot \frac{\hbar}{mc} = c^2
+\]<p>したがって：</p>
+\[
+\boxed{a_{\max} = \frac{mc^3}{\hbar}}
+\]<p>さらに、プランク質量：</p>
+\[
+m_{\mathrm{P}} = \sqrt{\frac{\hbar c}{G}}
+\]<p>を代入すると：</p>
+\[
+a_{\max} = \frac{c^3}{\hbar} \cdot \sqrt{\frac{\hbar c}{G}} = \sqrt{\frac{c^7}{\hbar G}}
+\]<p>となり、プランク加速度：</p>
+\[
+a_{\mathrm{P}} = \sqrt{\frac{c^7}{\hbar G}}
+\]<p>が再現される。</p>
+<p><strong>すなわち、コンプトン波長 \(\lambda_C\) は、特性スケール \(R\) を単一粒子に適用した際に現れる狭義の表現であり、ヒッグス場の束縛スケール \(R_f\) そのものに他ならない。</strong>したがって：</p>
+\[
+\boxed{\, R_{f} \;\equiv\; \lambda_{\mathrm{C}} \;=\; \frac{\hbar}{mc} \,}
+\]
 <footer>
   <p>© 2025 Misaki Kasai. <br>This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
 </footer>
