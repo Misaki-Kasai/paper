@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="fΛ理論 — Repulsive Gravity Theory Based on Scalar Fields and the Effective Λ (Lambda): This page contains the full HTML-rendered version of the fΛ theory (fLambda theory), originally written in LaTeX.">
+  <title>fΛ理論 — 斥力応答型重力 - 2025年5月30日</title>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="スカラー場と有効 Λ 項に基づく斥力応答型重力理論">
+  <meta name="twitter:description" content="A gravity theory unifying cosmic acceleration, rotation curves, and singularity avoidance.">
+  <meta name="twitter:url" content="https://misaki-kasai.github.io/paper/f_lambda_paper.html">
+  <meta name="twitter:creator" content="@f_Lambda_paper">
+  <meta name="twitter:image" content="https://misaki-kasai.github.io/paper/f_lambda_tw_card_w.png">
+  <link rel="icon" type="image/svg+xml" href="https://misaki-kasai.github.io/paper/f_lambda_b.svg">
+  <link rel="icon" type="image/png" href="https://misaki-kasai.github.io/paper/ggl_favicon_528.png" sizes="528x528">
+  <link rel="apple-touch-icon" href="https://misaki-kasai.github.io/paper/f_lambda_tw_card.png">
+   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+   <script>MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},options:{renderActions:{addTexCopy:[200,(doc)=>{for(const m of doc.math){const r=m.typesetRoot;if(!r.querySelector('.mjx-tex')){const t=document.createElement('span');t.className='mjx-tex';t.setAttribute('aria-hidden','true');t.setAttribute('role','presentation');t.textContent=m.math;t.style.position='absolute';t.style.left='-9999px';r.appendChild(t);}}},()=>{}]}}};</script><script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <style>body{background:#000;color:#E8D28D;font-family:"Times New Roman", "Noto Serif JP", Times, serif;line-height:1.6}a,h1,h2,h3,h4,h5,h6,strong,section,p,li,td,th,footer{color:#E8D28D}a{text-decoration:underline}a:hover{color:#FFA500}table{border-color:#E8D28D}table th,table td{border:1px solid #E8D28D}</style>
+  <style>.logo-box{height:1em;vertical-align:middle;margin-left:0.3em;display:inline-block;border:1.5px solid #E8D28D;padding:0.15em;border-radius:0.2em;background-color:#000}</style>
+  <style>body{font-size:14px;}</style>
+  <style>.ol-spacing li{margin-bottom:1em;}</style>
+  <style>.data-table{border:1px solid #E8D28D;border-collapse:collapse;width:100%;margin-bottom:1em}.data-table th,.data-table td{border:1px solid #E8D28D;padding:6px;text-align:left}.data-table caption{caption-side:bottom;font-size:0.9em;text-align:left;margin-top:0.3em;}</style>
+</head>
+<body>
+  <h1 style="font-size:1.7em; text-align:center;">スカラー場と有効 Λ 項に基づく<br>斥力応答型重力理論<img src="https://misaki-kasai.github.io/paper/f_lambda_b.svg" alt="fLambda logo" class="logo-box"></h1>
+  <strong style="font-size:1.3em; display:block; text-align:center;">Repulsive Gravity Theory<br>Based on Scalar Fields and the Effective Λ</strong>
+  <p style="text-align:center;"><strong>Misaki Kasai</strong></p>
+  <p style="text-align:center;"><strong>2025 年 5 月 30 日</strong></p>
+  <p style="text-align:center;"><strong>このページでは、もともと LaTeX で書かれた論文の<br>HTML 版（日本語原文）を提供します。</strong></p>
+Related Links:<br>
+<span style="display:inline-block;padding:0.0em 0.0em;border:1px solid #E8D28D;border-radius:0.3em;">📄</span> <a href="https://doi.org/10.5281/zenodo.15612467" target="_blank">Zenodo (DOI, PDF version)</a><br>
+<span style="display:inline-block;padding:0.0em 0.0em;border:1px solid #E8D28D;border-radius:0.3em;">📘</span> <a href="https://misaki-kasai.github.io/paper/f_Lambda_commentary_ja.pdf" target="_blank">日本語 PDF</a><br>
+<span style="display:inline-block;padding:0.0em 0.0em;border:1px solid #E8D28D;border-radius:0.3em;">🔗</span> <a href="https://misaki-kasai.github.io/paper/f_lambda_paper.html" target="_blank">English HTML version</a><br>
+<span style="display:inline-block;padding:0.0em 0.0em;border:1px solid #E8D28D;border-radius:0.3em;">📝</span> <a href="https://note.com/f_lambda_paper/n/nfc7dc4df9956" target="_blank">note: 解説ページ（AI クロール用）</a><br>
+<span style="display:inline-block;padding:0.0em 0.0em;border:1px solid #E8D28D;border-radius:0.3em;">🐦‍⬛</span> <a href="https://twitter.com/f_Lambda_paper" target="_blank">X (Twitter): Updates</a><br>
+<span style="display:inline-block;padding:0.0em 0.0em;border:1px solid #E8D28D;border-radius:0.3em;">👤</span> <a href="https://scholar.google.com/citations?user=9kB1rbkAAAAJ&hl=ja" target="_blank">Google Scholar: Misaki Kasai</a><br>
+<span style="display:inline-block;padding:0.0em 0.0em;border:1px solid #E8D28D;border-radius:0.3em;">🧬</span> <a href="https://orcid.org/0009-0005-7404-5257" target="_blank">ORCID: 0009-0005-7404-5257</a><br>
+<span style="display:inline-block;padding:0.0em 0.0em;border:1px solid #E8D28D;border-radius:0.3em;">💾</span> <a href="https://zenodo.org/record/15612467/files/fΛ_theory_v2.pdf" target="_blank">Direct PDF download: Zenodo</a>
+<section style="padding: 1em; border: 2px dashed #E8D28D; margin: 2em 0;">
+<h2 style="text-align: center;">変分セクションに関する<br>構造的補足</h2>
+<p>本モデルは、厳密解ではなく準解 \(\phi(r)\) を意図的に採用している。その理由は、厳密解を課すことで特性スケール \(r = R\) の物理的意義が消失し、空間のスケール応答的構造という本質的な挙動を再現できなくなるためである。</p><p>仮に厳密解を強制すると、\(r = R\) というパラメータは座標変換や対称性による縮退によって吸収されてしまう可能性が高い。その場合、\(R\) は物理的に意味を持つスケールとしての地位を失い、冗長なパラメータとなってしまうことで、スケール依存の意味ある構造は記述されなくなる。</p><p>準解であることは弱点ではなく、本モデルの構造的基盤である。それこそが、スケール依存的な空間力学を実現する鍵である。</p><p>この準解の妥当性を検証するために、変分残差解析を実施した。その結果、極値条件の破れは局所的かつ制御されており、物理的に意味のあるものであることが確認された。この挙動は Fig. 1 に視覚的に示されている。</p><p>準解の使用を、欠陥や妥協と誤解しないようにしてください。これは欠点ではなく、理論の核であり、本構造の根幹であるからです。</p><p>重要なのは、この準解が近似のために採用されたのではなく、有効宇宙項 \(\Lambda_{\text{eff}}(r)\) を導出するうえでの構造的役割のために導入されたという点である。</p><p>なお、このことは、宇宙全体の構造や場の基本方程式そのものが準解であることを意味するものではない。本研究の目的は、\(\Lambda_{\text{eff}}(r)\) のような準構造的な項が、その他の部分が厳密解で記述される宇宙において、機能的に作用し得るかを検証することにある。</p>
+<p>また、本論文における「対数型」という用語は、厳密な \(\log\) 関数式そのものを意味するのではなく、関数の形状が対数的であるという定性的特徴を指している。</p><p>この準解構造は、宇宙論スケール（\(\sim 10^{26}\,\text{m}\)）からヒッグススケール（\(\sim 10^{-18}\,\text{m}\)）までを一貫して扱うために最適化されている。</p><p>また、本理論における保存則や、その他詳細な議論については <a href="#appendix">Appendix（付録）</a>を参照。</p>
+</section>
+<hr />
+<h2>Abstract</h2><p>本研究では、スカラー場に起因する空間のスケール応答的な幾何学的斥力効果を対数型のポテンシャル構造として表現し、これに基づくスケール依存型の有効 \(\Lambda\) 項 \(\Lambda_{\text{eff}}\) を導出することで、Einstein 方程式の枠組みを重力理論から、斥力応答を基盤とした斥力応答型重力理論へと拡張する方法を提示する。</p><p>\(\Lambda_{\text{eff}}\) の効果は空間スケールに依存し、特に銀河スケールおよびブラックホール内部における重力の構造的性質そのものを再定義する役割を果たす可能性がある。</p><p>銀河回転曲線の外縁部にみられる平坦化と、ブラックホール特異点の回避という二つの観測的・理論的問題に対して、共通のスカラー場項 \(\Lambda_{\text{eff}}\) による統一的かつ定量的な解決を提示する。</p>
+<h2>銀河回転曲線問題と特異点問題の概観</h2><p>近年の観測により、銀河の外縁部における恒星の回転速度が、重力理論（一般相対性理論）と通常のバリオン物質量から期待される値を大きく上回ることが明らかとなった。これはいわゆる「銀河回転曲線問題」であり、ダークマターの存在を前提としない限り、既存の重力理論では説明が困難であるとされてきた <span style="color: blue;">[Rubin, V. C., & Ford, W. K. (1980). <em>Rotation of the Andromeda Nebula from a Spectroscopic Survey of Emission Regions</em>. The Astrophysical Journal]; [Sofue, Y., & Rubin, V. (2001). <em>Rotation Curves of Spiral Galaxies</em>. Annual Review of Astronomy and Astrophysics]</span>。</p>
+<p>一方、ブラックホール内部における重力崩壊は、古典的には \(r \to 0\) 極限で特異点（無限の曲率）を生じることが知られており、これもまた一般相対性理論の構造的限界を示唆していると考えられている <span style="color: blue;">[Penrose, R. (1965). <em>Gravitational Collapse and Space-Time Singularities</em>. Physical Review Letters]</span>。この「特異点問題」は、重力理論において量子補正または構造的修正の必要性を強く示唆する。</p>
+<h2>\(\Lambda\)CDM の成功と限界</h2><p>現代宇宙論の標準モデルである \(\Lambda\)CDM モデルは、宇宙マイクロ波背景（CMB）、バリオン音響振動（BAO）、Ia 型超新星などの観測と高精度に整合する成功を収めている <span style="color: blue;">[Planck Collaboration (2020). <em>Planck 2018 Results. VI. Cosmological Parameters</em>. Astronomy & Astrophysics]</span>。<br>しかしその一方で、宇宙定数 \(\Lambda\) は静的・一様な定数として定義されており、空間構造やスケール依存性を含まないという制約をもつ。また、\(\Lambda\)CDM はダークマターやダークエネルギーといった「見えない成分」に依存しているが、これらの正体は未解明である。これらは理論的には補助項として振る舞い、物理的実在性の根拠が希薄であるという批判も根強い <span style="color: blue;">[Padmanabhan, T. (2003). <em>Cosmological Constant – the Weight of the Vacuum</em>. Physics Reports]</span>。</p>
+<h2>動機：「斥力を主語」とする宇宙論的構造の構築</h2>
+<p>本研究では、「重力＝引力（空間の歪み）」という視点を基本とする一般相対性理論とは対照的に、斥力応答を主語とする重力理論の構築を試みる。具体的には、スカラー場に由来する有効宇宙項 \(\Lambda_{\text{eff}}\) を導入し、それが空間スケールに依存する斥力的ポテンシャルとして働くことで、銀河スケールからブラックホール特異点スケールまでの重力構造を統一的に説明する枠組みを提案する。</p>
+<p>なお、本研究は、Einstein 方程式における宇宙定数 \(\Lambda\) を定数のまま保持する立場を採る。ただし、その効果は対数型ポテンシャルを介してスケール依存的に現れ、\(\Lambda_{\text{eff}}(r)\) という形で観測可能な重力構造に反映される。このようにして、\(\Lambda\)CDM の哲学的背景を保ちつつ、その構造的限界を乗り越える重力理論を構築することを目的とする。</p>
+<h2 id="section4">有効 \(\Lambda\) 項 \(\Lambda_{\text{eff}}\) の構造とポテンシャルの導出</h2><p>このセクションでは、有効 \(\Lambda\) 項</p>
+\[
+\Lambda_{\text{eff}}(r) = \frac{4r^2}{(R^2 + r^2)^2}
+\]<p>が、球対称かつ静的なスカラー場に対して変分原理を適用することで構造的に導出されることを示す。</p><p>ここで、 \(R\) は空間スケールにおける特性長（characteristic scale）であり、有効項 \(\Lambda_{\text{eff}}(r)\) が最大値を取る位置に対応する物理的パラメータである。</p><p>本研究で扱うスカラー場 \(\phi\) は、厳密にはローレンツ不変なラグランジアン密度に基づいて構成される。すなわち、その一般形は：</p>
+\[
+\mathcal{L}_\phi = -\frac{1}{2} g^{\mu\nu} \partial_\mu \phi \, \partial_\nu \phi - V(\phi),
+\]<p>であるが、ここでは球対称かつ静的な解 \(\phi = \phi(r)\) に制限し、以下のように簡約化して扱う：</p>
+\[
+\mathcal{L}_\phi = -\frac{1}{2} \left( \frac{d\phi}{dr} \right)^2 - V(\phi).
+\]<p>このような簡約は、解の対称性に基づいた有効理論として正当化されるものであり、元のラグランジアンが持つローレンツ対称性を破るものではない。このとき、対応するエネルギー運動量テンソルの等方的な構造は次のように与えられる：</p>
+\[
+T_{\mu\nu}^{(\phi)} = \left[ \frac{1}{2} \left( \frac{d\phi}{dr} \right)^2 + V(\phi) \right] g_{\mu\nu}.
+\]<p>ここで、空間スケールに依存する有効 \(\Lambda\) 項として以下を仮定する：</p>
+\[
+\Lambda_{\text{eff}}(r) = \frac{4r^2}{(R^2 + r^2)^2}
+\]<p>この構造を実現する自然なスカラー場として、以下を選択する：</p>
+\[
+\phi(r) = \frac{2r}{R^2 + r^2}
+\]<p>このとき、\(\phi(r)\) を用いたポテンシャル \(V(\phi(r))\) は以下のように展開される：</p>
+\[
+\phi(r)^2 = \left( \frac{2r}{R^2 + r^2} \right)^2 = \frac{4r^2}{(R^2 + r^2)^2}
+\]
+\[
+\begin{aligned}
+V(\phi(r)) &= -\frac{1}{4} \cdot \phi^2 \left( 4 - R^2 \phi^2 \right) \\[1.0em]
+           &= -\frac{1}{4} \cdot \frac{4r^2}{(R^2 + r^2)^2} \left( 4 - \frac{4R^2 r^2}{(R^2 + r^2)^2} \right) \\[1.0em]
+           &= -\frac{4r^2}{(R^2 + r^2)^2} + \underbrace{\frac{4R^2 r^4}{(R^2 + r^2)^4}}_{\text{第 2 次寄与（補正項）}}
+\end{aligned}
+\]<p>ここで、第 2 項は補正項として \(\Lambda_{\text{eff}}\) の主要構造をわずかに変形するが、主項は明確に：</p>
+\[
+\boxed{V(\phi(r)) \propto -\Lambda_{\text{eff}}(r)}
+\]<p>と一致する。</p>
+<p>特に \(r \ll R\) では第 2 項は主項に比べて十分に小さく、また \(r \gg R\) においても：</p>
+\[
+\frac{r^2}{(R^2 + r^2)^2} \approx \frac{1}{r^2}, \quad \frac{r^4}{(R^2 + r^2)^4} \approx \frac{1}{r^4}
+\]<p>より、補正項の寄与は急速に減衰する。さらに中間スケールにあたる \(r = R\) においても、</p>
+\[
+\frac{4R^2}{(2R^2)^2} = \frac{1}{R^2}, \quad \frac{4R^2 R^4}{(2R^2)^4} = \frac{1}{4R^2}
+\]<p>となり、補正項は主項の \(1/4\) にとどまる。したがって、全空間にわたって主項が支配的であり、\(\Lambda_{\text{eff}}(r)\) はスカラー場ポテンシャル \(V(\phi)\) から直接かつ自然に導出されることが示される。</p>
+<h2>スカラー場に対する変分評価</h2>
+<p>本セクションでは、<a href="#section4">セクション 4 </a>で構成した有効宇宙項 \(\Lambda_{\text{eff}}(r)\) から導かれるスカラー場 \(\phi(r)\) のラグランジアンが、変分原理（オイラー＝ラグランジュ方程式）に基づく極値条件を満たすかどうかを評価する。</p>
+<p>ここで、我々は特に、空間スケール \(r = R\) の近傍において極値条件が局所的に破れ始め、その破れが \(r \gg R\) の領域で急速に減衰することを期待する。</p>
+<p>このような挙動は、採用された \(\phi(r)\) の構造から自然に導かれるものであり、また宇宙の加速膨張が極値条件の局所的な破れと密接に関係している可能性を示唆するためである。</p>
+<p>なお、ここで議論される極値条件の破れは、保存則 \(\nabla^\mu T_{\mu\nu} = 0\) の破れを直接的に意味するものではないことに注意されたい。</p>
+<h3>オイラー＝ラグランジュ方程式と変分残差</h3>
+<p><a href="#section4">セクション 4 </a>において、スカラーポテンシャル \(V(\phi)\) の構造に基づき、有効宇宙定数の空間依存性を再現するための自然な候補として、以下のスカラー場が採用された：</p>
+\[
+\phi(r) = \frac{2r}{R^2 + r^2}
+\]<p>これに対応するポテンシャルは次のような形となる：</p>
+\[
+V(\phi) = -\frac{1}{4} \phi^2 \left( 4 - R^2 \phi^2 \right)
+\]<p>球対称性を仮定したもとでのラグランジアン密度は以下の通りである：</p>
+\[
+\mathcal{L}_\phi = -\frac{1}{2} \left( \frac{d\phi}{dr} \right)^2 - V(\phi)
+= -\frac{1}{2} \left( \frac{d\phi}{dr} \right)^2 + \frac{1}{4} \phi^2 \left( 4 - R^2 \phi^2 \right)
+\]<p>このラグランジアンから導出されるオイラー＝ラグランジュ方程式は以下のように与えられる：</p>
+\[
+\frac{d^2\phi}{dr^2} = R^2 \phi^3 - 2\phi
+\]<p>ここでは、仮定されたスカラー場 \(\phi(r)\) が極値条件をどの程度満たしているかを評価するために、以下の境界条件のもとで解析を行う：</p>
+\[
+\phi(0) = 0, \quad \phi'(0) = \frac{2}{R^2}
+\]<p>ここで、特性スケール \(R = 2\) は、スカラー場構造および有効 \(\Lambda\) 項の挙動が最も明瞭に現れる値であり、解析結果および数値グラフの可視性を高める目的も兼ねて選ばれる。</p>
+<p>この条件のもとで、極値条件からのずれ（変分残差）は次のように定義される：</p>
+\[
+\delta(r) \equiv \frac{d^2\phi}{dr^2} - \left( R^2 \phi^3 - 2\phi \right)
+\]<p>仮定されたスカラー場 \(\phi(r)\) をこの式に代入することで、変分残差は明示的に次の形で与えられる：</p>
+\[
+\delta(r) = \left[\frac{4r(r^2 - 3R^2)}{(R^2 + r^2)^3}\right]
+-
+\left[\frac{8R^2 r^3}{(R^2 + r^2)^3} - \frac{4r}{R^2 + r^2}\right]
+\]<p>この式に基づき、スカラー場 \(\phi(r)\) に対する変分残差 \(\delta(r)\) を数値的に評価した。その結果得られたプロットを Fig. 1 に示す。</p>
+  <figure id="fig1" style="max-width:600px; margin:0 auto;">
+  <img src="https://misaki-kasai.github.io/paper/vari_resi.PNG" 
+       alt="Variational residual \(\delta(r)\) for the adopted scalar field \(\phi(r)\)." 
+       style="width:100%; height:auto;">
+  <figcaption>Fig. 1: 採用されたスカラー場 \(\phi(r)\) に対する変分残差 \(\delta(r)\) の挙動。</figcaption>
+  </figure><p>Fig. 1 から、変分残差 \(\delta(r)\) は空間スケール \(r = R\) において局所的なずれを生じ、その直後 \(r &gt; R\) にピークを迎え、以降急速に減衰していく様子が確認される。</p>
+<p>この結果は、スカラー場が特に \(r = R\) を認識し、それに応答していること、また極値条件の破れが局所的かつ非瞬間的であることを示している。このような挙動は、持続的な宇宙加速の性質とも整合的である。</p>
+<p>解析の範囲は \(r \in [0.0001, 100]\) に設定した。この区間内における変分残差 \(\delta(r)\) の最大値は以下の通りである：</p>
+\[
+\delta_{\text{max}} \approx 0.552 \quad \text{at} \quad r \approx 4.10
+\]<p>この残差の有意性を評価するため、極値条件に対する相対誤差を次のように定義する：</p>
+\[
+\epsilon_\phi(r) \equiv \left| \frac{\delta(r)}{\phi(r)} \right|
+\]<p>残差が最大となる点（\(r \approx 4.10\)）において、スカラー場の値は \(\phi(r) \approx 0.394\) であり、したがって：</p>
+\[
+\epsilon_\phi \approx 1.40
+\]<p>同様に、特性スケール \(r = R = 2.00\) における相対誤差は以下の通りである：</p>
+\[
+\epsilon_\phi(R) = \left| \frac{\delta(R)}{\phi(R)} \right| = 0.750 \quad (\delta(R) = 0.375,\ \phi(R) = 0.500)
+\]<p>特性スケール \(r = R\) 付近において、相対誤差は極値条件の局所的な破れと見なせる範囲に収まっており、このときの値 \(\epsilon_\phi(R) = 0.750\) は、本関数が準解として妥当であることを裏付けている。</p>
+<p>一方で、変分残差 \(\delta(r)\) は \(r \approx 4.10\) 付近で最大値を取り、このとき相対誤差はおよそ \(\epsilon_\phi \approx 1.40\) に達する。しかし、このスケールにおいては \(\phi(r)\) 自身が減衰して小さくなるため、分母が小さくなることで相対誤差が見かけ上過大評価される。</p>
+<p>したがって、準解の妥当性を評価するうえでは、主に \(r = R\) 付近に注目するのがより適切である。</p>
+<p>以上の評価に基づき、本研究で採用されたスカラー場 \(\phi(r)\) は厳密解ではないものの、変分原理に著しく反することのない、物理的に許容可能な準解であると見なすことができる。</p>
+<p>本論文では、準解 \(\phi(r)\) から構成された有効宇宙項 \(\Lambda_{\text{eff}}(r)\) に基づく構造全体を、<strong>\(\Lambda_{\text{eff}}\) モデル</strong>（または <strong>fΛ理論</strong>）として以後参照する。</p>
+<h2 id="section6">\(\Lambda_{\text{eff}}\) の最大値と宇宙定数との整合性</h2>
+<p>導出したスケール依存型の有効 \(\Lambda\) 項（\(\Lambda_{\text{eff}}\)）：</p>
+\[
+\Lambda_{\text{eff}}(r) = \frac{4r^2}{(R^2 + r^2)^2}
+\]<p>は、\(r = R\) において最大値をとり、その値は次のように与えられる：</p>
+\[
+\Lambda_{\text{eff}}^{\text{max}} = \left. \Lambda_{\text{eff}}(r) \right|_{r=R} = \frac{4R^2}{(R^2 + R^2)^2} = \frac{4R^2}{4R^4} = \frac{1}{R^2}
+\]<p>ここで、もしこの最大値が観測されている宇宙定数：</p>
+\[
+\Lambda \approx 10^{-52}\,\mathrm{m}^{-2}
+\]<p>に対応するとすれば、</p>
+\[
+R = \frac{1}{\sqrt{\Lambda}} \approx 10^{26}\,\mathrm{m}
+\]<p>となり、これは現在の宇宙の可視半径スケール（約 \(10^{26}\,\mathrm{m}\)、すなわち約 100 億光年）と一致する。</p>
+<p>このことは、本研究で導出されたスカラー場由来の有効 \(\Lambda\) 項が、観測的宇宙定数と自然に整合する構造を持つことを意味しており、\(\Lambda_{\text{eff}}\) が宇宙論的斥力の実体として有力な候補であることを示している。</p>
+<h2 id="section7">帰結と拡張 Einstein 方程式</h2><p>有効エネルギー密度に対応する修正 Einstein 方程式は以下のように記述される：</p>
+\[
+\Lambda_{\text{eff}}(r)\, g_{\mu\nu} + G_{\mu\nu} = \kappa\, T_{\mu\nu}^{(\text{matter})}
+\]<p>または、\(\Lambda_{\text{eff}}\) を右辺に移項した形式：</p>
+\[
+G_{\mu\nu} = \kappa\, T_{\mu\nu}^{(\text{matter})} - \Lambda_{\text{eff}}(r)\, g_{\mu\nu}
+\]<p>局所スケール（たとえば太陽系スケール）では、</p>
+\[
+\frac{\Lambda_{\text{eff}}(r)}{\kappa\, T_{\mu\nu}} \ll 1
+\]<p>となり、従来の Einstein 方程式へ自然に帰結する。よって、水星の近日点移動や重力赤方偏移といった、Einstein 方程式によって精密に説明されてきた観測事実とも整合する。</p>
+<h2>銀河回転曲線への適用と \(\Lambda\) 項の有効エネルギー</h2>
+<h3>(1) 重力項： 現実的近似モデル（球対称一様密度）</h3><p>銀河の中心部においては、バリオン成分が比較的密集しており、球対称かつ一様密度の近似モデルが適用可能である。このとき、半径 \(r\) 以内に含まれる質量 \(M(r)\) は次のように表される：</p>
+\[
+\rho = \text{const} \quad \Rightarrow \quad M(r) = \frac{4}{3} \pi r^3 \rho
+\]<p>この質量分布により生じる重力ポテンシャルから、回転速度は次のように導かれる：</p>
+\[
+v_{\text{grav}}(r) = \sqrt{\frac{G M(r)}{r}} = \sqrt{\frac{4}{3} \pi G \rho} \cdot r
+\quad \Rightarrow \quad v_{\text{grav}}(r) \propto r
+\]<p>これは、銀河回転曲線の内側（中心近傍）において観測される線形増加傾向と整合する。実際、観測的にも中心付近の回転速度は \(v \propto r\) に近い傾向を示しており、このモデルは銀河中心部における重力支配領域の良い近似となる。</p>
+<h3>(2) 斥力項： \(\Lambda\) 項・対数型拡張項による回転速度</h3><p>一様密度モデルによる重力項が銀河中心部で支配的である一方、銀河外縁部における平坦な回転曲線を説明するには、それとは異なる力学的寄与が必要である。</p>
+<p>本モデルでは、対数型ポテンシャルに由来するスカラー場から導出されたスケール依存型の有効 \(\Lambda\) 項が、空間に斥力的な効果を及ぼすと仮定する。この効果は、以下の形式で回転速度の二乗に寄与する：</p>
+\[
+v_{\text{rep}}^2(r) = v_0^2 \cdot \frac{2r^2}{R^2 + r^2}
+\]
+<p>ここで：</p>
+<ul>
+  <li>\(v_0\) は斥力項に由来する代表的な特性速度スケールであり、</li>
+  <li>銀河外縁部（\(r \gg R\)）において支配的になる。</li>
+</ul>
+<p>観測に基づく代表値として \(v_0 \approx 200~\mathrm{km/s}\) を採用する。この構造は、中心部では寄与が小さく、\(r \to \infty\) で漸近的に一定値 \(v_{\mathrm{rep}} \to \sqrt{2}\,v_0\) に収束するため、回転速度の平坦化を自然に再現する。</p>
+<h3>(3) エネルギー合成による回転速度</h3><p>本モデルにおける重力的な回転速度と斥力的寄与は、互いに独立なエネルギー項と見なせる。したがって、観測される回転速度は次のようなエネルギーの二乗和として合成される：</p>
+\[
+\begin{aligned} v_{\text{total}}^{2}(r) &= v_{\text{grav}}^{2}(r) + v_{\text{rep}}^{2}(r) \\[0.5em] &\Downarrow \\[0.5em] v_{\text{total}}(r) &= \sqrt{v_{\text{grav}}^{2}(r) + v_{\text{rep}}^{2}(r)} \end{aligned}
+\]<p>この合成構造により、</p>
+<ul>
+  <li>\(v_{\text{grav}} \propto r\) が中心部で支配し、</li>
+  <li>\(v_{\text{rep}} \to \sqrt{2}\,v_0\) により外縁部の回転曲線が平坦化される。</li>
+</ul>
+<p>本構造は、ダークマターを仮定することなく銀河回転曲線の特徴を再現できることを示しており、\(\Lambda_{\text{eff}}\) の有効性を裏付ける。</p>
+<h3>(4) \(\Lambda_{\text{eff}}\) の有効エネルギーからの速度 \(v_0 \approx 200\,\text{km/s}\) の導出</h3>
+<p>特性速度スケール \(v_0\) は、<a href="#section6">セクション 6 </a>の結果および \(\Lambda\)CDMモデルにおける真空エネルギー密度式に基づいて導出できる。</p>
+<p>したがって、有効エネルギー密度は次のように与えられる（<a href="#section6">セクション 6 </a>より、\(r = R\)（すなわち \(v_0\) の導出条件）において \(\Lambda_{\text{eff}} = \Lambda\) であるから、）：</p>
+\[
+\rho_\Lambda = \frac{\Lambda c^2}{8\pi G} \approx 10^{-26} \, \text{kg/m}^3.
+\]<p>このエネルギー密度を、半径 \(R \approx 1000\,\text{kpc} \approx 3.1 \times 10^{22}\,\text{m}\) の球対称領域にわたって積分すると、有効質量は以下のように求まる（<a href="#section6">セクション6</a>より、\(10^{22}\,\text{m} \ll 10^{26}\,\text{m}\) であるため、\(\rho_\Lambda\) はこの範囲では一定とみなして積分できるから、）：</p>
+\[
+M_\Lambda = \rho_\Lambda \cdot \frac{4}{3} \pi R^3 \approx 10^{42} \, \text{kg}.
+\]<p>この質量に対応する全エネルギーを運動エネルギーに変換すると、次の関係が得られる（ここでは、\(v_0 \approx 200\,\mathrm{km/s}\) を先に代入し、有効質量 \(M_\Lambda\) を一度全運動エネルギーに変換したとして、そのうちどれだけのエネルギー \(E\) が実際に必要となるかを見ることが本当の目的です。そのため、式の展開がやや逆順となっています）。：</p>
+\[
+E = \frac{1}{2} M_\Lambda v_0^2 \quad \Rightarrow \quad v_0 \approx \sqrt{\frac{2E}{M_\Lambda}} \approx 200\,\text{km/s}.
+\]<p>したがって、特性速度スケール \(v_0 \approx 200\,\text{km/s}\) は、\(\Lambda_{\text{eff}}\) モデルの枠組みの中で自然に導出される量であり、対応するエネルギー \(E\) は観測的に典型的なスケール \(E \sim 10^{52}\,\text{J}\) と整合的である。</p>
+<p>また、真空エネルギー全体は \(E_\Lambda = M_\Lambda c^2 \approx 10^{59}\,\text{J}\) と見積もられ、 \(E \sim 10^{52}\,\text{J}\) はこれと比較して十分に小さく、エネルギー論的一貫性も保たれている。</p>
+<p>これらの結果は、スカラー場から導出されたスケール依存項 \(\Lambda_{\text{eff}}(r)\) が、物理的に妥当な有効宇宙斥力項として機能しうることを定量的に裏付けるものである。</p>
+<h3>(5) 物理的意味：領域ごとの支配構造</h3>
+<ul class="ol-spacing">
+  <li>中心部（\(r &lt; R\)）：<br>重力項 \(v_{\text{grav}} \propto r\) が支配的</li>
+  <li>中間領域（\(r \approx R\)）：<br>斥力項 \(v_{\text{rep}}\) が優勢となり、回転速度は平坦化する</li>
+  <li>外縁部（\(r &gt; R\)）：<br>回転速度は緩やかに減衰あるいは再上昇<br>（対数型構造や \(\Lambda_{\text{eff}}(r)\) のスケール依存性に由来）</li>
+</ul>
+<p><strong>使用した代表パラメータとプロット条件</strong></p>
+<ul class="ol-spacing">
+  <li>万有引力定数：<br>\(G = 4.302 \times 10^{-6} \, \text{kpc} \cdot (\text{km/s})^2 / M_\odot\)</li>
+  <li>質量密度（銀河全体の平均）：<br>\(\rho = 10^6 \, M_\odot/\text{kpc}^3\)</li>
+  <li>スケールパラメータ：\(R = 5 \, \text{kpc}\)</li>
+  <li>特性速度スケール：\(v_0 = 200 \, \text{km/s}\)</li>
+  <li>計算対象の半径範囲：\(r = 0.1 \sim 20 \, \text{kpc}\)</li>
+</ul>
+<p>以上の代表値を用い、先に導出した回転速度の合成式：</p>
+\[
+v_{\text{total}}(r) = \sqrt{v_{\text{grav}}^2(r) + v_{\text{rep}}^2(r)}.
+\]<p>に基づき、銀河スケールでの回転速度プロファイルを数値的にプロットしたものが Fig. 2 である。</p>
+<figure style="max-width:600px; margin:0 auto;">
+  <img src="https://misaki-kasai.github.io/paper/gal_rot.PNG" 
+       alt="Galactic rotation curve simulation" 
+       style="width:100%; height:auto;">
+  <figcaption>Fig. 2: 銀河回転曲線に対する重力項・斥力項・合成速度の理論モデルに基づく数値プロット。</figcaption>
+</figure><p>ところが、Fig. 2 に示す数値シミュレーションの結果から明らかなように、中心部（\(r &lt; R\)）において重力項が支配的となることが期待されていたにもかかわらず、全スケールにわたり斥力項が重力項を上回る振る舞いが定量的に確認された。すなわち、銀河内の回転速度は実効的に、スカラー場由来の \(\Lambda\) 項によって支配されていることが明らかとなった。</p>
+<p>この結果は、銀河外縁部における回転速度の平坦性のみならず、中心領域においても斥力項が顕著に寄与していることを示しており、対数型斥力項のスケール支配性が想定を超えて広範囲に及ぶ可能性を強く裏付けるものである。</p>
+<h2 id="section9">ブラックホール特異点回避の条件</h2>
+<p>準解スカラー場 \(\phi(r)\) に由来するスケール依存型の斥力として、以下の加速度項が得られる：</p>
+\[
+a(r) = \frac{2c_0 r}{R^2 + r^2}
+\]<p>ここで、\(c_0\) は斥力ポテンシャル係数（単位：\(\mathrm{m^2/s^2}\)）であり、空間の斥力応答エネルギースケールを表す。</p>
+<p><strong>仮定：</strong> ブラックホール内部では、斥力加速度が球対称的に作用し、特異点に到達する直前で重力加速度と釣り合うものと仮定する。</p><p><strong>重力と斥力の釣り合い条件：</strong> この仮定のもと、釣り合い条件は以下のように表される：</p>
+\[
+\frac{GM}{r^2} = \frac{2c_0 r}{R^2 + r^2}
+\]<p>ここで、\(M\) はブラックホールの質量を表す。</p>
+<p><strong>\(R = r\) の採用：</strong> \(R = r\) を特性スケールとして採用すると、釣り合い条件は次のようになる（ \( r = R \) （ \( R = r \) ）を採用する理由は、関数 \(a(r)\) が極大をとる点が \( r = R \) であるため）：</p>
+\[
+\frac{GM}{r^2} = \frac{c_0}{r} \quad \Rightarrow \quad c_0 = \frac{GM}{r}
+\]<p><strong>特異点回避のための臨界条件：</strong><p> ブラックホールの質量エネルギーと斥力エネルギーが等しくなる臨界半径 \(r_{\text{crit}}\) を定義する。</p>
+<p>ここで、斥力エネルギーは次のように与えられる：</p>
+\[
+E_{\text{rep}} = M \cdot c_0 = \frac{GM^2}{r}
+\]<p>また、ブラックホールの質量エネルギーは以下の通りである：</p>
+\[
+E_{\text{BH}} = M c^2 
+\]<p>本モデルでは、空間の斥力応答はブラックホール自身の質量エネルギーに基づくと仮定する。</p>
+<p>したがって、この系は閉じた系としてエネルギー保存則が適用でき、ブラックホール内部に蓄積される斥力エネルギーが、ブラックホール全体の質量エネルギーを超えることはない。</p>
+<p>よって、両者が等しいとおいて臨界半径を導くと、以下のようになる：</p>
+\[
+E_{\text{rep}} = E_{\text{BH}} \quad \Rightarrow \quad \frac{GM^2}{r_{\text{crit}}} = M c^2 \quad \Rightarrow \quad r_{\text{crit}} = \frac{GM}{c^2}
+\]<p>この結果は、ブラックホールの崩壊が自然に有限スケールで停止することを意味しており、そのスケールは質量 \(M\)、重力定数 \(G\)、および光速 \(c\) のみで決定され、その臨界半径はシュワルツシルト半径 \(r_s\) のちょうど半分に一致する：</p>
+\[
+r_{\text{crit}} = \frac{1}{2} r_s, \quad \text{where} \quad r_s = \frac{2GM}{c^2}
+\]<p>したがって、特異点は外部からのカットオフなしに、理論内部に存在する空間の斥力構造そのものによって自律的に回避される。</p>
+<p>（ \(M c_0 = M c^2\)（\(E_{\text{rep}} = E_{\text{BH}}\)）より、臨界半径において \(c_0 = c^2\)。よって、特異点はエネルギー保存則と光速上限により禁止される。）</p>
+<h2 id="section10">ヒッグス機構との一致</h2><p>本セクションでは、<a href="#section4">セクション4</a>で定義されたポテンシャル</p>
+\[
+V(\phi(r)) = -\frac{1}{4} \cdot \phi^2 \left( 4 - R^2 \phi^2 \right)
+= -\phi^2 + \frac{1}{4} R^2 \phi^4
+\]<p>から導かれる真空期待値および質量項が、標準模型におけるヒッグス機構と一致することを示す。標準模型において、ヒッグス機構に対応する有効ポテンシャルは次のように与えられる：</p>
+\[
+V_{\text{Higgs}}(\phi) = -\frac{1}{2} \mu^2 \phi^2 + \frac{1}{4} \lambda \phi^4
+\]<p>この構造における真空期待値 \( v \) は、極値条件から決定される：</p>
+\[
+\left. \frac{dV}{d\phi} \right|_{\phi = v} = 0 \quad \Rightarrow \quad v = \sqrt{\frac{\mu^2}{\lambda}}
+\]
+<h3>真空期待値</h3>
+<p>\(\Lambda_{\text{eff}}\) モデルにおけるポテンシャル \(V(\phi(r))\) を微分すると：</p>
+\[
+\frac{dV}{d\phi} = 0 \quad \Rightarrow \quad \phi(-2 + R^2 \phi^2) = 0
+\]<p>したがって、得られる解は以下の通りである：</p>
+\[
+\phi = 0 \quad \text{または} \quad \phi = \pm \frac{\sqrt{2}}{R}
+\]<p>よって、自明な解 \(\phi = 0\) を除外すれば、\(\Lambda_{\text{eff}}\) モデルにおける真空期待値は：</p>
+\[
+v = \frac{\sqrt{2}}{R}, \quad \phi = \pm v
+\]<p>ここで整合性を確認するため、\(V(\phi(r))\) と \(V_{\text{Higgs}}(\phi)\) における2次および4次の係数を比較すると、次の関係が得られる：</p>
+\[
+-\phi^2 \leftrightarrow -\frac{1}{2} \mu^2 \phi^2 \quad \Rightarrow \quad \mu^2 = 2
+\]
+\[
+\frac{1}{4} R^2 \phi^4 \leftrightarrow \frac{1}{4} \lambda \phi^4 \quad \Rightarrow \quad \lambda = R^2
+\]<p>したがって、標準模型におけるポテンシャルの最小値の位置は以下の通り：</p>
+\[
+\phi = \pm \sqrt{\frac{\mu^2}{\lambda}} = \pm \sqrt{\frac{2}{R^2}} = \pm \frac{\sqrt{2}}{R}
+\]<p>よって、真空期待値は：</p>
+\[
+v = \frac{\sqrt{2}}{R}
+\]<p>このように、真空期待値 \( v \) は両モデルにおいて一致する。</p>
+<h3>質量項</h3>
+<p>整理のため、先に導入したポテンシャル \( V(\phi(r)) \) を再掲する：</p>
+\[
+V(\phi(r)) = -\frac{1}{4} \cdot \phi^2 \left( 4 - R^2 \phi^2 \right) = -\phi^2 + \frac{1}{4} R^2 \phi^4
+\]<p>物理的な質量項 \(m^2\) を抽出するために、ポテンシャル \(V(\phi(r))\) の 2 階微分を計算し、\(\phi = 0\) における値を評価する。</p>
+<p><strong>Step 1: 1 階微分</strong></p>
+\[
+\frac{dV}{d\phi}
+= \frac{d}{d\phi} \left( -\phi^2 + \frac{1}{4} R^2 \phi^4 \right)
+= -2\phi + R^2 \phi^3
+\]<p><strong>Step 2: 2 階微分</strong></p>
+\[
+\frac{d^2 V}{d\phi^2}
+= \frac{d}{d\phi} \left( -2\phi + R^2 \phi^3 \right)
+= -2 + 3R^2 \phi^2
+\]<p><strong>Step 3: \( \phi = 0 \) における評価</strong></p>
+\[
+\left. \frac{d^2 V}{d\phi^2} \right|_{\phi = 0}
+= -2 + 3R^2 \cdot 0^2
+= -2
+\quad \Rightarrow \quad m^2 = -2
+\]<p>比較のため、標準模型におけるヒッグスポテンシャルを再掲する：</p>
+\[
+V_{\text{Higgs}}(\phi) = -\frac{1}{2} \mu^2 \phi^2 + \frac{1}{4} \lambda \phi^4
+\]<p>ここで、2 次項（すなわち質量項）の係数は：</p>
+\[
+m^2 = -\mu^2
+\]<p>先に得られた結果 \( \mu^2 = 2 \) を代入すると：</p>
+\[
+m^2 = -2
+\]<p>したがって、両モデルにおける質量項は一致する。</p><p>以上より、本モデルのポテンシャル \( V(\phi(r)) \) から導かれる真空期待値および質量項は、標準模型におけるヒッグス機構と完全に一致する。</p>
+<p>（上で導出された真空期待値の式に観測値 \(v = 246\,\mathrm{GeV}\) を代入できる。すると、対応する特性スケール \(R\) は以下のように求まる：</p>
+\[
+v = \frac{\sqrt{2}}{R}
+\quad \Rightarrow \quad
+R = \frac{\sqrt{2}}{v} = \frac{\sqrt{2}}{246\,\mathrm{GeV}} \approx 5.75 \times 10^{-3}\,\mathrm{GeV}^{-1}
+\]<p>ここで、自然単位系（\(\hbar = c = 1\)）において、\(\mathrm{GeV}^{-1} \approx 1.97 \times 10^{-16}\,\mathrm{m}\) を用いて換算すると：</p>
+\[
+R \approx 5.75 \times 10^{-3} \times 1.97 \times 10^{-16}\,\mathrm{m} \approx 1.13 \times 10^{-18}\,\mathrm{m}
+\]<p>と定まる。この値は、LHC実験においてヒッグス粒子が発見された電弱距離スケール ≒ \(10^{-18}\,\mathrm{m}\) と一致する。）</p>
+<h2>考察と結論</h2>
+<p>本研究では、変分原理に基づき意図的に準解として構成したスカラー場 \(\phi(r)\) から、以下のスケール依存型の有効宇宙項を導出した：</p>
+\[
+\Lambda_{\text{eff}}(r) = \frac{4r^2}{(R^2 + r^2)^2},
+\]<p>これは以下の三つの側面において有効に機能する：</p>
+<ol class="ol-spacing">
+  <li><strong>宇宙論との整合性：</strong> 有効項 \(\Lambda_{\text{eff}}\) は \(r = R\) において最大値を取り、
+  \[
+  \Lambda_{\text{eff}}^{\text{max}} = \frac{1}{R^2}.
+  \]
+  となる。これを観測されている宇宙定数と同一視すると、\(R \sim 10^{26}\,\mathrm{m}\) が得られ、これは可視宇宙のスケール \(\sim 10^{26}\,\mathrm{m}\) と一致する。</li>
+  <li><strong>銀河回転曲線の再現：</strong> \(\Lambda_{\text{eff}}\) に基づく斥力項を用いて、回転速度の合成式として以下を構成した：
+  \[
+  v_{\text{total}}^2(r) = v_{\text{grav}}^2(r) + v_{\text{rep}}^2(r).
+  \]
+  現実的な質量密度モデルおよび代表的なパラメータを用いた数値評価により、この構造が銀河における観測上の平坦な回転速度分布を再現できることが確認された。</li>
+  <li><strong>特異点回避の可能性：</strong> 斥力エネルギーがブラックホールの質量エネルギーに等しくなる条件を導出することで、重力崩壊がエネルギー的に禁止される臨界半径 \(r_{\text{crit}} = \frac{GM}{c^2}\) を得た。この結果は、外部からのカットオフを必要とせず、提案されたモデル内部の動力学において自然に特異点が回避されることを示唆している。</li>
+</ol>
+<p>以上の結果から、\(\Lambda_{\text{eff}}\) モデルは、宇宙論的スケールから銀河構造、さらにはブラックホール内部に至るまで、広範な重力現象を一貫して記述可能な、整合的かつ有効な理論的枠組みを提供することが確認された。</p>
+<p>\(\Lambda_{\text{eff}}\) の寄与は、従来の引力とは逆方向の幾何学的効果として現れ、宇宙の加速膨張および銀河回転曲線の平坦化という両現象において重要な役割を果たす。</p>
+<p>さらに、この幾何学的斥力効果は、空間構造に内在する反重力的応答として、曲率特異点の形成を自然に防ぐ機構としても現れる。</p>
+<p>本モデルの予測精度に関する定量的評価と観測データとの整合性検証は、今後の理論発展および実験的検証において中心課題であり続ける。</p>
+<p>その第一歩として、本スカラーポテンシャル構造の枠組みの中で、ヒッグス機構との一致を確認した。</p>
+<span style="display: block; height: 0.5em;"></span>
+<h2>Acknowledgements</h2>
+<p>This research was solely developed by the author, without external collaboration or conceptual assistance.</p>
+<span style="display: block; height: 0.5em;"></span>
+<h2>Funding Statement</h2>
+<p>No external funding was received for this work.</p>
+<span style="display: block; height: 0.5em;"></span>
+<h2>Ethical Statement</h2>
+<p>This study involved no human or animal subjects; ethical approval was not applicable.</p>
+<span style="display: block; height: 0.5em;"></span>
+<h2>Conflict of Interest Statement</h2>
+<p>The author declares no conflict of interest.</p>
+<span style="display: block; height: 0.5em;"></span>
+<h2>References</h2>
+<p>All references are included directly in the text.</p>
+<span style="display: block; height: 1.0em;"></span>
+<hr id="appendix" style="border:0;height:2.75px;margin:2.5rem 0;background:#E8D28D;">
+<p style="font-size:2.0em; font-weight:bold; margin:2rem 0; text-align:center;">Appendix（付録）</p>
+<hr style="border:0;height:2.75px;margin:2.5rem 0;background:#E8D28D;">
+<section id="appendix-fitting-summary">
+<h2>Appendix:<br>銀河回転曲線フィッティング（斥力項のみ）</h2>
+<p>以下の統計表は、<a href="https://astroweb.cwru.edu/SPARC/" target="_blank">SPARC データセット</a>に含まれる 175 個の銀河回転曲線を、本理論における斥力項のみを用いてフィッティングした結果を示しています。<br>（非線形最小二乗法（重み付けなし））</p>
+  <table class="data-table">
+    <caption>ここで、 \(R^2\) は決定係数</caption>
+    <thead>
+      <tr><th>パラメータ ／ 評価指標</th><th>値</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>\(v_0\) の範囲 [km/s]</td><td>13.6 – 251.1</td></tr>
+      <tr><td>\(R\) の範囲 [kpc]</td><td>0.00 – 8.69</td></tr>
+      <tr><td>\(R^2\) の中央値</td><td>0.964</td></tr>
+      <tr><td>\(R^2\) の平均値（負値丸め）</td><td>0.803</td></tr>
+      <tr><td>\(R^2\) の最大値</td><td>0.999</td></tr>
+      <tr><td>\(R^2 \geq 0.99\) の銀河数</td><td>35 / 175</td></tr>
+    </tbody>
+  </table>
+<p>この結果に加えて、さらに重力項による相加または相殺の形での調整余地が残されています。</p>
+<p>斥力項のみで行なっている理由は、重力項において質量平均密度 \(\rho\) の指定またはパラメータ調整が銀河ごとに必要となるためであり、今回は省略しました。</p>
+<p>この結果はあくまで参考程度に留めて下さい。</p>
+<figure style="max-width:1200px; margin:0.0rem auto; padding:2px; border:3px solid #E8D28D; border-radius:10px; background:#000;">
+  <div style="display:grid; grid-template-columns:1fr; gap:10px;">
+    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_1.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 1/9" style="width:100%; height:auto; border-radius:6px;">
+    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_2.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 2/9" style="width:100%; height:auto; border-radius:6px;">
+    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_3.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 3/9" style="width:100%; height:auto; border-radius:6px;">
+    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_4.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 4/9" style="width:100%; height:auto; border-radius:6px;">
+    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_5.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 5/9" style="width:100%; height:auto; border-radius:6px;">
+    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_6.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 6/9" style="width:100%; height:auto; border-radius:6px;">
+    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_7.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 7/9" style="width:100%; height:auto; border-radius:6px;">
+    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_8.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 8/9" style="width:100%; height:auto; border-radius:6px;">
+    <img src="https://misaki-kasai.github.io/paper/flambda_fit_sparc_9.PNG" alt="fΛ fit to SPARC galaxy rotation curves — page 9/9" style="width:100%; height:auto; border-radius:6px;">
+  </div>
+  <figcaption style="text-align:center; color:#E8D28D; margin-top:10px; font-size:0.95rem;">
+    fΛ vs. 銀河回転曲線（SPARC 175個）
+  </figcaption>
+</figure>
+<p>なお、この回転速度式は、<a href="#section9">セクション 9 </a>で定義された加速度式 \(\phi(r)\cdot c_0\) と、円運動条件 \(a = \dfrac{v^2}{r}\) を通じて一意に対応している。</p>
+\[
+a(r) = \frac{2 c_0 r}{R^2 + r^2} \quad \overset{c_0 = v_0^2}{\underset{a = \frac{v^2}{r}}{\Longleftrightarrow}} \quad v_{\mathrm{rep}}^{2}(r) = \frac{2 v_0^{2} r^{2}}{R^{2} + r^{2}}
+\]
+\[\Longrightarrow \quad v_{\mathrm{rep}}(r) = v_0 \cdot \sqrt{\frac{2 r^{2}}{R^{2} + r^{2}}}
+\]
+</section>
+<section id="appendix-conservation-friedmann">
+<h2>Appendix:<br>保存則と Friedmann 方程式への接続</h2>
+<p><a href="#section7">セクション 7 </a>で定義された拡張 Einstein 方程式は：</p>
+\[
+\Lambda_{\mathrm{eff}}(r)\, g_{\mu\nu} + G_{\mu\nu} = \kappa\,T^{(\mathrm{matter})}_{\mu\nu},
+\qquad
+\kappa \equiv \frac{8\pi G}{c^4}.
+\]<p>よって、本理論では、Einstein 方程式に \(\Lambda_{\mathrm{eff}}(r)\) の空間依存性を明示的に取り入れているため、局所的な保存則と大域的な保存則を統一的に議論することが可能である。</p>
+<h3>\(\Lambda_{\mathrm{eff}}\) の普遍関数形</h3>
+<p><a href="#section4">セクション 4 </a>で導出した有効 \(\Lambda\) 項 \(\displaystyle \Lambda_{\mathrm{eff}}(r) = \dfrac{4r^{2}}{(R^{2}+r^{2})^{2}}\) を変形すると：</p>
+\[
+\boxed{\Lambda_{\mathrm{eff}}(r)=\frac{1}{R^{2}}F\!\left(\frac{r}{R}\right), \quad F(x)=\frac{4x^{2}}{(1+x^{2})^{2}}, \quad x \equiv \frac{r}{R}}
+\]<p>\(F(x)\) を代入して、\(x\) を展開すると、元の形：</p>
+\[
+\Lambda_{\mathrm{eff}}(r) = \frac{4 r^{2}}{\left(R^{2} + r^{2}\right)^{2}}
+\]
+が再現される。したがって、\(\Lambda_{\mathrm{eff}}(r)\) は \(\dfrac{r}{R} = x\) とおくことで、スケールに依存しない普遍関数 \(F(x)\) によって記述できることがわかる。
+<h3>Bianchi 恒等式と交換流 \(J_\nu\) の定義</h3>
+<p>拡張 Einstein 方程式に \(\nabla^\mu\) を作用させると、Bianchi 恒等式 \(\nabla^\mu G_{\mu\nu}=0\) および \(\nabla^\mu g_{\mu\nu}=0\) が成り立つ。また、\(\Lambda_{\mathrm{eff}}\) はスカラー量であるため、\(\nabla_\nu\Lambda_{\mathrm{eff}} = \partial_\nu\Lambda_{\mathrm{eff}}\) が成立する。これらを用いると次式を得る：</p>
+\[
+\kappa\,\nabla^\mu T^{(\mathrm{m})}_{\mu\nu} = \partial_\nu \Lambda_{\mathrm{eff}}.
+\]<p>ここで、エネルギー・運動量テンソル（以下、物質項）単体での局所的な保存則破れを記述するため、交換流 \(J_\nu\) を次のように定義する：</p>
+\[
+\boxed{J_\nu \equiv \nabla^\mu T^{(\mathrm{m})}_{\mu\nu} = \frac{1}{\kappa}\,\partial_\nu \Lambda_{\mathrm{eff}}}
+\]<p>この式は、\(\Lambda_{\mathrm{eff}}\) の時空的な勾配が立つと、物質項と真空エネルギーとの間でエネルギー・運動量の交換が生じることを意味する。すなわち、物質項単体では \(J_\nu \neq 0\) となり、局所保存則が破れるが、後述するように真空成分を含めた全体系では大域的な保存則が成立する。</p>
+<h3>静的・球対称場での交換流</h3>
+<p>静的かつ球対称な場では、時間および角度依存が消えるため、交換流は半径方向のみが残る：</p>
+\[
+\boxed{J_r = \frac{1}{\kappa}\,\frac{\mathrm{d}\Lambda_{\mathrm{eff}}}{\mathrm{d}r}}
+\]<p>ここで、先に述べた通り、\(\Lambda_{\mathrm{eff}}(r)\) は：</p>
+\[
+\Lambda_{\mathrm{eff}}(r)=\frac{1}{R^2}F\!\left(\frac{r}{R}\right),\quad F(x)=\frac{4x^2}{(1+x^2)^2},\quad x=\frac{r}{R}
+\]<p>であるから、連鎖律より、</p>
+\[
+\frac{d\Lambda_{\mathrm{eff}}}{dr} = \frac{d}{dr}\!\left[\frac{1}{R^{2}}F\!\left(\frac{r}{R}\right)\right] = \frac{1}{R^{2}}\!\cdot\!\frac{dF}{dx}\!\cdot\!\frac{dx}{dr} = \frac{1}{R^{2}}\!\cdot\!\frac{dF}{dx}\!\cdot\!\frac1R
+\]<p>よって、導関数は：</p>
+\[
+\boxed{\dfrac{\mathrm{d}\Lambda_{\mathrm{eff}}}{\mathrm{d}r}=\dfrac{1}{R^3}\dfrac{\mathrm{d}F}{\mathrm{d}x},\quad \dfrac{\mathrm{d}F}{\mathrm{d}x}=\dfrac{8x(1-x^2)}{(1+x^2)^3}}
+\]<p>したがって、交換流は次の形で表される：</p>
+\[
+\boxed{J_r=\frac{1}{\kappa R^3}\frac{\mathrm{d}F}{\mathrm{d}x}}
+\]<p>\(\dfrac{\mathrm{d}F}{\mathrm{d}x}\) の式を代入して明示的に書くと：</p>
+\[
+J_r=\frac{1}{\kappa R^3}\frac{8x(1-x^2)}{(1+x^2)^3},\qquad x=\frac{r}{R}
+\]
+<h3>規格化交換流 \(\tilde J\) の定義と極値解析</h3>
+<p>交換流 \(J_r\) を規格化するため、次式を定義する：</p>
+\[
+\boxed{\tilde J(x)\equiv\kappa R^3J_r=\frac{\mathrm{d}F}{\mathrm{d}x}=\frac{8x(1-x^2)}{(1+x^2)^3}}
+\]<p>\(\tilde J\) はスケール \(R\) に依存しない普遍関数であり、次の符号構造を持つ：</p>
+<ul class="ol-spacing">
+  <li><span>\(x \lt 1 \Rightarrow \tilde J \gt 0\)</span> ：真空から物質へのエネルギー供給</li>
+  <li><span>\(x \gt 1 \Rightarrow \tilde J \lt 0\)</span> ：物質から真空へのエネルギー回収</li>
+  <li><span>\(x = 1\)</span> で <span>\(\tilde J = 0\)</span> ：供給と回収の転換点</li>
+</ul>
+<p>簡単にすると、</p>
+<div style="border:3px solid currentColor; padding:1.5em; text-align:center; border-radius:6px; line-height:2;">
+  <span>\( r \lt R \)</span><strong> で、真空から物質へエネルギー供給</strong><br>
+  \(\Updownarrow\)<br>
+  <span>\( r = R \)</span><strong> で、流れが転換</strong><br>
+  \(\Updownarrow\)<br>
+  <span>\( r \gt R \)</span><strong> で、物質から真空へエネルギー回収</strong>
+</div>
+<h4>供給・回収ピークの導出</h4>
+<p>ピークは \(\tilde J(x)\) の極値から求められる。一階微分を再掲すると：</p>
+\[
+\tilde J(x) = \frac{\mathrm{d}F}{\mathrm{d}x} = \frac{8x(1-x^2)}{(1+x^2)^3}
+\]<p>したがって、二階微分は次のようになる：</p>
+\[
+\frac{\mathrm{d}^2F}{\mathrm{d}x^2} = \frac{\mathrm{d}}{\mathrm{d}x}
+\left[
+\frac{8x(1-x^2)}{(1+x^2)^3}
+\right] =
+\frac{8(3x^4 - 8x^2 + 1)}{(1+x^2)^4}
+\]<p>極値条件 \(\dfrac{\mathrm{d}^2F}{\mathrm{d}x^2}=0\) より：</p>
+\[
+\boxed{3x^4-8x^2+1=0},\qquad x=\frac{r}{R},\ r \ge 0,\ R &gt; 0.
+\]<p>ここで、 \(x^2 = y\) と置換して解くと：</p>
+\[
+y=\frac{4\pm\sqrt{13}}{3},\qquad x_{\pm}=\sqrt{\frac{4\pm\sqrt{13}}{3}}
+\]<p>\(r \ge 0,\ R &gt; 0\) より、 \(x = \dfrac{r}{R} \ge 0\) なので、解は：</p>
+\[
+\boxed{x = \sqrt{\dfrac{4 \pm \sqrt{13}}{3}}}
+\]
+<h4>極値の数値評価とピーク値</h4>
+<p>直前の解から、極値の位置は次のように数値評価される：</p>
+\[
+x_{\mathrm{sup}} = \sqrt{\dfrac{4 - \sqrt{13}}{3}} \approx 0.363,\quad x_{\mathrm{rec}} = \sqrt{\dfrac{4 + \sqrt{13}}{3}} \approx 1.592
+\]<p>これらを \(\tilde J(x)=\dfrac{8x(1-x^2)}{(1+x^2)^3}\) に代入すると、供給ピークと回収ピークの値は以下のように求められる：</p>
+<ul>
+  <li><b>供給ピーク（正）</b>：
+  <div>
+  \[
+  \tilde J(x_{\mathrm{sup}})=\frac{8\,x_{\mathrm{sup}}\!\left(1-x_{\mathrm{sup}}^2\right)}{\left(1+x_{\mathrm{sup}}^2\right)^3}\approx\boxed{+\,1.739}
+  \]
+  </div>
+  </li>
+  <li><b>回収ピーク（負）</b>：
+  <div>
+  \[
+  \tilde J(x_{\mathrm{rec}})=\frac{8\,x_{\mathrm{rec}}\!\left(1-x_{\mathrm{rec}}^2\right)}{\left(1+x_{\mathrm{rec}}^2\right)^3}\approx\boxed{-\,0.443}
+  \]
+  </div>
+  </li>
+</ul>
+<p>したがって、真空から物質への最大供給は \(x \approx 0.36\) 付近で生じ、
+その大きさは \(\tilde J \approx +1.74\) である。また、物質から真空への最大回収は
+\(x \approx 1.59\) 付近で発生し、その大きさは \(\tilde J \approx -0.44\) となる。</p>
+<h4>極値の向きの判定</h4>
+<p>極値の性質（極大か極小か）は、\(\tilde J(x)\) の符号を用いて次のように判定できる。</p>
+<ul class="ol-spacing">
+  <li>\(x_{\mathrm{sup}} \approx 0.363 &lt; 1\) であるから、 \(1 - x_{\mathrm{sup}}^2 &gt; 0\) より \(\tilde J(x_{\mathrm{sup}}) &gt; 0\)。したがって、\(x_{\mathrm{sup}}\) は <strong>供給ピーク</strong>（極大値）である。</li>
+  <li>\(x_{\mathrm{rec}} \approx 1.592 &gt; 1\) であるから、 \(1 - x_{\mathrm{rec}}^2 &lt; 0\) より \(\tilde J(x_{\mathrm{rec}}) &lt; 0\)。したがって、\(x_{\mathrm{rec}}\) は <strong>回収ピーク</strong>（極小値）である。</li>
+</ul>
+<p>また、二階微分 \(\dfrac{\mathrm{d}^2F}{\mathrm{d}x^2}\) は \(3x^4 - 8x^2 + 1 = 0\) を境に符号が反転するため、これらの極大・極小の判定は確定する。</p>
+<h3>大域保存則</h3>
+<p>交換流 \(J_r\) を半径方向に沿って線積分すると、次の結果を得る：</p>
+\[
+\int_{0}^{\infty}J_r\,\mathrm{d}r=\frac{1}{\kappa}\int_{0}^{\infty}\frac{\mathrm{d}\Lambda_{\mathrm{eff}}}{\mathrm{d}r}\,\mathrm{d}r=\frac{1}{\kappa}\big[\Lambda_{\mathrm{eff}}(\infty)-\Lambda_{\mathrm{eff}}(0)\big]=0
+\]<p>明示的に \(\Lambda_{\mathrm{eff}}(r)=\dfrac{4r^2}{(R^2+r^2)^2}\) を代入しても、同じ結果が得られる：</p>
+\[
+\boxed{\displaystyle \frac{1}{\kappa}\int_{0}^{\infty}\!\left[\frac{\partial}{\partial r}\!\left(\frac{4r^2}{(R^2+r^2)^2}\right)\right]\mathrm{d}r=0}
+\]<p>すなわち、端点 \(\Lambda_{\mathrm{eff}}(0)=\Lambda_{\mathrm{eff}}(\infty)=0\) により、半径方向における局所的な供給と回収は厳密に相殺される。</p>
+<p>さらに、球対称下での面積分、すなわち \(J_r\) の総流束は：</p>
+\[
+\Phi(r)=\oint_{S_r}J^i\,\mathrm{d}\Sigma_i=4\pi r^2 J_r
+\]<p>前述の通り、\(J_r=\dfrac{1}{\kappa}\,\dfrac{\mathrm{d}\Lambda_{\mathrm{eff}}}{\mathrm{d}r}\) であるから、</p>
+\[
+J_r=\frac{1}{\kappa}\,\frac{\mathrm{d}}{\mathrm{d}r}\!\left[\frac{4r^2}{(R^2+r^2)^2}\right]=\frac{1}{\kappa}\,\frac{8r\,(R^2-r^2)}{(R^2+r^2)^3}
+\]<p>したがって、総流束は：</p>
+\[
+\Phi(r)=4\pi r^2 J_r=\frac{32\pi}{\kappa}\,\frac{r^3(R^2-r^2)}{(R^2+r^2)^3}
+\]<p>端点の極限をとると：</p>
+\[
+\Phi(0)=\lim_{r\to0}\left(\frac{32\pi}{\kappa}\,\frac{r^3(R^2-r^2)}{(R^2+r^2)^3}\;\Rightarrow\;\frac{r^3R^2}{(R^2)^3}=\frac{r^3}{R^4}\right)=0,
+\]
+\[
+\Phi(\infty)=\lim_{r\to\infty}\left(\frac{32\pi}{\kappa}\,\frac{r^3(R^2-r^2)}{(R^2+r^2)^3}\;\Rightarrow\;\frac{-r^5}{(r^2)^3}=-\frac{1}{r}\right)=0.
+\]<p>したがって、\(\Phi(0)=\Phi(\infty)=0\) であり、全空間における真空からの供給と回収は、体積全体にわたって厳密に相殺される。<br>よって、一般相対論では困難とされた<strong>大域的エネルギー保存則がここで定義される</strong>。</p>
+<h3>交換流のスケール依存性</h3>
+<p>交換流 \(J_r\) の大きさは次式で表される：</p>
+\[
+\boxed{|J_r| \sim \frac{1}{\kappa R^3} \, |\tilde J(x)|}
+\]<p>この式から、特性スケール \(R\) が大きいほど交換流は急激に抑制されることがわかる。</p>
+<ul class="ol-spacing">
+  <li>宇宙論スケール：\(R_{\mathrm{cosmo}} \sim 10^{26}\,\mathrm{m}\) → \(|J_r|\) は極端に小さく、局所保存則の破れは観測的に無視できる。</li>
+  <li>ヒッグススケール：\(R_{\mathrm{Higgs}} \sim 10^{-18}\,\mathrm{m}\) → \(|J_r|\) は非常に大きく、局所的な交換流は顕著となる。</li>
+</ul>
+<p>交換流の大きさは \(|J_r| \sim \dfrac{1}{\kappa R^3}\) に比例するため、宇宙論スケールとヒッグススケールの強さの比は次式で与えられる：</p>
+\[
+\frac{|J_r|_{\mathrm{Higgs}}}{|J_r|_{\mathrm{cosmo}}} = \left( \frac{R_{\mathrm{cosmo}}}{R_{\mathrm{Higgs}}} \right)^3 \sim \left(\frac{10^{26}}{10^{-18}}\right)^3 \sim 10^{132}
+\]<p>すなわち、ヒッグススケールでは宇宙論スケールに比べて、およそ \(10^{132}\) 倍も交換流が強いことがわかる。</p>
+<ul class="ol-spacing">
+  <li><strong>局所領域</strong>： \(\nabla^\mu T^{(\mathrm{m})}_{\mu\nu}=J_\nu\neq0\) → 真空と物質間でエネルギー交換が発生する。特にヒッグススケールで顕著だが、宇宙論スケールでは交換流はほぼゼロに近い。\(\int_0^\infty J_r\,\mathrm{d}r=0\) より、半径方向の交換流は各特性スケールにおいて局所的に相殺される。</li>
+  <li><strong>大域領域</strong>： \(\Phi(0)=\Phi(\infty)=0\) より、供給と回収が全空間で相殺され、大域的なエネルギー保存則が厳密に成立する。</li>
+</ul>
+<p>したがって、大域で保存されるだけでなく局所でも保存則が回復するため、局所的な保存則の破れは直接観測困難だが、ヒッグススケールでは質量付与という形で交換流の痕跡を残す。一方で、宇宙論スケールでは、それに加えて交換流が極めて小さいため、保存則の破れやその痕跡は事実上、検出不能である。</p>
+<h3>\(\Lambda_{\mathrm{eff}}\) を真空エネルギーとして扱う場合</h3>
+<p>\(\Lambda_{\mathrm{eff}}\) を幾何学項ではなく真空エネルギー成分として右辺に移すと、拡張 Einstein 方程式は次のように書き換えられる：</p>
+\[
+\boxed{G_{\mu\nu} = \kappa\,T^{(\mathrm{matter})}_{\mu\nu} - \Lambda_{\mathrm{eff}}(r)\,g_{\mu\nu}}
+\]
+<p>ここで真空エネルギーのテンソルを</p>
+\[
+T^{(\Lambda)}_{\mu\nu} \equiv -\frac{\Lambda_{\mathrm{eff}}}{\kappa} g_{\mu\nu}
+\]
+<p>と定義すれば、式は次のように整理される：</p>
+\[
+G_{\mu\nu} = \kappa \Big( T^{(\mathrm{m})}_{\mu\nu} + T^{(\Lambda)}_{\mu\nu} \Big)
+\]
+<p>Bianchi 恒等式 \(\nabla^\mu G_{\mu\nu} = 0\) を用いると、全エネルギー運動量テンソルに対する保存則が自動的に成立する：</p>
+\[
+\boxed{\nabla^\mu T^{\mathrm{(total)}}_{\mu\nu} = 0},
+\qquad T^{\mathrm{(total)}}_{\mu\nu} = T^{(\mathrm{m})}_{\mu\nu} + T^{(\Lambda)}_{\mu\nu}
+\]<p>すなわち、\(\Lambda_{\mathrm{eff}}\) を幾何学項として扱う場合は物質項単体で局所保存則が破れているように見えるが、真空エネルギーを物質項に含めれば、全体系では共変的な保存則が厳密に保たれていると解釈できる。どちらの表現を採用するかは、\(\Lambda_{\mathrm{eff}}\) をそのまま幾何学項として扱うか、もしくは物質項に含めるかという、「何を物質（エネルギー・運動量）とみなすか」の解釈の違いに過ぎない。<br><strong>なお、著者の立場としては、幾何学項として扱うことを推奨する</strong>。</p>
+<h3>Friedmann 方程式への接続—<br>宇宙論スケールでの \(\Lambda_{\mathrm{eff}}\) 定数近似の可否</h3>
+<p>ここで、\(\Lambda_{\mathrm{eff}}(r)\) の空間勾配を考える：</p>
+\[
+\Lambda_{\mathrm{eff}}(r)=\frac{1}{R^{2}}F\!\left(\frac{r}{R}\right),
+\quad F(x)=\frac{4x^{2}}{(1+x^{2})^{2}},
+\quad x=\frac{r}{R}.
+\]<p>前述の通り、導関数は次式で表される：</p>
+\[
+\boxed{\frac{d\Lambda_{\mathrm{eff}}}{dr} = \frac{1}{R^{3}}\frac{dF}{dx}, \quad \frac{dF}{dx}=\frac{8x(1-x^{2})}{(1+x^{2})^{3}}}
+\]<p>ここで、\(x = \mathcal{O}(1)\) の範囲では、 \(\dfrac{dF}{dx}\) も同様に \(\mathcal{O}(1)\) の大きさに抑えられる（極値でも \(\left|\frac{dF}{dx}\right|_{\mathrm{max}} \approx 1.739\) に過ぎない）。したがって、\(\Lambda_{\mathrm{eff}}\) の空間勾配は、</p>
+\[
+\left|\frac{d\Lambda_{\mathrm{eff}}}{dr}\right|
+\sim \frac{1}{R^{3}}\times\mathcal{O}(1)
+\]<p>で特徴づけられる。</p>
+<p>よって、代表的な宇宙論スケールにおけるオーダー評価は次の通りである：</p>
+\[
+\boxed{R \sim 10^{26}\,\mathrm{m} \ \Rightarrow\ \left|\dfrac{d\Lambda_{\mathrm{eff}}}{dr}\right| \sim 10^{-78}\,\mathrm{m^{-3}}}
+\]<p>すなわち、宇宙論スケールでは \(\Lambda_{\mathrm{eff}}\) の空間勾配は観測的に無視できるほど小さく：</p>
+\[
+\left|\frac{d\Lambda_{\mathrm{eff}}}{dr}\right| \approx 0
+\]<p>また、\(\Lambda\)CDM の観測値 \(\Lambda \approx 10^{-52}\,\mathrm{m^{-2}}\)、宇宙論スケール \(L \approx 10^{26}\,\mathrm{m}\) より、たとえ定数 \(\Lambda\) が宇宙スケールでわずかに変化していたとしても、その変化率は：</p>
+\[
+\frac{\Lambda}{L} \approx \frac{10^{-52}\,\mathrm{m^{-2}}}{10^{26}\,\mathrm{m}} \approx 10^{-78}\,\mathrm{m^{-3}}
+\]<p>程度であり、直接検出できない水準にある。したがって、先に導出された \(\left|\frac{d\Lambda_{\mathrm{eff}}}{dr}\right| \sim 10^{-78}\,\mathrm{m^{-3}}\) は定数近似が成立すると同時に、\(\frac{\Lambda}{L}\) と比べて真の定数とみなされるほどの極小でもないため、\(\Lambda_{\mathrm{eff}}\) の導入意義も損なわれない。</p> 
+<p>よって、このスケールと近似条件下では、 \(\Lambda_{\mathrm{eff}}\) を空間的に一定とみなして定数 \(\Lambda\) として扱うことが可能であり、さらに前述の通り、宇宙論スケールでは交換流 \(J_r\) がほぼゼロとなることから、保存則の局所的な破れも実質的に無視できるため、以下の Friedmann 方程式が自然に再現される：</p>
+\[
+\boxed{H^2 \equiv \left(\frac{\dot a}{a}\right)^2 = \frac{8\pi G}{3}\,\rho - \frac{k c^2}{a^2} + \frac{\Lambda c^2}{3}}
+\]
+\[
+\boxed{\frac{\ddot a}{a} = -\frac{4\pi G}{3}\!\left(\rho + \frac{3P}{c^2}\right) + \frac{\Lambda c^2}{3}}
+\]<p>以上より、本理論と、\(\Lambda\)CDM モデルおよびその成功によって説明されてきた観測（CMB や BAO など）は、Friedmann 方程式を介して相互に接続することができる。</p>
+</section>
+<section id="appendix-higgs">
+<h2>Appendix:<br>ヒッグス機構との構造的対応</h2>
+<h3>自己結合定数 \(\lambda\)</h3>
+<p>本文で導出された真空期待値の式に観測値 \(v = 246\,\mathrm{GeV}\) を代入できる。すると、対応する特性スケール \(R\) は以下のように求まる：</p>
+\[
+v = \frac{\sqrt{2}}{R}
+\quad \Rightarrow \quad
+R = \frac{\sqrt{2}}{v} = \frac{\sqrt{2}}{246\,\mathrm{GeV}} \approx 5.75 \times 10^{-3}\,\mathrm{GeV}^{-1}
+\]<p>ここで、自然単位系（\(\hbar = c = 1\)）において、\(\mathrm{GeV}^{-1} \approx 1.97 \times 10^{-16}\,\mathrm{m}\) を用いて換算すると：</p>
+\[
+R \approx 5.75 \times 10^{-3} \times 1.97 \times 10^{-16}\,\mathrm{m} \approx 1.13 \times 10^{-18}\,\mathrm{m}
+\]<p>と定まる。この値は、LHC 実験においてヒッグス粒子が発見された電弱距離スケール ≒ \(10^{-18}\,\mathrm{m}\) と一致する。</p>
+<p>また、<a href="#section10">セクション 10 </a> より、係数比較から形式的に \( \lambda = R^{2} \) と同定済みである。ここで、\( v = \frac{\sqrt{2}}{R} \) から導いた \( R \approx 1.13\times 10^{-18}\ \mathrm{m} \) を代入すると、\(\lambda\) の次元が \([\mathrm{m}^2]\) となるため、標準模型の無次元の自己結合定数 \(\lambda\) と直接的に比較できないが、標準模型の関係式：</p>
+\[
+m_h^{2} = 2\,\lambda\,v^{2} \;\Rightarrow\; \lambda = \frac{m_h^{2}}{2\,v^{2}}
+\]<p>に、導出した \( v = \frac{\sqrt{2}}{R} \) を代入することで自然に規格化され、比較可能となる。</p>
+<p>実際に代入すると、</p>
+\[
+\lambda 
+= \dfrac{m_h^{2}}{2 \left( \dfrac{\sqrt{2}}{R} \right)^{2}}
+= \dfrac{m_h^{2}}{\dfrac{4}{R^{2}}}
+\]
+<p>したがって、</p>
+\[
+\boxed{\;\lambda = R^{2} \cdot \Bigl(\dfrac{m_h}{2}\Bigr)^{2}\;}
+\]<p>となり、\(\bigl(\dfrac{m_h}{2}\bigr)^{2}\) が規格化係数として必然的に現れる。</p>
+<p>ここで、自然単位系 \((\hbar = c = 1)\) において，</p>
+<ul class="ol-spacing">
+  <li>\( R \approx 1.13\times 10^{-18}\ \mathrm{m} \;\approx\; 5.75\times 10^{-3}\ \mathrm{GeV}^{-1} \)</li>
+  <li>\( m_h \approx 125\ \mathrm{GeV} \;\Rightarrow\; \dfrac{m_h}{2} \approx 62.5\ \mathrm{GeV} \)</li>
+</ul>
+<p>であるから、これらを代入すると、</p>
+\[
+\lambda \;=\; (5.75\times 10^{-3}\ \mathrm{GeV}^{-1})^{2}\,\times\,(62.5\ \mathrm{GeV})^{2}
+\;\approx\; 0.129
+\]<p>となり、標準模型の自己結合定数 \(\lambda \approx 0.129\)（無次元）と一致する。</p>
+<p>これは、\(10^{-18}\ \mathrm{m}\) スケールの平方領域において、ヒッグスの半質量に対応するエネルギー \(\dfrac{m_h}{2}\) が二重に重なり合うことで、ヒッグス粒子が生成されることを意味している。</p>
+<h3>ダブルヒッグス生成の条件</h3>
+<h4>標準模型の立場：</h4>
+<p>ヒッグス生成・崩壊は運動学的条件（エネルギー閾値）で決まる。</p>
+<ul class="ol-spacing">
+  <li>単一ヒッグスなら：\( \sqrt{\hat{s}} \geq m_h \)、</li>
+  <li>ダブルヒッグスなら：\( \sqrt{\hat{s}} \geq 2 m_h \) が生成条件。</li>
+</ul>
+<p>つまり、エネルギーさえ足りれば（\( \sqrt{\hat{s}} \geq 2 m_h \) となれば）、\( pp \;\to\; hh \)（ダブルヒッグス）の生成は可能という見方。（CERN が探索中）</p>
+<h4>本理論の立場：</h4>
+<p>先ほどの結果に基づくと：</p>
+<ul class="ol-spacing" style="padding-left:1em; margin-left:0;">
+  <li>自己結合定数：\( \lambda = R^2 \cdot \left( \dfrac{m_h}{2} \right)^2 \) より、<br>「2 つの \( \dfrac{m_h}{2} \) が \( R \) の平方スケールで同時に重なる」と、単一ヒッグス \( h \) が生成。</li>
+  <li>したがって、ダブルヒッグス \( hh \) 生成には、<br>「\( R \,(\approx 1.13 \times 10^{-18}\ \mathrm{m}) \)スケールの平方領域内で 4 つ（2 つ × 2 セット）の \( \dfrac{m_h}{2} \) がほぼ同時に重なる」必要があり、その確率は極めて低いかほぼゼロに近い。</li>
+</ul>
+<p>\( hh \) 生成は、エネルギー閾値よりも幾何学的な同時性条件に支配されるため、実質的に不可能（もしくはその生成確率は標準模型の予測よりも極端に低い）。</p>
+<p>両者の予言を対比すると、</p>
+<div style="border:3px solid currentColor; padding:1.5em; text-align:center; border-radius:6px; line-height:2;">
+<ul class="ol-spacing">
+  <li>標準模型：エネルギー閾値条件支配<br>\( hh \) 生成は「可能」</li>
+  <li>本理論の帰結：幾何学的な同時性条件支配<br>\( hh \) 生成は「確率的にほぼ不可能」</li>
+</ul>
+<div style="text-align:right; font-size:0.8em; margin-top:0.5em;">
+ 2025.09.19
+</div>
+</div>
+<h3>光の非束縛性と無限飛距離</h3>
+<p>また、この \( R \) (\( \approx 1.13 \times 10^{-18}\ \mathrm{m} \ \approx 5.75 \times 10^{-3}\ \mathrm{GeV}^{-1} \)) に対応するエネルギースケールは、\( \dfrac{1}{R} \approx 174\ \mathrm{GeV} \) であり、これは単一粒子が取り得る質量スケールの最大値（\( m_{\max} \leq 174\ \mathrm{GeV} \)）を与える。</p>
+<p>一方、標準模型の関係式：</p>
+\[
+m_t = \dfrac{y_f \cdot v}{\sqrt{2}} \quad (0 \leq y_f \leq 1)
+\]<p>から制約されるユカワ結合は最大で \( y_f = 1 \) とされ、それを超える重い粒子は存在しないことを示唆している。</p>
+<p>実際、観測された中で最も重い粒子はトップクォークであり、その質量は \( m_t \approx 173\ \mathrm{GeV} \) で、ユカワ結合は \( y_t \approx 0.99 \) である。<br>したがって、トップクォークより重い単一粒子は存在しない（\( m_{\max} \leq 174\ \mathrm{GeV},\ y_f \leq 1 \)）とする点において、fΛ と標準模型の予言は現時点で観測と一致している。</p>
+<p>仮に、 fΛ のエネルギースケール最大の \( m_{\max} \approx 174\ \mathrm{GeV} \) を代入すると：</p>
+\[
+y_f = \dfrac{\sqrt{2}\, m_{\max}}{v}
+\approx \dfrac{\sqrt{2} \times 174}{246}
+\approx \dfrac{246}{246}
+\approx 1.00
+\]<p>となり、ユカワ結合はちょうど 1 に達する。</p>
+<p>（ ↓ 代数的に解くと）</p>
+<p>標準模型の関係式：</p>
+\[
+m_f = \dfrac{y_f \cdot v}{\sqrt{2}}
+\]<p>\( m_f \) に、\( m_{\max} = \dfrac{1}{R} \) を代入すると、</p>
+\[
+\dfrac{1}{R} = \dfrac{y_f \cdot v}{\sqrt{2}} \;\Rightarrow\; y_f = \dfrac{\sqrt{2}}{v \cdot R}
+\]<p>\( v = \dfrac{\sqrt{2}}{R} \) であるから、</p>
+\[
+y_f = \dfrac{\sqrt{2}}{\left(\dfrac{\sqrt{2}}{R}\right) \cdot R} = 1
+\]<p>また、\( v = \dfrac{\sqrt{2}}{R} \) の同定、すなわち \( R \approx 1.13 \times 10^{-18}\ \mathrm{m} \) に固定する扱いを外せば、</p>
+<p>一般式：</p>
+\[
+\boxed{\dfrac{1}{R} = \dfrac{y_f \cdot v}{\sqrt{2}}}
+\]<p>が成り立つ。</p>
+<p>ここで、</p>
+<ul class="ol-spacing">
+  <li>ユカワ結合 \( y_f = 1 \) なら最大質量であるが、</li>
+  <li>一方で、ユカワ結合 \( y_f = 0 \) であるなら、その粒子の質量も 0 であることを意味する。</li>
+</ul>
+<p>質量 0 を再現するために \( y_f = 0 \) を代入すると、</p>
+\[
+\dfrac{1}{R} = \dfrac{0 \cdot v}{\sqrt{2}}
+\]
+\[
+\dfrac{1}{R} = 0
+\]<p><strong>となり、\( R \to \infty \) が必要となる。</strong></p>
+<p><strong>つまり、質量を持たない粒子は \( R \) を無限大に発散させるため、ヒッグス場に束縛されることなく無限に飛んでいくことができる。これに相当するのが光子、つまり光である。</strong></p>
+<p>厳密には光子にユカワ結合は定義できず、ユカワ結合 \( y_f = 0 \) をそのまま代入することはできないが、光子はヒッグス場と相互作用しないため、実質的には \( y_f = 0 \) の場合と同じ帰結を辿る。</p>
+<p><strong>よって、これが 光 がヒッグス場の影響を受けずに無限に移動できる幾何学的な原理となる。</strong></p>
+<p>また、トップクォークはユカワ結合 \( y_t \approx 0.99 \) であり、そのときの \( R \) は \( 1.13 \times 10^{-18}\ \mathrm{m} \) (\( \sqrt{2} / v \)) に限りなく近い。（計算すると、\( R \approx 1.14 \times 10^{-18}\ \mathrm{m} \)）</p>
+<p>したがって、トップクォークの移動は他の粒子と比べても \( 1.13 \times 10^{-18}\ \mathrm{m} \) スケールに極端に強く束縛され、最終的に生成地点付近で崩壊する運命を辿ることになる。</p>
+<p>実際、トップクォークの寿命はきわめて短く（およそ \( 5 \times 10^{-25}\ \mathrm{s} \)）、強い相互作用によるハドロン化を待たずに崩壊してしまう。<br>そのため、他の粒子のように「飛び回る存在」として観測されることはなく、生成された場所の近傍でただちに崩壊するのが大きな特徴とされている。</p>
+<h3 id="space-mass-connection">空間と質量の結びつき</h3>
+<p>アインシュタインの関係式 \(E = mc^2\) より、単一粒子において \(m_f = \dfrac{E_f}{c^2}\) であるから、同様に \(m_f = \dfrac{1}{R}\) を代入すると、単一粒子の空間（被）束縛エネルギー：</p>
+\[
+\dfrac{1}{R} = \dfrac{E_f}{c^2} \;\;\Rightarrow\;\; E_f = \dfrac{c^2}{R}
+\]<p>が定義される。</p>
+<p>これに、\(E_f = m_f \cdot c^2\) （\(E = mc^2\)）を代入すると、</p>
+\[
+m_f \cdot c^2 = \dfrac{c^2}{R}
+\]<p>したがって、</p>
+\[
+m_f = \dfrac{1}{R}
+\]<p>に戻る（循環する）。よって、「質量」とは、「ヒッグス場による幾何学的な束縛スケール \(R\) の範囲狭さ」を質量次元へ単に単位変換したものであると言える。<br>（単一粒子において、\(\dfrac{c^2}{R} = mc^2 = E\) が成り立つということ）</p>
+<p>この循環は、\(m_f\) に大きな質量を与えるほど、ヒッグス場における空間束縛スケール \(R\) が縮むことを意味しており、これは、一般相対論の「質量による空間の歪み」に対して、ヒッグス場の空間束縛スケール \(R\) から素粒子レベルでの説明を与える。</p>
+<p>しかし、この循環に基づくと、実際の因果の向きとしては、ヒッグス場の束縛スケールの範囲狭さ → 動かしづらさ → 外部から質量として観測される、と考える方が自然である。</p>
+<div style="border:3px solid currentColor; padding:0.5em; border-radius:6px; line-height:2;">
+<p><strong>つまり、少なくとも単一粒子においては、<br>「質量があるから空間が歪む」のではなく、「ヒッグス場に束縛されたためにその束縛度合い（空間スケール \(R\) の縮み）が質量として観測されている」ということである。</strong></p>
+</div>
+<p><strong>加えて、一般相対論的に言えば、局所的に \(R\) が縮んでいる空間、すなわち単一粒子の質量近傍を 光 が通過する際には、光子は \(R \to \infty\) のままその空間（時空）の測地線に沿って進むことになるため、光は質量を持たずして重力の影響を受けることになる。</strong></p>
+<p>（多粒子系においては複雑化するため一概には言えないが、空間と質量の結びつきの起源を考える上では、今回の単一粒子系の方が適している。）</p>
+<h3>ヒッグススケールとプランクスケール</h3>
+<p>単一粒子において \( m = \dfrac{1}{R} \) であるから、ここで、\( R \) にプランク長 \( \ell_P \approx 1.616 \times 10^{-35}\ \mathrm{m} \) を代入すると、</p>
+\[
+m = \frac{1}{\ell_P} \approx \frac{1}{1.616 \times 10^{-35}\ \mathrm{m}} \approx 6.19 \times 10^{34}\ \mathrm{m}^{-1}
+\]<p>自然単位系（\( \hbar = c = 1 \)）において、\( \mathrm{m}^{-1} \approx 1.97 \times 10^{-16}\ \mathrm{GeV} \) であるから、</p>
+\[
+m \approx 6.19 \times 10^{34} \times 1.97 \times 10^{-16}\ \mathrm{GeV} \approx 1.22 \times 10^{19}\ \mathrm{GeV}
+\]<p>この値は、標準的なプランク質量：</p>
+\[
+m_P \approx 1.22 \times 10^{19}\ \mathrm{GeV}\ (\approx 2.18 \times 10^{-8}\ \mathrm{kg})
+\]<p>と一致する。すなわち、\( R \) にプランク長 \( \ell_P \) を代入することで、プランク質量 \( m_P \) が必然的に現れる。</p>
+<p>したがって、ヒッグススケール質量とプランク質量は、ヒッグス場の空間束縛スケール \( R \) を介して同一の枠組みで繋がっていることがわかる。</p>
+<p>これは、長く未解決とされてきた、ヒッグススケール質量（\( \sim 10^2\ \mathrm{GeV} \)）とプランク質量（\( \sim 10^{19}\ \mathrm{GeV} \)）の間にある 17 桁の大きな隔たり、すなわちヒエラルキー問題（階層性問題）に対して、答えが与えられたことを意味する。</p>
+<h3>基本定数としての \(\dfrac{m_h}{2}\)</h3>
+<p><a href="#section10">セクション 10 </a> より、係数比較から形式的に \(\mu^2 = 2\)（無次元）と同定済みである。ここで、標準模型の \(\mu^2\) は \([\mathrm{GeV}^2]\) の次元を持つため直接の比較はできないが、標準模型の関係式：</p>
+\[
+v^2 = \frac{\mu^2}{\lambda}
+\]<p>に、先に求めた \(v = \dfrac{\sqrt{2}}{R}, \quad \lambda = R^2 \cdot \left(\dfrac{m_h}{2}\right)^2\) を代入すると、自然と規格化され比較できるようになる。<br>実際に代入すると、</p>
+\[
+\mu^2 = v^2 \lambda = \left(\dfrac{\sqrt{2}}{R}\right)^2 \cdot \left(R^2 \cdot \left(\dfrac{m_h}{2}\right)^2\right)
+\]<p>したがって、</p>
+\[
+\mu^2 = 2 \cdot \left(\dfrac{m_h}{2}\right)^2 \;\; [\mathrm{GeV}^2]
+\]<p>となり、\(\bigl(\dfrac{m_h}{2}\bigr)^{2}\) が規格化係数として必然的に現れ、さらに標準模型における定義 \(\mu^2 = \dfrac{1}{2} m_h^2 \; [\mathrm{GeV}^2]\) と一致する。<br>これら（\(\mu^2, \lambda\)）を fΛ のポテンシャル \(V(\phi(r))\) の \(\phi^2\) 項と \(\phi^4\) 項に戻すと：</p>
+\[
+V(\phi(r)) = -\left(\frac{m_h}{2}\right)^2 \phi^2 + \frac{1}{4} R^2 \left(\frac{m_h}{2}\right)^2 \phi^4
+\]<p>さらに、\(R = \dfrac{\sqrt{2}}{v}\) を代入すると、</p>
+\[
+\boxed{V(\phi(r)) = -\left(\dfrac{m_h}{2}\right)^2 \phi^2 + \dfrac{1}{4}\left(\dfrac{\sqrt{2}}{v}\right)^2\left(\dfrac{m_h}{2}\right)^2 \phi^4}
+\]<p>となり、標準模型のポテンシャル：
+\[
+V_{\text{Higgs}}(\phi) = -\dfrac{1}{4} m_h^2 \phi^2 + \dfrac{m_h^2}{8 v^2} \phi^4
+\]<p>と一致する。よって、標準模型のポテンシャルは、</p>
+\[
+\boxed{V_{\text{Higgs}}(\phi) = -\left(\dfrac{m_h}{2}\right)^2 \phi^2 + \dfrac{1}{4}\left(\dfrac{\sqrt{2}}{v}\right)^2\left(\dfrac{m_h}{2}\right)^2 \phi^4}
+\]<p>の形に細分化して記述できることがわかる。
+<h4>ヒッグスポテンシャルの一般化</h4>
+<p>直前で細分化された標準模型のポテンシャルは：</p>
+\[
+V_{\text{Higgs}}(\phi) = -\left(\dfrac{m_h}{2}\right)^2 \phi^2 + \dfrac{1}{4}\left(\dfrac{\sqrt{2}}{v}\right)^2\left(\dfrac{m_h}{2}\right)^2 \phi^4
+\]
+ここで、</p>
+\[
+\dfrac{m_h}{2} \equiv \breve{m}, \quad \dfrac{\sqrt{2}}{v} \equiv R_h
+\]<p>とおくと：</p>
+\[
+V_{\text{Higgs}}(\phi) = -\breve{m}^2 \phi^2 + \dfrac{1}{4} R_h^2 \breve{m}^2 \phi^4
+\]<p>これを整理すると：</p>
+\[
+\boxed{V_{\text{Higgs}}(\phi) = \breve{m}^2 \left( - \phi^2 + \dfrac{1}{4} R_h^2 \phi^4 \right)}
+\]<p>が得られ、質量無次元化と質量次元付与の双方向性を与えるための自然単位系：</p>
+\[
+\boxed{\breve{m} = 1}
+\]<p>が必然的に規定される。<br>この自然単位系（ \(\hbar = c = \breve{m} = 1\) ）を適用し、同時に \(R_h = \tfrac{\sqrt{2}}{v} \approx 1.13 \times 10^{-18}\,\mathrm{m}\) をより一般の特性スケール \(R\) に置き換えれば：</p>
+\[
+\boxed{V_{\text{Higgs}}(\phi) = - \phi^2 + \dfrac{1}{4} R^2 \phi^4}
+\]<p>が得られ、無次元化された普遍的なスカラー場ポテンシャルとして宇宙論スケールへそのまま適用可能となる（<a href="#section4">セクション 4 </a> へ）。</p>
+<p><strong>このことから、\(\breve{m} \equiv \dfrac{m_h}{2}\) は、ヒッグススケールにおける物理法則を規定する基本定数であることがわかる。</strong></p>
+<h2>Appendix:<br>Higgs ボソンと \(\Lambda\)CDM 曲率半径 \(R_\Lambda\) の帰結</h2>
+<h3>真空期待値、Higgs（ヒッグス）ボソン、Z ボソン、W ボソン</h3>
+<h4>破れ開始としての真空期待値（\(r = R = 2\)）</h4>
+<p>真空期待値（VEV）\(v = 246\,\mathrm{GeV}\) は、自発的対称性がすでに破れて安定した真空に対応するスケールである。
+つまり、その直前（エネルギー \(E\) がこれより高い領域）までは対称性は保たれており、\(v\) 付近から破れが始まったとみなせる。
+変分残差プロットで言えば、\(r = R = 2\) が破れの閾値（破れの開始地点）に相当する。</p>
+<h4>破れピークとしてのヒッグスボソン質量</h4>
+<p>ヒッグス粒子（ヒッグスボソン）質量 \(m_H\)（ここでは \(\hbar = c = 1\) の自然単位系を用いて \(E_H\) とおく）\(\approx 125\,\mathrm{GeV}\) は、ヒッグス場ポテンシャルの曲率、すなわち揺らぎに対する抵抗の強さを表す。
+物理的には、破れた真空中で最も顕著に励起可能な固有モード（≒ 自発的対称性の破れのピーク）である。</p>
+<p>もし、このピークが変分残差のピーク位置と一致するなら、それは、真空構造が最も強く応答するエネルギースケール（変分残差 \(\delta(r)\) が最大になり、極値条件破れが最も強く現れるエネルギースケール）がヒッグスボソンの質量スケールに一致していることを意味する。</p>
+<p>したがって、変分残差プロットにおける破れピークと自発的対称性の破れの最大強度点（ピーク）の位置が一致することが期待される。</p>
+<h4>スケーリング則と一般形</h4>
+<p><a id="space-mass-connection">前述</a>の通り、単一粒子において：</p>
+\[
+\frac{1}{R} = m = E \quad (\hbar = c = 1)
+\]
+<p>であるから、粒子の質量エネルギー \(E\) と特性スケール \(R\) には反比例の関係：</p>
+\[
+E \propto \frac{1}{R}
+\]
+<p>が成り立つ。ここで、本モデル（fΛ）では \(R\) と \(r\) はともに無次元の長さスケールとして互いに対応しているため、</p>
+\[
+E \propto \frac{1}{r}
+\]
+<p>と書き換えることができる。ここで\((E_v,  r_v)\) を基準点として固定すると、比例関係から、</p>
+\[
+\frac{E_v}{E} = \frac{r(E)}{r_v}
+\]
+<p>が成り立ち、一般式として：</p>
+\[
+r(E) = r_v \cdot \frac{E_v}{E}
+\]
+<p>を得る。これに \(r_v = R = 2,\ E_v = 246\ \mathrm{GeV}\) を代入すると：</p>
+\[
+r(E) = 2 \cdot \frac{246\,\mathrm{GeV}}{E} = \frac{492\,\mathrm{GeV}}{E}
+\]
+<p>となり、単一粒子質量スケール \(E\) と無次元スケール \(r\) の対応が定量化される。</p>
+<h4>個別適用と数値計算</h4>
+<p>これに個別の観測質量を代入すると：</p>
+<ol>
+  <li><strong>ヒッグスボソン</strong>（\(E_H \approx 125\,\mathrm{GeV}\)）<br>
+    \[
+    r_H = \frac{492\,\mathrm{GeV}}{125\,\mathrm{GeV}} \approx 3.94
+    \]
+  </li>
+  <li><strong>Z ボソン</strong>（\(E_Z \approx 91.2\,\mathrm{GeV}\)）<br>
+    \[
+    r_Z = \frac{492\,\mathrm{GeV}}{91.2\,\mathrm{GeV}} \approx 5.39
+    \]
+  </li>
+  <li><strong>W ボソン</strong>（\(E_W \approx 80.4\,\mathrm{GeV}\)）<br>
+    \[
+    r_W = \frac{492\,\mathrm{GeV}}{80.4\,\mathrm{GeV}} \approx 6.12
+    \]
+  </li>
+</ol>
+<p>この結果を、変分残差プロットに重ね合わせて該当部分を拡大すると、以下の図のようになる（本文の <a href="#fig1">Fig. 1</a> も参照）。</p>
+<figure style="max-width:600px; margin:0 auto;">
+<img src="https://misaki-kasai.github.io/paper/higgs_r_scale.PNG" style="width:100%; height:auto;" alt="Overlay of vacuum expectation value (VEV) and electroweak boson energy scales (Higgs, W, Z) on the variational residual plot">
+</figure>
+<p><strong>よって、自発的対称性の破れの象徴であるヒッグスボソン質量 \(125\,\mathrm{GeV}\) は、変分残差プロット上の \(r \approx 3.94\) に対応し、極値条件破れのピーク位置 \(r \approx 4.10\) と一致する。</strong></p><p>さらに、Z・W ボソンはその右側の肩にあたる位置に左から並び、破れとして \(\delta(r) \approx 0.5\) を保っていることから、残差プロット内で配置された各位置は直感的にも自然である。以上のように、ヒッグススケールの各観測値GeVの値には、一貫した繋がりと、より深い物理的意味を持たせることが可能である。</p>
+<div class="note"><p><strong>注）</strong> \(r\) と \(R\) はともに出力前は無次元量であり、変分残差 \(\delta(r)\) も無次元である（ \(r\) と \(R\) は常に観測突合時に観測側から単位を借用して出力されるということ）。したがって、変分残差プロットは無次元座標上の分布を表しており、これは、どの物理スケール（例えば今回のようにヒッグススケール）においても、その形状（変分残差プロットの形状）は変わらず保たれることを意味する。</p></div>
+<span style="display: block; height: 0.5em;"></span>
+<h3>曲率半径 \(R_\Lambda\)</h3>
+<p>また、\(\Lambda\)CDM における曲率半径 \(R_\Lambda\) は、宇宙定数 \(\Lambda\) を用いて次の式で与えられる（自然単位系（\(\hbar = c = 1\)））：</p>
+<p style="text-align:center;">\(R_\Lambda = \sqrt{\dfrac{3}{\Lambda}} \quad \left( = \dfrac{\sqrt{3}}{\sqrt{\Lambda}} \right)\)</p>
+<p>これは、アインシュタイン方程式における宇宙定数 \(\Lambda\) 項から直接、またはフリードマン方程式を通じて導かれるものであり、「\(\Lambda\) の効果が顕在化する時空の曲率半径（≒「重力が優勢な領域」から「\(\Lambda\) が優勢な領域」へ移行する転換スケール）」を意味する。つまり、このスケールを超えると、物質や放射よりも \(\Lambda\) の効果が支配的になり、定常的な加速膨張が優勢となることを意味している。</p>
+<p>したがって、本モデルにおいては、スカラー場応答が最大となる領域に、この曲率半径 \(\sqrt{\dfrac{3}{\Lambda}}\) が対応スケールとして自然に現れることが期待される。</p>
+<p>曲率半径 \(R_\Lambda\) をスケール換算して \(r\) で表すと：</p>
+<p style="text-align:center;">\(r_\Lambda = 2 \times \dfrac{R_\Lambda}{R} = 2\sqrt{3} \approx 3.46\)</p>
+<p style="text-align:center; font-size:90%;">（ここで、\( R_\Lambda = \dfrac{\sqrt{3}}{\sqrt{\Lambda}},\quad R = \dfrac{1}{\sqrt{\Lambda}}\)（<a href="#section6">セクション 6 </a>より））</p>
+<p>（ ↓ わかりやすく ）</p>
+<p style="text-align:center;">\(\dfrac{1}{\sqrt{\Lambda}} : 2 \; \left(r = R = 2\right) = \dfrac{\sqrt{3}}{\sqrt{\Lambda}} : r_\Lambda\)</p>
+<p style="text-align:center;">\(\dfrac{r_\Lambda}{\sqrt{\Lambda}} = \dfrac{2\sqrt{3}}{\sqrt{\Lambda}} \quad\Rightarrow\quad r_\Lambda = 2\sqrt{3} \approx 3.46\)</p>
+<p>この結果を、変分残差プロットに重ね合わせて該当部分を拡大すると、以下の図のようになる。</p>
+<figure style="max-width:600px; margin:0 auto;">
+<img src="https://misaki-kasai.github.io/paper/r_lambda_on_vari_resi.PNG" style="width:100%; height:auto;" alt="Overlay of curvature radius R_Λ on the variational residual plot">
+</figure>
+<p>よって、曲率半径 \(R_\Lambda\) は、本モデルの変分残差プロットにおける \(\Lambda_{\mathrm{eff}}\) 顕在化領域 \(r = 2 \sim 4.10\) 内に、\(r \approx 3.46\) として自然に含まれ、かつ極値条件破れのピーク付近に位置する。</p>
+<p>したがって、本モデルのスカラー場応答が最も強くなる領域と、\(\Lambda\)CDM における \(\Lambda\) 支配への転換点は一致する。</p>
+<p>以上より、ヒッグスボソン質量および曲率半径 \(R_\Lambda\) は、スケール間の隔たりを超えて、いずれも変分残差 \(\delta(r)\) のピークに帰結することが示される。</p>
+</section>
+<section id="appendix-ccc-生成一元論">
+<h2>Appendix:<br>CCC および aeon 遷移構造への帰結</h2>
+<p>\(M c_0 = M c^2\)（\(E_{\text{rep}} = E_{\text{BH}}\)）より、臨界半径において \(c_0 = c^2\)。よって、特異点はエネルギー保存則と光速上限により禁止される。</p>
+<p>特異点セクションの \(c_0 = \dfrac{GM}{r}\) によれば、\(c_0 \to 0\) の極限で \(r \to \infty\) に発散する（\(r \to \infty\) に伴い、スカラー場 \(\phi(r)\) の値も \(\to 0\)）。</p>
+<p>これは、最終的に宇宙全体がひとつのブラックホール的構造へと収束することを意味し、この極限構造は、ペンローズの共形サイクリック宇宙論（CCC）における aeon 間の接続条件と数学的に一致する。</p>
+<p>ここで、\(r = R \to \infty \Rightarrow \phi(r) \to 0 \Rightarrow \delta(r \approx R) \to 0\) となるが、\(\delta(r \approx R) \neq 0\) であった破れの痕跡は空間の履歴にそのまま残ると考えると、次の aeon は対称に始まるのではなく、前の aeon の痕跡がわずかに染みついた非対称な aeon として始まることになる。</p>
+<h3>「生成一元論」 — Generative Monism</h3>
+<p>これらのことは、ヒッグス機構とペンローズの共形サイクリック宇宙論（CCC）が、重力理論から導かれた一つのスカラー場ポテンシャル \(V(\phi(r))\) によってそれぞれ独立に導かれ、かつその両者が数学的に一意かつ明示的に接続されたことを意味する。（「生成一元論」 — Generative Monism ）</p>
+<h3>多元宇宙の数理的基盤</h3>
+<p>加えて、この理論では、\(\phi(r)\) の中身を変えるだけで文字通り全ての物理法則が書き換わるため、理論的コスパの観点から多元宇宙論との相性が極めて高い。</p>
+<p>多元宇宙論を支持して、物理法則の違う宇宙を創りたい場合は、\(\phi(r)\) の中身を任意に変えるだけで異なる宇宙を文字通り無限に構築できる。</p>
+<p>\(\phi(r)\) を任意に（好きに）選べる ＝ 変な宇宙や何も成り立たない宇宙すら数学的に構成可能ということです。</p>
+<h3>数理構造の哲学的解釈</h3>
+<p>これらの数理構造を意訳すると、</p>
+<div style="border:3px solid currentColor; padding:0.5em; border-radius:8px; margin:1rem 0; line-height:1.8;">
+<ol>
+  <li>（測地線延長のために）空間がまず斥力的に応答し（外向きに拡がり）、</li>
+  <li>その影響により量子揺らぎが崩壊する。</li>
+  <li>そのときの崩壊エネルギーが空間に放出され、</li>
+  <li>それが質量（＝物質）に変換されることで、</li>
+  <li>重力（＝引力的な空間の歪み）が現れる。</li>
+</ol>
+<p style="font-size: smaller;">(ここでの「崩壊」は、揺らぎの安定状態への遷移、および量子の重ね合わせ崩壊の両方を指しています。)</p>
+<p><u>つまり、因果関係として、先に空間が拡がることで、副次的（副作用的）に質量生成が生じ、重力が発生するということです。</u></p>
+<p>したがって、ダークマター粒子もダークエネルギーの実体も決して発見されず、それらは全て幾何学的な斥力応答の表れとして理解されるはずである。</p>
+<p>この因果の向きは、ブラックホールの形成過程についても以下の新しい視点を与え得る。</p>
+<ol class="ol-spacing">
+  <li>スカラー場 \(\phi(r)\) の突発的な変動（変分極値条件の破れ）</li>
+  <li>強力な斥力加速度 \(a(r)\) が突発的に発生</li>
+  <li>ポテンシャル \(V(\phi(r))\) → ヒッグス機構が発動</li>
+  <li>大量の質量が生成（溢れた分が後に銀河となる）</li>
+  <li>重力加速度 \(g = \dfrac{GM}{r^2}\) の発現</li>
+  <li>\(a(r) = g\) により空間が釣り合い、安定構造が形成される</li>
+  <li>この安定構造の空間がブラックホール内部として閉じられる</li>
+  <li>重力加速度 \(g\) を補給するために外（溢れた質量 ＝ 銀河）からも質量 ＝ 物質を取り込む</li>
+  <li>臨界半径付近で飽和した重力加速度（質量・エネルギー）は、<a href="#appendix-conservation-friedmann">交換流 \(J_r\) </a>により幾何学的なスカラー場 \(\phi(r)\) に還元され、臨界半径における斥力加速度 \(a_{\max}\) によって、幾何学的な温度（熱）として外部へ放出される（= ホーキング放射）</li>
+</ol>
+</div>
+<p><a href="#planck-units">後述する通り</a>、臨界半径 \(r = R = \dfrac{1}{2}r_s\) における斥力加速度は：</p>
+\[
+a_{\max} = \frac{c^4}{GM}
+\]<p>また、一般相対論的なホーキング温度は、事象の地平面 \(r = r_s\) における表面重力 \(\kappa_s\) から、次の式で与えられる：</p>
+\[
+T_{\mathrm{H}} = \frac{\hbar\,\kappa_s}{2\pi k_B c}, \qquad \kappa_s = \frac{c^4}{4GM}
+\]<p>ここで、両者の係数を対比すると：</p>
+\[
+a_{\max} = \frac{c^4}{GM}, \qquad \kappa_s = \frac{c^4}{4GM}
+\]<p>よって、臨界半径における有効温度スケールは：</p>
+\[
+a_{\max} = 4\,\kappa_s \quad \Longrightarrow \quad T_{\mathrm{eff}}^{\mathrm{crit}} = 4\,T_{\mathrm{H}}
+\]<p>したがって、臨界半径における加速度は事象の地平面における表面重力の 4 倍に相当し、赤方偏移によって有効温度スケールが \(\dfrac{1}{4}\) にまで減衰した結果、その投影として外部からホーキング放射が観測される。</p>
+<p>すなわち、ホーキング放射の発生源となる実効的な幾何学的勾配は、斥力加速度 \(a(r)\) の極大値としてブラックホール内部の臨界半径 \(r_{\mathrm{crit}} = \dfrac{1}{2}r_s\) 付近に局在していることを意味している。</p>
+</section>
+<h2 id="planck-units">Appendix:<br>基本プランク単位とその物理的実在性</h2>
+<p><a href="#section9">セクション 9 </a>で導出された斥力加速度は：</p>
+\[
+a(r) = \dfrac{2 c_{0} r}{R^{2} + r^{2}} \quad
+\]<p>ここで、関数 \( a(r) \) が極大値をとる点 \( r = R \) を代入すると：</p>
+\[
+a_{\max} = \dfrac{2 c_{0} R}{R^{2} + R^{2}} = \dfrac{2 c_{0} R}{2 R^{2}}
+\]<p>したがって：</p>
+\[
+a_{\max} = \dfrac{c_{0}}{R} \;\;\Rightarrow\;\; \boxed{a_{\max} \cdot R = c_{0}}
+\]<p>また、\(M c_{0} = M c^{2}\) より、臨界半径において \(c_{0}^{\max} = c^{2}\) であるから、</p>
+\[
+a_{\max} \cdot R = c^{2}
+\]<p><a href="#section9">セクション 9 </a>で求めた臨界半径 \(r_{\text{crit}} = \dfrac{1}{2} r_s = \dfrac{GM}{c^{2}}\) を \( R \) に代入すると：</p>
+\[
+a_{\max} \cdot \dfrac{GM}{c^{2}} = c^{2}
+\]<p>よって、</p>
+\[
+\boxed{a_{\max} = \dfrac{c^{4}}{GM}}
+\]<p>したがって、ブラックホール内部における斥力加速度・重力加速度ともに、この値を超えることはない。</p>
+<p>また、最大加速度としてプランク加速度：</p>
+\[
+a_{\mathrm{P}} \;\equiv\; \sqrt{\dfrac{c^{7}}{\hbar G}}
+\]
+<p>と、導出された臨界半径 \(\dfrac{1}{2} r_{s} = \dfrac{GM}{c^{2}}\) を、\(a_{\max}\) と \( R \) にそれぞれ代入すると：</p>
+\[
+a_{\max} \cdot R = c^{2} \;\;\Rightarrow\;\; \sqrt{\dfrac{c^{7}}{\hbar G}} \cdot \dfrac{GM}{c^{2}} = c^{2}
+\]
+<p>これを質量 \( M \) について解くと：</p>
+\[
+M = \sqrt{\dfrac{\hbar c}{G}}
+\]
+<p>となり、プランク質量が現れる。これは、極限まで縮退させたプランクスケールのブラックホールにおいても、その質量の上限はプランク質量に収まることを意味している。（後述する \(\kappa = 1\) の場合に該当）</p>
+<h3>内部構造からの基本プランク単位の導出</h3>
+<p>ここで、\(a_{\max}\) と \(R\) の比をとると：</p>
+\[
+\dfrac{a_{\max}}{R} = \dfrac{(c^{4} / GM)}{(GM / c^{2})} = \dfrac{c^{6}}{(GM)^{2}}
+\]<p>これを変形すると：</p>
+\[
+\dfrac{a_{\max}}{R} = \dfrac{c^{5}}{G} \cdot \dfrac{c}{GM^{2}} = \dfrac{c^{5}}{G} \cdot \left(\dfrac{GM^{2}}{c}\right)^{-1}
+\]<p>\(\dfrac{GM^{2}}{c}\) の次元はディラック定数 \(\hbar\) の次元に一致するため、比例定数 \(\kappa\) を用いて、</p>
+\[
+\dfrac{GM^{2}}{c} = \kappa \hbar
+\]<p>と記述できる。これを先ほどの式に代入すると：</p>
+\[
+\dfrac{a_{\max}}{R} = \dfrac{c^{5}}{G \kappa \hbar}
+\]<p>また、\(\dfrac{a_{\max}}{R} = \dfrac{c^{6}}{(GM)^{2}}\) であるから、</p>
+\[
+\dfrac{c^{6}}{(GM)^{2}} = \dfrac{c^{5}}{G \kappa \hbar} \quad \Rightarrow \quad M^{2} = \dfrac{\kappa \hbar c}{G}
+\]<p>したがって、物理的な限界質量は：</p>
+\[
+\boxed{M = \sqrt{\dfrac{\kappa \hbar c}{G}}}
+\]
+<h3>系 1：積 × 比 → 限界加速度</h3>
+\[
+\text{積} \times \text{比} \;\equiv\; (a_{\max} \cdot R)\left(\dfrac{a_{\max}}{R}\right) = a_{\max}^{2} = \left(\dfrac{c^{4}}{GM}\right)^{2}
+\]<p>直前で求めた限界質量 \(M = \sqrt{\dfrac{\kappa \hbar c}{G}}\) を代入すると、</p>
+\[
+a_{\max}^{2} = \dfrac{c^{7}}{\kappa \hbar G}
+\]<p>したがって、物理的な限界加速度は：</p>
+\[
+\boxed{a_{\max} = \sqrt{\dfrac{c^{7}}{\kappa \hbar G}}}
+\]
+<h3>系 2：積 ÷ 比 → 限界（最小）長さ</h3>
+\[
+\text{積} \div \text{比} \;\equiv\; \dfrac{a_{\max} \cdot R}{a_{\max}/R} = R^{2} = \left(\dfrac{GM}{c^{2}}\right)^{2}
+\]<p>限界質量 \(M = \sqrt{\dfrac{\kappa \hbar c}{G}}\) を代入すると、</p>
+\[
+R^{2} = \dfrac{\kappa \hbar G}{c^{3}}
+\]<p>したがって、物理的な最小長さは：</p>
+\[
+\boxed{R = \sqrt{\dfrac{\kappa \hbar G}{c^{3}}}}
+\]
+<h3>系 3：比 ÷ 積 → 限界曲率</h3>
+\[
+\text{比} \div \text{積} \;\equiv\; \dfrac{a_{\max}/R}{a_{\max} \cdot R} = \dfrac{1}{R^{2}}
+\]<p>直前の結果より、\(R = \sqrt{\dfrac{\kappa \hbar G}{c^{3}}}\) であるから、宇宙定数 \(\Lambda\) の次元に対応する物理的な限界曲率スケールは：</p>
+\[
+\boxed{\dfrac{1}{R^{2}} = \dfrac{c^{3}}{\kappa \hbar G}}
+\]<p><strong>基本プランク単位の前提は \(\kappa = 1\) であるから、それを採用すれば、ここで導かれた「質量・加速度・最小長さ・曲率」の物理的限界は、既知の基本プランク単位と同一となる。</strong></p>
+<div style="border:3px solid currentColor; padding:0.5em; border-radius:6px; line-height:2;">
+<p><strong>すなわち、基本プランク単位は外部から仮定されるべきものではなく、ブラックホール内部の臨界半径における限界値から、\(\kappa = 1\) を仮定して導かれる物理的実在であるといえる。</strong></p>
+</div>
+<p>また、</p>
+\[
+\boxed{v_{\max} = \sqrt{a_{\max} \cdot R}}
+\]<p>とおくと、</p>
+\[
+v_{\max} = \sqrt{\sqrt{\dfrac{c^{7}}{\kappa \hbar G}} \cdot \sqrt{\dfrac{\kappa \hbar G}{c^{3}}}}
+\]<p><strong>この式からわかるように、右辺は \(\kappa\) 同士で打ち消し合うことから、得られる限界速度は \(\kappa\) の値に関わらず一定である。</strong></p>
+<p><strong>したがって、\(\kappa\) を変えても限界速度の絶対値は不変であることが保証されるため、具体的な \(\kappa\) の値は他の物理限界（限界質量・限界加速度・最小長さ・限界曲率）を定めるための外部要請から決定してよい。<br>（現実宇宙は必ずしも \(\kappa = 1\) とは限らないということ）</strong></p>
+<p>仮に \(\kappa\) を 1 より小さくすると：</p>
+<ul>
+  <li>限界質量が軽くなる</li>
+  <li>限界加速度が強くなる</li>
+  <li>最小長さが短くなる</li>
+  <li>限界曲率が大きくなる</li>
+  <li>限界速度は変化なし（常に \(c\) ）</li>
+</ul>
+<p>したがって：</p>
+<ul class="ol-spacing" style="padding-left:1em; margin-left:0;">
+  <li>\(\kappa = 1\) の場合 → 基本プランク単位と一致し、余計な係数がつかないため最も対称的</li>
+  <li>\(\kappa &lt; 1\) の場合 → 量子効果が強調された世界</li>
+  <li>\(\kappa &gt; 1\) の場合 → 古典的寄りで物理限界が緩んだ世界</li>
+</ul>
+<p><strong>つまり、\(\kappa\) は「量子 ⇄ 古典のバランスを支配する調整パラメータ」として機能させることができる。</strong></p>
+<p><strong>ただし、\(\kappa = 1\) のときにのみ、全ての物理限界が補正因子なしに一致するため、理論的には \(\kappa = 1\) が最も自然である。</strong></p>
+<h3>コンプトン波長 \(\lambda\) の幾何学的本質とその一般化</h2>
+<p><a href="#space-mass-connection">前述</a>の通り、導出された幾何学・質量・エネルギー関係式は：</p>
+<div>
+\[
+\frac{c^{2}}{R} = mc^{2} = E \quad (\, \boxed{\;\hbar = c = 1\;} \,)
+\]<p><small>注）自然単位系では \( c \) を無次元の 1 として省略できるが、見慣れた式を維持するために \( c \) を残している。この \( c \) に直接 光速度 30 万 \( \mathrm{km/s} \) は代入不可。</small></p>
+</div>
+<p>ここで、自然単位系（\(\hbar = c = 1\)）を SI 単位系（\(\hbar \approx 1.055 \times 10^{-34}\ \mathrm{J \cdot s},\; c \approx 2.998 \times 10^{8}\ \mathrm{m/s}\)）に直すために、質量と長さスケールの単なる単位換算の関係：</p>
+\[
+m \times \frac{c}{\hbar} = \frac{1}{R} \quad \Longleftrightarrow \quad R \times \frac{c}{\hbar} = \frac{1}{m} \quad (\hbar \neq 1, \, c \neq 1)
+\]<p>より、単位変換は：</p>
+\[
+\boxed{R = \dfrac{\hbar}{mc} \quad \Longleftrightarrow \quad m = \dfrac{\hbar}{R c}} \quad (\hbar \neq 1, \, c \neq 1)
+\]<p>これを、先ほどの式に適用すると：</p>
+\[
+\frac{\hbar}{R c} \cdot c^{2} = mc^{2} = E \quad (\hbar \neq 1, \, c \neq 1)
+\]<p>したがって：</p>
+\[
+\boxed{\begin{array}{c}\dfrac{\hbar c}{R} = mc^{2} = E \\[0.6em]\text{SI 単位系： }\hbar \approx 1.055 \times 10^{-34}\ \mathrm{J \cdot s},\; c \approx 2.998 \times 10^{8}\ \mathrm{m/s} \end{array}}
+\]<p>となる。</p>
+<p>また、\(R = \dfrac{\hbar}{mc}\) はコンプトン波長：</p>
+\[
+\lambda_{\mathrm{C}} \equiv \frac{\hbar}{mc}
+\]<p>と一致する。よって、単一粒子において \(R\) と \(\lambda_{\mathrm{C}}\) は同一視することができる。</p>
+<p>ただし、コンプトン波長 \(\lambda_C\) は本来、「質量をもった粒子」に付随する固有の長さスケールであり、標準模型における真空期待値 \(v\) や宇宙論のような場のスケールに直接適用することはできない。</p>
+<p><strong>したがって、\(R\) はコンプトン波長の概念をヒッグス場の束縛スケール、さらに言えばより普遍的な特性スケールへと拡張したものとして理解できる。</strong></p
+<p>ここで、整合性を確認するために、<a href="#planck-units">前述</a>の関係式：</p>
+\[
+a_{\max} \cdot R = c^2
+\]<p>に、\(R = \dfrac{\hbar}{m c}\) を代入すると：</p>
+\[
+a_{\max} \cdot \frac{\hbar}{mc} = c^2
+\]<p>したがって：</p>
+\[
+\boxed{a_{\max} = \frac{mc^3}{\hbar}}
+\]<p>プランク質量 \( m_{\mathrm{P}} = \sqrt{\dfrac{\hbar c}{G}}\) を代入すると：</p>
+\[
+a_{\max} = \sqrt{\frac{\hbar c}{G}} \cdot \frac{c^3}{\hbar} = \sqrt{\frac{c^7}{\hbar G}}
+\]<p>となり、プランク加速度：</p>
+\[
+a_{\mathrm{P}} = \sqrt{\frac{c^7}{\hbar G}}
+\]<p>が正しく再現される。</p>
+<p>したがって、コンプトン波長 \(\lambda_C\) は、特性スケール \(R\) を単一粒子に適用した際に現れる狭義の表現であり、ヒッグス場の束縛スケール \(R_f\) と本質的に同義であると言える。すなわち：</p>
+\[
+\boxed{\, \lambda_{\mathrm{C}} \equiv R_{f} = \frac{\hbar}{mc} \,}
+\]
+<footer>
+  <p>© 2025 Misaki Kasai. <br>This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+</footer>
+</body>
+</html>
