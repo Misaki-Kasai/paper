@@ -201,9 +201,8 @@ R = \frac{1}{\sqrt{\Lambda}} \approx 10^{26}\,\mathrm{m}
 \]<p>\(\dfrac{\mathrm{d}F}{\mathrm{d}x}\) の式を代入して明示的に書くと：</p>
 \[
 J_r=\frac{1}{\kappa R^3}\frac{8x(1-x^2)}{(1+x^2)^3},\qquad x=\frac{r}{R}
-\]
-<h3>規格化交換流 \(\tilde J\) の定義と極値解析</h3>
-<p>交換流 \(J_r\) を規格化するため、次式を定義する：</p>
+\
+<p>ここで、交換流 \(J_r\) を規格化するため、次式を定義する：</p>
 \[
 \boxed{\tilde J(x)\equiv\kappa R^3J_r=\frac{\mathrm{d}F}{\mathrm{d}x}=\frac{8x(1-x^2)}{(1+x^2)^3}}
 \]<p>\(\tilde J\) はスケール \(R\) に依存しない普遍関数であり、次の符号構造を持つ：</p>
@@ -212,15 +211,6 @@ J_r=\frac{1}{\kappa R^3}\frac{8x(1-x^2)}{(1+x^2)^3},\qquad x=\frac{r}{R}
   <li><span>\(x \gt 1 \Rightarrow \tilde J \lt 0\)</span> ：物質から真空へのエネルギー回収</li>
   <li><span>\(x = 1\)</span> で <span>\(\tilde J = 0\)</span> ：供給と回収の転換点</li>
 </ul>
-<p>簡単にすると、</p>
-<div style="border:3px solid currentColor; padding:1.5em; text-align:center; border-radius:6px; line-height:2;">
-  <span>\( r \lt R \)</span><strong> で、真空から物質へエネルギー供給</strong><br>
-  \(\Updownarrow\)<br>
-  <span>\( r = R \)</span><strong> で、流れが転換</strong><br>
-  \(\Updownarrow\)<br>
-  <span>\( r \gt R \)</span><strong> で、物質から真空へエネルギー回収</strong>
-</div>
-<h4>供給・回収ピークの導出</h4>
 <p>ピークは \(\tilde J(x)\) の極値から求められる。一階微分を再掲すると：</p>
 \[
 \tilde J(x) = \frac{\mathrm{d}F}{\mathrm{d}x} = \frac{8x(1-x^2)}{(1+x^2)^3}
@@ -241,38 +231,6 @@ y=\frac{4\pm\sqrt{13}}{3},\qquad x_{\pm}=\sqrt{\frac{4\pm\sqrt{13}}{3}}
 \[
 \boxed{x = \sqrt{\dfrac{4 \pm \sqrt{13}}{3}}}
 \]
-<h4>極値の数値評価とピーク値</h4>
-<p>直前の解から、極値の位置は次のように数値評価される：</p>
-\[
-x_{\mathrm{sup}} = \sqrt{\dfrac{4 - \sqrt{13}}{3}} \approx 0.363,\quad x_{\mathrm{rec}} = \sqrt{\dfrac{4 + \sqrt{13}}{3}} \approx 1.592
-\]<p>これらを \(\tilde J(x)=\dfrac{8x(1-x^2)}{(1+x^2)^3}\) に代入すると、供給ピークと回収ピークの値は以下のように求められる：</p>
-<ul>
-  <li><b>供給ピーク（正）</b>：
-  <div>
-  \[
-  \tilde J(x_{\mathrm{sup}})=\frac{8\,x_{\mathrm{sup}}\!\left(1-x_{\mathrm{sup}}^2\right)}{\left(1+x_{\mathrm{sup}}^2\right)^3}\approx\boxed{+\,1.739}
-  \]
-  </div>
-  </li>
-  <li><b>回収ピーク（負）</b>：
-  <div>
-  \[
-  \tilde J(x_{\mathrm{rec}})=\frac{8\,x_{\mathrm{rec}}\!\left(1-x_{\mathrm{rec}}^2\right)}{\left(1+x_{\mathrm{rec}}^2\right)^3}\approx\boxed{-\,0.443}
-  \]
-  </div>
-  </li>
-</ul>
-<p>したがって、真空から物質への最大供給は \(x \approx 0.36\) 付近で生じ、
-その大きさは \(\tilde J \approx +1.74\) である。また、物質から真空への最大回収は
-\(x \approx 1.59\) 付近で発生し、その大きさは \(\tilde J \approx -0.44\) となる。</p>
-<h4>極値の向きの判定</h4>
-<p>極値の性質（極大か極小か）は、\(\tilde J(x)\) の符号を用いて次のように判定できる。</p>
-<ul class="ol-spacing">
-  <li>\(x_{\mathrm{sup}} \approx 0.363 &lt; 1\) であるから、 \(1 - x_{\mathrm{sup}}^2 &gt; 0\) より \(\tilde J(x_{\mathrm{sup}}) &gt; 0\)。したがって、\(x_{\mathrm{sup}}\) は <strong>供給ピーク</strong>（極大値）である。</li>
-  <li>\(x_{\mathrm{rec}} \approx 1.592 &gt; 1\) であるから、 \(1 - x_{\mathrm{rec}}^2 &lt; 0\) より \(\tilde J(x_{\mathrm{rec}}) &lt; 0\)。したがって、\(x_{\mathrm{rec}}\) は <strong>回収ピーク</strong>（極小値）である。</li>
-</ul>
-<p>また、二階微分 \(\dfrac{\mathrm{d}^2F}{\mathrm{d}x^2}\) は \(3x^4 - 8x^2 + 1 = 0\) を境に符号が反転するため、これらの極大・極小の判定は確定する。</p>
-<h3>大域保存則</h3>
 <p>交換流 \(J_r\) を半径方向に沿って線積分すると、次の結果を得る：</p>
 \[
 \int_{0}^{\infty}J_r\,\mathrm{d}r=\frac{1}{\kappa}\int_{0}^{\infty}\frac{\mathrm{d}\Lambda_{\mathrm{eff}}}{\mathrm{d}r}\,\mathrm{d}r=\frac{1}{\kappa}\big[\Lambda_{\mathrm{eff}}(\infty)-\Lambda_{\mathrm{eff}}(0)\big]=0
@@ -409,60 +367,6 @@ a_{\max} \cdot \dfrac{GM}{c^{2}} = c^{2}
 \[
 \boxed{M = \sqrt{\dfrac{\kappa \hbar c}{G}}}
 \]
-<h3>系 1：積 × 比 → 限界加速度</h3>
-\[
-\text{積} \times \text{比} \;\equiv\; (a_{\max} \cdot R)\left(\dfrac{a_{\max}}{R}\right) = a_{\max}^{2} = \left(\dfrac{c^{4}}{GM}\right)^{2}
-\]<p>直前で求めた限界質量 \(M = \sqrt{\dfrac{\kappa \hbar c}{G}}\) を代入すると、</p>
-\[
-a_{\max}^{2} = \dfrac{c^{7}}{\kappa \hbar G}
-\]<p>したがって、物理的な限界加速度は：</p>
-\[
-\boxed{a_{\max} = \sqrt{\dfrac{c^{7}}{\kappa \hbar G}}}
-\]
-<h3>系 2：積 ÷ 比 → 限界（最小）長さ</h3>
-\[
-\text{積} \div \text{比} \;\equiv\; \dfrac{a_{\max} \cdot R}{a_{\max}/R} = R^{2} = \left(\dfrac{GM}{c^{2}}\right)^{2}
-\]<p>限界質量 \(M = \sqrt{\dfrac{\kappa \hbar c}{G}}\) を代入すると、</p>
-\[
-R^{2} = \dfrac{\kappa \hbar G}{c^{3}}
-\]<p>したがって、物理的な最小長さは：</p>
-\[
-\boxed{R = \sqrt{\dfrac{\kappa \hbar G}{c^{3}}}}
-\]
-<h3>系 3：比 ÷ 積 → 限界曲率</h3>
-\[
-\text{比} \div \text{積} \;\equiv\; \dfrac{a_{\max}/R}{a_{\max} \cdot R} = \dfrac{1}{R^{2}}
-\]<p>直前の結果より、\(R = \sqrt{\dfrac{\kappa \hbar G}{c^{3}}}\) であるから、宇宙定数 \(\Lambda\) の次元に対応する物理的な限界曲率スケールは：</p>
-\[
-\boxed{\dfrac{1}{R^{2}} = \dfrac{c^{3}}{\kappa \hbar G}}
-\]<p><strong>基本プランク単位の前提は \(\kappa = 1\) であるから、それを採用すれば、ここで導かれた「質量・加速度・最小長さ・曲率」の物理的限界は、既知の基本プランク単位と同一となる。</strong></p>
-<div style="border:3px solid currentColor; padding:0.5em; border-radius:6px; line-height:2;">
-<p><strong>すなわち、基本プランク単位は外部から仮定されるべきものではなく、ブラックホール内部の臨界半径における限界値から、\(\kappa = 1\) を仮定して導かれる物理的実在であるといえる。</strong></p>
-</div>
-<p>また、</p>
-\[
-\boxed{v_{\max} = \sqrt{a_{\max} \cdot R}}
-\]<p>とおくと、</p>
-\[
-v_{\max} = \sqrt{\sqrt{\dfrac{c^{7}}{\kappa \hbar G}} \cdot \sqrt{\dfrac{\kappa \hbar G}{c^{3}}}}
-\]<p><strong>この式からわかるように、右辺は \(\kappa\) 同士で打ち消し合うことから、得られる限界速度は \(\kappa\) の値に関わらず一定である。</strong></p>
-<p><strong>したがって、\(\kappa\) を変えても限界速度の絶対値は不変であることが保証されるため、具体的な \(\kappa\) の値は他の物理限界（限界質量・限界加速度・最小長さ・限界曲率）を定めるための外部要請から決定してよい。<br>（現実宇宙は必ずしも \(\kappa = 1\) とは限らないということ）</strong></p>
-<p>仮に \(\kappa\) を 1 より小さくすると：</p>
-<ul>
-  <li>限界質量が軽くなる</li>
-  <li>限界加速度が強くなる</li>
-  <li>最小長さが短くなる</li>
-  <li>限界曲率が大きくなる</li>
-  <li>限界速度は変化なし（常に \(c\) ）</li>
-</ul>
-<p>したがって：</p>
-<ul class="ol-spacing" style="padding-left:1em; margin-left:0;">
-  <li>\(\kappa = 1\) の場合 → 基本プランク単位と一致し、余計な係数がつかないため最も対称的</li>
-  <li>\(\kappa &lt; 1\) の場合 → 量子効果が強調された世界</li>
-  <li>\(\kappa &gt; 1\) の場合 → 古典的寄りで物理限界が緩んだ世界</li>
-</ul>
-<p><strong>つまり、\(\kappa\) は「量子 ⇄ 古典のバランスを支配する調整パラメータ」として機能させることができる。</strong></p>
-<p><strong>ただし、\(\kappa = 1\) のときにのみ、全ての物理限界が補正因子なしに一致するため、理論的には \(\kappa = 1\) が最も自然である。</strong></p>
 <h2>銀河回転曲線への適用と \(\Lambda\) 項の有効エネルギー</h2>
 <h3>(1) 重力項： 現実的近似モデル（球対称一様密度）</h3><p>銀河の中心部においては、バリオン成分が比較的密集しており、球対称かつ一様密度の近似モデルが適用可能である。このとき、半径 \(r\) 以内に含まれる質量 \(M(r)\) は次のように表される：</p>
 \[
