@@ -275,7 +275,7 @@ v_{\text{total}}(r) = \sqrt{v_{\text{grav}}^2(r) + v_{\text{rep}}^2(r)}.
 \[
 v_{\mathrm{rep}}(r) = v_0 \cdot \sqrt{\frac{2r^2}{R^2 + r^2}}
 \]
-<h2 id="section9">ブラックホール特異点回避と臨界半径</h2>
+<h2 id="section9">ブラックホール特異点の回避と臨界半径</h2>
 <p>スカラー場 \(\phi(r)\) から導かれる斥力加速度は：</p>
 \[
 a_{\mathrm{rep}}(r) = c_0 \cdot \phi(r) = \frac{2c_0 r}{R^2 + r^2}
@@ -313,82 +313,141 @@ r_{\text{crit}} = \frac{1}{2}\,r_s, \quad \text{ここで} \quad r_s = \frac{2GM
 <p>よって、ブラックホールの特性スケール \(R = \dfrac{1}{2}\,r_s \equiv R_{\mathrm{BH}}\) が自然に定義される。</p>
 <p>また、\(M \cdot c_0 = M c^2\)（\(E_{\text{rep}} = E_{\text{BH}}\)）より、臨界半径において \(c_0 = c^2\)。<strong>したがって、特異点はエネルギー保存則と光速上限により禁止される。</strong></p>
 <p>このことから、特異点は外部からのカットオフなしに、理論内部に存在する空間の斥力構造そのものによって自律的に回避されることがわかる。</p>
-<h2 id="section10">ヒッグス機構との一致</h2><p>本セクションでは、<a href="#section4">セクション4</a>で定義されたポテンシャル</p>
+<p>さらに幾何学的な帰結として、ブラックホールシャドウは、臨界半径 \(r_{\text{crit}} = \dfrac{GM}{c^2}\) によって特徴づけられ、その光子球の半径は：</p>
 \[
-V(\phi(r)) = -\frac{1}{4} \cdot \phi^2 \left( 4 - R^2 \phi^2 \right)
-= -\phi^2 + \frac{1}{4} R^2 \phi^4
-\]<p>から導かれる真空期待値および質量項が、標準模型におけるヒッグス機構と一致することを示す。標準模型において、ヒッグス機構に対応する有効ポテンシャルは次のように与えられる：</p>
-\[
-V_{\text{Higgs}}(\phi) = -\frac{1}{2} \mu^2 \phi^2 + \frac{1}{4} \lambda \phi^4
-\]<p>この構造における真空期待値 \( v \) は、極値条件から決定される：</p>
-\[
-\left. \frac{dV}{d\phi} \right|_{\phi = v} = 0 \quad \Rightarrow \quad v = \sqrt{\frac{\mu^2}{\lambda}}
+r_{\mathrm{ph}} = \frac{3}{2}\,r_s = 3\,r_{\mathrm{crit}}
 \]
-<h3>真空期待値</h3>
-<p>\(\Lambda_{\text{eff}}\) モデルにおけるポテンシャル \(V(\phi(r))\) を微分すると：</p>
+<p>重力レンズ効果を考慮したシャドウ半径は：</p>
 \[
-\frac{dV}{d\phi} = 0 \quad \Rightarrow \quad \phi(-2 + R^2 \phi^2) = 0
-\]<p>したがって、得られる解は以下の通りである：</p>
+b_c = \frac{r_{\mathrm{ph}}}{\sqrt{1 - \dfrac{2\,r_{\mathrm{crit}}}{r_{\mathrm{ph}}}}} = 3\sqrt{3}\,r_{\mathrm{crit}}
+\]
+<p>よって、シャドウの直径は：</p>
+\[
+D = 2\,b_c = 6\sqrt{3}\,r_{\mathrm{crit}}
+\]
+<p>したがって、次の無次元比が得られる：</p>
+\[
+\frac{D}{r_{\mathrm{crit}}} = 6\sqrt{3} \approx 10.4
+\]
+<p>この値は正規化なしにあらゆるブラックホールに適用できる普遍的な値であり、イベントホライズンテレスコープ（EHT）による観測値、M87*（約11.0）および Sgr A*（約10.0）とよく一致する。</p>
+<p>また、臨界半径 \(r_{\text{crit}}\) における斥力加速度を \(a_{\mathrm{rep}}^{\max}\) とおけば、臨界半径において \(c_0 = c^2\) であるから、</p>
+\[
+a_{\mathrm{rep}}^{\max} = \frac{c^2}{r_{\text{crit}}}
+\]
+<p>ここで、\(r_{\text{crit}} = \dfrac{GM}{c^2}\) を代入すれば、</p>
+\[
+a_{\mathrm{rep}}^{\max} = \frac{c^2}{\frac{GM}{c^2}} = \frac{c^4}{GM}
+\]
+<p>したがって、ブラックホール内部において、斥力加速度・重力加速度ともに、この値を超えることはない。</p>
+<p>ここで、\(a_{\mathrm{rep}}^{\max}\) をプランク加速度</p>
+\[
+a_{\mathrm{P}} \equiv \sqrt{\frac{c^7}{\hbar G}}
+\]
+<p>に等しいとおけば、</p>
+\[
+\frac{c^4}{G M} = \sqrt{\frac{c^7}{\hbar G}} \quad \Longrightarrow \quad M = \sqrt{\frac{\hbar c}{G}}
+\]
+<p>が得られ、これはプランク質量 \(m_{\mathrm{P}} \equiv \sqrt{\dfrac{\hbar c}{G}}\) と一致する。</p>
+<p>すなわち、ブラックホールがたとえプランクスケールにまで圧縮されたとしても、その質量はこの基本的限界（プランク質量）を超えることはできないことがわかる。</p>
+<h2 id="section10">ヒッグス機構との一致</h2><p>本セクションでは、セクション~4で定義された \(\Lambda_{\text{eff}}\) モデルのスカラー場ポテンシャル：</p>
+\[
+V(\phi(r)) = -\frac{1}{4}\cdot\phi^{2}\!\left(4 - R^{2}\phi^{2}\right) = -\phi^{2} + \frac{1}{4}R^{2}\phi^{4}
+\]
+<p>が、ヒッグス機構における質量生成構造と直接的に対応していることを示す。</p>
+<p>\(\Lambda_{\text{eff}}\) モデルのポテンシャル \(V(\phi(r))\) から真空期待値（VEV）を得るために、\(\phi\) について微分すると、</p>
+\[
+\frac{dV(\phi(r))}{d\phi} = 0 \quad \Rightarrow \quad \phi\,(-2 + R^2 \phi^2) = 0
+\]
+<p>その解は：</p>
 \[
 \phi = 0 \quad \text{または} \quad \phi = \pm \frac{\sqrt{2}}{R}
-\]<p>よって、自明な解 \(\phi = 0\) を除外すれば、\(\Lambda_{\text{eff}}\) モデルにおける真空期待値は：</p>
-\[
-v = \frac{\sqrt{2}}{R}, \quad \phi = \pm v
-\]<p>ここで整合性を確認するため、\(V(\phi(r))\) と \(V_{\text{Higgs}}(\phi)\) における2次および4次の係数を比較すると、次の関係が得られる：</p>
-\[
--\phi^2 \leftrightarrow -\frac{1}{2} \mu^2 \phi^2 \quad \Rightarrow \quad \mu^2 = 2
 \]
+<p>したがって、自明な解 \(\phi = 0\) を除外すれば、\(\Lambda_{\text{eff}}\) モデルにおける真空期待値：</p>
 \[
-\frac{1}{4} R^2 \phi^4 \leftrightarrow \frac{1}{4} \lambda \phi^4 \quad \Rightarrow \quad \lambda = R^2
-\]<p>したがって、標準模型におけるポテンシャルの最小値の位置は以下の通り：</p>
+v = \frac{\sqrt{2}}{R}, \quad \phi = \pm\, v
+\]
+<p>が得られる。観測から定められたヒッグス場の真空期待値 \(v \approx 246\,\mathrm{GeV}\) を代入すれば、</p>
 \[
-\phi = \pm \sqrt{\frac{\mu^2}{\lambda}} = \pm \sqrt{\frac{2}{R^2}} = \pm \frac{\sqrt{2}}{R}
-\]<p>よって、真空期待値は：</p>
-\[
-v = \frac{\sqrt{2}}{R}
-\]<p>このように、真空期待値 \( v \) は両モデルにおいて一致する。</p>
-<h3>質量項</h3>
-<p>整理のため、先に導入したポテンシャル \( V(\phi(r)) \) を再掲する：</p>
-\[
-V(\phi(r)) = -\frac{1}{4} \cdot \phi^2 \left( 4 - R^2 \phi^2 \right) = -\phi^2 + \frac{1}{4} R^2 \phi^4
-\]<p>物理的な質量項 \(m^2\) を抽出するために、ポテンシャル \(V(\phi(r))\) の 2 階微分を計算し、\(\phi = 0\) における値を評価する。</p>
-<p><strong>Step 1: 1 階微分</strong></p>
-\[
-\frac{dV}{d\phi}
-= \frac{d}{d\phi} \left( -\phi^2 + \frac{1}{4} R^2 \phi^4 \right)
-= -2\phi + R^2 \phi^3
-\]<p><strong>Step 2: 2 階微分</strong></p>
-\[
-\frac{d^2 V}{d\phi^2}
-= \frac{d}{d\phi} \left( -2\phi + R^2 \phi^3 \right)
-= -2 + 3R^2 \phi^2
-\]<p><strong>Step 3: \( \phi = 0 \) における評価</strong></p>
-\[
-\left. \frac{d^2 V}{d\phi^2} \right|_{\phi = 0}
-= -2 + 3R^2 \cdot 0^2
-= -2
-\quad \Rightarrow \quad m^2 = -2
-\]<p>比較のため、標準模型におけるヒッグスポテンシャルを再掲する：</p>
-\[
-V_{\text{Higgs}}(\phi) = -\frac{1}{2} \mu^2 \phi^2 + \frac{1}{4} \lambda \phi^4
-\]<p>ここで、2 次項（すなわち質量項）の係数は：</p>
-\[
-m^2 = -\mu^2
-\]<p>先に得られた結果 \( \mu^2 = 2 \) を代入すると：</p>
-\[
-m^2 = -2
-\]<p>したがって、両モデルにおける質量項は一致する。</p><p>以上より、本モデルのポテンシャル \( V(\phi(r)) \) から導かれる真空期待値および質量項は、標準模型におけるヒッグス機構と完全に一致する。</p>
-<p>（上で導出された真空期待値の式に観測値 \(v = 246\,\mathrm{GeV}\) を代入できる。すると、対応する特性スケール \(R\) は以下のように求まる：</p>
-\[
-v = \frac{\sqrt{2}}{R}
-\quad \Rightarrow \quad
 R = \frac{\sqrt{2}}{v} = \frac{\sqrt{2}}{246\,\mathrm{GeV}} \approx 5.75 \times 10^{-3}\,\mathrm{GeV}^{-1}
-\]<p>ここで、自然単位系（\(\hbar = c = 1\)）において、\(\mathrm{GeV}^{-1} \approx 1.97 \times 10^{-16}\,\mathrm{m}\) を用いて換算すると：</p>
+\]
+<p>自然単位系（\(\hbar = c = 1\)）において、\(1\,\mathrm{GeV}^{-1} \approx 1.97 \times 10^{-16}\,\mathrm{m}\) であるから、</p>
 \[
-R \approx 5.75 \times 10^{-3} \times 1.97 \times 10^{-16}\,\mathrm{m} \approx 1.13 \times 10^{-18}\,\mathrm{m}
-\]<p>と定まる。この値は、LHC実験においてヒッグス粒子が発見された電弱距離スケール ≒ \(10^{-18}\,\mathrm{m}\) と一致する。）</p>
+R \approx 5.75 \times 10^{-3} \,\times\, 1.97 \times 10^{-16}\,\mathrm{m} \approx 1.13 \times 10^{-18}\,\mathrm{m}
+\]
+<p>この値は、LHC実験においてヒッグス粒子が発見された電弱距離スケール \(\sim10^{-18}\,\mathrm{m}\) と一致する。よって、\(R = \dfrac{\sqrt{2}}{v} \equiv R_h\) が自然に定義される。</p>
+<p>ここで、Yukawa結合は、</p>
+\[
+y_f = \frac{R_h}{R_f}, \qquad R_f \equiv \frac{1}{m_f}
+\]
+<p>と書き換えることができ、両辺に対数を取れば、スケール空間における距離として以下のように表すことができる：</p>
+\[
+\log y_f = \Delta\nu, \qquad \Delta\nu \equiv \log R_h - \log R_f
+\]
+<p>ここで、標準模型におけるヒッグスポテンシャルは：</p>
+\[
+V_{\text{Higgs}}(\phi) = -\frac{1}{2}\mu^2\phi^2 + \frac{1}{4}\lambda\phi^4, \qquad v^2 = \frac{\mu^2}{\lambda}, \quad m_h^2 = 2\lambda v^2
+\]
+<p>これらの関係式を明示的に代入すると：</p>
+\[
+V_{\text{Higgs}}(\phi) = -\frac{1}{4}m_h^2\phi^2 + \frac{m_h^2}{8v^2}\phi^4
+\]
+<p>これを細分化すると：</p>
+\[
+V_{\text{Higgs}}(\phi) = -\left(\frac{m_h}{2}\right)^2\phi^2 + \frac{1}{4}\left(\frac{\sqrt{2}}{v}\right)^2\left(\frac{m_h}{2}\right)^2\phi^4
+\]
+<p>ここで、</p>
+\[
+\frac{m_h}{2} \equiv \breve{m}
+\]
+<p>とおいて、前述の関係式 \(R_h = \dfrac{\sqrt{2}}{v}\) を代入すると：</p>
+\[
+V_{\text{Higgs}}(\phi) = -\breve{m}^{2}\phi^{2} + \frac{1}{4}R_h^{2}\breve{m}^{2}\phi^{4}
+\]
+<p>整理すれば：</p>
+\[
+V_{\text{Higgs}}(\phi) = \breve{m}^{2}\!\left(-\phi^{2} + \frac{1}{4}R_h^{2}\phi^{4}\right)
+\]
+<p>したがって、質量次元付与と質量無次元化を橋渡しする自然な選択として \(\breve{m} = 1\) が導かれる。</p>
+<p>ここで、自然単位系として \(\hbar = c = \breve{m} = 1\) を採用し、\(R_h = \dfrac{\sqrt{2}}{v}\) を一般の特性スケール \(R\) に置き換えれば、質量無次元化された普遍的なスカラー場ポテンシャル：</p>
+\[
+\boxed{V_{\text{Higgs}}(\phi) = -\phi^{2} + \frac{1}{4}R^{2}\phi^{4}}
+\]
+<p>が得られる。これは \(\Lambda_{\text{eff}}\) モデルのポテンシャル \(V(\phi(r)) = -\phi^{2} + \dfrac{1}{4}R^{2}\phi^{4}\) と完全に一致する。</p>
+<p>ここで、ヒッグススケールにおける特性質量スケール \(\breve{m}\) を用いると、自己結合定数は、</p>
+\[
+\lambda_{\Lambda_{\text{eff}}} \equiv R_h^2\,\breve{m}^2
+\]
+<p>と表せる。 \(\;\hbar = c = 1\), \(\breve{m} \neq 1\) を採用すれば、  
+\(R_h \approx 1.13\times10^{-18}\,\mathrm{m} \approx 5.75\times10^{-3}\,\mathrm{GeV}^{-1}, \;\breve{m} = \dfrac{m_h}{2} \approx 62.5\,\mathrm{GeV}\) であるから、</p>
+\[
+\lambda_{\Lambda_{\text{eff}}} \approx (5.75\times10^{-3}\,\mathrm{GeV}^{-1})^2\;\cdot\; (62.5\,\mathrm{GeV})^2 \; \approx \; 0.129
+\]
+<p>が得られる。これは標準模型におけるヒッグス自己結合定数 \(\lambda \approx 0.129\) と一致する。</p>
+<p><strong>本セクションにおけるこれらの結果は、質量生成が、幾何学的な斥力応答によって駆動されていることを示している。</strong></p>
+<h3>ダブルヒッグス (\(hh\)) 生成は可能か？</h3>
+<p>単一のヒッグス粒子 (\(h\)) の生成は、特性長さスケール \(R_h\) に対応する領域内で、2つの半質量量子状態 \(|m_h/2\rangle_{1,2}\) の重ね合せにより起こる：</p>
+\[
+\frac{1}{\sqrt{2}} \left( |m_h/2\rangle_1 + |m_h/2\rangle_2 \right) \;\Rightarrow\; |h\rangle
+\]
+<p>この重ね合わせは、次の関係式に反映される：</p>
+\[
+\lambda_{\Lambda_{\text{eff}}} = R_h^2 \left( \frac{m_h}{2} \right)^2
+\]
+<p>これに対して、ダブルヒッグス (\(hh\)) の生成は、2つの独立したヒッグス重ね合わせ状態によって表される：</p>
+\[
+|hh\rangle = |h\rangle \otimes |h\rangle 
+= \left( \frac{1}{\sqrt{2}} \right)^2 \left( |m_h/2\rangle_1 + |m_h/2\rangle_2 \right) \otimes \left( |m_h/2\rangle_3 + |m_h/2\rangle_4 \right)
+\]
+<p>しかし、特性長さスケール \(R_h \approx 1.13 \times 10^{-18}\,\mathrm{m}\) に対応するエネルギースケールは、\(1/R_h \approx 174\,\mathrm{GeV}\) であるため、総エネルギー \(\approx 250\,\mathrm{GeV}\) をもつ4つの半質量を同一の \(R_h\) スケール領域内に局在させようとすると、</p>
+\[
+E_{hh} \equiv 4 \cdot \left( \frac{m_h}{2} \right) \approx 250\,\mathrm{GeV} 
+\quad \boldsymbol{>} \quad 
+E_{R_h} \equiv \frac{1}{R_h} \approx 174\,\mathrm{GeV}
+\]
+<p>となり、閉じ込め可能なエネルギースケールの限界を超えることになる。</p>
+<p><strong>したがって、半質量の 4 点重ね合わせ、すなわちダブルヒッグス生成は、\(R_h\) スケールの閉じ込め限界によりエネルギー的に禁止される。</strong></p>
 <h2>考察と結論</h2>
-<p>本研究では、変分原理に基づき意図的に準解として構成したスカラー場 \(\phi(r)\) から、以下のスケール依存型の有効宇宙項を導出した：</p>
+<p>本研究では、特性スケール \( R \) を保持しながら変分原理とも整合する準解として定式化されたスカラー場 \(\phi(r)\) から、スケール依存性を持つ以下の有効 \(\Lambda\) 項を導出した：</p>
 \[
 \Lambda_{\text{eff}}(r) = \frac{4r^2}{(R^2 + r^2)^2},
 \]<p>これは以下の三つの側面において有効に機能する：</p>
@@ -397,22 +456,27 @@ R \approx 5.75 \times 10^{-3} \times 1.97 \times 10^{-16}\,\mathrm{m} \approx 1.
   \[
   \Lambda_{\text{eff}}^{\text{max}} = \frac{1}{R^2}.
   \]
-  となる。これを観測されている宇宙定数と同一視すると、\(R \sim 10^{26}\,\mathrm{m}\) が得られ、これは可視宇宙のスケール \(\sim 10^{26}\,\mathrm{m}\) と一致する。</li>
-  <li><strong>銀河回転曲線の再現：</strong> \(\Lambda_{\text{eff}}\) に基づく斥力項を用いて、回転速度の合成式として以下を構成した：
-  \[
-  v_{\text{total}}^2(r) = v_{\text{grav}}^2(r) + v_{\text{rep}}^2(r).
-  \]
-  現実的な質量密度モデルおよび代表的なパラメータを用いた数値評価により、この構造が銀河における観測上の平坦な回転速度分布を再現できることが確認された。</li>
-  <li><strong>特異点回避の可能性：</strong> 斥力エネルギーがブラックホールの質量エネルギーに等しくなる条件を導出することで、重力崩壊がエネルギー的に禁止される臨界半径 \(r_{\text{crit}} = \frac{GM}{c^2}\) を得た。この結果は、外部からのカットオフを必要とせず、提案されたモデル内部の動力学において自然に特異点が回避されることを示唆している。</li>
+  となる。これを観測されている宇宙定数として同定すると、\(R \sim 10^{26}\,\mathrm{m}\) が得られ、これは宇宙論スケール \(\sim 10^{26}\,\mathrm{m}\) と一致する。</li>
+  <li><strong>銀河回転曲線の再現：</strong> \(\Lambda_{\text{eff}}\) に基づく斥力項を用いた回転速度の合成式：
+    \[
+    v_{\text{total}}(r) = \sqrt{v_{\text{grav}}^2(r) + v_{\text{rep}}^2(r)}, \qquad 
+    v_{\text{grav}}^{2}(r) = \frac{4}{3}\pi G\rho\, r^{2}, \quad 
+    v_{\text{rep}}^2(r) = v_0^2 \cdot \frac{2r^2}{R^2 + r^2}
+    \]
+    が、現実的な質量密度モデルおよび代表的なパラメータを用いた数値評価により、この構造が銀河における観測上の平坦な回転速度分布を再現することが示された。また、その結果、銀河全域にわたって、\(\Lambda_{\text{eff}}\) に基づく幾何学的斥力項が、重力項よりも優勢であることが確認された。
+    <p>したがって、銀河の回転曲線は以下の斥力項によって系統的に特徴づけられる：</p>
+    \[
+    v_{\text{rep}}(r) = v_{0} \cdot \sqrt{\frac{2r^{2}}{R^{2} + r^{2}}}
+    \]
+  </li>
+  <li><strong>特異点回避の可能性：</strong> 斥力エネルギーがブラックホールの質量エネルギーに等しくなる条件を導出することで、それ以上の重力崩壊がエネルギー保存則と光速上限のダブルロックにより禁止される臨界半径 \(r_{\text{crit}} = \dfrac{GM}{c^2}\) を得た。この結果は、外部からのカットオフを必要とせず、空間が持つ幾何学的な斥力構造により特異点が必然的に回避されることを示している。</li>
 </ol>
 <p>以上の結果から、\(\Lambda_{\text{eff}}\) モデルは、宇宙論的スケールから銀河構造、さらにはブラックホール内部に至るまで、広範な重力現象を一貫して記述可能な、整合的かつ有効な理論的枠組みを提供することが確認された。</p>
-<p>\(\Lambda_{\text{eff}}\) の寄与は、従来の引力とは逆方向の幾何学的効果として現れ、宇宙の加速膨張および銀河回転曲線の平坦化という両現象において重要な役割を果たす。</p>
-<p>さらに、この幾何学的斥力効果は、空間構造に内在する反重力的応答として、曲率特異点の形成を自然に防ぐ機構としても現れる。</p>
-<p>本モデルの予測精度に関する定量的評価と観測データとの整合性検証は、今後の理論発展および実験的検証において中心課題であり続ける。</p>
-<p>その第一歩として、本スカラーポテンシャル構造の枠組みの中で、ヒッグス機構との一致を確認した。</p>
+<p>本モデルの理論的発展と、観測的・実証的検証は、今後の中心的課題であり続ける。その第一歩として、本スカラーポテンシャル構造の枠組みの中で、ヒッグス機構との一致を確認した。
+</p>
 <span style="display: block; height: 0.5em;"></span>
 <h2>Acknowledgements</h2>
-<p>This research was solely developed by the author, without external collaboration or conceptual assistance.</p>
+<p>This research was solely developed by the author, without external collaboration.</p>
 <span style="display: block; height: 0.5em;"></span>
 <h2>Funding Statement</h2>
 <p>No external funding was received for this work.</p>
