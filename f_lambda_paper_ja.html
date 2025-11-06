@@ -577,7 +577,7 @@ a(r) = \frac{2 c_0 r}{R^2 + r^2} \quad \overset{c_0 = v_0^2}{\underset{a = \frac
 \]<p>ここで、エネルギー・運動量テンソル（以下、物質項）単体での局所的な保存則破れを記述するため、交換流 \(J_\nu\) を次のように定義する：</p>
 \[
 \boxed{J_\nu \equiv \nabla^\mu T^{(\mathrm{m})}_{\mu\nu} = \frac{1}{\kappa}\,\partial_\nu \Lambda_{\mathrm{eff}}}
-\]<p>この式は、\(\Lambda_{\mathrm{eff}}\) の時空的な勾配が立つと、物質項と真空エネルギーとの間でエネルギー・運動量の交換が生じることを意味する。すなわち、物質項単体では \(J_\nu \neq 0\) となり、局所保存則が破れるが、後述するように真空成分を含めた全体系では大域的な保存則が成立する。</p>
+\]<p>この式は、\(\Lambda_{\mathrm{eff}}\) の時空的な勾配が立つと、物質項と幾何学項との間でエネルギー・運動量の交換が生じることを意味する。すなわち、物質項単体では \(J_\nu \neq 0\) となり、局所保存則が破れるが、後述するように幾何学項を含めた全体系では大域的な保存則が成立する。</p>
 <h3>静的・球対称場での交換流</h3>
 <p>静的かつ球対称な場では、時間および角度依存が消えるため、交換流は半径方向のみが残る：</p>
 \[
@@ -604,17 +604,17 @@ J_r=\frac{1}{\kappa R^3}\frac{8x(1-x^2)}{(1+x^2)^3},\qquad x=\frac{r}{R}
 \boxed{\tilde J(x)\equiv\kappa R^3J_r=\frac{\mathrm{d}F}{\mathrm{d}x}=\frac{8x(1-x^2)}{(1+x^2)^3}}
 \]<p>\(\tilde J\) はスケール \(R\) に依存しない普遍関数であり、次の符号構造を持つ：</p>
 <ul class="ol-spacing">
-  <li><span>\(x \lt 1 \Rightarrow \tilde J \gt 0\)</span> ：真空から物質へのエネルギー供給</li>
-  <li><span>\(x \gt 1 \Rightarrow \tilde J \lt 0\)</span> ：物質から真空へのエネルギー回収</li>
+  <li><span>\(x \lt 1 \Rightarrow \tilde J \gt 0\)</span> ：幾何学から物質へのエネルギー供給</li>
+  <li><span>\(x \gt 1 \Rightarrow \tilde J \lt 0\)</span> ：物質から幾何学へのエネルギー回収</li>
   <li><span>\(x = 1\)</span> で <span>\(\tilde J = 0\)</span> ：供給と回収の転換点</li>
 </ul>
 <p>簡単にすると、</p>
 <div style="border:3px solid currentColor; padding:1.5em; text-align:center; border-radius:6px; line-height:2;">
-  <span>\( r \lt R \)</span><strong> で、真空から物質へエネルギー供給</strong><br>
+  <span>\( r \lt R \)</span><strong> で、幾何学から物質へエネルギー供給</strong><br>
   \(\Updownarrow\)<br>
   <span>\( r = R \)</span><strong> で、流れが転換</strong><br>
   \(\Updownarrow\)<br>
-  <span>\( r \gt R \)</span><strong> で、物質から真空へエネルギー回収</strong>
+  <span>\( r \gt R \)</span><strong> で、物質から幾何学へエネルギー回収</strong>
 </div>
 <h4>供給・回収ピークの導出</h4>
 <p>ピークは \(\tilde J(x)\) の極値から求められる。一階微分を再掲すると：</p>
@@ -658,9 +658,7 @@ x_{\mathrm{sup}} = \sqrt{\dfrac{4 - \sqrt{13}}{3}} \approx 0.363,\quad x_{\mathr
   </div>
   </li>
 </ul>
-<p>したがって、真空から物質への最大供給は \(x \approx 0.36\) 付近で生じ、
-その大きさは \(\tilde J \approx +1.74\) である。また、物質から真空への最大回収は
-\(x \approx 1.59\) 付近で発生し、その大きさは \(\tilde J \approx -0.44\) となる。</p>
+<p>したがって、幾何学から物質への最大供給は \(x \approx 0.36\) 付近で生じ、その大きさは \(\tilde J \approx +1.74\) である。また、物質から幾何学への最大回収は \(x \approx 1.59\) 付近で発生し、その大きさは \(\tilde J \approx -0.44\) となる。</p>
 <h4>極値の向きの判定</h4>
 <p>極値の性質（極大か極小か）は、\(\tilde J(x)\) の符号を用いて次のように判定できる。</p>
 <ul class="ol-spacing">
@@ -691,7 +689,7 @@ J_r=\frac{1}{\kappa}\,\frac{\mathrm{d}}{\mathrm{d}r}\!\left[\frac{4r^2}{(R^2+r^2
 \]
 \[
 \Phi(\infty)=\lim_{r\to\infty}\left(\frac{32\pi}{\kappa}\,\frac{r^3(R^2-r^2)}{(R^2+r^2)^3}\;\Rightarrow\;\frac{-r^5}{(r^2)^3}=-\frac{1}{r}\right)=0.
-\]<p>したがって、\(\Phi(0)=\Phi(\infty)=0\) であり、全空間における真空からの供給と回収は、体積全体にわたって厳密に相殺される。<br>よって、一般相対論では困難とされた<strong>大域的エネルギー保存則がここで定義される</strong>。</p>
+\]<p>したがって、\(\Phi(0)=\Phi(\infty)=0\) であり、全空間における幾何学からの供給と回収は、体積全体にわたって厳密に相殺される。<br>よって、一般相対論では困難とされた<strong>大域的エネルギー保存則がここで定義される</strong>。</p>
 <h3>交換流のスケール依存性</h3>
 <p>交換流 \(J_r\) の大きさは次式で表される：</p>
 \[
@@ -706,28 +704,10 @@ J_r=\frac{1}{\kappa}\,\frac{\mathrm{d}}{\mathrm{d}r}\!\left[\frac{4r^2}{(R^2+r^2
 \frac{|J_r|_{\mathrm{Higgs}}}{|J_r|_{\mathrm{cosmo}}} = \left( \frac{R_{\mathrm{cosmo}}}{R_{\mathrm{Higgs}}} \right)^3 \sim \left(\frac{10^{26}}{10^{-18}}\right)^3 \sim 10^{132}
 \]<p>すなわち、ヒッグススケールでは宇宙論スケールに比べて、およそ \(10^{132}\) 倍も交換流が強いことがわかる。</p>
 <ul class="ol-spacing">
-  <li><strong>局所領域</strong>： \(\nabla^\mu T^{(\mathrm{m})}_{\mu\nu}=J_\nu\neq0\) → 真空と物質間でエネルギー交換が発生する。特にヒッグススケールで顕著だが、宇宙論スケールでは交換流はほぼゼロに近い。\(\int_0^\infty J_r\,\mathrm{d}r=0\) より、半径方向の交換流は各特性スケールにおいて局所的に相殺される。</li>
+  <li><strong>局所領域</strong>： \(\nabla^\mu T^{(\mathrm{m})}_{\mu\nu}=J_\nu\neq0\) → 幾何学と物質間でエネルギー交換が発生する。特にヒッグススケールで顕著だが、宇宙論スケールでは交換流はほぼゼロに近い。\(\int_0^\infty J_r\,\mathrm{d}r=0\) より、半径方向の交換流は各特性スケールにおいて局所的に相殺される。</li>
   <li><strong>大域領域</strong>： \(\Phi(0)=\Phi(\infty)=0\) より、供給と回収が全空間で相殺され、大域的なエネルギー保存則が厳密に成立する。</li>
 </ul>
 <p>したがって、大域で保存されるだけでなく局所でも保存則が回復するため、局所的な保存則の破れは直接観測困難だが、ヒッグススケールでは質量付与という形で交換流の痕跡を残す。一方で、宇宙論スケールでは、それに加えて交換流が極めて小さいため、保存則の破れやその痕跡は事実上、検出不能である。</p>
-<h3>\(\Lambda_{\mathrm{eff}}\) を真空エネルギーとして扱う場合</h3>
-<p>\(\Lambda_{\mathrm{eff}}\) を幾何学項ではなく真空エネルギー成分として右辺に移すと、拡張 Einstein 方程式は次のように書き換えられる：</p>
-\[
-\boxed{G_{\mu\nu} = \kappa\,T^{(\mathrm{matter})}_{\mu\nu} - \Lambda_{\mathrm{eff}}(r)\,g_{\mu\nu}}
-\]
-<p>ここで真空エネルギーのテンソルを</p>
-\[
-T^{(\Lambda)}_{\mu\nu} \equiv -\frac{\Lambda_{\mathrm{eff}}}{\kappa} g_{\mu\nu}
-\]
-<p>と定義すれば、式は次のように整理される：</p>
-\[
-G_{\mu\nu} = \kappa \Big( T^{(\mathrm{m})}_{\mu\nu} + T^{(\Lambda)}_{\mu\nu} \Big)
-\]
-<p>Bianchi 恒等式 \(\nabla^\mu G_{\mu\nu} = 0\) を用いると、全エネルギー運動量テンソルに対する保存則が自動的に成立する：</p>
-\[
-\boxed{\nabla^\mu T^{\mathrm{(total)}}_{\mu\nu} = 0},
-\qquad T^{\mathrm{(total)}}_{\mu\nu} = T^{(\mathrm{m})}_{\mu\nu} + T^{(\Lambda)}_{\mu\nu}
-\]<p>すなわち、\(\Lambda_{\mathrm{eff}}\) を幾何学項として扱う場合は物質項単体で局所保存則が破れているように見えるが、真空エネルギーを物質項に含めれば、全体系では共変的な保存則が厳密に保たれていると解釈できる。どちらの表現を採用するかは、\(\Lambda_{\mathrm{eff}}\) をそのまま幾何学項として扱うか、もしくは物質項に含めるかという、「何を物質（エネルギー・運動量）とみなすか」の解釈の違いに過ぎない。<br><strong>なお、著者の立場としては、幾何学項として扱うことを推奨する</strong>。</p>
 <h3>Friedmann 方程式への接続—<br>宇宙論スケールでの \(\Lambda_{\mathrm{eff}}\) 定数近似の可否</h3>
 <p>ここで、\(\Lambda_{\mathrm{eff}}(r)\) の空間勾配を考える：</p>
 \[
