@@ -596,7 +596,7 @@ E_{R_h} \equiv \frac{1}{R_h} \approx 174\,\mathrm{GeV}.
 \]<p>To describe the local non-conservation of the energy-momentum tensor (hereafter referred to as the matter term) alone, we define the exchange current \(J_\nu\) as follows:</p>
 \[
 \boxed{J_\nu \equiv \nabla^\mu T^{(\mathrm{m})}_{\mu\nu} = \frac{1}{\kappa}\,\partial_\nu \Lambda_{\mathrm{eff}}}
-\]<p>This equation implies that whenever there is a spacetime gradient in \(\Lambda_{\mathrm{eff}}\), an exchange of energy and momentum occurs between the matter component and the vacuum energy. In other words, the matter term by itself satisfies \(J_\nu \neq 0\), meaning local conservation is violated; however, as discussed later, global conservation is still maintained when the vacuum contribution is included in the total system.</p>
+\]<p>This equation implies that whenever there is a spacetime gradient in \(\Lambda_{\mathrm{eff}}\), an exchange of energy and momentum occurs between the matter component and the geometric energy. In other words, the matter term by itself satisfies \(J_\nu \neq 0\), meaning local conservation is violated; however, as discussed later, global conservation is still maintained when the geometric contribution is included in the total system.</p>
 <h3>Exchange Current in a Static, Spherically Symmetric Field</h3>
 <p>In a static and spherically symmetric field, the dependence on time and angular coordinates disappears, leaving only the radial component of the exchange current:</p>
 \[
@@ -623,17 +623,17 @@ J_r=\frac{1}{\kappa R^3}\frac{8x(1-x^2)}{(1+x^2)^3},\qquad x=\frac{r}{R}
 \boxed{\tilde J(x)\equiv\kappa R^3J_r=\frac{\mathrm{d}F}{\mathrm{d}x}=\frac{8x(1-x^2)}{(1+x^2)^3}}
 \]<p>\(\tilde J\) is a universal function independent of the scale \(R\) and exhibits the following sign structure:</p>
 <ul class="ol-spacing">
-  <li><span>\(x \lt 1 \Rightarrow \tilde J \gt 0\)</span>: Energy flows from the vacuum into matter.</li>
-  <li><span>\(x \gt 1 \Rightarrow \tilde J \lt 0\)</span>: Energy is transferred back from matter to the vacuum.</li>
+  <li><span>\(x \lt 1 \Rightarrow \tilde J \gt 0\)</span>: Energy flows from the geometry into matter.</li>
+  <li><span>\(x \gt 1 \Rightarrow \tilde J \lt 0\)</span>: Energy is transferred back from matter to the geometry.</li>
   <li><span>\(x = 1\)</span>, where <span>\(\tilde J = 0\)</span>: The transition point between energy supply and recovery.</li>
 </ul>
 <p>In summary:</p>
 <div style="border:3px solid currentColor; padding:1em; text-align:center; border-radius:6px; line-height:2;">
-  <span>\(\text{For }\, r \lt R\;\)</span><strong> energy flows from vacuum to matter</strong><br>
+  <span>\(\text{For }\, r \lt R\;\)</span><strong> energy flows from geometry to matter</strong><br>
   \(\Updownarrow\)<br>
   <span>\(\text{At }\, r = R\;\)</span><strong> the flow reverses</strong><br>
   \(\Updownarrow\)<br>
-  <span>\(\text{For }\, r \gt R\;\)</span><strong> energy flows from matter back to vacuum</strong>
+  <span>\(\text{For }\, r \gt R\;\)</span><strong> energy flows from matter back to geometry</strong>
 </div>
 <h4>Deriving the Peaks of Energy Supply and Recovery</h4>
 <p>The peaks are determined from the extrema of \(\tilde J(x)\). Rewriting the first derivative for reference:</p>
@@ -673,7 +673,7 @@ x_{\mathrm{sup}} = \sqrt{\dfrac{4 - \sqrt{13}}{3}} \approx 0.363,\quad x_{\mathr
   </div>
   </li>
 </ul>
-<p>Therefore, the maximum energy supply from the vacuum to matter occurs around \(x \approx 0.36\) with a magnitude of \(\tilde J \approx +1.74\). Similarly, the maximum energy recovery from matter back into the vacuum takes place near \(x \approx 1.59\) with a magnitude of \(\tilde J \approx -0.44\).</p>
+<p>Therefore, the maximum energy supply from the geometry to matter occurs around \(x \approx 0.36\) with a magnitude of \(\tilde J \approx +1.74\). Similarly, the maximum energy recovery from matter back into the geometry takes place near \(x \approx 1.59\) with a magnitude of \(\tilde J \approx -0.44\).</p>
 <h4>Determining the Nature of the Extrema</h4>
 <p>The nature of each extremum (whether it corresponds to a maximum or a minimum) can be determined using the sign of \(\tilde J(x)\) as follows:</p>
 <ul class="ol-spacing">
@@ -704,7 +704,7 @@ J_r=\frac{1}{\kappa}\,\frac{\mathrm{d}}{\mathrm{d}r}\!\left[\frac{4r^2}{(R^2+r^2
 \]
 \[
 \Phi(\infty)=\lim_{r\to\infty}\left(\frac{32\pi}{\kappa}\,\frac{r^3(R^2-r^2)}{(R^2+r^2)^3}\;\Rightarrow\;\frac{-r^5}{(r^2)^3}=-\frac{1}{r}\right)=0.
-\]<p>Thus, since \(\Phi(0)=\Phi(\infty)=0\), the total energy supplied from the vacuum and recovered back into it is exactly balanced over the entire volume of space.<br>Consequently, a <strong>global energy conservation law, which is difficult to define in general relativity, is established here</strong>.</p>
+\]<p>Thus, since \(\Phi(0)=\Phi(\infty)=0\), the total energy supplied from the geometry and recovered back into it is exactly balanced over the entire volume of space.<br>Consequently, a <strong>global energy conservation law, which is difficult to define in general relativity, is established here</strong>.</p>
 <h3>Scale Dependence of the Exchange Current</h3>
 <p>The magnitude of the exchange current \(J_r\) is given by:</p>
 \[
@@ -719,24 +719,10 @@ J_r=\frac{1}{\kappa}\,\frac{\mathrm{d}}{\mathrm{d}r}\!\left[\frac{4r^2}{(R^2+r^2
 \frac{|J_r|_{\mathrm{Higgs}}}{|J_r|_{\mathrm{cosmo}}} = \left(\frac{R_{\mathrm{cosmo}}}{R_{\mathrm{Higgs}}}\right)^3 \sim \left(\frac{10^{26}}{10^{-18}}\right)^3 \sim 10^{132}
 \]<p>This implies that, at the Higgs scale, the exchange current is about \(10^{132}\) times stronger than at the cosmological scale.</p>
 <ul class="ol-spacing">
-  <li><strong>Local regime</strong>: Since \(\nabla^\mu T^{(\mathrm{m})}_{\mu\nu}=J_\nu\neq0\), energy exchange occurs between vacuum and matter. This effect is particularly significant at the Higgs scale, whereas on cosmological scales the exchange current is nearly zero. Because \(\int_0^\infty J_r\,\mathrm{d}r=0\), the radial exchange currents locally cancel out at each characteristic scale.</li>
+  <li><strong>Local regime</strong>: Since \(\nabla^\mu T^{(\mathrm{m})}_{\mu\nu}=J_\nu\neq0\), energy exchange occurs between geometry and matter. This effect is particularly significant at the Higgs scale, whereas on cosmological scales the exchange current is nearly zero. Because \(\int_0^\infty J_r\,\mathrm{d}r=0\), the radial exchange currents locally cancel out at each characteristic scale.</li>
   <li><strong>Global regime</strong>: Since \(\Phi(0)=\Phi(\infty)=0\), the energy supplied and recovered are perfectly balanced across the entire space, and the global energy conservation law holds exactly.</li>
 </ul>
 <p>Therefore, not only is energy conserved globally, but local conservation is effectively restored as well. Although local violations of conservation are extremely difficult to detect directly, traces of the exchange current can manifest at the Higgs scale in the form of mass generation. On the other hand, at cosmological scales, the exchange current is so small that both the violation of conservation and any associated traces are practically undetectable.</p>
-<h3>Treating \(\Lambda_{\mathrm{eff}}\) as Vacuum Energy</h3>
-<p>If we move \(\Lambda_{\mathrm{eff}}\) to the right-hand side and treat it not as a geometric term but as a vacuum energy component, the extended Einstein equation can be rewritten as:</p>
-\[
-\boxed{G_{\mu\nu} = \kappa\,T^{(\mathrm{matter})}_{\mu\nu} - \Lambda_{\mathrm{eff}}(r)\,g_{\mu\nu}}
-\]<p>Defining the vacuum energy tensor as:</p>
-\[
-T^{(\Lambda)}_{\mu\nu} \equiv -\frac{\Lambda_{\mathrm{eff}}}{\kappa} g_{\mu\nu}
-\]<p>the equation can be rearranged as:</p>
-\[
-G_{\mu\nu} = \kappa \Big( T^{(\mathrm{m})}_{\mu\nu} + T^{(\Lambda)}_{\mu\nu} \Big)
-\]<p>Using the Bianchi identity \(\nabla^\mu G_{\mu\nu} = 0\), the conservation law for the total energy-momentum tensor automatically follows:</p>
-\[
-\boxed{\nabla^\mu T^{\mathrm{(total)}}_{\mu\nu} = 0}, \qquad T^{\mathrm{(total)}}_{\mu\nu} = T^{(\mathrm{m})}_{\mu\nu} + T^{(\Lambda)}_{\mu\nu}
-\]<p>In other words, when \(\Lambda_{\mathrm{eff}}\) is treated as part of the geometry, the matter term alone appears to violate local conservation. However, if the vacuum energy is included as part of the matter sector, the total system strictly satisfies the covariant conservation law. Thus, the choice of formulation simply reflects a difference in interpretation: whether \(\Lambda_{\mathrm{eff}}\) is regarded as a purely geometric term or as part of the matter (energy-momentum) content.<br><strong>From the author's standpoint, it is recommended to treat \(\Lambda_{\mathrm{eff}}\) as a geometric term.</strong></p>
 <h3>Validity of Approximating \(\Lambda_{\mathrm{eff}}\) as Constant on Cosmological Scales</h3>
 <p>Let us now consider the spatial gradient of \(\Lambda_{\mathrm{eff}}(r)\):</p>
 \[
