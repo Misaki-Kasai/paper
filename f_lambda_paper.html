@@ -557,6 +557,120 @@ E_{R_h} \equiv \frac{1}{R_h} \approx 174\,\mathrm{GeV}.
 <span style="display: block; height: 0.5em;"></span>
 <h2>References</h2>
 <p>All references are included directly in the text.</p>
+
+<h2>Appendix A</h2>
+<h2>Cosmological Mapping of the Variational Residual Structure</h2>
+<p>In this appendix, we summarize how \(\Lambda_{\mathrm{eff}}(r)\) and the variational residual structure in the present theory (\(\mathrm{f}\Lambda\)) are mapped onto cosmology.</p>
+<p>From Section~5, the variational residual at \(R=\sqrt{3}\) is</p>
+\[
+\delta(r)=\frac{4r^3(r^2+1)}{(r^2+3)^3}
+\]
+<p>and it takes its maximum value \(\delta_{\max}\simeq0.641\) at \(r_\mathrm{peak}\simeq3.56\). As noted in Section~4, since both \(r\) and \(R\) are treated as dimensionless quantities, \(r_\mathrm{peak}\) is also dimensionless.</p>
+<p>From Section~7, the base response function of \(\Lambda_{\mathrm{eff}}(r)\) is</p>
+\[
+F(x)=\frac{4x^2}{(1+x^2)^2},
+\qquad
+x\equiv\frac{r}{R}.
+\]
+<p>Here, since the physical length in FLRW spacetime is given by \(\ell_\mathrm{phys}(t)=a(t)\kern0.10em\ell_\mathrm{com}\), we have \(x(t)\equiv \dfrac{\ell_\mathrm{phys}(t)}{R}=\dfrac{a(t)\kern0.10em\ell_\mathrm{com}}{R}\). Therefore, if we normalize the comoving scale as \(\ell_\mathrm{com}=R\) with respect to the characteristic scale \(R\), then \(x(t)=a(t)\). Accordingly, as anticipated in Section~3, the minimal-assumption mapping to cosmology is</p>
+\[
+x(z)=a(z)=(1+z)^{-1}
+\]
+<p>and, by defining \(\Xi_\mathrm{base}(z)\equiv F(x(z))\), we obtain</p>
+\[
+\Xi_\mathrm{base}(z)=
+\frac{4(1+z)^2}{\left[(1+z)^2+1\right]^2}.
+\]
+<p>If one assumes that the residual strength is reflected in local cosmological expansion, then from the dimensionless relation \(\mfrac{r}{r_\mathrm{peak}}=\mfrac{z}{z_c}\) (i.e., \(r=r_\mathrm{peak}\cdot\mfrac{z}{z_c}\)), the variational residual \(\delta(r)\) is expressed as</p>
+\[
+\delta\!\left(r_\mathrm{peak}\cdot\mfrac{z}{z_c}\right).
+\]
+<p>Normalizing this by \(\delta_{\max}\), one obtains the normalized window function</p>
+\[
+W_\delta(z;z_c)=
+\frac{
+\delta\!\left(r_\mathrm{peak}\cdot\dfrac{z}{z_c}\right)
+}{
+\delta_{\max}
+}
+\]
+<p>which is directly proportional to the variational residual and satisfies both \(W_\delta(0;z_c)\!\!=\!\!0\) and \(W_\delta(z_c;z_c)=1\). Therefore, the effective expansion response function is given by</p>
+\[
+\Xi(z)=
+\Xi_\mathrm{base}(z)\left[1+\epsilon W_\delta(z;z_c)\right]
+\]
+<p>and the dimensionless expansion rate and the Hubble parameter are respectively written as</p>
+\[
+E^2(z)=
+\Omega\kern0.03em_r(1+z)^4+
+\Omega_m(1+z)^3+
+\Omega_\Lambda\kern0.09em\Xi(z),
+\qquad
+H(z)=H_0E(z).
+\]
+<p>In this study, we assume an approximately flat spacetime background and adopt the representative values \(\Omega_m(\equiv\!\Omega_{m0})=0.30\), \(\Omega\kern0.03em_r=9\times10^{-5}\), \(\Omega_\Lambda=1-\Omega_m-\Omega\kern0.03em_r\), and \(H_0 = 67.4\ \mathrm{km\,s^{-1}\,Mpc^{-1}}\). We also apply the maximum residual value \(\delta_{\max}\) as the normalization coefficient, namely,</p>
+\[
+\epsilon=\delta_{\max}\simeq0.641.
+\]
+<h3>A.1 &nbsp; Effective Redshift Scale and the \(H_0\) Tension</h3>
+<p>The quantity \(z_c\) is the effective redshift scale, and it is natural to regard its value as being determined by the distance to the cosmic microwave background (CMB) at each cosmic epoch. Therefore, to determine the value of \(z_c\) today, it is sufficient to evaluate the point at which the relative difference in the comoving distance to the last-scattering surface at \(z_\ast=1089.9\),</p>
+\[
+\Delta D_C=
+\frac{D_C^{\kern0.04em\mathrm{f}\Lambda}-D_C^{\Lambda\mathrm{CDM}}}
+{D_C^{\Lambda\mathrm{CDM}}},
+\]
+<p>is minimized.</p>
+<p><strong>Table 1.</strong> Relative difference in the comoving distance to the last-scattering surface, \(\Delta D_C(z_\ast)\), and its dependence on \(z_c\). The calculation was performed for \(z_\ast=1089.9\), using \(\Omega_m=0.30\), \(\Omega\kern0.03em_r=9\times10^{-5}\), \(\Omega_\Lambda=1-\Omega_m-\Omega\kern0.03em_r\), \(r_\mathrm{peak}=3.56\), and \(\epsilon=\delta_{\max}=0.641\).</p>
+<table>
+  <thead>
+    <tr>
+      <th>\(z_c\)</th>
+      <th>\(\Delta D_C(z_*=1089.9)\)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>0.020</td><td>\(+0.762\,\%\)</td></tr>
+    <tr><td>0.050</td><td>\(+0.304\,\%\)</td></tr>
+    <tr><td>0.080</td><td>\(+0.0204\,\%\)</td></tr>
+    <tr><td>0.0820</td><td>\(+0.00515\,\%\)</td></tr>
+    <tr><td><span style="border:1px solid #000; padding:0 0.2em;">0.0827</span></td><td><span style="border:1px solid #000; padding:0 0.2em;">\({-}0.000100\,\%\)</span></td></tr>
+    <tr><td>0.0830</td><td>\(-0.00234\,\%\)</td></tr>
+    <tr><td>0.100</td><td>\(-0.117\,\%\)</td></tr>
+    <tr><td>0.150</td><td>\(-0.349\,\%\)</td></tr>
+    <tr><td>0.200</td><td>\(-0.483\,\%\)</td></tr>
+  </tbody>
+</table>
+<p>From this result, we find that the relative difference in the comoving distance to the last-scattering surface is minimized, while changing sign, in the vicinity of \(z_c\simeq0.0827\). Therefore, the effective redshift scale today is determined to be</p>
+\[
+\boxed{z_c\simeq0.0827}\,.
+\]<p>Using this value of \(z_c\), we define \(H_0^\mathrm{app}\) as the best-fit value of \(H_0\) obtained by fitting the \(\Lambda\)CDM distance modulus \(\mu_{\Lambda\mathrm{CDM}}(z;H_0)\) to the distance modulus of the present model,</p>
+\[
+\mu_{\kern0.05em\mathrm{f}\Lambda}(z)
+=
+5\log_{10}\!\left(\frac{d_L^{\kern0.05em\mathrm{f}\Lambda}(z)}{\mathrm{Mpc}}\right)+25,
+\qquad
+d_L^{\kern0.05em\mathrm{f}\Lambda}(z)
+=
+(1+z)\frac{c}{H_0}\int_0^z \frac{dz'}{E_{\kern0.05em\mathrm{f}\Lambda}(z')},
+\]
+<p>evaluated over the Hubble-flow range \(0.0233<z<0.15\) in the unweighted least-squares sense, which yields</p>
+\[
+H_0^\mathrm{app}\simeq73.6\ \mathrm{km\,s^{-1}\,Mpc^{-1}}.
+\]
+<p>This means that, while retaining the early-universe \(\Lambda\)CDM reference value \(67.4\ \mathrm{km\,s^{-1}\,Mpc^{-1}}\), a larger apparent Hubble constant is observed in the local universe around \(z_c\simeq0.0827\), which is also consistent with the representative value \(H_0\simeq73\ \mathrm{km\,s^{-1}\,Mpc^{-1}}\) in the range \(0.0233<z<0.15\) reported by SH\kern0.03em0\kern0.03emES <span style="color: blue;">[A. G. Riess et al. <em>A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km s\(^{-1}\) Mpc\(^{-1}\) Uncertainty from the Hubble Space Telescope and the SH0ES Team</em>. <em>The Astrophysical Journal Letters</em>, 934:L7, 2022.]</span>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+  
 <span style="display: block; height: 1.0em;"></span>
 <hr id="appendix" style="border:0;height:2.75px;margin:2.5rem 0;background:#E8D28D;">
 <p style="font-size:2.0em; font-weight:bold; margin:2rem 0; text-align:center;">Appendix C</p>
