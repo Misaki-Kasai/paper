@@ -77,14 +77,16 @@ Related Links:<img src="f_lambda_b.svg" alt="fLambda logo" class="logo-box" styl
 \]
 <p>Then, \(\phi(r)^2=\dfrac{4}{R^2}\cdot\dfrac{x^2}{(1+x^2)^2}\), \(\phi(r)^4=\dfrac{4}{R^2}\cdot\dfrac{4}{R^2}\cdot\left(\dfrac{x^2}{(1+x^2)^2}\right)^2\), and therefore, in the standard \(-\phi^2+\phi^4\)-type potential that guarantees the symmetry \(\phi \leftrightarrow -\phi\), identifying the \(\phi^4\) term as a higher-order term belonging to the same \(R\)-hierarchy (with a single overall prefactor of \(\dfrac{4}{R^2}\)) as the \(\phi^2\) term fixes the coefficient to \(\dfrac{1}{4}R^2\). Accordingly, the potential corresponding to the scalar field \(\phi(r)\) takes the form</p>
 \[
-V(\phi(r))=-\phi^2+\frac{1}{4}R^2\phi^4\,\,
-=
+\begin{aligned}
+V(\phi(r))
+&=-\phi^2+\frac{1}{4}R^2\phi^4\\
+&=
 -\left(\frac{2r}{R^2+r^2}\right)^2
-+\frac{1}{4}R^2\left(\frac{2r}{R^2+r^2}\right)^4
-\]
-\[
-= \underbrace{-\frac{4r^2}{(R^2 + r^2)^2}}_{\text{Leading term}} \;
-+ \underbrace{\frac{4R^2 r^4}{(R^2 + r^2)^4}}_{\text{Second-order correction term}}.
++\frac{1}{4}R^2\left(\frac{2r}{R^2+r^2}\right)^4\\
+&=
+\underbrace{-\frac{4r^2}{(R^2 + r^2)^2}}_{\text{Leading term}}
++\underbrace{\frac{4R^2 r^4}{(R^2 + r^2)^4}}_{\text{Second-order correction term}}
+\end{aligned}
 \]
 <p>Here, the second term serves as a correction that slightly modifies the primary structure, but the leading term clearly satisfies the relation:</p>
 \[
@@ -645,13 +647,14 @@ H(z)=H_0E(z).
 \boxed{z_c\simeq0.0827}\,.
 \]<p>Using this value of \(z_c\), we define \(H_0^\mathrm{app}\) as the best-fit value of \(H_0\) obtained by fitting the \(\Lambda\)CDM distance modulus \(\mu_{\Lambda\mathrm{CDM}}(z;H_0)\) to the distance modulus of the present model,</p>
 \[
+\begin{aligned}
 \mu_{\kern0.05em\mathrm{f}\Lambda}(z)
-=
-5\log_{10}\!\left(\frac{d_L^{\kern0.05em\mathrm{f}\Lambda}(z)}{\mathrm{Mpc}}\right)+25,
-\qquad
+&=
+5\log_{10}\!\left(\frac{d_L^{\kern0.05em\mathrm{f}\Lambda}(z)}{\mathrm{Mpc}}\right)+25,\\
 d_L^{\kern0.05em\mathrm{f}\Lambda}(z)
-=
+&=
 (1+z)\frac{c}{H_0}\int_0^z \frac{dz'}{E_{\kern0.05em\mathrm{f}\Lambda}(z')},
+\end{aligned}
 \]
 <p>evaluated over the Hubble-flow range \(0.0233<z<0.15\) in the unweighted least-squares sense, which yields</p>
 \[
@@ -666,13 +669,13 @@ H_0^\mathrm{app}\simeq73.6\ \mathrm{km\,s^{-1}\,Mpc^{-1}}.
 <p>with the normalization coefficient \(\eta=\delta_{\max}\simeq0.641\).</p>
 <p>With this effective coupling \(\mu(z)\), the linear growth equation is given by</p>
 \[
+\begin{aligned}
 \frac{d^2D}{da^2}
 +\frac{3+\dfrac{d\ln H}{d\ln a}}{a}\frac{dD}{da}
--\frac{3}{2a^2}\kern0.20em\mu(z)\kern0.20em\Omega_m(a)D=0,
-\qquad
-\Omega_m(a)=\frac{\Omega_{m0}\kern0.07em a^{-3}}{E(a)^2},
-\quad
-a=(1+z)^{-1},
+-\frac{3}{2a^2}\kern0.20em\mu(z)\kern0.20em\Omega_m(a)D&=0,\\
+\Omega_m(a)&=\frac{\Omega_{m0}\kern0.07em a^{-3}}{E(a)^2},
+\qquad a=(1+z)^{-1},
+\end{aligned}
 \]
 <p>which we solve numerically, yielding</p>
 \[
