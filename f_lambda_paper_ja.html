@@ -672,8 +672,143 @@ S_8\simeq0.778,\\
        style="width:100%; height:auto;">
   <figcaption>Fig. 4: 観測点を重ねた \(f\sigma_8(z)\) の比較。本モデルの \(f\sigma_8(z)\) 曲線（黄色）は、観測されている構造成長データを比較的良好に再現していることがわかる。</figcaption>
 </figure>
-  
-  
+
+<h2 id="appendix-b">変分残差に対する matter-like な幾何学的抵抗成分と \(\Omega_{m0}\)</h2>
+
+<p>本付録では、変分残差の立ち上がりに対して抵抗しうる臨界的な復元応答を、matter-like な有効幾何学成分として定式化する。</p>
+
+<p><a href="#section4">セクション4</a>より、スカラー場 \(\phi(r)\) は本理論において幾何学応答を特徴づける無次元振幅として扱われる。球対称条件のもとでは、局所的な幾何学応答の規格化振幅は、無次元振幅を半径 \(r\) で規格化した \(\phi(r)/r\) によって表される。</p>
+
+<p>宇宙論的背景における有効成分としてこの振幅を記述するには、分母の基準長さとして、<a href="#section6">セクション6</a>で定義した宇宙論的長さスケール \(R_c=1/\sqrt{\Lambda}\) を用いる必要がある。すなわち、\(\phi(r)/R_c\) は、宇宙論的背景スケールに対して規格化された局所的幾何学応答の振幅を表し、その強度は \((\phi(r)/R_c)^2\) によって特徴づけられる。この強度を有効密度の形式へ変換するため、重力結合定数 \(\kappa=8\pi G/c^4\) を用いて幾何学的抵抗成分の有効密度を</p>
+\[
+\rho_{\mathrm{geo}}^{\mathrm{resist}}(r)
+\equiv
+\frac{1}{\kappa}\left(\frac{\phi(r)}{R_c}\right)^2
+\]
+<p>と定義する。</p>
+
+<p>ここで、<a href="#appendix-a">Appendix A</a>で述べた通り \(x(z)=a(z)=(1+z)^{-1}\) であり、さらに \(\ell_{\rm com}=R\) と規格化しているため、現在すなわち \(a=1\) における関係式 \(\ell_{\rm phys}=a\kern0.10em\ell_{\rm com}\) より、</p>
+\[
+r=\ell_{\rm phys}=\ell_{\rm com}=R
+\]
+<p>が成り立つ。したがって、幾何学的抵抗成分の有効密度の現在値は</p>
+\[
+\rho_{\mathrm{geo},0}^{\mathrm{resist}}
+=
+\frac{1}{\kappa}\left(\frac{\phi(R)}{R_c}\right)^2
+\]
+<p>で与えられる。これを現在の臨界密度 \(\rho_{\mathrm{crit},0}=\dfrac{3H_0^2c^2}{8\pi G}\) で正規化すると、</p>
+\[
+\Omega_{\mathrm{geo},0}^{\mathrm{resist}}
+=
+\left(\frac{\phi(R)}{R_c}\right)^2\frac{c^2}{3H_0^2}
+\]
+<p>を得る。ここで、<a href="#section6">セクション6</a>より \(1/R_c^2=\Lambda\) であるから、</p>
+\[
+\Omega_{\mathrm{geo},0}^{\mathrm{resist}}
+=
+\phi(R)^2\,\frac{\Lambda c^2}{3H_0^2}
+=
+\phi(R)^2\,\Omega_{\Lambda_{\mathrm{eff}},0}
+\]
+<p>と簡約化できる。ここで、\(\Omega_{\Lambda_{\mathrm{eff}},0}\) は、<a href="#section7">セクション7</a>で示した拡張 Einstein 方程式における幾何学項 \(\Lambda_{\mathrm{eff}}(r)\) のうち、基礎応答関数 \(F(x)\) に掛かる宇宙論スケールの基礎強度 \(1/R_c^2\) に対応する幾何学的有効密度 \(1/(R_c^2\kappa)\) を現在の臨界密度 \(\rho_{\mathrm{crit},0}\) で規格化して得られる宇宙論的成分 \(\Omega_{\Lambda_{\mathrm{eff}},0}\equiv (1/R_c^2)\kern0.10em c^2/(3H_0^2)=\Lambda c^2/(3H_0^2)\) を表す。</p>
+
+<p>したがって、幾何学的抵抗成分の現在値は、幾何学応答の強度 \(\phi(R)^2\) を重みとしてもつ宇宙論的成分として与えられる。</p>
+
+<p>さらに、変分残差の構造から定まる特性スケール \(R=\sqrt{3}\) において \(\phi(R)^2=1/3\) であるから、</p>
+\[
+\Omega_{\mathrm{geo},0}^{\mathrm{resist}}
+=
+\frac{1}{3}\,\Omega_{\Lambda_{\mathrm{eff}},0}
+\]
+<p>を得る。すなわち、幾何学的抵抗成分の現在値は、\(\Lambda_{\mathrm{eff}}\) に対応する宇宙論的成分の \(1/3\) に相当する大きさをもつ。</p>
+
+<p>また、<a href="#section4">セクション4</a>および<a href="#section7">7</a>より \(\Lambda_{\mathrm{eff}}\) は真空エネルギーではなく幾何学項として扱われているため、独立の流体圧力を仮定していない。したがって、背景レベルではこの成分を非圧の matter-like 有効成分（\(w=0\)）として \(\Omega_{b0}\) と並列に扱うことができ、その幾何学的有効密度の赤方偏移依存は標準的に</p>
+\[
+\rho_{\mathrm{geo}}^{\mathrm{resist}}(z)
+=
+\rho_{\mathrm{geo},0}^{\mathrm{resist}}(1+z)^3
+\]
+<p>で与えられる。ここで、\(x(z)=a(z)=(1+z)^{-1}\) を用いれば、</p>
+\[
+\rho_{\mathrm{geo}}^{\mathrm{resist}}(z)
+=
+\rho_{\mathrm{geo},0}^{\mathrm{resist}}\,x(z)^{-3}
+\]
+<p>と書き換えることができ、さらに \(x(z)=\ell_{\rm phys}(z)/R\) より</p>
+\[
+x(z)^{-3}
+=
+\left(\frac{R}{\ell_{\rm phys}(z)}\right)^3
+\]
+<p>であるから、幾何学的抵抗成分の matter-like な赤方偏移依存はこの幾何学的スケール比によって記述されることがわかる。すなわち、変分残差の立ち上がりに抵抗する matter-like な幾何学的抵抗成分は、現在値において \(\Lambda_{\mathrm{eff}}(R)\) と同様に \(\phi(R)^2\) によって特徴づけられ、背景宇宙においては、宇宙膨張に伴う \(\ell_{\rm phys}(z)\) の増大とともに、\(x(z)^{-3}\) すなわち \(\left(\dfrac{R}{\ell_{\rm phys}(z)}\right)^3\) に従って急速に減衰する。</p>
+
+<p>したがって、全 matter 成分は、バリオン（通常物質）成分と幾何学的な matter-like 成分の和として記述でき、また近似的平坦性</p>
+\[
+\Omega_{r0}+\Omega_{b0}+\Omega_{\mathrm{geo},0}^{\mathrm{resist}}+\Omega_{\Lambda_{\mathrm{eff}},0}=1
+\]
+<p>より、</p>
+\[
+\Omega_{\Lambda_{\mathrm{eff}},0}
+=
+\frac{1-\Omega_{r0}-\Omega_{b0}}{1+\frac{1}{3}}
+\]
+<p>を得る。ここで、全 matter 成分は</p>
+\[
+\Omega_{m0}
+=
+\Omega_{b0}
++
+\Omega_{\mathrm{geo},0}^{\mathrm{resist}}
+\]
+<p>であるから、\(\Omega_{\mathrm{geo},0}^{\mathrm{resist}}=\dfrac{1}{3}\kern0.10em\Omega_{\Lambda_{\mathrm{eff}},0}\) より</p>
+\[
+\Omega_{m0}
+=
+\Omega_{b0}
++
+\frac{1}{3}\!\cdot\!
+\frac{1-\Omega_{r0}-\Omega_{b0}}{1+\frac{1}{3}}\kern0.01em
+=
+\Omega_{b0}
++
+\frac{1-\Omega_{r0}-\Omega_{b0}}{4}
+\]
+<p>となる。したがって、上記に代表値</p>
+\[
+\Omega_{b0}=0.049,
+\qquad
+\Omega_{r0}=9\times10^{-5}
+\]
+<p>を代入すると、</p>
+\[
+\boxed{
+\Omega_{\Lambda_{\mathrm{eff}},0}\simeq 0.71318,
+\quad
+\Omega_{\mathrm{geo},0}^{\mathrm{resist}}\simeq 0.23773,
+\quad
+\Omega_{m0}\simeq 0.28673}
+\]
+<p>が定量的に定まる。</p>
+
+<p>この値を用いて <a href="#appendix-a">Appendix A</a> と同様の手順で評価すると、</p>
+\[
+\boxed{
+z_c\simeq 0.08951}
+\]
+<p>および</p>
+\[
+\boxed{
+\begin{gathered}
+H_0^{\rm app}\simeq 73.3\ {\rm km\,s^{-1}\,Mpc^{-1}},\qquad
+S_8\simeq 0.758,\\
+\Delta D_C(z_\ast=1089.9)\approx +1.91\times10^{-6}\,\%
+\end{gathered}
+}
+\]
+<p>を得る。</p>
+
+<p>以上より、近似的平坦性条件のもとでは、上で定義した幾何学的な matter-like 成分が現実的な宇宙論パラメータを与えることが示され、\(\Omega_{\mathrm{geo},0}^{\mathrm{resist}}\) は、変分極値条件 \(\delta=0\) からのずれを抑える matter-like な復元応答として解釈できることがわかる。すなわち、この復元応答は有限幅をもつ変分残差 \(\delta(r)\) の山状構造の立ち上がりの抑制に寄与するが、その現在値は \(\Omega_{\Lambda_{\mathrm{eff}},0}\) の \(1/3\) にとどまるため、復元的抵抗から幾何学的な斥力応答への移行が始まる境界 \(r=R\) において支配的になることはできず、さらに \(r=R\) を越えるとその抵抗は急速に弱まる。その結果、幾何学的な斥力応答が実効的に解放され、系は山を越えたのち、\(\delta(r)\to0\) に漸近する領域 \(r\gg R\) へ向かう。</p>
   
   
   
