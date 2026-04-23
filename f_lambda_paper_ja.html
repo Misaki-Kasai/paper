@@ -75,7 +75,7 @@ Related Links:<br>
 \,\,
 \phi(r)^4=\frac{4}{R^2}\cdot\frac{4}{R^2}\cdot\left(\frac{x^2}{(1+x^2)^2}\right)^2
 \]
-<p>であるから、対称性 \(\phi \leftrightarrow -\phi\) を担保する標準的な \(-\phi^2+\phi^4\) 型ポテンシャルにおいて、\(\phi^2\) 項と同一の \(R\)-階層に属する（前因子として \(\dfrac{4}{R^2}\) を1つだけもつ）高次項として \(\phi^4\) 項を同定すると、その係数は \(\dfrac{1}{4}R^2\) で与えられることがわかる。したがって、スカラー場 \(\phi(r)\) に対応するポテンシャルは以下のように展開される：</p>
+<p>であるから、対称性 \(\phi \leftrightarrow -\phi\) を担保する標準的な \(-\phi^2+\phi^4\) 型ポテンシャルにおいて、\(\phi^2\) 項と同一の \(R\)-階層に属する（前因子として \(\dfrac{4}{R^2}\) を 1 つだけもつ）高次項として \(\phi^4\) 項を同定すると、その係数は \(\dfrac{1}{4}R^2\) で与えられることがわかる。したがって、スカラー場 \(\phi(r)\) に対応するポテンシャルは以下のように展開される：</p>
 \[
 \begin{aligned}
 V(\phi(r))
@@ -88,18 +88,18 @@ V(\phi(r))
 +\underbrace{\frac{4R^2 r^4}{(R^2 + r^2)^4}}_{\text{第二項（補正項）}}
 \end{aligned}
 \]
-<p>ここで、第ニ項は補正項として主要構造をわずかに変形するが、主項は明確に：</p>
+<p>ここで、第二項は補正項として主要構造をわずかに変形するが、主項は明確に：</p>
 \[
 \boxed{V(\phi(r)) \propto -\Lambda_{\mathrm{eff}}(r), \qquad \Lambda_{\mathrm{eff}}(r) \equiv \frac{4r^{2}}{(R^{2}+r^{2})^{2}}}
 \]
-<p>特に \(r \ll R\) では第ニ項は主項に比べて十分に小さく、また \(r \gg R\) においても：</p>
+<p>特に \(r \ll R\) では第二項は主項に比べて十分に小さく、また \(r \gg R\) においても：</p>
 \[
-\underbrace{\frac{r^2}{(R^2 + r^2)^2} \sim \frac{1}{r^2}}_{\text{主項}},\qquad\underbrace{\frac{r^4}{(R^2 + r^2)^4} \sim \frac{1}{r^4}}_{\text{第ニ項（補正項）}}
+\underbrace{\frac{r^2}{(R^2 + r^2)^2} \sim \frac{1}{r^2}}_{\text{主項}},\qquad\underbrace{\frac{r^4}{(R^2 + r^2)^4} \sim \frac{1}{r^4}}_{\text{第二項（補正項）}}
 \]
 <p>となり、補正項の寄与は急速に減衰する。</p>
 <p>さらに、中間スケールにあたる \(r = R\) においても、</p>
 \[
-\underbrace{\frac{4R^2}{(2R^2)^2} = \frac{1}{R^2}}_{\text{主項}},\qquad\underbrace{\frac{4R^2 R^4}{(2R^2)^4} = \frac{1}{4R^2}}_{\text{第ニ項（補正項）}}
+\underbrace{\frac{4R^2}{(2R^2)^2} = \frac{1}{R^2}}_{\text{主項}},\qquad\underbrace{\frac{4R^2 R^4}{(2R^2)^4} = \frac{1}{4R^2}}_{\text{第二項（補正項）}}
 \]
 <p>より、補正項は主項の \(1/4\) にとどまる。</p>
 <p>したがって、空間の全領域にわたって主項が支配的であることから、\(\Lambda_{\text{eff}}(r)\) はスカラー場ポテンシャル \(V(\phi(r))\) から直接かつ自然に導出されることが示される。</p>
@@ -109,15 +109,13 @@ V(\phi(r))
 <p>なお、ここで議論される極値条件の破れは、保存則 \(\nabla^\mu T_{\mu\nu} = 0\) の破れを直接的に意味するものではないことに注意されたい。</p>
 <p><a href="#section4">セクション4</a> より、スカラー場とそれに対応するポテンシャルは：</p>
 \[
-\phi(r) = \frac{2r}{R^2 + r^2}, \qquad V(\phi(r)) = -\frac{1}{4} \cdot \phi^2 \left( 4 - R^2 \phi^2 \right)
+\phi(r) = \frac{2r}{R^2 + r^2}, \qquad V(\phi(r)) = -\phi^2 + \frac{1}{4}R^2\phi^4
 \]
-<p>よって、静的・球対称のもとでのラグランジアン密度は：</p>
+<p>よって、静的・球対称のもとでのラグランジアンは：</p>
 \[
-\begin{aligned}
-\mathcal{L}_\phi 
-&= -\frac{1}{2} \left( \frac{d\phi}{dr} \right)^2 - V(\phi(r)) \\[1em]
-&= -\frac{1}{2} \left( \frac{d\phi}{dr} \right)^2 + \frac{1}{4} \cdot \phi^2 \left( 4 - R^2 \phi^2 \right)
-\end{aligned}
+\mathcal{L}_\phi
+= -\frac{1}{2}\left(\frac{d\phi}{dr}\right)^2 - V(\phi(r))
+= -\frac{1}{2}\left(\frac{d\phi}{dr}\right)^2 + \phi^2 - \frac{1}{4}R^2\phi^4
 \]
 <p>したがって、このラグランジアンから導出されるオイラー＝ラグランジュ方程式は以下のように与えられる：</p>
 \[
