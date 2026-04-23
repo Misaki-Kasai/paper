@@ -618,7 +618,60 @@ d_L^{\kern0.05em\mathrm{f}\Lambda}(z)
 H_0^{\rm app}\simeq73.6\ \mathrm{km\,s^{-1}\,Mpc^{-1}}
 \]
 <p>を得る。これは、初期宇宙における \(\Lambda\)CDM の基準値 \(67.4\ \mathrm{km\,s^{-1}\,Mpc^{-1}}\) を保持したまま、\(z_c\simeq0.0827\) 近傍の局所宇宙においてより大きい見かけのハッブル定数が観測されることを意味し、SH\kern0.03em0\kern0.03emES <span style="color: blue;">[A. G. Riess et al. <em>A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km s\(^{-1}\) Mpc\(^{-1}\) Uncertainty from the Hubble Space Telescope and the SH0ES Team</em>. <em>The Astrophysical Journal Letters</em>, 934:L7, 2022.]</span> による \(0.0233&lt;z&lt;0.15\) における代表的な観測値 \(H_0\simeq73\ \mathrm{km\,s^{-1}\,Mpc^{-1}}\) とも整合的である。</p>
-  
+<h3>\(S_8\) 緊張</h3>
+
+<p>膨張率への残差強度の反映に一貫性を持たせるため、有効重力係数に対しても同じ窓関数 \(W_\delta\) を用いて残差強度を反映させた</p>
+\[
+\mu(z)=1-\eta W_\delta(z;z_c)
+\]
+<p>を定義し、先ほどと同様に規格化係数として \(\eta=\delta_{\max}\simeq0.641\) を適用する。したがって、線形成長方程式は</p>
+\[
+\begin{gathered}
+\frac{d^2D}{da^2}
++\frac{3+\dfrac{d\ln H}{d\ln a}}{a}\frac{dD}{da}
+-\frac{3}{2a^2}\kern0.20em\mu(z)\kern0.20em\Omega_m(a)D=0,\\[4pt]
+\Omega_m(a)=\frac{\Omega_{m0}\kern0.07em a^{-3}}{E(a)^2},
+\qquad a=(1+z)^{-1}
+\end{gathered}
+\]
+<p>で与えられる。これを数値的に解くと、</p>
+\[
+S_8=\sigma_8\sqrt{\frac{\Omega_{m0}}{0.3}}\simeq0.778
+\]
+<p>を得る（初期ゆらぎ振幅は \(\Lambda\)CDM と同一とし、\(\sigma_{8,\Lambda{\rm CDM}}=0.811\) <span style="color: blue;">[Planck Collaboration. <em>Planck 2018 results. VI. Cosmological parameters</em>. <em>Astronomy &amp; Astrophysics</em>, 641:A6, 2020.]</span> を基準値として、\(a=1\) における成長関数 \(D(1)\) の比から \(\sigma_8\) を評価した。本研究では \(\Omega_{m0}=0.30\) を採用しているため、この場合 \(S_8=\sigma_8\) である）。</p>
+
+<p>この結果は、標準的な \(\Lambda\)CDM の予測よりも小さい構造成長振幅を与えることを意味し、KiDS <span style="color: blue;">[S.-S. Li et al. <em>KiDS-1000: Cosmology with improved cosmic shear measurements</em>. <em>Astronomy &amp; Astrophysics</em>, 679:A133, 2023.]</span> などの弱重力レンズ観測から得られている \(S_8\simeq0.77\) の値とも整合的である。</p>
+
+<p>したがって、本理論から導かれる変分残差構造により、宇宙マイクロ波背景放射の幾何を保持しながら、標準宇宙論において指摘されている \(H_0\) 緊張と \(S_8\) 緊張の同時緩和が以下のように実現される。</p>
+
+\[
+\boxed{
+\begin{gathered}
+z_c\simeq0.0827,\quad \epsilon=\eta=\delta_{\max}\\[3pt]
+H_0^{\rm app}\simeq73.6\ \mathrm{km\,s^{-1}\,Mpc^{-1}},\qquad
+S_8\simeq0.778,\\
+\Delta D_C(z_\ast=1089.9)\approx-0.000100\,\%
+\end{gathered}
+}
+\]
+
+<p>最後に、\(\Lambda\)CDM と比較した本モデルの無次元膨張率 \(E(z)\) の振る舞いを <a href="#fig3">Fig.&nbsp;3</a> に示す。</p>
+
+<figure id="fig3" style="max-width:600px; margin:0 auto;">
+  <img src="E(z).PNG" 
+       alt="LambdaCDM と比較した無次元膨張率 E(z) の振る舞い" 
+       style="width:100%; height:auto;">
+  <figcaption>Fig. 3: \(\Lambda\)CDM と比較した無次元膨張率 \(E(z)\) の振る舞い</figcaption>
+</figure>
+
+<p>加えて、観測点（<span style="color: blue;">[B. Sagredo, S. Nesseris, and D. Sapone. <em>Internal Robustness of Growth Rate data</em>. <em>Physical Review D</em>, 98:083543, 2018, arXiv:1806.10822 [astro-ph.CO].]</span>, Table&nbsp;I を \(\Omega_{m0}=0.30\) へ簡易補正した値）を重ねた \(f\sigma_8(z)\) の比較を <a href="#fig4">Fig.&nbsp;4</a> に示す。ここで、\(\Lambda\)CDM と同様に、成長率 \(f(z)\equiv \dfrac{d\ln D}{d\ln a}\) より \(f\sigma_8(z)=f(z)\,\sigma_8(z)\) である。</p>
+
+<figure id="fig4" style="max-width:600px; margin:0 auto;">
+  <img src="fsigma8.PNG" 
+       alt="観測点を重ねた f sigma 8(z) の比較" 
+       style="width:100%; height:auto;">
+  <figcaption>Fig. 4: 観測点を重ねた \(f\sigma_8(z)\) の比較。本モデルの \(f\sigma_8(z)\) 曲線（黄色）は、観測されている構造成長データを比較的良好に再現していることがわかる。</figcaption>
+</figure>
   
   
   
