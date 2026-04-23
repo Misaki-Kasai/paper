@@ -341,7 +341,7 @@ D = 2\,b_c = 6\sqrt{3}\,r_{\mathrm{crit}}
 \[
 \frac{D}{r_{\mathrm{crit}}} = 6\sqrt{3} \approx 10.4
 \]
-<p>この値は正規化なしにあらゆるブラックホールに適用できる普遍的な値であり、イベントホライズンテレスコープ（EHT）による観測値、M87*（約11.0）および Sgr A*（約10.0）とよく一致する。</p>
+<p>この値は正規化なしにあらゆるブラックホールに適用できる普遍的な値であり、イベントホライズンテレスコープ（EHT）による観測値、M87* \(d/\theta_g \approx 11.1\) <span style="color: blue;">[Event Horizon Telescope Collaboration. <em>First M87 Event Horizon Telescope Results. VI. The Shadow and Mass of the Central Black Hole</em>. <em>The Astrophysical Journal Letters</em>, 875(1):L6, 2019.]</span> および Sgr A* \(d/\theta_g \approx 10.8\) <span style="color: blue;">[Event Horizon Telescope Collaboration. <em>First Sagittarius A* Event Horizon Telescope Results. IV. Variability, Morphology, and Black Hole Mass</em>. <em>The Astrophysical Journal Letters</em>, 930(2):L15, 2022.]</span> とよく一致する。</p>
 <p>また、臨界半径 \(r_{\text{crit}}\) における斥力加速度を \(a_{\mathrm{rep}}^{\max}\) とおけば、臨界半径において \(c_0 = c^2\) であるから、</p>
 \[
 a_{\mathrm{rep}}^{\max} = \frac{c^2}{r_{\text{crit}}}
@@ -363,7 +363,7 @@ a_{\mathrm{P}} \equiv \sqrt{\frac{c^7}{\hbar G}}
 <p>すなわち、ブラックホールがたとえプランクスケールにまで圧縮されたとしても、その質量はこの基本的限界（プランク質量）を越えて下回ることはできないことがわかる。</p>
 <h2 id="section10">ヒッグス機構との一致</h2><p>本セクションでは、<a href="#section4">セクション4</a> で定義された \(\Lambda_{\text{eff}}\) モデルのスカラー場ポテンシャル：</p>
 \[
-V(\phi(r)) = -\frac{1}{4}\cdot\phi^{2}\!\left(4 - R^{2}\phi^{2}\right) = -\phi^{2} + \frac{1}{4}R^{2}\phi^{4}
+V(\phi(r)) = -\phi^{2} + \frac{1}{4}R^{2}\phi^{4}
 \]
 <p>が、ヒッグス機構における質量生成構造と直接的に対応していることを示す。</p>
 <p>\(\Lambda_{\text{eff}}\) モデルのポテンシャル \(V(\phi(r))\) から真空期待値（VEV）を得るために、\(\phi\) について微分すると、</p>
@@ -505,6 +505,131 @@ E_{R_h} \equiv \frac{1}{R_h} \approx 174\,\mathrm{GeV}
 <span style="display: block; height: 0.5em;"></span>
 <h2>References</h2>
 <p>All references are included directly in the text.</p>
+
+<h2 id="appendix-a">変分残差構造の宇宙論的写像</h2>
+<p>本付録では、本理論（\,\(\mathrm{f}\Lambda\)\,）における \(\Lambda_{\mathrm{eff}}(r)\) と変分残差構造を宇宙論へ写像する方法をまとめる。</p>
+
+<p><a href="#section5">セクション5</a>より、\(R=\sqrt{3}\) における変分残差は</p>
+\[
+\delta(r)=\frac{4r^3(r^2+1)}{(r^2+3)^3}
+\]
+<p>であり、\(r_{\rm peak}\simeq3.56\) において最大値 \(\delta_{\max}\simeq0.641\) をとる。なお、<a href="#section4">セクション4</a>で述べた通り、\(r\) および \(R\) は無次元量として扱われているため、\(r_{\rm peak}\) も無次元量である。</p>
+
+<p><a href="#section7">セクション7</a>より \(\Lambda_{\text{eff}}(r)\) の基礎応答関数は</p>
+\[
+F(x)=\frac{4x^2}{(1+x^2)^2},
+\qquad
+x\equiv\frac{r}{R}
+\]
+<p>である。ここで、FLRW 時空における物理長 \(\ell_{\rm phys}(t)=a(t)\kern0.10em\ell_{\rm com}\) より \(x(t)\equiv \dfrac{\ell_{\rm phys}(t)}{R}=\dfrac{a(t)\kern0.10em\ell_{\rm com}}{R}\) であるから、特性スケール \(R\) を基準に \(\ell_{\rm com}=R\) と規格化すれば \(x(t)=a(t)\) となる。よって、<a href="#section3">セクション3</a>の方針に沿った最小仮定の宇宙論写像は</p>
+\[
+x(z)=a(z)=(1+z)^{-1}
+\]
+<p>であり、\(\Xi_{\rm base}(z)\equiv F(x(z))\) と定義すれば、</p>
+\[
+\Xi_{\rm base}(z)=
+\frac{4(1+z)^2}{\left[(1+z)^2+1\right]^2}
+\]
+<p>を得る。</p>
+
+<p>残差強度が宇宙論的な局所膨張へ反映されると仮定した場合、無次元比 \(\dfrac{r}{r_{\rm peak}}=\dfrac{z}{z_c}\)（すなわち \(r=r_{\rm peak}\cdot\dfrac{z}{z_c}\)）より、変分残差 \(\delta(r)\) は</p>
+\[
+\delta\!\left(r_{\rm peak}\cdot\dfrac{z}{z_c}\right)
+\]
+<p>と表せる。これを \(\delta_{\max}\) で規格化すると、変分残差に直接比例し、かつ \(z=0\) において \(W_\delta(0;z_c)=0\),&nbsp;&nbsp;\(z=z_c\) において \(W_\delta(z_c;z_c)=1\) の両方を満たす規格化窓関数</p>
+\[
+W_\delta(z;z_c)=
+\frac{
+\delta\!\left(r_{\rm peak}\cdot\dfrac{z}{z_c}\right)
+}{
+\delta_{\max}
+}
+\]
+<p>が得られる。したがって、有効膨張応答関数は</p>
+\[
+\Xi(z)=
+\Xi_{\rm base}(z)\left[1+\epsilon W_\delta(z;z_c)\right]
+\]
+<p>で与えられ、無次元膨張率と膨張率はそれぞれ</p>
+\[
+\begin{gathered}
+E^2(z)=
+\Omega\kern0.03em_r(1+z)^4+
+\Omega_m(1+z)^3+
+\Omega_\Lambda\kern0.09em\Xi(z),\\[4pt]
+H(z)=H_0E(z)
+\end{gathered}
+\]
+<p>となる。本研究では、平均的に平坦な時空背景を仮定し、その代表値として \(\Omega_m(\equiv\!\Omega_{m0})=0.30\), \(\Omega\kern0.03em_r=9\times10^{-5}\), \(\Omega_\Lambda=1-\Omega_m-\Omega\kern0.03em_r\), \(H_0 = 67.4\ \mathrm{km\,s^{-1}\,Mpc^{-1}}\) を採用する。また、規格化係数として残差最大値 \(\delta_{\max}\) を用いる。すなわち、</p>
+\[
+\epsilon=\delta_{\max}\simeq0.641
+\]
+
+<h3>有効赤方偏移スケールと \(H_0\) 緊張</h3>
+
+<p>\(z_c\) は有効赤方偏移スケールであり、その値は各時代の宇宙における宇宙マイクロ波背景放射までの距離によって定まると考えるのが自然である。したがって、今日の \(z_c\) を求めるには、最終散乱面 \(z_\ast=1089.9\) までの共動距離の相対差</p>
+\[
+\Delta D_C=
+\frac{D_C^{\kern0.04em\mathrm{f}\Lambda}-D_C^{\Lambda{\rm CDM}}}
+{D_C^{\Lambda{\rm CDM}}}
+\]
+<p>が最小になる点を評価すればよいことがわかる。</p>
+
+<p><strong>Table 1.</strong> 最終散乱面までの共動距離の相対差 \(\Delta D_C(z_\ast)\) とその \(z_c\) 依存性。計算は \(z_\ast=1089.9\) に対して行い、\(\Omega_m=0.30\), \(\Omega\kern0.03em_r=9\times10^{-5}\), \(\Omega_\Lambda=1-\Omega_m-\Omega\kern0.03em_r\), \(r_{\rm peak}=3.56\), \(\epsilon=\delta_{\max}=0.641\) を用いた。</p>
+<table style="margin:0 auto; border-collapse:collapse;">
+  <thead>
+    <tr>
+      <th style="text-align:left; padding:0.2em 1.2em 0.2em 0.6em;">\(z_c\)</th>
+      <th style="text-align:right; padding:0.2em 0.6em 0.2em 1.2em;">\(\Delta D_C(z_*=1089.9)\)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="text-align:left; padding:0.2em 1.2em 0.2em 0.6em;">0.020</td><td style="text-align:right; padding:0.2em 0.6em 0.2em 1.2em;">\(+0.762\,\%\)</td></tr>
+    <tr><td style="text-align:left; padding:0.2em 1.2em 0.2em 0.6em;">0.050</td><td style="text-align:right; padding:0.2em 0.6em 0.2em 1.2em;">\(+0.304\,\%\)</td></tr>
+    <tr><td style="text-align:left; padding:0.2em 1.2em 0.2em 0.6em;">0.080</td><td style="text-align:right; padding:0.2em 0.6em 0.2em 1.2em;">\(+0.0204\,\%\)</td></tr>
+    <tr><td style="text-align:left; padding:0.2em 1.2em 0.2em 0.6em;">0.0820</td><td style="text-align:right; padding:0.2em 0.6em 0.2em 1.2em;">\(+0.00515\,\%\)</td></tr>
+    <tr><td style="text-align:left; padding:0.2em 1.2em 0.2em 0.6em;">0.0827</td><td style="text-align:right; padding:0.2em 0.6em 0.2em 1.2em;">\({-}0.000100\,\%\)</td></tr>
+    <tr><td style="text-align:left; padding:0.2em 1.2em 0.2em 0.6em;">0.0830</td><td style="text-align:right; padding:0.2em 0.6em 0.2em 1.2em;">\(-0.00234\,\%\)</td></tr>
+    <tr><td style="text-align:left; padding:0.2em 1.2em 0.2em 0.6em;">0.100</td><td style="text-align:right; padding:0.2em 0.6em 0.2em 1.2em;">\(-0.117\,\%\)</td></tr>
+    <tr><td style="text-align:left; padding:0.2em 1.2em 0.2em 0.6em;">0.150</td><td style="text-align:right; padding:0.2em 0.6em 0.2em 1.2em;">\(-0.349\,\%\)</td></tr>
+    <tr><td style="text-align:left; padding:0.2em 1.2em 0.2em 0.6em;">0.200</td><td style="text-align:right; padding:0.2em 0.6em 0.2em 1.2em;">\(-0.483\,\%\)</td></tr>
+  </tbody>
+</table>
+
+<p>この結果から、最終散乱面までの共動距離の相対差は \(z_c\simeq0.0827\) 近傍において符号をまたぎつつ最小化されることがわかる。したがって、今日の宇宙における有効赤方偏移スケールの値は</p>
+\[
+\boxed{z_c\simeq0.0827}
+\]
+<p>と定まる。</p>
+
+<p>この値を用いたハッブルフロー領域 \(0.0233&lt;z&lt;0.15\) における本モデルの距離指数</p>
+\[
+\begin{gathered}
+\mu_{\kern0.05em\mathrm{f}\Lambda}(z)
+=
+5\log_{10}\!\left(\frac{d_L^{\kern0.05em\mathrm{f}\Lambda}(z)}{\mathrm{Mpc}}\right)+25,\\[4pt]
+d_L^{\kern0.05em\mathrm{f}\Lambda}(z)
+=
+(1+z)\frac{c}{H_0}\int_0^z \frac{dz'}{E_{\kern0.05em\mathrm{f}\Lambda}(z')}
+\end{gathered}
+\]
+<p>に対して、\(H_0\) を可変とした \(\Lambda\)CDM の距離指数 \(\mu_{\Lambda{\rm CDM}}(z;H_0)\) で再フィット（重みなし最小二乗）したときの最良値を \(H_0^{\rm app}\) と定義すると、</p>
+\[
+H_0^{\rm app}\simeq73.6\ \mathrm{km\,s^{-1}\,Mpc^{-1}}
+\]
+<p>を得る。これは、初期宇宙における \(\Lambda\)CDM の基準値 \(67.4\ \mathrm{km\,s^{-1}\,Mpc^{-1}}\) を保持したまま、\(z_c\simeq0.0827\) 近傍の局所宇宙においてより大きい見かけのハッブル定数が観測されることを意味し、SH\kern0.03em0\kern0.03emES <span style="color: blue;">[A. G. Riess et al. <em>A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km s\(^{-1}\) Mpc\(^{-1}\) Uncertainty from the Hubble Space Telescope and the SH0ES Team</em>. <em>The Astrophysical Journal Letters</em>, 934:L7, 2022.]</span> による \(0.0233&lt;z&lt;0.15\) における代表的な観測値 \(H_0\simeq73\ \mathrm{km\,s^{-1}\,Mpc^{-1}}\) とも整合的である。</p>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 <span style="display: block; height: 1.0em;"></span>
 <hr id="appendix" style="border:0;height:2.75px;margin:2.5rem 0;background:#E8D28D;">
 <p style="font-size:2.0em; font-weight:bold; margin:2rem 0; text-align:center;">Appendix（付録）C</p>
