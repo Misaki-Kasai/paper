@@ -71,9 +71,60 @@ Related Links:<img src="f_lambda_b.svg" alt="fLambda logo" class="logo-box" styl
 \]
 <p>where \(V(\phi(r))\) is the scalar potential.</p>
 <p>This radial one-dimensional formulation serves to generate a scale-dependent repulsive response in a spherically symmetric and static configuration.</p>
-<p>In this study, we consider the basic logarithmic profile \(\ln(1+x^2)\) with \(x \equiv \dfrac{r}{R}\) as the background profile characterizing the one-dimensional radial structure. Then, the scalar field serving as a <em>shape function</em> for the spatial profile of the scale-dependent geometric repulsive response is given by the radial derivative of this background profile:</p>
+<p>In this study, the fundamental radial variable is not \(r\) itself, but the dimensionless scale ratio</p>
 \[
-\phi(r)=\frac{d}{dr}\ln\!\left(1+\frac{r^2}{R^2}\right)=\frac{2r}{R^2+r^2}.
+x\equiv \frac{r}{R},
+\]
+<p>where \(R\) is the characteristic scale defined above. To require a regular response structure without singularities on the real axis, we impose the following conjugate pair in the complex \(x\)-plane, symmetric with respect to the real \(x\)-axis:</p>
+\[
+\zeta_{\pm}=x\pm i,\qquad x\ge 0
+\]
+<p>By Euler’s formula, these can be expressed in polar form as</p>
+\[
+\zeta_{\pm}=\sqrt{1+x^2}\,e^{\pm i\theta},
+\qquad
+\theta=\arctan\left(\frac{1}{x}\right)\ (x>0),\quad
+\theta(0)=\frac{\pi}{2}.
+\]
+<p>We then define the background profile as the real amplitude response obtained after phase cancellation:</p>
+\[
+\mathcal{B}(x)\equiv \ln \zeta_{+}+\ln \zeta_{-}.
+\]
+<p>Substituting the conjugate polar forms into this definition, we obtain</p>
+\[
+\mathcal{B}(x)
+=
+\left[\ln\sqrt{1+x^2}+i\theta\right]
++
+\left[\ln\sqrt{1+x^2}-i\theta\right]
+=
+2\ln\sqrt{1+x^2}
+=
+\ln(1+x^2).
+\]
+<p>Therefore, the logarithmic background profile used in this theory is obtained as the real amplitude response generated through the phase cancellation of the complex-conjugate scale pair. Accordingly, the physical meaning of \(\mathcal{B}(x)\) is that it represents a dimensionless geometrical background response that space exhibits with respect to the scale ratio \(x=r/R\).</p>
+<p>At the characteristic point \(x=1\), namely \(r=R\), we have</p>
+\[
+\zeta_{\pm}=1\pm i,
+\]
+<p>and hence</p>
+\[
+\arg \zeta_{\pm}=\pm\frac{\pi}{4}.
+\]
+<p>Since the phase difference of the complex-conjugate pair is generally \(\Delta\theta=2\theta\), it becomes</p>
+\[
+\Delta\theta=\frac{\pi}{2}
+\]
+<p>at \(x=1\). At this point, the real component \(x\) and the magnitude of the imaginary component \(1\) are balanced. Thus, the characteristic scale \(R\) appears as a geometrical balance point in the complex \(x\)-plane. This interpretation clarifies why the characteristic scale \(r=R\) must remain explicitly encoded in the scalar-field structure.</p>
+<p>With this background profile, the scalar field serving as a <em>shape function</em> for the spatial profile of the scale-dependent geometric repulsive response is defined by its radial derivative:</p>
+\[
+\phi(r)
+=
+\frac{d\mathcal{B}}{dx}\frac{dx}{dr}
+=
+\frac{d}{dr}\ln\!\left(1+\frac{r^2}{R^2}\right)
+=
+\frac{2r}{R^2+r^2}.
 \]
 <p>Then, \(\phi(r)^2=\dfrac{4}{R^2}\cdot\dfrac{x^2}{(1+x^2)^2}\), \(\phi(r)^4=\dfrac{4}{R^2}\cdot\dfrac{4}{R^2}\cdot\left(\dfrac{x^2}{(1+x^2)^2}\right)^2\), and therefore, in the standard \(-\phi^2+\phi^4\)-type potential that guarantees the symmetry \(\phi \leftrightarrow -\phi\), identifying the \(\phi^4\) term as a higher-order term belonging to the same \(R\)-hierarchy (with a single overall prefactor of \(\dfrac{4}{R^2}\)) as the \(\phi^2\) term fixes the coefficient to \(\dfrac{1}{4}R^2\). Accordingly, the potential corresponding to the scalar field \(\phi(r)\) takes the form</p>
 \[
